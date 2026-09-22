@@ -3,6 +3,7 @@ import {
   detectLang,
   getJson,
   getText,
+  isUsableCover,
   sleep,
   slugId,
   writeAuto,
@@ -130,7 +131,13 @@ function toCase(repo, readme) {
   const intro = readmeIntro(readme);
   const excerpt = repo.description || intro || "GitHub 上使用 / 围绕 Laya 构建的开源项目。";
   const code = readmeCode(readme);
-  const image = readmeImage(readme);
+  const fromReadme = readmeImage(readme);
+  // GitHub renders repo social cards on demand, so every repo gets real art;
+  // README art wins only when it is an actual image rather than a badge.
+  const image =
+    fromReadme && isUsableCover(fromReadme)
+      ? fromReadme
+      : `https://opengraph.githubassets.com/1/${repo.full_name}`;
   const textPool = [repo.name, repo.description ?? "", intro].join(" ");
 
   return {
@@ -154,7 +161,7 @@ function toCase(repo, readme) {
         : {}),
       ...(typeof repo.forks_count === "number" ? { forks: repo.forks_count } : {}),
     },
-    ...(image ? { imageUrl: image } : {}),
+    imageUrl: image,
     tags: [],
     variants: inferVariants(textPool),
     links: [],

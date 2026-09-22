@@ -13,8 +13,14 @@
     "excerpt": "分享一下开源项目 Laya，一个多语言、非自回归的 System 1 决策模型，输入文本/工单/JSON + 结构化问题，单次前向传播（~33ms）直接输出带概率的分类/打分/判断。",
     "lang": "zh",
     "metrics": {},
-    "tags": ["multilingual", "scoring", "vs-jev"],
-    "variants": ["multilingual"],
+    "tags": [
+      "multilingual",
+      "scoring",
+      "vs-jev"
+    ],
+    "variants": [
+      "multilingual"
+    ],
     "links": [],
     "curatedAt": "2026-09-22T07:00:00.000Z",
     "curatedBy": "manual"
@@ -37,8 +43,14 @@
       "snippet": "pip install laya\npython -m laya serve --checkpoint ./checkpoints/typed-decisions"
     },
     "metrics": {},
-    "tags": ["tutorial", "deploy", "vs-jev"],
-    "variants": ["typed-decisions"],
+    "tags": [
+      "tutorial",
+      "deploy",
+      "vs-jev"
+    ],
+    "variants": [
+      "typed-decisions"
+    ],
     "links": [],
     "curatedAt": "2026-09-22T07:00:00.000Z",
     "curatedBy": "manual"
@@ -56,7 +68,11 @@
     "excerpt": "从校准概率切入，介绍 System 1 决策模型的解法：pip install laya 即可使用，国内下载源会自动切换到 ModelScope（魔塔），海外用户默认从 HuggingFace 下载。",
     "lang": "zh",
     "metrics": {},
-    "tags": ["scoring", "tutorial", "deploy"],
+    "tags": [
+      "scoring",
+      "tutorial",
+      "deploy"
+    ],
     "variants": [],
     "links": [],
     "curatedAt": "2026-09-22T07:00:00.000Z",
@@ -76,11 +92,15 @@
     "excerpt": "为什么 LLM 不适合做「决策」、System One：来自《思考，快与慢》的新模型类别，以及 JEV、kev、laya 三个代表方案为什么直接输出校准概率更适合自动化。",
     "lang": "zh",
     "metrics": {},
-    "tags": ["vs-jev", "scoring"],
+    "tags": [
+      "vs-jev",
+      "scoring"
+    ],
     "variants": [],
     "links": [],
     "curatedAt": "2026-09-22T07:00:00.000Z",
-    "curatedBy": "manual"
+    "curatedBy": "manual",
+    "imageUrl": "https://assets.cnblogs.com/images/wechat-share.jpg"
   },
   {
     "id": "sohu-1078638804",
@@ -96,11 +116,18 @@
     "excerpt": "针对专有 System 1 API 的趋势，开发者发布完全开源的横向 System 1 决策模型家族 Laya：模拟人类大脑 System 1 机制，在商用硬件上仅需 32.8 毫秒即可做出判断。",
     "lang": "zh",
     "metrics": {},
-    "tags": ["vs-jev", "benchmark", "multilingual"],
-    "variants": ["multilingual"],
+    "tags": [
+      "vs-jev",
+      "benchmark",
+      "multilingual"
+    ],
+    "variants": [
+      "multilingual"
+    ],
     "links": [],
     "curatedAt": "2026-09-22T07:00:00.000Z",
-    "curatedBy": "manual"
+    "curatedBy": "manual",
+    "imageUrl": "https://q0.itc.cn/q_70,c_zoom,w_500//images03/20260920/1367077e87734bf0a62943c8cbfbf7d8.jpeg"
   },
   {
     "id": "medium-laya-bye-bye-typescript-jev",
@@ -122,11 +149,18 @@
       "detectedLang": "en"
     },
     "metrics": {},
-    "tags": ["tutorial", "fine-tune", "vs-jev"],
-    "variants": ["english"],
+    "tags": [
+      "tutorial",
+      "fine-tune",
+      "vs-jev"
+    ],
+    "variants": [
+      "english"
+    ],
     "links": [],
     "curatedAt": "2026-09-22T07:00:00.000Z",
-    "curatedBy": "manual"
+    "curatedBy": "manual",
+    "imageUrl": "https://cdn-images-1.medium.com/max/1024/0*jaYXkEGpR13-WxgW"
   },
   {
     "id": "threads-lioupai629-ddeswefex1y",
@@ -142,11 +176,15 @@
     "excerpt": "这两天 Jev 很红、昨天申请 waitlist，今天拿到资格就用 Codex 写了个专案来测测看 Jev 与开源的 Laya 模型：Jev 的上下文和准确度确实高。",
     "lang": "zh",
     "metrics": {},
-    "tags": ["vs-jev", "benchmark"],
+    "tags": [
+      "vs-jev",
+      "benchmark"
+    ],
     "variants": [],
     "links": [],
     "curatedAt": "2026-09-22T07:00:00.000Z",
-    "curatedBy": "manual"
+    "curatedBy": "manual",
+    "imageUrl": "https://scontent-lax7-1.cdninstagram.com/v/t51.82787-15/793720202_17985617871118625_2322240843441793985_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzk4OTcwODgxNjAwMjUyMjQ4Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTkyMC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=PwmGrnJLRqwQ7kNvwE2qGP9&_nc_oc=AdprnT9AyWOsDpBr4tdbJpxD8QuTd4UPxAnZcc1EIaiPG9p2DEZl9jQs6aRv349qruk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lax7-1.cdninstagram.com&_nc_gid=2a84yALCo4acZnfNQBCsTw&_nc_ss=7a22e&oh=00_AQINRZUw8t1DCUzhOqapENQR6MxXE2SSEm_2w8n44BCkjA&oe=6AB81540"
   },
   {
     "id": "linkedin-glukicov-jev-laya",
@@ -162,10 +200,13 @@
     "excerpt": "\"System One models\" became the loudest idea in AI this week. TypeSafe AI launched #Jev on 15 September and named the category...",
     "lang": "en",
     "metrics": {},
-    "tags": ["vs-jev"],
+    "tags": [
+      "vs-jev"
+    ],
     "variants": [],
     "links": [],
     "curatedAt": "2026-09-22T07:00:00.000Z",
-    "curatedBy": "manual"
+    "curatedBy": "manual",
+    "imageUrl": "https://media.licdn.com/dms/image/v2/D4E22AQEt171nkwbalQ/feedshare-shrink_800/B4EaDAh1MKJ8Ag-/0/1789936489530?e=2147483647&v=beta&t=zq4p0N2_penIufao2xJAfun2IvFrKopZAeH8f2vRUHQ"
   }
 ]

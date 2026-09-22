@@ -1,8 +1,11 @@
 import {
+  BROWSER_UA,
   compact,
   detectLang,
   getText,
+  htmlImage,
   makeLink,
+  ogImage,
   sleep,
   slugId,
   stripHtml,
@@ -49,8 +52,19 @@ async function searchRss(sub, q) {
     )?.[1];
     const content =
       /<content type="html"[^>]*>([\s\S]*?)<\/content>/.exec(block)?.[1] ?? "";
+    // Hosted posts and link posts both ship a preview thumbnail in the feed.
+    const thumb = /<media:thumbnail[^>]*url="([^"]+)"/.exec(block)?.[1];
     if (title && id && link) {
-      entries.push({ title, id, published, name, link, content });
+      entries.push({
+        title,
+        id,
+        published,
+        name,
+        link,
+        content,
+        imageUrl:
+          thumb?.replace(/&amp;/g, "&") ?? htmlImage(content),
+      });
     }
   }
   return entries;
@@ -93,6 +107,7 @@ function toCase(post) {
       : new Date().toISOString(),
     excerpt,
     lang: detectLang(`${post.title} ${body}`),
+    ...(post.imageUrl ? { imageUrl: post.imageUrl } : {}),
     metrics: {},
     tags: [],
     variants: [],
@@ -127,6 +142,21 @@ export async function fetchReddit() {
   }
 
   const cases = [...byId.values()].map(toCase);
+  // Text posts ship no feed thumbnail; the post page still exposes a social
+  // preview image when asked with a browser-like agent.
+  for (const item of cases) {
+    if (item.imageUrl) continue;
+    try {
+      const html = await getText(item.canonicalUrl, {
+        headers: { "User-Agent": BROWSER_UA },
+      });
+      const image = ogImage(html);
+      if (image) item.imageUrl = image;
+    } catch {
+      // Keep the local placeholder for this post
+    }
+    await sleep(600);
+  }
   await writeAuto("reddit", cases);
   return cases.length;
 }

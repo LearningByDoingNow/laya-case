@@ -3,6 +3,7 @@ import {
   detectLang,
   getJson,
   getText,
+  isUsableCover,
   sleep,
   slugId,
   writeAuto,
@@ -117,7 +118,14 @@ function toCase(item, card) {
       .slice(0, 6)
       .join(", ")}）。`;
   const code = cardCode(card);
-  const image = cardImage(card);
+  const fromCard = cardImage(card);
+  // HF publishes a social thumbnail for every model and space; use it whenever
+  // the model card itself has no usable art.
+  const thumbKind = item.sdk ? "spaces" : "models";
+  const image =
+    fromCard && isUsableCover(fromCard)
+      ? fromCard
+      : `https://cdn-thumbnails.huggingface.co/social-thumbnails/${thumbKind}/${id}.png`;
   const textPool = `${id} ${excerpt}`;
 
   return {
@@ -138,7 +146,7 @@ function toCase(item, card) {
       typeof item.likes === "number"
         ? { likes: item.likes }
         : {},
-    ...(image ? { imageUrl: image } : {}),
+    imageUrl: image,
     tags: [],
     variants: inferVariants(id, textPool),
     links: [],

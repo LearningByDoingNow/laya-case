@@ -21,6 +21,7 @@
     "test:smoke": "playwright test",
     "data": "npm run data:fetch && npm run data:build",
     "data:fetch": "node scripts/fetch.mjs",
+    "data:covers": "node scripts/enrich-covers.mjs",
     "data:build": "node scripts/merge.mjs"
   },
   "dependencies": {

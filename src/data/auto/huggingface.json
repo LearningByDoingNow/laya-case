@@ -17,7 +17,7 @@
       "snippet": "res_hi[\"routing\"]\n# {\n#   'model': 'multilingual',\n#   'repo': 'convaiinnovations/laya/multilingual',\n#   'reason': 'non-Latin script (devanagari, 100% of letters); the English checkpoint cannot read it'\n# }"
     },
     "metrics": {
-      "likes": 2026
+      "likes": 2061
     },
     "imageUrl": "https://raw.githubusercontent.com/NandhaKishorM/laya/main/assets/laya_vs_jev_full.png",
     "tags": [],
@@ -47,7 +47,7 @@
       "snippet": "import laya\n\nagent = laya.load(\"convaiinnovations/laya-multilingual\")\nresult = agent.predict(\n    {\"body\": \"मुझसे इनवॉइस 4411 के लिए दो बार शुल्क लिया गया। कृपया आज ही धनवापसी करें।\"},\n    {\"department\": {\"type\": \"choice\", \"instructions\": \"Which team should handle `body`?\",\n                    \"criteria\": {\"billing\": \"invoices, payments, refunds\",\n                                 \"technical\": \"bugs and outages\", \"sales\": \"pricing\"}},\n     \"refund_requested\": {\"type\": \"noul\", \"instructions\": \"Does the sender ask for money back?\"}},\n)\nprint(result[\"answers\"][\"department\"][\"choice\"])      # billing"
     },
     "metrics": {
-      "likes": 148
+      "likes": 149
     },
     "imageUrl": "https://huggingface.co/convaiinnovations/laya/resolve/main/assets/logo-mark.png",
     "tags": [],
@@ -103,6 +103,7 @@
     "metrics": {
       "likes": 8
     },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/mys/laya-multilingual-GGUF.png",
     "tags": [],
     "variants": [
       "multilingual"
@@ -127,6 +128,7 @@
     "metrics": {
       "likes": 7
     },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/mys/laya-GGUF.png",
     "tags": [],
     "variants": [],
     "links": [],
@@ -153,6 +155,7 @@
     "metrics": {
       "likes": 2
     },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Weidows/laya-multilingual-GGUF.png",
     "tags": [],
     "variants": [
       "multilingual"
@@ -177,6 +180,7 @@
     "metrics": {
       "likes": 1
     },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/mys/laya-typed-decisions-GGUF.png",
     "tags": [],
     "variants": [
       "typed-decisions"
@@ -205,6 +209,7 @@
     "metrics": {
       "likes": 2
     },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/fr0stbit3/laya-gguf.png",
     "tags": [],
     "variants": [],
     "links": [],
@@ -231,6 +236,7 @@
     "metrics": {
       "likes": 0
     },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/fr0stbit3/laya-multilingual-gguf.png",
     "tags": [],
     "variants": [
       "multilingual"
@@ -259,6 +265,7 @@
     "metrics": {
       "likes": 0
     },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/fr0stbit3/laya-typed-decisions-gguf.png",
     "tags": [],
     "variants": [
       "typed-decisions"
@@ -287,6 +294,7 @@
     "metrics": {
       "likes": 5
     },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/aac6fef/laya-multilingual-coreml-ane.png",
     "tags": [],
     "variants": [
       "multilingual"
@@ -315,6 +323,7 @@
     "metrics": {
       "likes": 3
     },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/aac6fef/laya-multilingual-coreml.png",
     "tags": [],
     "variants": [
       "multilingual"
@@ -343,6 +352,7 @@
     "metrics": {
       "likes": 4
     },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/ShaunSpark/laya-mind2web-browser-agent.png",
     "tags": [],
     "variants": [],
     "links": [],
@@ -396,6 +406,7 @@
     "metrics": {
       "likes": 1
     },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/aac6fef/laya-coreml.png",
     "tags": [],
     "variants": [],
     "links": [],
@@ -422,6 +433,7 @@
     "metrics": {
       "likes": 0
     },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/aac6fef/laya-typed-decisions-coreml.png",
     "tags": [],
     "variants": [
       "typed-decisions"
@@ -444,8 +456,9 @@
     "excerpt": "HuggingFace 上的 Laya 相关模型（gradio）。",
     "lang": "zh",
     "metrics": {
-      "likes": 120
+      "likes": 122
     },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/convaiinnovations/laya-demo.png",
     "tags": [],
     "variants": [],
     "links": [],
@@ -468,6 +481,7 @@
     "metrics": {
       "likes": 3
     },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/thaitea/laya-vision-demo.png",
     "tags": [],
     "variants": [],
     "links": [],
@@ -490,6 +504,7 @@
     "metrics": {
       "likes": 2
     },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/abhishekbhakat/laya-multilingual-demo.png",
     "tags": [],
     "variants": [
       "multilingual"
@@ -514,6 +529,7 @@
     "metrics": {
       "likes": 1
     },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/yasserrmd/laya-lab.png",
     "tags": [],
     "variants": [],
     "links": [],

@@ -1,3 +1,4 @@
+import { enrichCovers } from "./enrich-covers.mjs";
 import { fetchBlogs } from "./fetch-blogs.mjs";
 import { fetchGithub } from "./fetch-github.mjs";
 import { fetchHf } from "./fetch-hf.mjs";
@@ -27,6 +28,15 @@ for (const [name, run] of Object.entries(SOURCES)) {
     console.error(`✘ ${name}: ${error.message}`);
     process.exitCode = 1;
   }
+}
+
+// Cover backfill is best effort: it only fills entries still missing art and
+// must never fail the collection run.
+try {
+  const filled = await enrichCovers();
+  console.log(`✔ covers: ${filled} backfilled`);
+} catch (error) {
+  console.error(`✘ covers: ${error.message}`);
 }
 
 console.log(`fetch finished in ${((Date.now() - started) / 1000).toFixed(1)}s`);

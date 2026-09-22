@@ -2,6 +2,13 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 
 export const UA = "Laya-Case-Collector/0.1 (community case index)";
 
+// Some hosts turn plain collectors away. These two read as a real browser and
+// as Facebook's link crawler, which still receive the same meta tags.
+export const BROWSER_UA =
+  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36";
+export const FB_CRAWLER_UA =
+  "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)";
+
 export async function getJson(url, { headers = {} } = {}) {
   const res = await fetch(url, {
     headers: { "User-Agent": UA, Accept: "application/json", ...headers },
@@ -78,6 +85,33 @@ export function stripHtml(html) {
     .replace(/&#39;/g, "'")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+// Covers must be real raster art: badge SVGs render as broken thumbnails.
+export function isUsableCover(url) {
+  const path = url.split(/[?#]/)[0].toLowerCase();
+  if (path.endsWith(".svg")) return false;
+  return !/shields\.io|badgen\.net|badge\.fury/.test(path);
+}
+
+const OG_IMAGE =
+  /<meta[^>]+(?:property=["']og:image["']|name=["']twitter:image(?::src)?["'])[^>]+content=["']([^"']+)["']/i;
+
+const OG_IMAGE_FLIPPED =
+  /<meta[^>]+content=["']([^"']+)["'][^>]+(?:property=["']og:image["']|name=["']twitter:image(?::src)?["'])/i;
+
+// Social preview image declared in a page head; falls back to twitter cards.
+export function ogImage(html) {
+  const match = OG_IMAGE.exec(html) ?? OG_IMAGE_FLIPPED.exec(html);
+  const url = match?.[1]?.replace(/&amp;/g, "&").trim();
+  return url && /^https?:\/\//.test(url) && isUsableCover(url) ? url : undefined;
+}
+
+// First raster <img> inside an HTML fragment (RSS bodies, README previews).
+export function htmlImage(html) {
+  const match = /<img[^>]+src=["'](https?:\/\/[^"']+)["']/i.exec(html ?? "");
+  const url = match?.[1]?.replace(/&amp;/g, "&");
+  return url && isUsableCover(url) ? url : undefined;
 }
 
 export function detectLang(text) {

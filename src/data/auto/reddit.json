@@ -12,6 +12,7 @@
     "createdAt": "2026-09-22T03:56:12.000Z",
     "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wmyvzp/jev_is_very_good_your_own_data_is_better/\"> <img src=\"https://preview.redd.it/42lh8wgfvzqh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=2223aa5484a0815ff895505e0bcd40afbc5f4297\" alt=\"Jev is very good. Your own data is better.\" title=\"Jev is very good. Your own data is better.\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>The Jev launch got me curious enough to go read the two papers the...",
     "lang": "en",
+    "imageUrl": "https://preview.redd.it/42lh8wgfvzqh1.png?width=640&crop=smart&auto=webp&s=2223aa5484a0815ff895505e0bcd40afbc5f4297",
     "metrics": {},
     "tags": [],
     "variants": [],
@@ -47,7 +48,8 @@
       }
     ],
     "curatedAt": "2026-09-22T06:30:02.597Z",
-    "curatedBy": "auto"
+    "curatedBy": "auto",
+    "imageUrl": "https://share.redd.it/preview/post/1wmev5u"
   },
   {
     "id": "reddit-1wm0cn0",
@@ -62,6 +64,7 @@
     "createdAt": "2026-09-21T02:33:01.000Z",
     "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wm0cn0/convaiinnovationslaya_multilingual/\"> <img src=\"https://external-preview.redd.it/jvxN3-dnP0ONagNz6HLgL-xfARRDV2e0gNQNzYl3qhI.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=8ea78a158bf00fdf63a20e254bdb727256cd92a2\" alt=\"convaiinnovations/laya (multilingual, non-autoregressive System 1 decision model)\" title=\"convaiinnovations/laya (multilingual, non-autoregressive System 1 decision model)\" /> </a>...",
     "lang": "en",
+    "imageUrl": "https://external-preview.redd.it/jvxN3-dnP0ONagNz6HLgL-xfARRDV2e0gNQNzYl3qhI.png?width=640&crop=smart&auto=webp&s=8ea78a158bf00fdf63a20e254bdb727256cd92a2",
     "metrics": {},
     "tags": [],
     "variants": [],
@@ -97,7 +100,8 @@
       }
     ],
     "curatedAt": "2026-09-22T06:30:02.598Z",
-    "curatedBy": "auto"
+    "curatedBy": "auto",
+    "imageUrl": "https://share.redd.it/preview/post/1wlmkm9"
   },
   {
     "id": "reddit-1wlm50l",
@@ -117,7 +121,8 @@
     "variants": [],
     "links": [],
     "curatedAt": "2026-09-22T06:30:02.599Z",
-    "curatedBy": "auto"
+    "curatedBy": "auto",
+    "imageUrl": "https://share.redd.it/preview/post/1wlm50l"
   },
   {
     "id": "reddit-1wlfmgq",
@@ -137,7 +142,8 @@
     "variants": [],
     "links": [],
     "curatedAt": "2026-09-22T06:30:02.599Z",
-    "curatedBy": "auto"
+    "curatedBy": "auto",
+    "imageUrl": "https://share.redd.it/preview/post/1wlfmgq"
   },
   {
     "id": "reddit-1wl1yzq",
@@ -152,6 +158,7 @@
     "createdAt": "2026-09-20T00:15:37.000Z",
     "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wl1yzq/i_gave_jev_laya_finetuned_modernce_and_qwen35_the/\"> <img src=\"https://external-preview.redd.it/OGs5bzllNXE5a3FoMf0C-RwhEAIhO29wYbXpGCItnwYWeS2V6CtQJKOIxpem.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=01d16cdb259d88f1648e1505f251d3403479e697\" alt=\"I gave Jev, Laya, finetuned ModernCE and Qwen3.5 the controls to Doom\" title=\"I gave Jev, Laya, finetuned ModernCE and Qwen3.5 the controls to Doom\"...",
     "lang": "en",
+    "imageUrl": "https://external-preview.redd.it/OGs5bzllNXE5a3FoMf0C-RwhEAIhO29wYbXpGCItnwYWeS2V6CtQJKOIxpem.png?width=640&crop=smart&auto=webp&s=01d16cdb259d88f1648e1505f251d3403479e697",
     "metrics": {},
     "tags": [],
     "variants": [],
@@ -177,6 +184,7 @@
     "createdAt": "2026-09-18T06:25:03.000Z",
     "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wjieap/made_the_horizontal_opensource_model_for_jev_with/\"> <img src=\"https://preview.redd.it/i3znzaqm28qh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=29d4364afa725ca1d778ff2eee50a853947aa36e\" alt=\"Made the horizontal open-source model for Jev with RLCD, and it surpasses all the Jev benchmarks. HF space, benchmark, model, repo\" title=\"Made the horizontal open-source model for Jev with RLCD, and it s...",
     "lang": "en",
+    "imageUrl": "https://preview.redd.it/i3znzaqm28qh1.png?width=640&crop=smart&auto=webp&s=29d4364afa725ca1d778ff2eee50a853947aa36e",
     "metrics": {},
     "tags": [],
     "variants": [],

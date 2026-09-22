@@ -2,6 +2,8 @@ import {
   compact,
   detectLang,
   getText,
+  htmlImage,
+  ogImage,
   sleep,
   slugId,
   stripHtml,
@@ -49,20 +51,39 @@ function parseRssItems(xml) {
     const pubDate = /<pubDate>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/pubDate>/.exec(block)?.[1];
     const description = /<description>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/description>/.exec(block)?.[1];
     const creator = /<dc:creator>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/dc:creator>/.exec(block)?.[1];
-    if (title && link) items.push({ title, link, pubDate, description, creator });
+    const content =
+      /<content:encoded>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/content:encoded>/.exec(
+        block,
+      )?.[1] ?? "";
+    if (title && link) {
+      items.push({
+        title,
+        link,
+        pubDate,
+        description,
+        creator,
+        // Post art lives either in the full content or the excerpt.
+        imageUrl: htmlImage(content) ?? htmlImage(description ?? ""),
+      });
+    }
   }
   return items;
 }
 
-async function fetchPublishDate(url) {
+// One page fetch yields both the publish date and the social preview image.
+async function fetchPageMeta(url) {
   try {
     const html = await getText(url);
     const match = DATE_META.exec(html);
-    if (!match) return undefined;
-    const parsed = new Date(match[1]);
-    return Number.isNaN(parsed.getTime()) ? undefined : parsed.toISOString();
+    const parsed = match ? new Date(match[1]) : undefined;
+    return {
+      ...(parsed && !Number.isNaN(parsed.getTime())
+        ? { createdAt: parsed.toISOString() }
+        : {}),
+      imageUrl: ogImage(html),
+    };
   } catch {
-    return undefined;
+    return {};
   }
 }
 
@@ -85,6 +106,7 @@ function toCase(entry) {
     createdAt: entry.createdAt ?? new Date().toISOString(),
     excerpt,
     lang: detectLang(textPool),
+    ...(entry.imageUrl ? { imageUrl: entry.imageUrl } : {}),
     metrics: entry.metrics ?? {},
     tags: [],
     variants: [],
@@ -136,7 +158,7 @@ async function fetchDdg() {
   for (const [url, meta] of byUrl) {
     if (budget <= 0) break;
     budget -= 1;
-    const createdAt = await fetchPublishDate(url);
+    const page = await fetchPageMeta(url);
     cases.push(
       toCase({
         id: slugId(
@@ -146,9 +168,9 @@ async function fetchDdg() {
         canonicalUrl: url,
         title: meta.title,
         author: new URL(url).hostname.replace(/^www\./, ""),
-        createdAt,
         description: meta.snippet,
         links: [],
+        ...page,
       }),
     );
     await sleep(500);
@@ -171,6 +193,7 @@ async function fetchRssFeed(url, idPrefix) {
       author: item.creator ? stripHtml(item.creator) : undefined,
       createdAt: item.pubDate ? new Date(item.pubDate).toISOString() : undefined,
       description: item.description ?? "",
+      ...(item.imageUrl ? { imageUrl: item.imageUrl } : {}),
       links: [],
     }));
 }
@@ -190,6 +213,7 @@ async function fetchDevTo() {
       author: item.user?.username,
       createdAt: item.published_at,
       description: item.description ?? "",
+      ...(item.cover_image ? { imageUrl: item.cover_image } : {}),
       metrics: { likes: item.positive_reactions_count ?? 0 },
       links: [],
     }));

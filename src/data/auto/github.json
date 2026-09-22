@@ -18,8 +18,8 @@
       "snippet": "res_hi[\"routing\"]\n# {\n#   'model': 'multilingual',\n#   'repo': 'convaiinnovations/laya/multilingual',\n#   'reason': 'non-Latin script (devanagari, 100% of letters); the English checkpoint cannot read it'\n# }"
     },
     "metrics": {
-      "stars": 12859,
-      "forks": 1038
+      "stars": 13073,
+      "forks": 1055
     },
     "imageUrl": "https://raw.githubusercontent.com/NandhaKishorM/laya/main/assets/logo-lockup.png",
     "tags": [],
@@ -50,8 +50,8 @@
       "snippet": "pip install laya-mlx"
     },
     "metrics": {
-      "stars": 4557,
-      "forks": 313
+      "stars": 4618,
+      "forks": 318
     },
     "imageUrl": "https://raw.githubusercontent.com/mizorewww/laya-mlx/main/docs/assets/snake-demo.gif",
     "tags": [],
@@ -82,7 +82,7 @@
       "snippet": "pip install 'laya-coreml[demo]'\nhf download aac6fef/laya-multilingual-coreml-ane --local-dir models/snake\nlaya-coreml-snake --model ./models/snake"
     },
     "metrics": {
-      "stars": 1039,
+      "stars": 1054,
       "forks": 68
     },
     "imageUrl": "https://raw.githubusercontent.com/mizorewww/laya-coreml/main/docs/assets/snake-demo.gif",
@@ -113,9 +113,10 @@
       "snippet": "npm install @receptron/laya"
     },
     "metrics": {
-      "stars": 219,
+      "stars": 225,
       "forks": 18
     },
+    "imageUrl": "https://opengraph.githubassets.com/1/receptron/laya",
     "tags": [],
     "variants": [
       "laya.cpp",
@@ -144,9 +145,10 @@
       "snippet": "git clone https://github.com/wdobry/laya-playground\ncd laya-playground\nuv venv --python 3.12 && uv pip install laya\n.venv/bin/python server.py"
     },
     "metrics": {
-      "stars": 84,
-      "forks": 14
+      "stars": 88,
+      "forks": 15
     },
+    "imageUrl": "https://opengraph.githubassets.com/1/wdobry/laya-playground",
     "tags": [],
     "variants": [],
     "links": [],
@@ -172,9 +174,10 @@
       "snippet": "swift run -c release FluidUseLaya answer --state \"…\" --type choice \\\n    --instructions \"What does the customer want?\" --options \"refund|order status|technical help\"\nswift run -c release FluidUseLaya tetris --pieces 200            # headless Tetris, P(clean) per landing\nswift run -c release FluidUseLaya benchmark --suites <mobius>/benchmark/suites.jsonl --reference <mobius>/benchmark/reference-rows.jsonl\nswift run -c release LayaTetrisDemo                              # SwiftUI: laya plays Tetris, live decisions"
     },
     "metrics": {
-      "stars": 70,
+      "stars": 71,
       "forks": 5
     },
+    "imageUrl": "https://opengraph.githubassets.com/1/FluidInference/FluidUse",
     "tags": [],
     "variants": [
       "typed-decisions"
@@ -202,9 +205,10 @@
       "snippet": "git clone https://github.com/virajbhartiya/laya-vs-jev.git\ncd laya-vs-jev\nuv sync --extra demo --extra trex --extra dev\nuv run --extra demo hf download aac6fef/laya-multilingual-mlx \\\n  --local-dir models/hub/laya-multilingual-mlx\ncp .env.example .env\n# Set TYPESAFE_API_KEY in .env before running.\nuv run --extra trex laya-trex --round-seconds 0 --env-file .env"
     },
     "metrics": {
-      "stars": 50,
+      "stars": 52,
       "forks": 4
     },
+    "imageUrl": "https://opengraph.githubassets.com/1/virajbhartiya/laya-vs-jev",
     "tags": [],
     "variants": [
       "laya-mlx"
@@ -232,9 +236,10 @@
       "snippet": "git submodule update --init --recursive\ncmake -S . -B build-cuda -G Ninja -DCMAKE_BUILD_TYPE=Release \\\n  -DCMAKE_CUDA_ARCHITECTURES=120\ncmake --build build-cuda --parallel 8"
     },
     "metrics": {
-      "stars": 43,
+      "stars": 45,
       "forks": 2
     },
+    "imageUrl": "https://opengraph.githubassets.com/1/lkarlslund/laya.cpp",
     "tags": [],
     "variants": [
       "laya.cpp",
@@ -267,6 +272,7 @@
       "stars": 21,
       "forks": 5
     },
+    "imageUrl": "https://opengraph.githubassets.com/1/r33drichards/laya-vision",
     "tags": [],
     "variants": [
       "typed-decisions"
@@ -297,6 +303,7 @@
       "stars": 18,
       "forks": 6
     },
+    "imageUrl": "https://opengraph.githubassets.com/1/PromptEngineer48/laya-vs-jev-arena",
     "tags": [],
     "variants": [],
     "links": [],
@@ -325,6 +332,7 @@
       "stars": 18,
       "forks": 3
     },
+    "imageUrl": "https://opengraph.githubassets.com/1/0xBakeer/arbiter",
     "tags": [],
     "variants": [],
     "links": [],
@@ -353,6 +361,7 @@
       "stars": 13,
       "forks": 0
     },
+    "imageUrl": "https://opengraph.githubassets.com/1/ChristianAlexander/laya_ex",
     "tags": [],
     "variants": [
       "elixir"
@@ -383,6 +392,7 @@
       "stars": 10,
       "forks": 0
     },
+    "imageUrl": "https://opengraph.githubassets.com/1/pythongiant/laya-drift",
     "tags": [],
     "variants": [],
     "links": [],
@@ -411,7 +421,7 @@
       "stars": 6,
       "forks": 0
     },
-    "imageUrl": "https://img.shields.io/pypi/v/edgejev.svg",
+    "imageUrl": "https://opengraph.githubassets.com/1/yzfly/edgejev",
     "tags": [],
     "variants": [
       "laya.cpp"
@@ -442,6 +452,7 @@
       "stars": 6,
       "forks": 1
     },
+    "imageUrl": "https://opengraph.githubassets.com/1/kaiyes/fast-jev-compaction-laya",
     "tags": [],
     "variants": [
       "laya-mlx",
@@ -449,6 +460,37 @@
     ],
     "links": [],
     "curatedAt": "2026-09-22T06:29:06.050Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-afshinm-laya-mps",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/afshinm/laya-mps",
+    "title": "laya-mps",
+    "author": {
+      "name": "afshinm",
+      "handle": "afshinm",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/314326?v=4",
+      "profileUrl": "https://github.com/afshinm"
+    },
+    "createdAt": "2026-09-21T06:49:44Z",
+    "excerpt": "Run Jev-style typed decisions locally on your Mac with low RAM usage and fast responses",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "git clone https://github.com/afshinm/laya-mps.git\ncd laya-mps\n./scripts/serve.sh"
+    },
+    "metrics": {
+      "stars": 6,
+      "forks": 1
+    },
+    "imageUrl": "https://opengraph.githubassets.com/1/afshinm/laya-mps",
+    "tags": [],
+    "variants": [
+      "typed-decisions"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-22T06:29:07.773Z",
     "curatedBy": "auto"
   },
   {
@@ -473,40 +515,11 @@
       "stars": 5,
       "forks": 0
     },
+    "imageUrl": "https://opengraph.githubassets.com/1/NVentimiglia/laya-mcp",
     "tags": [],
     "variants": [],
     "links": [],
     "curatedAt": "2026-09-22T06:29:07.200Z",
-    "curatedBy": "auto"
-  },
-  {
-    "id": "gh-afshinm-laya-mps",
-    "sourceType": "github",
-    "canonicalUrl": "https://github.com/afshinm/laya-mps",
-    "title": "laya-mps",
-    "author": {
-      "name": "afshinm",
-      "handle": "afshinm",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/314326?v=4",
-      "profileUrl": "https://github.com/afshinm"
-    },
-    "createdAt": "2026-09-21T06:49:44Z",
-    "excerpt": "Run Jev-style typed decisions locally on your Mac with low RAM usage and fast responses",
-    "lang": "en",
-    "code": {
-      "lang": "bash",
-      "snippet": "git clone https://github.com/afshinm/laya-mps.git\ncd laya-mps\n./scripts/serve.sh"
-    },
-    "metrics": {
-      "stars": 5,
-      "forks": 1
-    },
-    "tags": [],
-    "variants": [
-      "typed-decisions"
-    ],
-    "links": [],
-    "curatedAt": "2026-09-22T06:29:07.773Z",
     "curatedBy": "auto"
   },
   {
@@ -531,7 +544,7 @@
       "stars": 5,
       "forks": 0
     },
-    "imageUrl": "https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white",
+    "imageUrl": "https://opengraph.githubassets.com/1/cv/laya-plays-smb3",
     "tags": [],
     "variants": [],
     "links": [],
@@ -560,6 +573,7 @@
       "stars": 4,
       "forks": 0
     },
+    "imageUrl": "https://opengraph.githubassets.com/1/aovestdipaperino/laya-rust",
     "tags": [],
     "variants": [
       "laya-rust",
@@ -587,6 +601,7 @@
       "stars": 3,
       "forks": 1
     },
+    "imageUrl": "https://opengraph.githubassets.com/1/shpati/laya.cpp",
     "tags": [],
     "variants": [
       "laya.cpp"
@@ -617,6 +632,7 @@
       "stars": 3,
       "forks": 1
     },
+    "imageUrl": "https://opengraph.githubassets.com/1/yibie/laya-jev-lab",
     "tags": [],
     "variants": [],
     "links": [],
@@ -645,6 +661,7 @@
       "stars": 3,
       "forks": 0
     },
+    "imageUrl": "https://opengraph.githubassets.com/1/aovestdipaperino/laya-pong",
     "tags": [],
     "variants": [],
     "links": [],
@@ -673,6 +690,7 @@
       "stars": 3,
       "forks": 2
     },
+    "imageUrl": "https://opengraph.githubassets.com/1/apiplant/laya-rs",
     "tags": [],
     "variants": [
       "laya-rust",
@@ -704,6 +722,7 @@
       "stars": 3,
       "forks": 0
     },
+    "imageUrl": "https://opengraph.githubassets.com/1/neko233-com/laya-go",
     "tags": [],
     "variants": [
       "laya-go"
@@ -734,6 +753,7 @@
       "stars": 3,
       "forks": 0
     },
+    "imageUrl": "https://opengraph.githubassets.com/1/myxamediyar/chunklaya",
     "tags": [],
     "variants": [],
     "links": [],
@@ -762,6 +782,7 @@
       "stars": 3,
       "forks": 1
     },
+    "imageUrl": "https://opengraph.githubassets.com/1/bvolpato/kevala",
     "tags": [],
     "variants": [
       "laya-rust"
@@ -792,6 +813,7 @@
       "stars": 2,
       "forks": 0
     },
+    "imageUrl": "https://opengraph.githubassets.com/1/li-ming1/laya-zig",
     "tags": [],
     "variants": [],
     "links": [],
@@ -816,6 +838,7 @@
       "stars": 2,
       "forks": 1
     },
+    "imageUrl": "https://opengraph.githubassets.com/1/instax-dutta/sysone-bench",
     "tags": [],
     "variants": [],
     "links": [],
@@ -844,7 +867,7 @@
       "stars": 2,
       "forks": 0
     },
-    "imageUrl": "https://github.com/ChenneyZhuang/laya-browser-agent/actions/workflows/tests.yml/badge.svg",
+    "imageUrl": "https://opengraph.githubassets.com/1/ChenneyZhuang/laya-browser-agent",
     "tags": [],
     "variants": [],
     "links": [],
@@ -873,7 +896,7 @@
       "stars": 2,
       "forks": 0
     },
-    "imageUrl": "https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1255875&amp;theme=light&amp;t=1790038052883",
+    "imageUrl": "https://opengraph.githubassets.com/1/ItisShikhar/gg-friggin-ez",
     "tags": [],
     "variants": [
       "multilingual",
