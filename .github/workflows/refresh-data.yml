@@ -2,7 +2,7 @@ name: Refresh Data
 
 on:
   schedule:
-    # 每周一 03:00 UTC（北京时间 11:00）重新采集各来源数据
+    # Re-collect every source on Mondays at 03:00 UTC (11:00 Beijing time)
     - cron: "0 3 * * 1"
   workflow_dispatch:
 
@@ -26,8 +26,9 @@ jobs:
       - run: npm ci
 
       - name: Fetch latest data from all sources
-        # 个别来源失败（如 Reddit 429、接口抖动）不该阻断整体刷新：
-        # 成功的来源照常更新，失败的来源由 writeAuto 保留原文件。
+        # One failing source (Reddit 429, endpoint blip) must not block the
+        # refresh: healthy sources still update and writeAuto keeps the failed
+        # source's file untouched.
         run: |
           npm run data:fetch || \
             echo "::warning::some sources failed; committing partial refresh"
@@ -36,7 +37,7 @@ jobs:
         run: npm run data:build
 
       - name: Guard against publishing truncated data
-        # 采集层意外大面积失败时中止，避免把残缺数据发布上线。
+        # Abort when the collector fails broadly so truncated data never ships.
         run: |
           COUNT=$(node -e "console.log(JSON.parse(require('fs').readFileSync('src/data/cases.json','utf8')).cases.length)")
           echo "merged case count: $COUNT"
@@ -61,7 +62,8 @@ jobs:
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
       - name: Trigger CI build and deploy
-        # GITHUB_TOKEN 的 push 不会触发其它 workflow，需显式触发 CI 重新构建部署。
+        # A push made with GITHUB_TOKEN never starts other workflows, so trigger
+        # CI explicitly to rebuild and deploy.
         if: steps.commit.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

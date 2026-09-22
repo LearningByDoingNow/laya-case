@@ -9,7 +9,7 @@ import {
   writeAuto,
 } from "./lib/common.mjs";
 
-// Reddit 的 .json 接口对普通客户端返回 403，但 search.rss（Atom）可用。
+// Reddit's .json endpoint returns 403 for plain clients, but search.rss (Atom) works.
 const SEARCHES = [
   { sub: "LocalLLaMA", q: "laya" },
   { sub: "LocalLLaMA", q: '"system one" model' },
@@ -122,7 +122,7 @@ export async function fetchReddit() {
     } catch (error) {
       console.warn(`  [reddit] r/${sub} q=${q} failed: ${error.message}`);
     }
-    // Reddit RSS 限流较严（429），查询间隔放宽
+    // Reddit RSS rate limits are strict (429), so space the queries out
     await sleep(4500);
   }
 

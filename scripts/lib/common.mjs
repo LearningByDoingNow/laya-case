@@ -31,11 +31,12 @@ export async function writeAuto(name, cases) {
     const existing = JSON.parse(await readFile(path, "utf8"));
     previous = Array.isArray(existing) ? existing : existing.cases ?? [];
   } catch {
-    // 首次采集或文件损坏：按全新写入处理。
+    // First fetch, or the file is unreadable: treat it as a fresh write.
   }
 
-  // 防御：来源整体抓取失败（限流、接口挂掉）时会返回空数组，
-  // 不能用空结果覆盖已有数据，否则会清空该来源的历史条目。
+  // Guard: when a whole source fails (rate limited, endpoint down) it returns
+  // an empty array. Never overwrite existing data with an empty result, or the
+  // source's history would be wiped.
   if (cases.length === 0 && previous.length > 0) {
     console.warn(
       `  [guard] ${name}: fetched 0 but ${previous.length} exist; keeping existing file`,
@@ -43,8 +44,9 @@ export async function writeAuto(name, cases) {
     return path;
   }
 
-  // 已存在的条目沿用首次采集时间，只有新条目用当前时间；
-  // 否则重复采集同样内容也会刷新 curatedAt，让定时任务每次都在做空提交。
+  // Existing entries keep their first-seen timestamp and only new entries take
+  // the current time. Otherwise re-collecting identical content would keep
+  // bumping curatedAt and turn every scheduled run into an empty commit.
   const firstSeen = new Map(
     previous
       .map((item) => [item.id, item.curatedAt])

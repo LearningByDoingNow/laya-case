@@ -8,11 +8,12 @@ import {
   writeAuto,
 } from "./lib/common.mjs";
 
-// 官方仓库不在 convaiinnovations 组织下，单独保证收录。
+// The official repo lives outside the convaiinnovations org, so fetch it separately.
 const OFFICIAL_REPOS = ["NandhaKishorM/laya"];
 
-// 搜索词覆盖：官方仓库引用、pip 安装命令、System One / typed decision 关键词、
-// 各语言运行时（laya.cpp / mlx / rust / go ...）与 topic 标记。
+// Query coverage: references to the official repo, pip install commands,
+// System One / typed decision keywords, per-language runtimes
+// (laya.cpp / mlx / rust / go ...) and topic labels.
 const QUERIES = [
   '"NandhaKishorM/laya" in:readme',
   '"pip install laya" in:readme',
@@ -35,7 +36,7 @@ const README_NAMES = ["README.md", "readme.md", "README.MD", "Readme.md", "READM
 const CODE_FENCE = /```([a-z]+)\n([\s\S]*?)```/g;
 
 function readmeCode(readme, langHint) {
-  // 跳过过短的片段（比如单独的 `pip install laya`），取第一个可用代码块
+  // Skip snippets that are too short (a lone `pip install laya`) and take the first usable block
   CODE_FENCE.lastIndex = 0;
   let match;
   while ((match = CODE_FENCE.exec(readme)) !== null) {
@@ -51,7 +52,7 @@ function readmeCode(readme, langHint) {
 }
 
 function looksRelevant(repo) {
-  // laya 必须出现在名称或描述里（仅 topic 命中说明关联不可靠）
+  // laya must appear in the name or description (a topic-only hit is a weak association)
   const core = `${repo.name} ${repo.description ?? ""}`;
   if (!/laya/i.test(core)) return false;
   const text = `${core} ${(repo.topics ?? []).join(" ")}`;
@@ -79,7 +80,7 @@ async function fetchReadme(fullName) {
       );
       if (text.trim()) return text;
     } catch {
-      // 尝试下一个常见文件名
+      // Try the next common filename
     }
   }
   return "";

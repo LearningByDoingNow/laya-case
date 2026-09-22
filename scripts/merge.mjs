@@ -1,7 +1,7 @@
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import { stripHtml } from "./lib/common.mjs";
 
-// 标签推断规则：命中即加入，顺序决定优先级。
+// Tag inference rules: a match assigns the tag, order sets priority.
 const TAG_RULES = [
   ["vs-jev", /\bjev\b|typesafe/i],
   ["benchmark", /benchmark|评测|对比|head-to-head|\bvs\b|arena|准确率|accuracy/i],
@@ -46,8 +46,9 @@ async function loadDir(dir) {
   } catch {
     return [];
   }
-  // 合并优先级：github > huggingface > reddit > blogs。
-  // 先注册的条目在同 URL 冲突时保留字段，后注册的只补空缺。
+  // Merge priority: github > huggingface > reddit > blogs.
+  // On a same-URL conflict the earlier entry keeps its fields and later
+  // ones only fill in what is missing.
   const PRIORITY = ["github.json", "huggingface.json", "reddit.json", "blogs.json"];
   const ordered = [...files]
     .filter((name) => name.endsWith(".json"))
@@ -149,7 +150,7 @@ function register(entry) {
     return;
   }
 
-  // manual 覆盖 auto；同来源合并时保留更完整字段（manual 优先）。
+  // manual overrides auto; inside one source the fuller record wins.
   const preferManual = entry.curatedBy === "manual";
   const merged = preferManual
     ? { ...target, ...entry, metrics: { ...target.metrics, ...entry.metrics } }

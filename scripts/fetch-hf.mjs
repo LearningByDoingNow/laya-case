@@ -35,7 +35,7 @@ function looksRelevant(item) {
   if (LAYA_FALSE_POSITIVE.test(text)) return false;
   if (id.startsWith("convaiinnovations/laya")) return true;
   if ((item.tags ?? []).some((tag) => LAYA_TAGS.has(tag))) return true;
-  // 仓库名以 laya 开头（laya-mlx、laya-cpp ...）
+  // Repo names starting with "laya" (laya-mlx, laya-cpp ...)
   if (/^laya[-.]/i.test(repoName)) return true;
   return false;
 }
@@ -48,7 +48,7 @@ async function fetchCard(modelId) {
       );
       if (text.trim()) return text;
     } catch {
-      // 继续尝试
+      // Move on to the next candidate
     }
   }
   return "";
@@ -89,7 +89,7 @@ function cardImage(card) {
     /<img\s[^>]*src="(https:\/\/[^"]+)"/i.exec(card) ||
     /!\[[^\]]*\]\((https:\/\/[^)\s]+)\)/i.exec(card);
   if (!match) return undefined;
-  // 只保留稳定图床，避免相对路径与占位图
+  // Keep stable image hosts only; drop relative paths and placeholder art
   return /huggingface\.co|githubusercontent\.com/.test(match[1])
     ? match[1]
     : undefined;
