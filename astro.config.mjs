@@ -6,6 +6,8 @@ export default defineConfig({
   // base so every URL — assets, links, canonical — matches production exactly.
   base: "/laya-case/",
   output: "static",
-  site: process.env.PUBLIC_SITE_URL,
+  // Default to the production origin so local builds emit the same canonical
+  // and Open Graph URLs as the deployed site without extra environment setup.
+  site: process.env.PUBLIC_SITE_URL || "https://learningbydoingnow.github.io",
   integrations: [react()],
 });
