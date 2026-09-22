@@ -19,6 +19,8 @@ A curated collection of the best Laya articles and open-source cases — searcha
 
 > Unofficial community project, not affiliated with Convai Innovations / Laya. Models, snippets, accounts and trademarks belong to their original authors and platforms.
 
+Laya Case collects the best Laya-related articles and open-source cases from across the web — including many hands-on Laya vs Jev comparisons — into one searchable wall.
+
 ## Features
 
 | | Description |
@@ -114,7 +116,7 @@ Tests use the local Chrome by default.
 
 **[🌐 在线预览](https://learningbydoingnow.github.io/laya-case/)** · [English](#laya-case)
 
-Laya Case 收集全网优秀的 Laya 相关文章与开源案例,汇成一面静态案例墙——保留来源链接、作者、数据指标、可运行代码与外链。
+Laya Case 收集全网优秀的 Laya 相关文章与开源案例——含大量 Laya vs Jev 对比实测——汇成一面静态案例墙,保留来源链接、作者、数据指标、可运行代码与外链。
 
 > 非官方社区项目,与 Convai Innovations / Laya 无隶属关系;模型、代码片段、账号信息与商标权利归原作者及原平台所有。
 

@@ -68,6 +68,7 @@ const structuredData = {
 <BaseLayout
   title={`${item.title} · Laya Case`}
   description={item.excerpt.slice(0, 180)}
+  keywords={[item.title, ...(item.tags ?? []), "Laya", "Jev", "Laya vs Jev"].join(", ")}
   image={item.imageUrl}
   canonicalPath={`${import.meta.env.BASE_URL}case/${item.id}/`}
   article

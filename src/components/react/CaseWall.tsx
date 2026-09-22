@@ -138,7 +138,8 @@ export default function CaseWall({
           <p>
             Laya 是 Convai Innovations 开源的 System 1
             决策模型家族（Apache 2.0）：输入状态与结构化问题，单次前向传播直接输出带校准概率的类型化判断——分类、打分、是非——从不生成文本，所以没有幻觉可解析。覆盖
-            100+ 语言，权重完全开放，可本地部署、可微调。
+            100+ 语言，权重完全开放，可本地部署、可微调。社区常把它作为 Jev
+            的开源替代来实测与对比，下方案例收录了大量 Laya vs Jev 同题对比。
           </p>
           <code className="quickstart">pip install laya</code>
         </div>
