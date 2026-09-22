@@ -105,8 +105,16 @@ export function getHotScore(
   return signal * 0.5 ** (ageHours / 168);
 }
 
+function isUsableCover(url: string): boolean {
+  const path = url.split(/[?#]/)[0].toLowerCase();
+  if (path.endsWith(".svg")) return false;
+  return !/shields\.io|badgen\.net|badge\.fury/.test(path);
+}
+
 export function caseCover(item: CaseItem): string {
-  return item.imageUrl || `${import.meta.env.BASE_URL}poster-placeholder.svg`;
+  return item.imageUrl && isUsableCover(item.imageUrl)
+    ? item.imageUrl
+    : `${import.meta.env.BASE_URL}poster-placeholder.svg`;
 }
 
 export function formatMetric(value: number): string {
