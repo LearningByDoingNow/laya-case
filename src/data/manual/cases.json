@@ -1,0 +1,171 @@
+[
+  {
+    "id": "zhihu-pin-2084725494638031641",
+    "sourceType": "blog",
+    "canonicalUrl": "https://www.zhihu.com/pin/2084725494638031641",
+    "title": "Laya：开源的 BERT 类决策模型，性能超 Jev",
+    "author": {
+      "name": "王鹏LLM",
+      "handle": "王鹏LLM",
+      "profileUrl": "https://www.zhihu.com/"
+    },
+    "createdAt": "2026-09-20T04:00:00.000Z",
+    "excerpt": "分享一下开源项目 Laya，一个多语言、非自回归的 System 1 决策模型，输入文本/工单/JSON + 结构化问题，单次前向传播（~33ms）直接输出带概率的分类/打分/判断。",
+    "lang": "zh",
+    "metrics": {},
+    "tags": ["multilingual", "scoring", "vs-jev"],
+    "variants": ["multilingual"],
+    "links": [],
+    "curatedAt": "2026-09-22T07:00:00.000Z",
+    "curatedBy": "manual"
+  },
+  {
+    "id": "zhihu-laya-shiji",
+    "sourceType": "blog",
+    "canonicalUrl": "https://zhuanlan.zhihu.com/p/2085559011349362295",
+    "title": "Jev 开源平替模型 Laya 实测",
+    "author": {
+      "name": "知乎专栏",
+      "handle": "zhuanlan",
+      "profileUrl": "https://www.zhihu.com/"
+    },
+    "createdAt": "2026-09-21T04:00:00.000Z",
+    "excerpt": "实测 Laya 的部署与效果：pip install 之后用 python -m laya serve 加载 typed-decisions checkpoint 起本地服务，对比 Jev 的上下文理解与准确度。",
+    "lang": "zh",
+    "code": {
+      "lang": "bash",
+      "snippet": "pip install laya\npython -m laya serve --checkpoint ./checkpoints/typed-decisions"
+    },
+    "metrics": {},
+    "tags": ["tutorial", "deploy", "vs-jev"],
+    "variants": ["typed-decisions"],
+    "links": [],
+    "curatedAt": "2026-09-22T07:00:00.000Z",
+    "curatedBy": "manual"
+  },
+  {
+    "id": "juejin-7687572195092004899",
+    "sourceType": "blog",
+    "canonicalUrl": "https://juejin.cn/post/7687572195092004899",
+    "title": "为什么 LLM 的置信度在骗你？一个 33ms 校准概率引擎的解法",
+    "author": {
+      "name": "juejin.cn",
+      "handle": "juejin"
+    },
+    "createdAt": "2026-09-20T08:00:00.000Z",
+    "excerpt": "从校准概率切入，介绍 System 1 决策模型的解法：pip install laya 即可使用，国内下载源会自动切换到 ModelScope（魔塔），海外用户默认从 HuggingFace 下载。",
+    "lang": "zh",
+    "metrics": {},
+    "tags": ["scoring", "tutorial", "deploy"],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-22T07:00:00.000Z",
+    "curatedBy": "manual"
+  },
+  {
+    "id": "cnblogs-itech-23068704",
+    "sourceType": "blog",
+    "canonicalUrl": "https://www.cnblogs.com/itech/p/23068704",
+    "title": "LLM 做决策又慢又贵？System One 模型 JEV、kev、laya 直接算概率",
+    "author": {
+      "name": "iTech",
+      "handle": "itech",
+      "profileUrl": "https://www.cnblogs.com/itech"
+    },
+    "createdAt": "2026-09-21T02:00:00.000Z",
+    "excerpt": "为什么 LLM 不适合做「决策」、System One：来自《思考，快与慢》的新模型类别，以及 JEV、kev、laya 三个代表方案为什么直接输出校准概率更适合自动化。",
+    "lang": "zh",
+    "metrics": {},
+    "tags": ["vs-jev", "scoring"],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-22T07:00:00.000Z",
+    "curatedBy": "manual"
+  },
+  {
+    "id": "sohu-1078638804",
+    "sourceType": "blog",
+    "canonicalUrl": "https://m.sohu.com/a/1078638804_120333371",
+    "title": "开源模型 Laya 发布：推理速度快 Jev 近 8 倍，零成本替代专有 API",
+    "author": {
+      "name": "搜狐号",
+      "handle": "120333371",
+      "profileUrl": "https://www.sohu.com/"
+    },
+    "createdAt": "2026-09-20T02:00:00.000Z",
+    "excerpt": "针对专有 System 1 API 的趋势，开发者发布完全开源的横向 System 1 决策模型家族 Laya：模拟人类大脑 System 1 机制，在商用硬件上仅需 32.8 毫秒即可做出判断。",
+    "lang": "zh",
+    "metrics": {},
+    "tags": ["vs-jev", "benchmark", "multilingual"],
+    "variants": ["multilingual"],
+    "links": [],
+    "curatedAt": "2026-09-22T07:00:00.000Z",
+    "curatedBy": "manual"
+  },
+  {
+    "id": "medium-laya-bye-bye-typescript-jev",
+    "sourceType": "blog",
+    "canonicalUrl": "https://medium.com/data-science-in-your-pocket/laya-bye-bye-typescript-jev-ai-bdefd25149e0",
+    "title": "Laya: Bye Bye TypeScript Jev AI",
+    "author": {
+      "name": "Data Science in Your Pocket",
+      "handle": "data-science-in-your-pocket",
+      "profileUrl": "https://medium.com/"
+    },
+    "createdAt": "2026-09-20T10:00:00.000Z",
+    "excerpt": "A model card walkthrough of Laya: a non-autoregressive System 1 decision model that never generates text — what it gives up, and how fine-tuning on your domain data turns it into a specialized decision model in production.",
+    "lang": "en",
+    "translation": {
+      "status": "ready",
+      "text": "对 Laya 模型卡的解读：Laya 是一个非自回归的 System 1 决策模型，从不生成文本；文章讲了它放弃了什么，以及如何在自己的领域数据上微调，把它变成生产环境里的专用决策模型。",
+      "targetLang": "zh-CN",
+      "detectedLang": "en"
+    },
+    "metrics": {},
+    "tags": ["tutorial", "fine-tune", "vs-jev"],
+    "variants": ["english"],
+    "links": [],
+    "curatedAt": "2026-09-22T07:00:00.000Z",
+    "curatedBy": "manual"
+  },
+  {
+    "id": "threads-lioupai629-ddeswefex1y",
+    "sourceType": "threads",
+    "canonicalUrl": "https://www.threads.com/@lioupai629/post/DdeSwefEx1y",
+    "title": "用 Codex 写了个专案，实测 Jev 与开源的 Laya 模型",
+    "author": {
+      "name": "lioupai629",
+      "handle": "lioupai629",
+      "profileUrl": "https://www.threads.com/@lioupai629"
+    },
+    "createdAt": "2026-09-19T06:00:00.000Z",
+    "excerpt": "这两天 Jev 很红、昨天申请 waitlist，今天拿到资格就用 Codex 写了个专案来测测看 Jev 与开源的 Laya 模型：Jev 的上下文和准确度确实高。",
+    "lang": "zh",
+    "metrics": {},
+    "tags": ["vs-jev", "benchmark"],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-22T07:00:00.000Z",
+    "curatedBy": "manual"
+  },
+  {
+    "id": "linkedin-glukicov-jev-laya",
+    "sourceType": "blog",
+    "canonicalUrl": "https://www.linkedin.com/posts/glukicov_jev-laya-llm-activity-7507537784186888192-R3tc",
+    "title": "Jev 与 Laya 引发的 System One 讨论周",
+    "author": {
+      "name": "Gleb Lukicov",
+      "handle": "glukicov",
+      "profileUrl": "https://www.linkedin.com/in/glukicov"
+    },
+    "createdAt": "2026-09-21T05:00:00.000Z",
+    "excerpt": "\"System One models\" became the loudest idea in AI this week. TypeSafe AI launched #Jev on 15 September and named the category...",
+    "lang": "en",
+    "metrics": {},
+    "tags": ["vs-jev"],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-22T07:00:00.000Z",
+    "curatedBy": "manual"
+  }
+]

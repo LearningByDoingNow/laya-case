@@ -1,0 +1,82 @@
+---
+import CaseDetail from "../../components/react/CaseDetail";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCaseAliases, getCases } from "../../lib/cases";
+import type { CaseItem, CaseSourceType } from "../../lib/types";
+
+const CODE_SOURCES: CaseSourceType[] = ["github", "huggingface"];
+
+export function getStaticPaths() {
+  return [
+    ...getCases().map((item) => ({
+      params: { id: item.id },
+      props: { item, redirectTo: undefined },
+    })),
+    ...getCaseAliases().map((alias) => ({
+      params: { id: alias.id },
+      props: { item: undefined, redirectTo: alias.canonicalCaseId },
+    })),
+  ];
+}
+
+type Props =
+  | { item: CaseItem; redirectTo?: undefined }
+  | { item?: undefined; redirectTo: string };
+
+const { item, redirectTo } = Astro.props;
+if (redirectTo) {
+  return Astro.redirect(`/case/${redirectTo}`, 301);
+}
+if (!item) {
+  throw new Error("Case page has neither an item nor a redirect target");
+}
+
+const isCode = CODE_SOURCES.includes(item.sourceType);
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": isCode ? "SoftwareSourceCode" : "SocialMediaPosting",
+  headline: item.title,
+  datePublished: item.createdAt,
+  url: item.canonicalUrl,
+  ...(isCode
+    ? {
+        codeRepository: item.canonicalUrl,
+        ...(item.code ? { programmingLanguage: item.code.lang } : {}),
+      }
+    : { articleBody: item.excerpt.slice(0, 1200) }),
+  ...(item.imageUrl ? { image: item.imageUrl } : {}),
+  ...(item.tags.length > 0 ? { keywords: item.tags.join(", ") } : {}),
+  author: {
+    "@type": isCode ? "Organization" : "Person",
+    name: item.author.name,
+    alternateName: `@${item.author.handle}`,
+  },
+  ...(typeof item.metrics.likes === "number"
+    ? {
+        interactionStatistic: [
+          {
+            "@type": "InteractionCounter",
+            interactionType: "https://schema.org/LikeAction",
+            userInteractionCount: item.metrics.likes,
+          },
+        ],
+      }
+    : {}),
+};
+---
+
+<BaseLayout
+  title={`${item.title} · Laya Case`}
+  description={item.excerpt.slice(0, 180)}
+  image={item.imageUrl}
+  canonicalPath={`/case/${item.id}`}
+  article
+>
+  <script
+    slot="head"
+    type="application/ld+json"
+    set:html={JSON.stringify(structuredData)}
+  />
+
+  <CaseDetail item={item} client:load />
+</BaseLayout>

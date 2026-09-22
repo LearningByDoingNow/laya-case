@@ -1,0 +1,885 @@
+[
+  {
+    "id": "gh-nandhakishorm-laya",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/NandhaKishorM/laya",
+    "title": "laya",
+    "author": {
+      "name": "NandhaKishorM",
+      "handle": "NandhaKishorM",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/48623612?v=4",
+      "profileUrl": "https://github.com/NandhaKishorM"
+    },
+    "createdAt": "2026-09-18T04:46:33Z",
+    "excerpt": "Multilingual, non-autoregressive System 1 decision engine. Typed decisions over 100+ languages in a single forward pass — 33 ms — trained with reinforcement learning against strictly proper scoring rules (RLCD), with a router that picks the right checkpoint per request.",
+    "lang": "en",
+    "code": {
+      "lang": "python",
+      "snippet": "res_hi[\"routing\"]\n# {\n#   'model': 'multilingual',\n#   'repo': 'convaiinnovations/laya/multilingual',\n#   'reason': 'non-Latin script (devanagari, 100% of letters); the English checkpoint cannot read it'\n# }"
+    },
+    "metrics": {
+      "stars": 12039,
+      "forks": 980
+    },
+    "imageUrl": "https://raw.githubusercontent.com/NandhaKishorM/laya/main/assets/logo-lockup.png",
+    "tags": [],
+    "variants": [
+      "multilingual",
+      "typed-decisions"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:08.862Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-mizorewww-laya-mlx",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/mizorewww/laya-mlx",
+    "title": "laya-mlx",
+    "author": {
+      "name": "mizorewww",
+      "handle": "mizorewww",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/252857002?v=4",
+      "profileUrl": "https://github.com/mizorewww"
+    },
+    "createdAt": "2026-09-19T13:50:26Z",
+    "excerpt": "Native MLX runtime for Laya typed decision models — 7–14 ms short decisions on M3 Max. No text generation, PyTorch, or cloud API.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "pip install laya-mlx"
+    },
+    "metrics": {
+      "stars": 4324,
+      "forks": 288
+    },
+    "imageUrl": "https://raw.githubusercontent.com/mizorewww/laya-mlx/main/docs/assets/snake-demo.gif",
+    "tags": [],
+    "variants": [
+      "laya-mlx",
+      "typed-decisions"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:09.347Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-mizorewww-laya-coreml",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/mizorewww/laya-coreml",
+    "title": "laya-coreml",
+    "author": {
+      "name": "mizorewww",
+      "handle": "mizorewww",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/252857002?v=4",
+      "profileUrl": "https://github.com/mizorewww"
+    },
+    "createdAt": "2026-09-19T23:14:13Z",
+    "excerpt": "Local Laya typed decisions on Apple Core ML and Neural Engine. Validated ports, ~5 ms short decisions on M3 Max, reproducible speed and energy benchmarks.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "pip install 'laya-coreml[demo]'\nhf download aac6fef/laya-multilingual-coreml-ane --local-dir models/snake\nlaya-coreml-snake --model ./models/snake"
+    },
+    "metrics": {
+      "stars": 986,
+      "forks": 64
+    },
+    "imageUrl": "https://raw.githubusercontent.com/mizorewww/laya-coreml/main/docs/assets/snake-demo.gif",
+    "tags": [],
+    "variants": [
+      "typed-decisions"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:09.815Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-receptron-laya",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/receptron/laya",
+    "title": "laya",
+    "author": {
+      "name": "receptron",
+      "handle": "receptron",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/168242058?v=4",
+      "profileUrl": "https://github.com/receptron"
+    },
+    "createdAt": "2026-09-19T15:30:52Z",
+    "excerpt": "Run Laya, the open-source Jev-compatible System-1 decision model, from Node.js / TypeScript via ONNX Runtime",
+    "lang": "en",
+    "code": {
+      "lang": "sh",
+      "snippet": "npm install @receptron/laya"
+    },
+    "metrics": {
+      "stars": 205,
+      "forks": 18
+    },
+    "tags": [],
+    "variants": [
+      "laya.cpp",
+      "node"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:10.292Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-wdobry-laya-playground",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/wdobry/laya-playground",
+    "title": "laya-playground",
+    "author": {
+      "name": "wdobry",
+      "handle": "wdobry",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/10637790?v=4",
+      "profileUrl": "https://github.com/wdobry"
+    },
+    "createdAt": "2026-09-20T19:06:43Z",
+    "excerpt": "A website, two games, a benchmark and an agent skill for Laya, the open-source decision model. Runs on your machine.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "git clone https://github.com/wdobry/laya-playground\ncd laya-playground\nuv venv --python 3.12 && uv pip install laya\n.venv/bin/python server.py"
+    },
+    "metrics": {
+      "stars": 71,
+      "forks": 10
+    },
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:10.788Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-fluidinference-fluiduse",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/FluidInference/FluidUse",
+    "title": "FluidUse",
+    "author": {
+      "name": "FluidInference",
+      "handle": "FluidInference",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/216957621?v=4",
+      "profileUrl": "https://github.com/FluidInference"
+    },
+    "createdAt": "2026-09-21T00:47:25Z",
+    "excerpt": "Local computer use on Apple silicon: on-device typed decisions with laya and form filling with CUA-S1-FORMS, driven through the macOS Accessibility API",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "swift run -c release FluidUseLaya answer --state \"…\" --type choice \\\n    --instructions \"What does the customer want?\" --options \"refund|order status|technical help\"\nswift run -c release FluidUseLaya tetris --pieces 200            # headless Tetris, P(clean) per landing\nswift run -c release FluidUseLaya benchmark --suites <mobius>/benchmark/suites.jsonl --reference <mobius>/benchmark/reference-rows.jsonl\nswift run -c release LayaTetrisDemo                              # SwiftUI: laya plays Tetris, live decisions"
+    },
+    "metrics": {
+      "stars": 61,
+      "forks": 5
+    },
+    "tags": [],
+    "variants": [
+      "typed-decisions"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:11.280Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-virajbhartiya-laya-vs-jev",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/virajbhartiya/laya-vs-jev",
+    "title": "laya-vs-jev",
+    "author": {
+      "name": "virajbhartiya",
+      "handle": "virajbhartiya",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/56783451?v=4",
+      "profileUrl": "https://github.com/virajbhartiya"
+    },
+    "createdAt": "2026-09-21T14:30:39Z",
+    "excerpt": "Laya vs Jev: local MLX and hosted AI decisions playing T-Rex side by side, with live metrics and replay recording",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "git clone https://github.com/virajbhartiya/laya-vs-jev.git\ncd laya-vs-jev\nuv sync --extra demo --extra trex --extra dev\nuv run --extra demo hf download aac6fef/laya-multilingual-mlx \\\n  --local-dir models/hub/laya-multilingual-mlx\ncp .env.example .env\n# Set TYPESAFE_API_KEY in .env before running.\nuv run --extra trex laya-trex --round-seconds 0 --env-file .env"
+    },
+    "metrics": {
+      "stars": 44,
+      "forks": 4
+    },
+    "tags": [],
+    "variants": [
+      "laya-mlx"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:11.795Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-lkarlslund-laya-cpp",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/lkarlslund/laya.cpp",
+    "title": "laya.cpp",
+    "author": {
+      "name": "lkarlslund",
+      "handle": "lkarlslund",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/8929787?v=4",
+      "profileUrl": "https://github.com/lkarlslund"
+    },
+    "createdAt": "2026-09-20T09:18:04Z",
+    "excerpt": "RTX-optimized C++ inference for Laya typed decisions",
+    "lang": "en",
+    "code": {
+      "lang": "sh",
+      "snippet": "git submodule update --init --recursive\ncmake -S . -B build-cuda -G Ninja -DCMAKE_BUILD_TYPE=Release \\\n  -DCMAKE_CUDA_ARCHITECTURES=120\ncmake --build build-cuda --parallel 8\nctest --test-dir build-cuda --output-on-failure"
+    },
+    "metrics": {
+      "stars": 40,
+      "forks": 2
+    },
+    "tags": [],
+    "variants": [
+      "laya.cpp",
+      "typed-decisions"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:12.267Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-r33drichards-laya-vision",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/r33drichards/laya-vision",
+    "title": "laya-vision",
+    "author": {
+      "name": "r33drichards",
+      "handle": "r33drichards",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/57335981?v=4",
+      "profileUrl": "https://github.com/r33drichards"
+    },
+    "createdAt": "2026-09-19T15:12:19Z",
+    "excerpt": "Image inputs for Laya: calibrated, non-generative typed decisions over images + text (SmolVLM-256M backbone)",
+    "lang": "en",
+    "code": {
+      "lang": "python",
+      "snippet": "import laya\nfrom PIL import Image\n\nagent = laya.load_vlm(\"thaitea/laya-vision-smolvlm-256m\")   # downloads from the Hub\nresult = agent.predict(\n    {\"image\": Image.open(\"photo.jpg\"), \"note\": \"customer says it arrived broken\"},\n    {\n        \"damaged\":  {\"type\": \"noul\",   \"instructions\": \"Does the item in the photo look damaged?\"},\n        \"category\": {\"type\": \"choice\", \"instructions\": \"What kind of item is this?\",\n                     \"criteria\": [\"electronics\", \"clothing\", \"furniture\", \"food\", \"other\"]},\n    },\n)\nprint(result[\"answers\"][\"damaged\"][\"noul\"], result[\"answers\"][\"category\"][\"choice\"])"
+    },
+    "metrics": {
+      "stars": 21,
+      "forks": 5
+    },
+    "tags": [],
+    "variants": [
+      "typed-decisions"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:12.864Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-0xbakeer-arbiter",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/0xBakeer/arbiter",
+    "title": "arbiter",
+    "author": {
+      "name": "0xBakeer",
+      "handle": "0xBakeer",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/17404809?v=4",
+      "profileUrl": "https://github.com/0xBakeer"
+    },
+    "createdAt": "2026-09-20T04:45:28Z",
+    "excerpt": "Serve typed-decision (System 1) models — Laya or your own — on NVIDIA GPUs or Apple Silicon, with a Jev-compatible API and coding-agent integrations",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "git clone https://github.com/0xBakeer/arbiter.git\ncd arbiter\n./run.sh setup      # .venv, torch, the deps, and the three checkpoints (2.3 GB)\n./run.sh serve      # http://localhost:8010"
+    },
+    "metrics": {
+      "stars": 19,
+      "forks": 3
+    },
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:13.362Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-promptengineer48-laya-vs-jev-arena",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/PromptEngineer48/laya-vs-jev-arena",
+    "title": "laya-vs-jev-arena",
+    "author": {
+      "name": "PromptEngineer48",
+      "handle": "PromptEngineer48",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/130393461?v=4",
+      "profileUrl": "https://github.com/PromptEngineer48"
+    },
+    "createdAt": "2026-09-21T06:11:56Z",
+    "excerpt": "Laya (open source, local) vs TypeSafe Jev (API): two AI models race in Snake and fight in a Mortal-Kombat-style arena. Every move is a real model decision.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "git clone https://github.com/PromptEngineer48/laya-vs-jev-arena.git\ncd laya-vs-jev-arena\npip install -r requirements.txt"
+    },
+    "metrics": {
+      "stars": 18,
+      "forks": 6
+    },
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:13.832Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-christianalexander-laya-ex",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/ChristianAlexander/laya_ex",
+    "title": "laya_ex",
+    "author": {
+      "name": "ChristianAlexander",
+      "handle": "ChristianAlexander",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6108845?v=4",
+      "profileUrl": "https://github.com/ChristianAlexander"
+    },
+    "createdAt": "2026-09-20T03:28:34Z",
+    "excerpt": "An Elixir library wrapping ConvAI Innovations' OSS Laya system one model",
+    "lang": "en",
+    "code": {
+      "lang": "elixir",
+      "snippet": "{:ok, model} = Laya.load()\n\nLaya.predict(model, \"Please refund the duplicate invoice.\", %{\n  \"department\" => %{\n    type: :choice,\n    instructions: \"Which team should handle this request?\",\n    criteria: [\n      {\"billing\", \"invoices, payments, and refunds\"},\n      {\"technical\", \"bugs and outages\"},\n      {\"other\", \"everything else\"}\n    ]\n  },\n  \"refund_requested\" => %{\n    type: :noul,\n    instructions: \"Does the customer explicitly request a refund?\"\n  }\n})"
+    },
+    "metrics": {
+      "stars": 13,
+      "forks": 0
+    },
+    "tags": [],
+    "variants": [
+      "elixir"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:14.317Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-pythongiant-laya-drift",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/pythongiant/laya-drift",
+    "title": "laya-drift",
+    "author": {
+      "name": "pythongiant",
+      "handle": "pythongiant",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/13624560?v=4",
+      "profileUrl": "https://github.com/pythongiant"
+    },
+    "createdAt": "2026-09-21T12:53:15Z",
+    "excerpt": "opencode plugin to monitor agent drift over time",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "cd /Users/srihariunnikrishnan/drift\nbash scripts/setup.sh              # .venv (reuses system torch) + pip install laya\n(cd .opencode && bun install)      # or npm install"
+    },
+    "metrics": {
+      "stars": 9,
+      "forks": 0
+    },
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:14.818Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-kaiyes-fast-jev-compaction-laya",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/kaiyes/fast-jev-compaction-laya",
+    "title": "fast-jev-compaction-laya",
+    "author": {
+      "name": "kaiyes",
+      "handle": "kaiyes",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/5293742?v=4",
+      "profileUrl": "https://github.com/kaiyes"
+    },
+    "createdAt": "2026-09-20T14:39:01Z",
+    "excerpt": "Local, key-free context compaction for opencode: replaces lossy LLM-summarization compaction with typed decisions scored by the open-weight Laya models running natively on Apple Silicon via MLX.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "> pip install laya-mlx        # the Laya runtime — from github.com/mizorewww/laya-mlx\n> python server.py            # starts on http://127.0.0.1:8787 — keep this terminal open\n>"
+    },
+    "metrics": {
+      "stars": 6,
+      "forks": 1
+    },
+    "tags": [],
+    "variants": [
+      "laya-mlx",
+      "typed-decisions"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:15.300Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-yzfly-edgejev",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/yzfly/edgejev",
+    "title": "edgejev",
+    "author": {
+      "name": "yzfly",
+      "handle": "yzfly",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/46625232?v=4",
+      "profileUrl": "https://github.com/yzfly"
+    },
+    "createdAt": "2026-09-20T08:18:57Z",
+    "excerpt": "离线可用的本地类型化决策：4 核 CPU 单题 15.6ms。Local & offline Jev / System One inference on CPU — ONNX + INT8, no torch at runtime. 支持 laya / kev / PlayJev",
+    "lang": "zh",
+    "code": {
+      "lang": "bash",
+      "snippet": "uv tool install \"edgejev[build]\"\nedgejev build --backend laya --out ./jev-int8"
+    },
+    "metrics": {
+      "stars": 5,
+      "forks": 0
+    },
+    "imageUrl": "https://img.shields.io/pypi/v/edgejev.svg",
+    "tags": [],
+    "variants": [
+      "laya.cpp"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:15.785Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-nventimiglia-laya-mcp",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/NVentimiglia/laya-mcp",
+    "title": "laya-mcp",
+    "author": {
+      "name": "NVentimiglia",
+      "handle": "NVentimiglia",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/125889?v=4",
+      "profileUrl": "https://github.com/NVentimiglia"
+    },
+    "createdAt": "2026-09-19T04:48:09Z",
+    "excerpt": "This is a mcp server for integrating Laya into your agentic workflow.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "pip install laya-mcp\n# or from this tree:\npip install -e laya-mcp/"
+    },
+    "metrics": {
+      "stars": 5,
+      "forks": 0
+    },
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:16.261Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-afshinm-laya-mps",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/afshinm/laya-mps",
+    "title": "laya-mps",
+    "author": {
+      "name": "afshinm",
+      "handle": "afshinm",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/314326?v=4",
+      "profileUrl": "https://github.com/afshinm"
+    },
+    "createdAt": "2026-09-21T06:49:44Z",
+    "excerpt": "Run Jev-style typed decisions locally on your Mac with low RAM usage and fast responses",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "git clone https://github.com/afshinm/laya-mps.git\ncd laya-mps\n./scripts/serve.sh"
+    },
+    "metrics": {
+      "stars": 5,
+      "forks": 1
+    },
+    "tags": [],
+    "variants": [
+      "typed-decisions"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:16.744Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-cv-laya-plays-smb3",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/cv/laya-plays-smb3",
+    "title": "laya-plays-smb3",
+    "author": {
+      "name": "cv",
+      "handle": "cv",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/5445?v=4",
+      "profileUrl": "https://github.com/cv"
+    },
+    "createdAt": "2026-09-20T00:32:41Z",
+    "excerpt": "World 1-1 cleared with unmodified Laya on DGX Spark. Model-driven jumping, replay-verified frames, and every decision recorded.",
+    "lang": "en",
+    "code": {
+      "lang": "sh",
+      "snippet": "git clone https://github.com/cv/laya-plays-smb3.git\ncd laya-plays-smb3\nuv sync --locked\nuv run pytest\n\nuv run laya-mario run --backend toy --scenario scenarios/toy-gap.toml \\\n  --policy heuristic --output results/toy-demo.json\nuv run laya-mario replay results/toy-demo.json"
+    },
+    "metrics": {
+      "stars": 5,
+      "forks": 0
+    },
+    "imageUrl": "https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white",
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:17.222Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-aovestdipaperino-laya-rust",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/aovestdipaperino/laya-rust",
+    "title": "laya-rust",
+    "author": {
+      "name": "aovestdipaperino",
+      "handle": "aovestdipaperino",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/42046613?v=4",
+      "profileUrl": "https://github.com/aovestdipaperino"
+    },
+    "createdAt": "2026-09-20T13:00:16Z",
+    "excerpt": "Pure-Rust inference for the Laya non-autoregressive typed-decision model (ModernBERT-large + RL decision head), on candle",
+    "lang": "en",
+    "code": {
+      "lang": "sh",
+      "snippet": "mkdir -p models/laya-base/encoder models/laya-base/tokenizer\nB=https://huggingface.co/convaiinnovations/laya/resolve/main\nfor f in model.safetensors encoder/config.json tokenizer/tokenizer.json \\\n         tokenizer/tokenizer_config.json rl_agent_config.json; do\n  curl -sL -o models/laya-base/$f \"$B/$f\"\ndone"
+    },
+    "metrics": {
+      "stars": 4,
+      "forks": 0
+    },
+    "tags": [],
+    "variants": [
+      "laya-rust",
+      "laya-candle"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:17.701Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-shpati-laya-cpp",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/shpati/laya.cpp",
+    "title": "laya.cpp",
+    "author": {
+      "name": "shpati",
+      "handle": "shpati",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/2678888?v=4",
+      "profileUrl": "https://github.com/shpati"
+    },
+    "createdAt": "2026-09-19T17:18:58Z",
+    "excerpt": "C/C++ port of NandhaKishorM/laya",
+    "lang": "en",
+    "metrics": {
+      "stars": 3,
+      "forks": 1
+    },
+    "tags": [],
+    "variants": [
+      "laya.cpp"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:18.189Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-aovestdipaperino-laya-pong",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/aovestdipaperino/laya-pong",
+    "title": "laya-pong",
+    "author": {
+      "name": "aovestdipaperino",
+      "handle": "aovestdipaperino",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/42046613?v=4",
+      "profileUrl": "https://github.com/aovestdipaperino"
+    },
+    "createdAt": "2026-09-20T13:48:34Z",
+    "excerpt": "Browser pong whose paddle is decided by a Laya typed decision, one question per frame at 18.7 ms",
+    "lang": "en",
+    "code": {
+      "lang": "sh",
+      "snippet": "git clone https://github.com/aovestdipaperino/laya-pong\ncd laya-pong"
+    },
+    "metrics": {
+      "stars": 3,
+      "forks": 0
+    },
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:18.670Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-apiplant-laya-rs",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/apiplant/laya-rs",
+    "title": "laya-rs",
+    "author": {
+      "name": "apiplant",
+      "handle": "apiplant",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/23236743?v=4",
+      "profileUrl": "https://github.com/apiplant"
+    },
+    "createdAt": "2026-09-19T20:46:13Z",
+    "excerpt": "Rust reimplementation of Laya, a sub-35ms non-autoregressive typed-decision engine (ModernBERT encoder + RLCD-trained decision head), built from scratch on candle.",
+    "lang": "en",
+    "code": {
+      "lang": "sh",
+      "snippet": "brew tap apiplant/tap\nbrew install apiplant/tap/laya-rs"
+    },
+    "metrics": {
+      "stars": 3,
+      "forks": 2
+    },
+    "tags": [],
+    "variants": [
+      "laya-rust",
+      "laya-candle"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:19.182Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-neko233-com-laya-go",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/neko233-com/laya-go",
+    "title": "laya-go",
+    "author": {
+      "name": "neko233-com",
+      "handle": "neko233-com",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/242357072?v=4",
+      "profileUrl": "https://github.com/neko233-com"
+    },
+    "createdAt": "2026-09-21T02:06:10Z",
+    "excerpt": "Laya — open horizontal System 1 decision models: Go server + agent CLI/MCP replacing JEV (non-autoregressive structured prediction)",
+    "lang": "en",
+    "code": {
+      "lang": "sh",
+      "snippet": "curl -s http://127.0.0.1:7710/health\ncurl -s http://127.0.0.1:7710/v1/decide -H 'content-type: application/json' \\\n  -d '{\"features\":{\"intent_change\":0.9,\"target_known\":0.8},\"top_k\":3}'"
+    },
+    "metrics": {
+      "stars": 3,
+      "forks": 0
+    },
+    "tags": [],
+    "variants": [
+      "laya-go"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:19.666Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-myxamediyar-chunklaya",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/myxamediyar/chunklaya",
+    "title": "chunklaya",
+    "author": {
+      "name": "myxamediyar",
+      "handle": "myxamediyar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/86684638?v=4",
+      "profileUrl": "https://github.com/myxamediyar"
+    },
+    "createdAt": "2026-09-19T23:23:00Z",
+    "excerpt": "Long-input harness for Laya, the open-weights System 1 decision model: chunk, detect, aggregate. Apache 2.0.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "python3 -m venv .venv && .venv/bin/pip install -r requirements.txt"
+    },
+    "metrics": {
+      "stars": 3,
+      "forks": 0
+    },
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:20.171Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-bvolpato-kevala",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/bvolpato/kevala",
+    "title": "kevala",
+    "author": {
+      "name": "bvolpato",
+      "handle": "bvolpato",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/3207647?v=4",
+      "profileUrl": "https://github.com/bvolpato"
+    },
+    "createdAt": "2026-09-21T23:49:14Z",
+    "excerpt": "Decision models (Laya, Kev) in any web page: a zero-dependency Rust engine compiled to WebAssembly, with WebGPU kernels. One import, no server.",
+    "lang": "en",
+    "code": {
+      "lang": "js",
+      "snippet": "import { Kevala } from \"kevala\";"
+    },
+    "metrics": {
+      "stars": 3,
+      "forks": 1
+    },
+    "tags": [],
+    "variants": [
+      "laya-rust"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:20.656Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-li-ming1-laya-zig",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/li-ming1/laya-zig",
+    "title": "laya-zig",
+    "author": {
+      "name": "li-ming1",
+      "handle": "li-ming1",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/159421370?v=4",
+      "profileUrl": "https://github.com/li-ming1"
+    },
+    "createdAt": "2026-09-21T15:09:30Z",
+    "excerpt": "A from-scratch, dependency-free Zig CPU runtime for the Laya System-1 decision model: tokenizer + mmBERT-base encoder + decision head in one binary, no Python/torch/BLAS. Work in progress, see README.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "git clone https://github.com/li-ming1/laya-zig\ncd laya-zig"
+    },
+    "metrics": {
+      "stars": 2,
+      "forks": 0
+    },
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:21.138Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-instax-dutta-sysone-bench",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/instax-dutta/sysone-bench",
+    "title": "sysone-bench",
+    "author": {
+      "name": "instax-dutta",
+      "handle": "instax-dutta",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/54683866?v=4",
+      "profileUrl": "https://github.com/instax-dutta"
+    },
+    "createdAt": "2026-09-21T15:34:40Z",
+    "excerpt": "First independent head-to-head benchmark of System One decision models (Laya vs Jev) on byte-identical inputs",
+    "lang": "en",
+    "metrics": {
+      "stars": 2,
+      "forks": 1
+    },
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:21.608Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-chenneyzhuang-laya-browser-agent",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/ChenneyZhuang/laya-browser-agent",
+    "title": "laya-browser-agent",
+    "author": {
+      "name": "ChenneyZhuang",
+      "handle": "ChenneyZhuang",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/61360637?v=4",
+      "profileUrl": "https://github.com/ChenneyZhuang"
+    },
+    "createdAt": "2026-09-21T05:00:42Z",
+    "excerpt": "Local, open-source Jev alternative: browser agent decisions with Laya (System One model) on your own machine. No cloud, no API key. Playwright/CDP, MCP-friendly.",
+    "lang": "en",
+    "code": {
+      "lang": "python",
+      "snippet": "from localdecide import BrowserDecider\nfrom localdecide.drivers import PlaywrightDriver\n\nwith PlaywrightDriver(start_url=\"https://en.wikipedia.org/wiki/Main_Page\") as driver:\n    run = BrowserDecider().run(driver, \"Click the 'Random article' link in the navigation.\")\n    print(run.stopped, run.summary()[\"median_decision_ms\"], \"ms/decision\")\n# -> done 142 ms/decision"
+    },
+    "metrics": {
+      "stars": 2,
+      "forks": 0
+    },
+    "imageUrl": "https://github.com/ChenneyZhuang/laya-browser-agent/actions/workflows/tests.yml/badge.svg",
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:22.120Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-yibie-laya-jev-lab",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/yibie/laya-jev-lab",
+    "title": "laya-jev-lab",
+    "author": {
+      "name": "yibie",
+      "handle": "yibie",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/365484?v=4",
+      "profileUrl": "https://github.com/yibie"
+    },
+    "createdAt": "2026-09-20T06:00:15Z",
+    "excerpt": "Independent measurements of typed-decision models: Jev (TypeSafe API) vs Laya (open weights), and a local-first cascade that matches Jev's accuracy at 1.8x the speed",
+    "lang": "en",
+    "code": {
+      "lang": "python",
+      "snippet": "first = laya.ask(state, question, criteria)\nif first[\"confidence\"] >= threshold:\n    return first                              # solved locally\nreturn jev.ask(state, question, criteria)     # escalate"
+    },
+    "metrics": {
+      "stars": 2,
+      "forks": 1
+    },
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:22.601Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-r4ai-laya-web",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/r4ai/laya-web",
+    "title": "laya-web",
+    "author": {
+      "name": "r4ai",
+      "handle": "r4ai",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/96561881?v=4",
+      "profileUrl": "https://github.com/r4ai"
+    },
+    "createdAt": "2026-09-20T15:24:04Z",
+    "excerpt": "Laya typed decisions in the browser with ONNX Runtime WebGPU and Wasm",
+    "lang": "en",
+    "code": {
+      "lang": "sh",
+      "snippet": "npm install @r4ai/laya-web onnxruntime-web\n# or\npnpm add @r4ai/laya-web onnxruntime-web\n# or\nyarn add @r4ai/laya-web onnxruntime-web"
+    },
+    "metrics": {
+      "stars": 2,
+      "forks": 0
+    },
+    "imageUrl": "https://img.shields.io/badge/License-Apache_2.0-blue.svg",
+    "tags": [],
+    "variants": [
+      "laya.cpp",
+      "typed-decisions"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-22T06:19:23.088Z",
+    "curatedBy": "auto"
+  }
+]

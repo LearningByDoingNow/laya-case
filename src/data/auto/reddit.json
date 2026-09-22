@@ -1,0 +1,192 @@
+[
+  {
+    "id": "reddit-1wmyvzp",
+    "sourceType": "reddit",
+    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wmyvzp/jev_is_very_good_your_own_data_is_better/",
+    "title": "Jev is very good. Your own data is better.",
+    "author": {
+      "name": "TrifleHopeful5418",
+      "handle": "TrifleHopeful5418",
+      "profileUrl": "https://www.reddit.com/user/TrifleHopeful5418"
+    },
+    "createdAt": "2026-09-22T03:56:12.000Z",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wmyvzp/jev_is_very_good_your_own_data_is_better/\"> <img src=\"https://preview.redd.it/42lh8wgfvzqh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=2223aa5484a0815ff895505e0bcd40afbc5f4297\" alt=\"Jev is very good. Your own data is better.\" title=\"Jev is very good. Your own data is better.\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>The Jev launch got me curious enough to go read the two papers the...",
+    "lang": "en",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [
+      {
+        "url": "https://definedrr.medium.com/jev-is-very-good-your-own-data-is-better-you-just-need-to-be-not-afraid-to-use-it-fa1e85260ced?postPublishedType=repub",
+        "domain": "definedrr.medium.com"
+      }
+    ],
+    "curatedAt": "2026-09-22T06:11:54.879Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "reddit-1wmev5u",
+    "sourceType": "reddit",
+    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wmev5u/got_jevlike_api_running_natively_on_ninfer_qwen38/",
+    "title": "Got jev-like api running natively on ninfer / qwen3.8 27b and results are quite decent",
+    "author": {
+      "name": "Unlucky-Message8866",
+      "handle": "Unlucky-Message8866",
+      "profileUrl": "https://www.reddit.com/user/Unlucky-Message8866"
+    },
+    "createdAt": "2026-09-21T14:46:43.000Z",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Hi all! After all the jev hype I wanted to try by myself and got qwen3.8 27b to mix-and-match open implementations on top of ninfer, and to be honest I'm quite impressed with the results, latency is not great but accuracy is almost on par, this is a very dirty POC but it kinda works (there's still some bugs and incorrect allocation, still need to figure out how to properly integrate into ninfer). Source code at: <a href=\"https://github.com/kn...",
+    "lang": "en",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [
+      {
+        "url": "https://github.com/knoopx/ninfer",
+        "domain": "github.com"
+      }
+    ],
+    "curatedAt": "2026-09-22T06:11:54.880Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "reddit-1wm0cn0",
+    "sourceType": "reddit",
+    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wm0cn0/convaiinnovationslaya_multilingual/",
+    "title": "convaiinnovations/laya (multilingual, non-autoregressive System 1 decision model)",
+    "author": {
+      "name": "Balance-",
+      "handle": "Balance-",
+      "profileUrl": "https://www.reddit.com/user/Balance-"
+    },
+    "createdAt": "2026-09-21T02:33:01.000Z",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wm0cn0/convaiinnovationslaya_multilingual/\"> <img src=\"https://external-preview.redd.it/jvxN3-dnP0ONagNz6HLgL-xfARRDV2e0gNQNzYl3qhI.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=8ea78a158bf00fdf63a20e254bdb727256cd92a2\" alt=\"convaiinnovations/laya (multilingual, non-autoregressive System 1 decision model)\" title=\"convaiinnovations/laya (multilingual, non-autoregressive System 1 decision model)\" /> </a>...",
+    "lang": "en",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [
+      {
+        "url": "https://huggingface.co/convaiinnovations/laya",
+        "domain": "huggingface.co"
+      }
+    ],
+    "curatedAt": "2026-09-22T06:11:54.881Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "reddit-1wlmkm9",
+    "sourceType": "reddit",
+    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wlmkm9/layacpp_optimized_laya_nearinstant_decision_making/",
+    "title": "laya.cpp: Optimized laya near-instant decision making",
+    "author": {
+      "name": "lkarlslund",
+      "handle": "lkarlslund",
+      "profileUrl": "https://www.reddit.com/user/lkarlslund"
+    },
+    "createdAt": "2026-09-20T17:06:02.000Z",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>After seeing <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wjieap/made_the_horizontal_opensource_model_for_jev_with/\">u/Nandakishor_ml’s post introducing Laya</a>, I wanted to see how fast it could run in a standalone C++ implementation.</p> <p>Credit to <a href=\"/u/Nandakishor_ml\">u/Nandakishor_ml</a> for the architecture, training and open-source release. My contribution is the inference implementation: <strong><a href=\"https://git...",
+    "lang": "en",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [
+      {
+        "url": "https://github.com/lkarlslund/laya.cpp",
+        "domain": "github.com"
+      }
+    ],
+    "curatedAt": "2026-09-22T06:11:54.881Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "reddit-1wlm50l",
+    "sourceType": "reddit",
+    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wlm50l/the_scaling_lesson_what_are_we_missing/",
+    "title": "The Scaling Lesson. What are we missing?",
+    "author": {
+      "name": "Silver-Champion-4846",
+      "handle": "Silver-Champion-4846",
+      "profileUrl": "https://www.reddit.com/user/Silver-Champion-4846"
+    },
+    "createdAt": "2026-09-20T16:49:41.000Z",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Consider the difference between GPT 1 and GPT 6. They are both decoder-only language models, yet there's so much difference between them. Data scale, data quality, sft, rl, etc. </p> <p>But the important lesson, I think, is that the preliminary capabilities of a specific manifestation of a machine learning architecture should not be viewed as the absolute limit of that architecture's potential, seeing as we went from 'autocomplete on steroids...",
+    "lang": "en",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-22T06:11:54.881Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "reddit-1wlfmgq",
+    "sourceType": "reddit",
+    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wlfmgq/is_typesafe_basedderived_from_work_done_by_the/",
+    "title": "Is Typesafe based/derived from work done by the Laya author?",
+    "author": {
+      "name": "ECrispy",
+      "handle": "ECrispy",
+      "profileUrl": "https://www.reddit.com/user/ECrispy"
+    },
+    "createdAt": "2026-09-20T12:19:44.000Z",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Typesafe's new model, Jev is all over the internet, this sub etc as a new classifier model.</p> <p>Then an AI dev posted here how they'd done something very similar, and made a new model, Laya.</p> <p><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wijo3e/i_literally_built_the_jev_architecture_one_year/\">https://www.reddit.com/r/LocalLLaMA/comments/1wijo3e/i_literally_built_the_jev_architecture_one_year/</a></p> <p>I'm not an ML/AI dev...",
+    "lang": "en",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-22T06:11:54.881Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "reddit-1wl1yzq",
+    "sourceType": "reddit",
+    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wl1yzq/i_gave_jev_laya_finetuned_modernce_and_qwen35_the/",
+    "title": "I gave Jev, Laya, finetuned ModernCE and Qwen3.5 the controls to Doom",
+    "author": {
+      "name": "shniydder",
+      "handle": "shniydder",
+      "profileUrl": "https://www.reddit.com/user/shniydder"
+    },
+    "createdAt": "2026-09-20T00:15:37.000Z",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wl1yzq/i_gave_jev_laya_finetuned_modernce_and_qwen35_the/\"> <img src=\"https://external-preview.redd.it/OGs5bzllNXE5a3FoMf0C-RwhEAIhO29wYbXpGCItnwYWeS2V6CtQJKOIxpem.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=01d16cdb259d88f1648e1505f251d3403479e697\" alt=\"I gave Jev, Laya, finetuned ModernCE and Qwen3.5 the controls to Doom\" title=\"I gave Jev, Laya, finetuned ModernCE and Qwen3.5 the controls to Doom\"...",
+    "lang": "en",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [
+      {
+        "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+        "domain": "typesafe.ai"
+      }
+    ],
+    "curatedAt": "2026-09-22T06:11:54.881Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "reddit-1wjieap",
+    "sourceType": "reddit",
+    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wjieap/made_the_horizontal_opensource_model_for_jev_with/",
+    "title": "Made the horizontal open-source model for Jev with RLCD, and it surpasses all the Jev benchmarks. HF space, benchmark, model, repo",
+    "author": {
+      "name": "Nandakishor_ml",
+      "handle": "Nandakishor_ml",
+      "profileUrl": "https://www.reddit.com/user/Nandakishor_ml"
+    },
+    "createdAt": "2026-09-18T06:25:03.000Z",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wjieap/made_the_horizontal_opensource_model_for_jev_with/\"> <img src=\"https://preview.redd.it/i3znzaqm28qh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=29d4364afa725ca1d778ff2eee50a853947aa36e\" alt=\"Made the horizontal open-source model for Jev with RLCD, and it surpasses all the Jev benchmarks. HF space, benchmark, model, repo\" title=\"Made the horizontal open-source model for Jev with RLCD, and it s...",
+    "lang": "en",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [
+      {
+        "url": "https://github.com/NandhaKishorM/laya",
+        "domain": "github.com"
+      }
+    ],
+    "curatedAt": "2026-09-22T06:11:54.882Z",
+    "curatedBy": "auto"
+  }
+]
