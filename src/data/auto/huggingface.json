@@ -17,7 +17,7 @@
       "snippet": "res_hi[\"routing\"]\n# {\n#   'model': 'multilingual',\n#   'repo': 'convaiinnovations/laya/multilingual',\n#   'reason': 'non-Latin script (devanagari, 100% of letters); the English checkpoint cannot read it'\n# }"
     },
     "metrics": {
-      "likes": 1947
+      "likes": 2026
     },
     "imageUrl": "https://raw.githubusercontent.com/NandhaKishorM/laya/main/assets/laya_vs_jev_full.png",
     "tags": [],
@@ -47,7 +47,7 @@
       "snippet": "import laya\n\nagent = laya.load(\"convaiinnovations/laya-multilingual\")\nresult = agent.predict(\n    {\"body\": \"मुझसे इनवॉइस 4411 के लिए दो बार शुल्क लिया गया। कृपया आज ही धनवापसी करें।\"},\n    {\"department\": {\"type\": \"choice\", \"instructions\": \"Which team should handle `body`?\",\n                    \"criteria\": {\"billing\": \"invoices, payments, refunds\",\n                                 \"technical\": \"bugs and outages\", \"sales\": \"pricing\"}},\n     \"refund_requested\": {\"type\": \"noul\", \"instructions\": \"Does the sender ask for money back?\"}},\n)\nprint(result[\"answers\"][\"department\"][\"choice\"])      # billing"
     },
     "metrics": {
-      "likes": 140
+      "likes": 148
     },
     "imageUrl": "https://huggingface.co/convaiinnovations/laya/resolve/main/assets/logo-mark.png",
     "tags": [],
@@ -76,7 +76,7 @@
       "snippet": "import laya\n\nagent = laya.load(\"convaiinnovations/laya-typed-decisions\")\nresult = agent.predict(state, questions)"
     },
     "metrics": {
-      "likes": 62
+      "likes": 64
     },
     "imageUrl": "https://huggingface.co/convaiinnovations/laya/resolve/main/assets/logo-mark.png",
     "tags": [],
@@ -285,7 +285,7 @@
       "snippet": "pip install laya-coreml"
     },
     "metrics": {
-      "likes": 4
+      "likes": 5
     },
     "tags": [],
     "variants": [
@@ -444,7 +444,7 @@
     "excerpt": "HuggingFace 上的 Laya 相关模型（gradio）。",
     "lang": "zh",
     "metrics": {
-      "likes": 114
+      "likes": 120
     },
     "tags": [],
     "variants": [],

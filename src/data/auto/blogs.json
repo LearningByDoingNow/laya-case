@@ -8,7 +8,7 @@
       "name": "laplusda.com",
       "handle": "laplusda.com"
     },
-    "createdAt": "2026-09-22T00:00:00.000Z",
+    "createdAt": "2026-09-22T08:26:29.981Z",
     "excerpt": "Laya is an open-source System One decision model that can run on local hardware. Like Jev, it accepts a state plus Choice, Score, and Noul questions instead of generating text. The model code and weights are published under Apache 2.0, which makes Laya relevant when application data cannot be sent to a managed decision API. The project was published on September 18, 2026 and remains very new ...",
     "lang": "en",
     "metrics": {},
@@ -27,7 +27,7 @@
       "name": "heym.run",
       "handle": "heym.run"
     },
-    "createdAt": "2026-09-22T06:30:16.616Z",
+    "createdAt": "2026-09-22T08:26:30.543Z",
     "excerpt": "System One models return calibrated probabilities instead of text. What Jev and Laya actually send back, and how one node runs either without a rewrite. → system-one -modelsjevlayadecision-modeltypesafe-aicalibrated-probabilityai-workflowself-hosted",
     "lang": "en",
     "metrics": {},
@@ -35,6 +35,25 @@
     "variants": [],
     "links": [],
     "curatedAt": "2026-09-22T06:30:16.616Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "blog-github-com-instax-dutta-sysone-bench",
+    "sourceType": "blog",
+    "canonicalUrl": "https://github.com/instax-dutta/sysone-bench",
+    "title": "GitHub - instax-dutta/sysone-bench: First independent head-to-head ...",
+    "author": {
+      "name": "github.com",
+      "handle": "github.com"
+    },
+    "createdAt": "2026-09-22T08:26:31.482Z",
+    "excerpt": "First independent head-to-head benchmark of System One decision models ( Laya vs Jev) on byte-identical inputs - instax-dutta/sysone-bench",
+    "lang": "en",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-22T08:26:31.482Z",
     "curatedBy": "auto"
   },
   {
@@ -46,7 +65,7 @@
       "name": "laya.convaiinnovations.com",
       "handle": "laya.convaiinnovations.com"
     },
-    "createdAt": "2026-09-22T06:30:18.375Z",
+    "createdAt": "2026-09-22T08:26:32.120Z",
     "excerpt": "I Built Non-Autoregressive Decision Models with RL a Year Ago. Then a Frontier Lab Called It a \"Breakthrough\". From our March 2025 arXiv paper on sequence conversion trajectories to Laya : a sub-35ms open-weight System 1 decision engine with RLCD, multilingual routing across 100+ languages, and state-of-the-art calibration.",
     "lang": "en",
     "metrics": {},
@@ -65,7 +84,7 @@
       "name": "huggingface.co",
       "handle": "huggingface.co"
     },
-    "createdAt": "2026-09-22T06:30:20.010Z",
+    "createdAt": "2026-09-22T08:26:32.890Z",
     "excerpt": "Instructions to use convaiinnovations/ laya with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use convaiinnovations/ laya with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-classification\", model=\"convaiinnovations/ laya \")",
     "lang": "en",
     "metrics": {},
@@ -84,7 +103,7 @@
       "name": "modelscope.cn",
       "handle": "modelscope.cn"
     },
-    "createdAt": "2026-09-22T06:30:21.279Z",
+    "createdAt": "2026-09-22T08:26:34.465Z",
     "excerpt": "Laya Multilingual, non-autoregressive System 1 decision model. Give it a state (text, email, ticket, or JSON) and typed questions; it returns typed answers with mathematically calibrated probabilities in a single forward pass (~33 ms) across 100+ languages. Trained with reinforcement learning against strictly proper scoring rules (RLCD), so reporting honest probabilities is the only way to ...",
     "lang": "en",
     "metrics": {},
@@ -95,22 +114,22 @@
     "curatedBy": "auto"
   },
   {
-    "id": "blog-huggingface-co-convaiinnovations-laya-multilingual",
+    "id": "blog-huggingface-co-convaiinnovations-laya-tree-main",
     "sourceType": "blog",
-    "canonicalUrl": "https://huggingface.co/convaiinnovations/laya-multilingual",
-    "title": "convaiinnovations/laya-multilingual · Hugging Face",
+    "canonicalUrl": "https://huggingface.co/convaiinnovations/laya/tree/main",
+    "title": "convaiinnovations/laya at main - Hugging Face",
     "author": {
       "name": "huggingface.co",
       "handle": "huggingface.co"
     },
-    "createdAt": "2026-09-22T06:30:22.190Z",
+    "createdAt": "2026-09-22T08:26:35.158Z",
     "excerpt": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science.",
     "lang": "en",
     "metrics": {},
     "tags": [],
     "variants": [],
     "links": [],
-    "curatedAt": "2026-09-22T06:30:22.190Z",
+    "curatedAt": "2026-09-22T08:26:35.158Z",
     "curatedBy": "auto"
   },
   {
@@ -122,7 +141,7 @@
       "name": "ai345.info",
       "handle": "ai345.info"
     },
-    "createdAt": "2026-09-19T09:44:17.000Z",
+    "createdAt": "2026-09-22T08:26:36.459Z",
     "excerpt": "Convai Laya 是什么？ Convai Innovations 开源的非自回归决策模型，421M 参数，一次前向 38 毫秒返回带校准概率的结构化答案，不做文本生成。含能力、评测与上手指南。",
     "lang": "zh",
     "metrics": {},
@@ -133,32 +152,14 @@
     "curatedBy": "auto"
   },
   {
-    "id": "blog-github-com-artificial-intelligence-works-laya-jev",
-    "sourceType": "blog",
-    "canonicalUrl": "https://github.com/artificial-intelligence-works/laya-jev",
-    "title": "GitHub - artificial-intelligence-works/laya-jev",
-    "author": {
-      "name": "github.com",
-      "handle": "github.com"
-    },
-    "createdAt": "2026-09-22T06:30:25.416Z",
-    "excerpt": "Contribute to artificial-intelligence-works/ laya -jev development by creating an account on GitHub.",
-    "lang": "en",
-    "metrics": {},
-    "tags": [],
-    "variants": [],
-    "links": [],
-    "curatedAt": "2026-09-22T06:30:25.416Z",
-    "curatedBy": "auto"
-  },
-  {
     "id": "medium-medium-com-martinyeunghk-laya-the-421m-open-weight-decision-engine-that-skips-text-generation-entirely-a0b60ea40079",
     "canonicalUrl": "https://medium.com/@martinyeunghk/laya-the-421m-open-weight-decision-engine-that-skips-text-generation-entirely-a0b60ea40079?source=rss------laya-5",
     "title": "Laya: The 421M Open-Weight Decision Engine That Skips Text Generation Entirely",
     "author": "martin yeung",
     "createdAt": "2026-09-22T01:53:21.000Z",
     "description": "<div class=\"medium-feed-item\"><p class=\"medium-feed-image\"><a href=\"https://medium.com/@martinyeunghk/laya-the-421m-open-weight-decision-engine-that-skips-text-generation-entirely-a0b60ea40079?source=rss------laya-5\"><img src=\"https://cdn-images-1.medium.com/max/1920/1*v_fAcJN3q1BC9lYx57pAtw.png\" width=\"1920\"></a></p><p class=\"medium-feed-snippet\">A practical guide to what it does, where it fits, and what to check before you ship it.</p><p class=\"medium-feed-link\"><a href=\"https://medium.com/@martinyeunghk/laya-the-421m-open-weight-decision-engine-that-skips-text-generation-entirely-a0b60ea40079?source=rss------laya-5\">Continue reading on Medium »</a></p></div>",
-    "links": []
+    "links": [],
+    "curatedAt": "2026-09-22T08:26:38.933Z"
   },
   {
     "id": "medium-medium-com-codehimanshu24-fast-calibrated-decisions-what-rlcd-models-actually-are-where-they-fit-and-why-we-need-both-771f0a68bd83",
@@ -167,7 +168,8 @@
     "author": "Codehimanshu",
     "createdAt": "2026-09-21T16:52:52.000Z",
     "description": "<div class=\"medium-feed-item\"><p class=\"medium-feed-image\"><a href=\"https://medium.com/@codehimanshu24/fast-calibrated-decisions-what-rlcd-models-actually-are-where-they-fit-and-why-we-need-both-771f0a68bd83?source=rss------laya-5\"><img src=\"https://cdn-images-1.medium.com/max/1376/1*0J39X7JscDvQhUsPUxSeJw.jpeg\" width=\"1376\"></a></p><p class=\"medium-feed-snippet\">Inside TypeSafe Jev, ModernBERT Laya, Robotics Reflexes, and the Multimodal Future of AI Control Flow</p><p class=\"medium-feed-link\"><a href=\"https://medium.com/@codehimanshu24/fast-calibrated-decisions-what-rlcd-models-actually-are-where-they-fit-and-why-we-need-both-771f0a68bd83?source=rss------laya-5\">Continue reading on Medium »</a></p></div>",
-    "links": []
+    "links": [],
+    "curatedAt": "2026-09-22T08:26:38.933Z"
   },
   {
     "id": "medium-gnana70-medium-com-jev-has-an-open-source-rival-i-tested-laya-beyond-the-demo-74131b626e6f",
@@ -176,6 +178,17 @@
     "author": "Gnana Prasath",
     "createdAt": "2026-09-21T01:56:19.000Z",
     "description": "<div class=\"medium-feed-item\"><p class=\"medium-feed-image\"><a href=\"https://gnana70.medium.com/jev-has-an-open-source-rival-i-tested-laya-beyond-the-demo-74131b626e6f?source=rss------laya-5\"><img src=\"https://cdn-images-1.medium.com/max/1280/1*eryG-6ER_k5y43njQS0BpA.jpeg\" width=\"1280\"></a></p><p class=\"medium-feed-snippet\">A beginner-friendly look at System 1 decision models &#x2014; and why a correct answer can still be too uncertain to automate.</p><p class=\"medium-feed-link\"><a href=\"https://gnana70.medium.com/jev-has-an-open-source-rival-i-tested-laya-beyond-the-demo-74131b626e6f?source=rss------laya-5\">Continue reading on Medium »</a></p></div>",
-    "links": []
+    "links": [],
+    "curatedAt": "2026-09-22T08:26:38.933Z"
+  },
+  {
+    "id": "medium-ml-medium-com-samertallauze-laya-model-explained-the-open-source-decision-model-you-can-run-locall-4884cd4b964e",
+    "canonicalUrl": "https://medium.com/@SamerTallauze/laya-model-explained-the-open-source-decision-model-you-can-run-locall-4884cd4b964e?source=rss------machine_learning-5",
+    "title": "Laya Model Explained: The Open-Source Decision Model You Can Run Locall",
+    "author": "Samer Tallauze",
+    "createdAt": "2026-09-22T08:00:35.000Z",
+    "description": "<div class=\"medium-feed-item\"><p class=\"medium-feed-image\"><a href=\"https://medium.com/@SamerTallauze/laya-model-explained-the-open-source-decision-model-you-can-run-locall-4884cd4b964e?source=rss------machine_learning-5\"><img src=\"https://cdn-images-1.medium.com/max/1040/0*giEEjC6rt4L518sE\" width=\"1040\"></a></p><p class=\"medium-feed-snippet\">Laya is not another small language model trying to become a cheaper ChatGPT. It does not generate paragraphs token by token. Instead, it&#x2026;</p><p class=\"medium-feed-link\"><a href=\"https://medium.com/@SamerTallauze/laya-model-explained-the-open-source-decision-model-you-can-run-locall-4884cd4b964e?source=rss------machine_learning-5\">Continue reading on Medium »</a></p></div>",
+    "links": [],
+    "curatedAt": "2026-09-22T08:26:38.933Z"
   }
 ]

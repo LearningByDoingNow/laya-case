@@ -18,8 +18,8 @@
       "snippet": "res_hi[\"routing\"]\n# {\n#   'model': 'multilingual',\n#   'repo': 'convaiinnovations/laya/multilingual',\n#   'reason': 'non-Latin script (devanagari, 100% of letters); the English checkpoint cannot read it'\n# }"
     },
     "metrics": {
-      "stars": 12104,
-      "forks": 985
+      "stars": 12859,
+      "forks": 1038
     },
     "imageUrl": "https://raw.githubusercontent.com/NandhaKishorM/laya/main/assets/logo-lockup.png",
     "tags": [],
@@ -50,8 +50,8 @@
       "snippet": "pip install laya-mlx"
     },
     "metrics": {
-      "stars": 4340,
-      "forks": 293
+      "stars": 4557,
+      "forks": 313
     },
     "imageUrl": "https://raw.githubusercontent.com/mizorewww/laya-mlx/main/docs/assets/snake-demo.gif",
     "tags": [],
@@ -82,8 +82,8 @@
       "snippet": "pip install 'laya-coreml[demo]'\nhf download aac6fef/laya-multilingual-coreml-ane --local-dir models/snake\nlaya-coreml-snake --model ./models/snake"
     },
     "metrics": {
-      "stars": 990,
-      "forks": 64
+      "stars": 1039,
+      "forks": 68
     },
     "imageUrl": "https://raw.githubusercontent.com/mizorewww/laya-coreml/main/docs/assets/snake-demo.gif",
     "tags": [],
@@ -113,7 +113,7 @@
       "snippet": "npm install @receptron/laya"
     },
     "metrics": {
-      "stars": 205,
+      "stars": 219,
       "forks": 18
     },
     "tags": [],
@@ -144,8 +144,8 @@
       "snippet": "git clone https://github.com/wdobry/laya-playground\ncd laya-playground\nuv venv --python 3.12 && uv pip install laya\n.venv/bin/python server.py"
     },
     "metrics": {
-      "stars": 71,
-      "forks": 10
+      "stars": 84,
+      "forks": 14
     },
     "tags": [],
     "variants": [],
@@ -172,7 +172,7 @@
       "snippet": "swift run -c release FluidUseLaya answer --state \"…\" --type choice \\\n    --instructions \"What does the customer want?\" --options \"refund|order status|technical help\"\nswift run -c release FluidUseLaya tetris --pieces 200            # headless Tetris, P(clean) per landing\nswift run -c release FluidUseLaya benchmark --suites <mobius>/benchmark/suites.jsonl --reference <mobius>/benchmark/reference-rows.jsonl\nswift run -c release LayaTetrisDemo                              # SwiftUI: laya plays Tetris, live decisions"
     },
     "metrics": {
-      "stars": 62,
+      "stars": 70,
       "forks": 5
     },
     "tags": [],
@@ -202,7 +202,7 @@
       "snippet": "git clone https://github.com/virajbhartiya/laya-vs-jev.git\ncd laya-vs-jev\nuv sync --extra demo --extra trex --extra dev\nuv run --extra demo hf download aac6fef/laya-multilingual-mlx \\\n  --local-dir models/hub/laya-multilingual-mlx\ncp .env.example .env\n# Set TYPESAFE_API_KEY in .env before running.\nuv run --extra trex laya-trex --round-seconds 0 --env-file .env"
     },
     "metrics": {
-      "stars": 44,
+      "stars": 50,
       "forks": 4
     },
     "tags": [],
@@ -225,19 +225,20 @@
       "profileUrl": "https://github.com/lkarlslund"
     },
     "createdAt": "2026-09-20T09:18:04Z",
-    "excerpt": "RTX-optimized C++ inference for Laya typed decisions",
+    "excerpt": "C++ inference for Laya typed decisions, optimized for RTX, supports Vulkan, CPU",
     "lang": "en",
     "code": {
       "lang": "sh",
-      "snippet": "git submodule update --init --recursive\ncmake -S . -B build-cuda -G Ninja -DCMAKE_BUILD_TYPE=Release \\\n  -DCMAKE_CUDA_ARCHITECTURES=120\ncmake --build build-cuda --parallel 8\nctest --test-dir build-cuda --output-on-failure"
+      "snippet": "git submodule update --init --recursive\ncmake -S . -B build-cuda -G Ninja -DCMAKE_BUILD_TYPE=Release \\\n  -DCMAKE_CUDA_ARCHITECTURES=120\ncmake --build build-cuda --parallel 8"
     },
     "metrics": {
-      "stars": 40,
+      "stars": 43,
       "forks": 2
     },
     "tags": [],
     "variants": [
       "laya.cpp",
+      "multilingual",
       "typed-decisions"
     ],
     "links": [],
@@ -275,34 +276,6 @@
     "curatedBy": "auto"
   },
   {
-    "id": "gh-0xbakeer-arbiter",
-    "sourceType": "github",
-    "canonicalUrl": "https://github.com/0xBakeer/arbiter",
-    "title": "arbiter",
-    "author": {
-      "name": "0xBakeer",
-      "handle": "0xBakeer",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/17404809?v=4",
-      "profileUrl": "https://github.com/0xBakeer"
-    },
-    "createdAt": "2026-09-20T04:45:28Z",
-    "excerpt": "Serve typed-decision (System 1) models — Laya or your own — on NVIDIA GPUs or Apple Silicon, with a Jev-compatible API and coding-agent integrations",
-    "lang": "en",
-    "code": {
-      "lang": "bash",
-      "snippet": "git clone https://github.com/0xBakeer/arbiter.git\ncd arbiter\n./run.sh setup      # .venv, torch, the deps, and the three checkpoints (2.3 GB)\n./run.sh serve      # http://localhost:8010"
-    },
-    "metrics": {
-      "stars": 19,
-      "forks": 3
-    },
-    "tags": [],
-    "variants": [],
-    "links": [],
-    "curatedAt": "2026-09-22T06:29:03.819Z",
-    "curatedBy": "auto"
-  },
-  {
     "id": "gh-promptengineer48-laya-vs-jev-arena",
     "sourceType": "github",
     "canonicalUrl": "https://github.com/PromptEngineer48/laya-vs-jev-arena",
@@ -328,6 +301,34 @@
     "variants": [],
     "links": [],
     "curatedAt": "2026-09-22T06:29:04.371Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-0xbakeer-arbiter",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/0xBakeer/arbiter",
+    "title": "arbiter",
+    "author": {
+      "name": "0xBakeer",
+      "handle": "0xBakeer",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/17404809?v=4",
+      "profileUrl": "https://github.com/0xBakeer"
+    },
+    "createdAt": "2026-09-20T04:45:28Z",
+    "excerpt": "Serve typed-decision (System 1) models — Laya or your own — on NVIDIA GPUs or Apple Silicon, with a Jev-compatible API and coding-agent integrations",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "git clone https://github.com/0xBakeer/arbiter.git\ncd arbiter\n./run.sh setup      # .venv, torch, the deps, and the three checkpoints (2.3 GB)\n./run.sh serve      # http://localhost:8010"
+    },
+    "metrics": {
+      "stars": 18,
+      "forks": 3
+    },
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-22T06:29:03.819Z",
     "curatedBy": "auto"
   },
   {
@@ -379,13 +380,44 @@
       "snippet": "cd /Users/srihariunnikrishnan/drift\nbash scripts/setup.sh              # .venv (reuses system torch) + pip install laya\n(cd .opencode && bun install)      # or npm install"
     },
     "metrics": {
-      "stars": 9,
+      "stars": 10,
       "forks": 0
     },
     "tags": [],
     "variants": [],
     "links": [],
     "curatedAt": "2026-09-22T06:29:05.482Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-yzfly-edgejev",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/yzfly/edgejev",
+    "title": "edgejev",
+    "author": {
+      "name": "yzfly",
+      "handle": "yzfly",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/46625232?v=4",
+      "profileUrl": "https://github.com/yzfly"
+    },
+    "createdAt": "2026-09-20T08:18:57Z",
+    "excerpt": "离线可用的本地类型化决策：4 核 CPU 单题 15.6ms。Local & offline Jev / System One inference on CPU — ONNX + INT8, no torch at runtime. 支持 laya / kev / PlayJev",
+    "lang": "zh",
+    "code": {
+      "lang": "bash",
+      "snippet": "uv tool install \"edgejev[build]\"\nedgejev build --backend laya --out ./jev-int8"
+    },
+    "metrics": {
+      "stars": 6,
+      "forks": 0
+    },
+    "imageUrl": "https://img.shields.io/pypi/v/edgejev.svg",
+    "tags": [],
+    "variants": [
+      "laya.cpp"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-22T06:29:06.636Z",
     "curatedBy": "auto"
   },
   {
@@ -417,37 +449,6 @@
     ],
     "links": [],
     "curatedAt": "2026-09-22T06:29:06.050Z",
-    "curatedBy": "auto"
-  },
-  {
-    "id": "gh-yzfly-edgejev",
-    "sourceType": "github",
-    "canonicalUrl": "https://github.com/yzfly/edgejev",
-    "title": "edgejev",
-    "author": {
-      "name": "yzfly",
-      "handle": "yzfly",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/46625232?v=4",
-      "profileUrl": "https://github.com/yzfly"
-    },
-    "createdAt": "2026-09-20T08:18:57Z",
-    "excerpt": "离线可用的本地类型化决策：4 核 CPU 单题 15.6ms。Local & offline Jev / System One inference on CPU — ONNX + INT8, no torch at runtime. 支持 laya / kev / PlayJev",
-    "lang": "zh",
-    "code": {
-      "lang": "bash",
-      "snippet": "uv tool install \"edgejev[build]\"\nedgejev build --backend laya --out ./jev-int8"
-    },
-    "metrics": {
-      "stars": 5,
-      "forks": 0
-    },
-    "imageUrl": "https://img.shields.io/pypi/v/edgejev.svg",
-    "tags": [],
-    "variants": [
-      "laya.cpp"
-    ],
-    "links": [],
-    "curatedAt": "2026-09-22T06:29:06.636Z",
     "curatedBy": "auto"
   },
   {
@@ -592,6 +593,34 @@
     ],
     "links": [],
     "curatedAt": "2026-09-22T06:29:09.471Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-yibie-laya-jev-lab",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/yibie/laya-jev-lab",
+    "title": "laya-jev-lab",
+    "author": {
+      "name": "yibie",
+      "handle": "yibie",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/365484?v=4",
+      "profileUrl": "https://github.com/yibie"
+    },
+    "createdAt": "2026-09-20T06:00:15Z",
+    "excerpt": "Independent measurements of typed-decision models: Jev (TypeSafe API) vs Laya (open weights), and a local-first cascade that matches Jev's accuracy at 1.8x the speed",
+    "lang": "en",
+    "code": {
+      "lang": "python",
+      "snippet": "first = laya.ask(state, question, criteria)\nif first[\"confidence\"] >= threshold:\n    return first                              # solved locally\nreturn jev.ask(state, question, criteria)     # escalate"
+    },
+    "metrics": {
+      "stars": 3,
+      "forks": 1
+    },
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-22T06:29:14.691Z",
     "curatedBy": "auto"
   },
   {
@@ -823,63 +852,35 @@
     "curatedBy": "auto"
   },
   {
-    "id": "gh-yibie-laya-jev-lab",
+    "id": "gh-itisshikhar-gg-friggin-ez",
     "sourceType": "github",
-    "canonicalUrl": "https://github.com/yibie/laya-jev-lab",
-    "title": "laya-jev-lab",
+    "canonicalUrl": "https://github.com/ItisShikhar/gg-friggin-ez",
+    "title": "gg-friggin-ez",
     "author": {
-      "name": "yibie",
-      "handle": "yibie",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/365484?v=4",
-      "profileUrl": "https://github.com/yibie"
+      "name": "ItisShikhar",
+      "handle": "ItisShikhar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16289482?v=4",
+      "profileUrl": "https://github.com/ItisShikhar"
     },
-    "createdAt": "2026-09-20T06:00:15Z",
-    "excerpt": "Independent measurements of typed-decision models: Jev (TypeSafe API) vs Laya (open weights), and a local-first cascade that matches Jev's accuracy at 1.8x the speed",
+    "createdAt": "2026-09-19T11:01:24Z",
+    "excerpt": "Fast, drop-in multilingual profanity and toxicity screener for Node.js, powered by System 1 models like TypeSafe AI Jev and Laya. Catches leetspeak, character spacing, and romanized profanity across languages including Kannada, Telugu, Tamil, Hindi, and Bengali. ~50-500ms latency.",
     "lang": "en",
     "code": {
-      "lang": "python",
-      "snippet": "first = laya.ask(state, question, criteria)\nif first[\"confidence\"] >= threshold:\n    return first                              # solved locally\nreturn jev.ask(state, question, criteria)     # escalate"
-    },
-    "metrics": {
-      "stars": 2,
-      "forks": 1
-    },
-    "tags": [],
-    "variants": [],
-    "links": [],
-    "curatedAt": "2026-09-22T06:29:14.691Z",
-    "curatedBy": "auto"
-  },
-  {
-    "id": "gh-r4ai-laya-web",
-    "sourceType": "github",
-    "canonicalUrl": "https://github.com/r4ai/laya-web",
-    "title": "laya-web",
-    "author": {
-      "name": "r4ai",
-      "handle": "r4ai",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/96561881?v=4",
-      "profileUrl": "https://github.com/r4ai"
-    },
-    "createdAt": "2026-09-20T15:24:04Z",
-    "excerpt": "Laya typed decisions in the browser with ONNX Runtime WebGPU and Wasm",
-    "lang": "en",
-    "code": {
-      "lang": "sh",
-      "snippet": "npm install @r4ai/laya-web onnxruntime-web\n# or\npnpm add @r4ai/laya-web onnxruntime-web\n# or\nyarn add @r4ai/laya-web onnxruntime-web"
+      "lang": "bash",
+      "snippet": "npm install gg-friggin-ez"
     },
     "metrics": {
       "stars": 2,
       "forks": 0
     },
-    "imageUrl": "https://img.shields.io/badge/License-Apache_2.0-blue.svg",
+    "imageUrl": "https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1255875&amp;theme=light&amp;t=1790038052883",
     "tags": [],
     "variants": [
-      "laya.cpp",
-      "typed-decisions"
+      "multilingual",
+      "node"
     ],
     "links": [],
-    "curatedAt": "2026-09-22T06:29:15.275Z",
+    "curatedAt": "2026-09-22T08:25:51.217Z",
     "curatedBy": "auto"
   }
 ]
