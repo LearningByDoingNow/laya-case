@@ -35,13 +35,16 @@ jobs:
         env:
           PUBLIC_SITE_URL: https://learningbydoingnow.github.io
       - name: Upload Pages artifact
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        # Only deploy builds of main. Checking the ref (not the event name)
+        # keeps pull requests out while still letting the refresh workflow's
+        # workflow_dispatch runs deploy the newly collected data.
+        if: github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
   deploy:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
     environment:
