@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-22T06:19:23.424Z",
+  "generatedAt": "2026-09-22T07:00:00.000Z",
   "aliases": [],
   "cases": [
     {
-      "id": "blog-github-com-mroxso-lajev-tree-main",
+      "id": "blog-github-com-artificial-intelligence-works-laya-jev",
       "sourceType": "blog",
-      "canonicalUrl": "https://github.com/mroxso/lajev/tree/main",
-      "title": "GitHub - mroxso/lajev · GitHub",
+      "canonicalUrl": "https://github.com/artificial-intelligence-works/laya-jev",
+      "title": "GitHub - artificial-intelligence-works/laya-jev",
       "author": {
         "name": "github.com",
         "handle": "github.com"
       },
-      "createdAt": "2026-09-22T06:12:18.254Z",
-      "excerpt": "Dockerized REST API around Laya ( convaiinnovations / laya ), the open-source non-autoregressive decision model that came out of the TypeSafe Jev discussion (Sep 2026). Laya takes a state (text, email, ticket, JSON) plus typed questions and returns typed answers with calibrated probabilities — in a ...",
+      "createdAt": "2026-09-22T06:30:25.416Z",
+      "excerpt": "Contribute to artificial-intelligence-works/ laya -jev development by creating an account on GitHub.",
       "lang": "en",
       "translation": {
         "status": "pending",
@@ -22,13 +22,11 @@
       },
       "metrics": {},
       "tags": [
-        "vs-jev",
-        "deploy",
-        "routing"
+        "vs-jev"
       ],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:12:18.254Z",
+      "curatedAt": "2026-09-22T06:30:25.416Z",
       "curatedBy": "auto"
     },
     {
@@ -40,7 +38,7 @@
         "name": "modelscope.cn",
         "handle": "modelscope.cn"
       },
-      "createdAt": "2026-09-22T06:12:13.477Z",
+      "createdAt": "2026-09-22T06:30:21.279Z",
       "excerpt": "Laya Multilingual, non-autoregressive System 1 decision model. Give it a state (text, email, ticket, or JSON) and typed questions; it returns typed answers with mathematically calibrated probabilities in a single forward pass (~33 ms) across 100+ languages. Trained with reinforcement learning against strictly proper scoring rules (RLCD), so reporting honest probabilities is the only way to ...",
       "lang": "en",
       "translation": {
@@ -57,7 +55,7 @@
       ],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:12:13.477Z",
+      "curatedAt": "2026-09-22T06:30:21.279Z",
       "curatedBy": "auto"
     },
     {
@@ -69,7 +67,7 @@
         "name": "laya.convaiinnovations.com",
         "handle": "laya.convaiinnovations.com"
       },
-      "createdAt": "2026-09-22T06:12:10.613Z",
+      "createdAt": "2026-09-22T06:30:18.375Z",
       "excerpt": "I Built Non-Autoregressive Decision Models with RL a Year Ago. Then a Frontier Lab Called It a \"Breakthrough\". From our March 2025 arXiv paper on sequence conversion trajectories to Laya : a sub-35ms open-weight System 1 decision engine with RLCD, multilingual routing across 100+ languages, and state-of-the-art calibration.",
       "lang": "en",
       "translation": {
@@ -84,7 +82,7 @@
       ],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:12:10.613Z",
+      "curatedAt": "2026-09-22T06:30:18.375Z",
       "curatedBy": "auto"
     },
     {
@@ -96,7 +94,7 @@
         "name": "heym.run",
         "handle": "heym.run"
       },
-      "createdAt": "2026-09-22T06:12:09.004Z",
+      "createdAt": "2026-09-22T06:30:16.616Z",
       "excerpt": "System One models return calibrated probabilities instead of text. What Jev and Laya actually send back, and how one node runs either without a rewrite. → system-one -modelsjevlayadecision-modeltypesafe-aicalibrated-probabilityai-workflowself-hosted",
       "lang": "en",
       "translation": {
@@ -110,7 +108,7 @@
       ],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:12:09.004Z",
+      "curatedAt": "2026-09-22T06:30:16.616Z",
       "curatedBy": "auto"
     },
     {
@@ -142,7 +140,7 @@
           "domain": "definedrr.medium.com"
         }
       ],
-      "curatedAt": "2026-09-22T06:11:54.879Z",
+      "curatedAt": "2026-09-22T06:30:02.595Z",
       "curatedBy": "auto"
     },
     {
@@ -166,7 +164,7 @@
       "tags": [],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:23.424Z",
+      "curatedAt": "2026-09-22T01:53:21.000Z",
       "curatedBy": "auto"
     },
     {
@@ -193,7 +191,7 @@
       ],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:12:06.832Z",
+      "curatedAt": "2026-09-22T06:30:14.442Z",
       "curatedBy": "auto"
     },
     {
@@ -228,7 +226,7 @@
         "laya-rust"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:20.656Z",
+      "curatedAt": "2026-09-22T06:29:12.327Z",
       "curatedBy": "auto"
     },
     {
@@ -252,7 +250,7 @@
       "tags": [],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:23.424Z",
+      "curatedAt": "2026-09-21T16:52:52.000Z",
       "curatedBy": "auto"
     },
     {
@@ -274,7 +272,7 @@
       "tags": [],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:13:23.470Z",
+      "curatedAt": "2026-09-22T06:29:33.653Z",
       "curatedBy": "auto"
     },
     {
@@ -306,7 +304,7 @@
       ],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:21.608Z",
+      "curatedAt": "2026-09-22T06:29:13.482Z",
       "curatedBy": "auto"
     },
     {
@@ -339,7 +337,7 @@
       "tags": [],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:21.138Z",
+      "curatedAt": "2026-09-22T06:29:12.912Z",
       "curatedBy": "auto"
     },
     {
@@ -372,7 +370,7 @@
           "domain": "github.com"
         }
       ],
-      "curatedAt": "2026-09-22T06:11:54.880Z",
+      "curatedAt": "2026-09-22T06:30:02.597Z",
       "curatedBy": "auto"
     },
     {
@@ -412,7 +410,7 @@
         "laya-mlx"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:11.795Z",
+      "curatedAt": "2026-09-22T06:29:02.052Z",
       "curatedBy": "auto"
     },
     {
@@ -447,7 +445,7 @@
       ],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:14.818Z",
+      "curatedAt": "2026-09-22T06:29:05.482Z",
       "curatedBy": "auto"
     },
     {
@@ -484,7 +482,7 @@
         "typed-decisions"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:16.744Z",
+      "curatedAt": "2026-09-22T06:29:07.773Z",
       "curatedBy": "auto"
     },
     {
@@ -520,7 +518,7 @@
       ],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:13.832Z",
+      "curatedAt": "2026-09-22T06:29:04.371Z",
       "curatedBy": "auto"
     },
     {
@@ -557,7 +555,7 @@
       ],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:22.120Z",
+      "curatedAt": "2026-09-22T06:29:14.120Z",
       "curatedBy": "auto"
     },
     {
@@ -619,7 +617,7 @@
         "multilingual"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:13:14.169Z",
+      "curatedAt": "2026-09-22T06:29:23.956Z",
       "curatedBy": "auto"
     },
     {
@@ -681,7 +679,7 @@
           "domain": "huggingface.co"
         }
       ],
-      "curatedAt": "2026-09-22T06:11:54.881Z",
+      "curatedAt": "2026-09-22T06:30:02.598Z",
       "curatedBy": "auto"
     },
     {
@@ -720,7 +718,7 @@
         "laya-go"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:19.666Z",
+      "curatedAt": "2026-09-22T06:29:11.174Z",
       "curatedBy": "auto"
     },
     {
@@ -769,7 +767,7 @@
       ],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:23.424Z",
+      "curatedAt": "2026-09-21T01:56:19.000Z",
       "curatedBy": "auto"
     },
     {
@@ -796,7 +794,7 @@
         "snippet": "swift run -c release FluidUseLaya answer --state \"…\" --type choice \\\n    --instructions \"What does the customer want?\" --options \"refund|order status|technical help\"\nswift run -c release FluidUseLaya tetris --pieces 200            # headless Tetris, P(clean) per landing\nswift run -c release FluidUseLaya benchmark --suites <mobius>/benchmark/suites.jsonl --reference <mobius>/benchmark/reference-rows.jsonl\nswift run -c release LayaTetrisDemo                              # SwiftUI: laya plays Tetris, live decisions"
       },
       "metrics": {
-        "stars": 61,
+        "stars": 62,
         "forks": 5
       },
       "tags": [
@@ -806,7 +804,7 @@
         "typed-decisions"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:11.280Z",
+      "curatedAt": "2026-09-22T06:29:01.463Z",
       "curatedBy": "auto"
     },
     {
@@ -842,7 +840,7 @@
       ],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:10.788Z",
+      "curatedAt": "2026-09-22T06:29:00.891Z",
       "curatedBy": "auto"
     },
     {
@@ -877,7 +875,7 @@
         "multilingual"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:13:15.842Z",
+      "curatedAt": "2026-09-22T06:29:25.742Z",
       "curatedBy": "auto"
     },
     {
@@ -910,7 +908,7 @@
         "typed-decisions"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:13:16.398Z",
+      "curatedAt": "2026-09-22T06:29:26.310Z",
       "curatedBy": "auto"
     },
     {
@@ -941,7 +939,7 @@
       "tags": [],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:13:15.285Z",
+      "curatedAt": "2026-09-22T06:29:25.191Z",
       "curatedBy": "auto"
     },
     {
@@ -974,7 +972,7 @@
           "domain": "github.com"
         }
       ],
-      "curatedAt": "2026-09-22T06:11:54.881Z",
+      "curatedAt": "2026-09-22T06:30:02.598Z",
       "curatedBy": "auto"
     },
     {
@@ -999,7 +997,7 @@
       "tags": [],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:11:54.881Z",
+      "curatedAt": "2026-09-22T06:30:02.599Z",
       "curatedBy": "auto"
     },
     {
@@ -1035,7 +1033,7 @@
       ],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:13:18.745Z",
+      "curatedAt": "2026-09-22T06:29:28.584Z",
       "curatedBy": "auto"
     },
     {
@@ -1067,7 +1065,7 @@
         "typed-decisions"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:13:14.721Z",
+      "curatedAt": "2026-09-22T06:29:24.510Z",
       "curatedBy": "auto"
     },
     {
@@ -1099,7 +1097,7 @@
         "multilingual"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:13:13.047Z",
+      "curatedAt": "2026-09-22T06:29:22.786Z",
       "curatedBy": "auto"
     },
     {
@@ -1128,7 +1126,7 @@
       ],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:13:13.603Z",
+      "curatedAt": "2026-09-22T06:29:23.400Z",
       "curatedBy": "auto"
     },
     {
@@ -1167,7 +1165,7 @@
         "typed-decisions"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:23.088Z",
+      "curatedAt": "2026-09-22T06:29:15.275Z",
       "curatedBy": "auto"
     },
     {
@@ -1207,7 +1205,7 @@
         "typed-decisions"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:15.300Z",
+      "curatedAt": "2026-09-22T06:29:06.050Z",
       "curatedBy": "auto"
     },
     {
@@ -1240,7 +1238,7 @@
       "tags": [],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:18.670Z",
+      "curatedAt": "2026-09-22T06:29:10.027Z",
       "curatedBy": "auto"
     },
     {
@@ -1276,7 +1274,7 @@
         "laya-candle"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:17.701Z",
+      "curatedAt": "2026-09-22T06:29:08.919Z",
       "curatedBy": "auto"
     },
     {
@@ -1304,7 +1302,7 @@
       ],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:11:54.881Z",
+      "curatedAt": "2026-09-22T06:30:02.599Z",
       "curatedBy": "auto"
     },
     {
@@ -1374,7 +1372,7 @@
         "typed-decisions"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:12.267Z",
+      "curatedAt": "2026-09-22T06:29:02.624Z",
       "curatedBy": "auto"
     },
     {
@@ -1408,7 +1406,7 @@
         "laya.cpp"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:15.785Z",
+      "curatedAt": "2026-09-22T06:29:06.636Z",
       "curatedBy": "auto"
     },
     {
@@ -1458,7 +1456,7 @@
         "multilingual"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:13:22.526Z",
+      "curatedAt": "2026-09-22T06:29:32.786Z",
       "curatedBy": "auto"
     },
     {
@@ -1494,7 +1492,7 @@
       ],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:22.601Z",
+      "curatedAt": "2026-09-22T06:29:14.691Z",
       "curatedBy": "auto"
     },
     {
@@ -1530,7 +1528,7 @@
       ],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:13.362Z",
+      "curatedAt": "2026-09-22T06:29:03.819Z",
       "curatedBy": "auto"
     },
     {
@@ -1591,7 +1589,7 @@
         "elixir"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:14.317Z",
+      "curatedAt": "2026-09-22T06:29:04.926Z",
       "curatedBy": "auto"
     },
     {
@@ -1627,7 +1625,7 @@
         "typed-decisions"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:13:19.908Z",
+      "curatedAt": "2026-09-22T06:29:29.704Z",
       "curatedBy": "auto"
     },
     {
@@ -1664,7 +1662,7 @@
         "multilingual"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:13:17.042Z",
+      "curatedAt": "2026-09-22T06:29:26.892Z",
       "curatedBy": "auto"
     },
     {
@@ -1701,7 +1699,7 @@
         "multilingual"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:13:17.604Z",
+      "curatedAt": "2026-09-22T06:29:27.457Z",
       "curatedBy": "auto"
     },
     {
@@ -1735,7 +1733,7 @@
       ],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:13:19.354Z",
+      "curatedAt": "2026-09-22T06:29:29.140Z",
       "curatedBy": "auto"
     },
     {
@@ -1795,7 +1793,7 @@
       "tags": [],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:17.222Z",
+      "curatedAt": "2026-09-22T06:29:08.356Z",
       "curatedBy": "auto"
     },
     {
@@ -1828,7 +1826,7 @@
           "domain": "typesafe.ai"
         }
       ],
-      "curatedAt": "2026-09-22T06:11:54.881Z",
+      "curatedAt": "2026-09-22T06:30:02.599Z",
       "curatedBy": "auto"
     },
     {
@@ -1861,7 +1859,7 @@
       "tags": [],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:20.171Z",
+      "curatedAt": "2026-09-22T06:29:11.758Z",
       "curatedBy": "auto"
     },
     {
@@ -1888,7 +1886,7 @@
         "snippet": "pip install 'laya-coreml[demo]'\nhf download aac6fef/laya-multilingual-coreml-ane --local-dir models/snake\nlaya-coreml-snake --model ./models/snake"
       },
       "metrics": {
-        "stars": 986,
+        "stars": 990,
         "forks": 64
       },
       "imageUrl": "https://raw.githubusercontent.com/mizorewww/laya-coreml/main/docs/assets/snake-demo.gif",
@@ -1900,7 +1898,7 @@
         "typed-decisions"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:09.815Z",
+      "curatedAt": "2026-09-22T06:28:59.627Z",
       "curatedBy": "auto"
     },
     {
@@ -1938,7 +1936,7 @@
         "laya-candle"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:19.182Z",
+      "curatedAt": "2026-09-22T06:29:10.611Z",
       "curatedBy": "auto"
     },
     {
@@ -1971,7 +1969,7 @@
         "laya.cpp"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:18.189Z",
+      "curatedAt": "2026-09-22T06:29:09.471Z",
       "curatedBy": "auto"
     },
     {
@@ -2010,7 +2008,7 @@
         "node"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:10.292Z",
+      "curatedAt": "2026-09-22T06:29:00.253Z",
       "curatedBy": "auto"
     },
     {
@@ -2032,7 +2030,7 @@
       "tags": [],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:13:21.650Z",
+      "curatedAt": "2026-09-22T06:29:31.823Z",
       "curatedBy": "auto"
     },
     {
@@ -2070,7 +2068,7 @@
         "typed-decisions"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:12.864Z",
+      "curatedAt": "2026-09-22T06:29:03.235Z",
       "curatedBy": "auto"
     },
     {
@@ -2097,8 +2095,8 @@
         "snippet": "pip install laya-mlx"
       },
       "metrics": {
-        "stars": 4324,
-        "forks": 288
+        "stars": 4340,
+        "forks": 293
       },
       "imageUrl": "https://raw.githubusercontent.com/mizorewww/laya-mlx/main/docs/assets/snake-demo.gif",
       "tags": [
@@ -2109,7 +2107,31 @@
         "typed-decisions"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:09.347Z",
+      "curatedAt": "2026-09-22T06:28:59.043Z",
+      "curatedBy": "auto"
+    },
+    {
+      "id": "blog-www-ai345-info-ai-guide-convai-laya-what-is",
+      "sourceType": "blog",
+      "canonicalUrl": "https://www.ai345.info/ai-guide/convai-laya-what-is",
+      "title": "Convai Laya 是什么？不生成文本的决策模型，38 毫秒出结果 - ai345",
+      "author": {
+        "name": "ai345.info",
+        "handle": "ai345.info"
+      },
+      "createdAt": "2026-09-19T09:44:17.000Z",
+      "excerpt": "Convai Laya 是什么？ Convai Innovations 开源的非自回归决策模型，421M 参数，一次前向 38 毫秒返回带校准概率的结构化答案，不做文本生成。含能力、评测与上手指南。",
+      "lang": "zh",
+      "metrics": {},
+      "tags": [
+        "benchmark",
+        "extraction",
+        "scoring",
+        "tutorial"
+      ],
+      "variants": [],
+      "links": [],
+      "curatedAt": "2026-09-22T06:30:23.020Z",
       "curatedBy": "auto"
     },
     {
@@ -2167,7 +2189,7 @@
       ],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:16.261Z",
+      "curatedAt": "2026-09-22T06:29:07.200Z",
       "curatedBy": "auto"
     },
     {
@@ -2189,7 +2211,7 @@
         "detectedLang": "en"
       },
       "metrics": {
-        "likes": 139
+        "likes": 140
       },
       "tags": [
         "agent",
@@ -2200,7 +2222,7 @@
         "multilingual"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:13:11.934Z",
+      "curatedAt": "2026-09-22T06:29:21.518Z",
       "curatedBy": "auto",
       "code": {
         "lang": "python",
@@ -2239,7 +2261,7 @@
       ],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:13:18.164Z",
+      "curatedAt": "2026-09-22T06:29:28.003Z",
       "curatedBy": "auto"
     },
     {
@@ -2260,9 +2282,14 @@
         "targetLang": "zh-CN",
         "detectedLang": "en"
       },
+      "code": {
+        "lang": "python",
+        "snippet": "import laya\n\nagent = laya.load(\"convaiinnovations/laya-typed-decisions\")\nresult = agent.predict(state, questions)"
+      },
       "metrics": {
         "likes": 62
       },
+      "imageUrl": "https://huggingface.co/convaiinnovations/laya/resolve/main/assets/logo-mark.png",
       "tags": [
         "agent",
         "fine-tune"
@@ -2271,13 +2298,8 @@
         "typed-decisions"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:13:12.492Z",
-      "curatedBy": "auto",
-      "code": {
-        "lang": "python",
-        "snippet": "import laya\n\nagent = laya.load(\"convaiinnovations/laya-typed-decisions\")\nresult = agent.predict(state, questions)"
-      },
-      "imageUrl": "https://huggingface.co/convaiinnovations/laya/resolve/main/assets/logo-mark.png"
+      "curatedAt": "2026-09-22T06:29:22.223Z",
+      "curatedBy": "auto"
     },
     {
       "id": "reddit-1wjieap",
@@ -2309,7 +2331,7 @@
           "domain": "github.com"
         }
       ],
-      "curatedAt": "2026-09-22T06:11:54.882Z",
+      "curatedAt": "2026-09-22T06:30:02.599Z",
       "curatedBy": "auto"
     },
     {
@@ -2331,7 +2353,7 @@
         "detectedLang": "en"
       },
       "metrics": {
-        "likes": 1941
+        "likes": 1947
       },
       "tags": [
         "routing",
@@ -2344,7 +2366,7 @@
         "english"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:13:11.368Z",
+      "curatedAt": "2026-09-22T06:29:20.810Z",
       "curatedBy": "auto",
       "code": {
         "lang": "python",
@@ -2376,8 +2398,8 @@
         "snippet": "res_hi[\"routing\"]\n# {\n#   'model': 'multilingual',\n#   'repo': 'convaiinnovations/laya/multilingual',\n#   'reason': 'non-Latin script (devanagari, 100% of letters); the English checkpoint cannot read it'\n# }"
       },
       "metrics": {
-        "stars": 12039,
-        "forks": 980
+        "stars": 12104,
+        "forks": 985
       },
       "imageUrl": "https://raw.githubusercontent.com/NandhaKishorM/laya/main/assets/logo-lockup.png",
       "tags": [
@@ -2391,7 +2413,7 @@
         "typed-decisions"
       ],
       "links": [],
-      "curatedAt": "2026-09-22T06:19:08.862Z",
+      "curatedAt": "2026-09-22T06:28:58.432Z",
       "curatedBy": "auto"
     },
     {
@@ -2408,12 +2430,12 @@
       "excerpt": "HuggingFace 上的 Laya 相关模型（gradio）。",
       "lang": "zh",
       "metrics": {
-        "likes": 113
+        "likes": 114
       },
       "tags": [],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-09-22T06:13:20.779Z",
+      "curatedAt": "2026-09-22T06:29:30.592Z",
       "curatedBy": "auto"
     }
   ]

@@ -15,7 +15,7 @@
     "tags": [],
     "variants": [],
     "links": [],
-    "curatedAt": "2026-09-22T06:12:06.832Z",
+    "curatedAt": "2026-09-22T06:30:14.442Z",
     "curatedBy": "auto"
   },
   {
@@ -27,14 +27,14 @@
       "name": "heym.run",
       "handle": "heym.run"
     },
-    "createdAt": "2026-09-22T06:12:09.004Z",
+    "createdAt": "2026-09-22T06:30:16.616Z",
     "excerpt": "System One models return calibrated probabilities instead of text. What Jev and Laya actually send back, and how one node runs either without a rewrite. → system-one -modelsjevlayadecision-modeltypesafe-aicalibrated-probabilityai-workflowself-hosted",
     "lang": "en",
     "metrics": {},
     "tags": [],
     "variants": [],
     "links": [],
-    "curatedAt": "2026-09-22T06:12:09.004Z",
+    "curatedAt": "2026-09-22T06:30:16.616Z",
     "curatedBy": "auto"
   },
   {
@@ -46,14 +46,14 @@
       "name": "laya.convaiinnovations.com",
       "handle": "laya.convaiinnovations.com"
     },
-    "createdAt": "2026-09-22T06:12:10.613Z",
+    "createdAt": "2026-09-22T06:30:18.375Z",
     "excerpt": "I Built Non-Autoregressive Decision Models with RL a Year Ago. Then a Frontier Lab Called It a \"Breakthrough\". From our March 2025 arXiv paper on sequence conversion trajectories to Laya : a sub-35ms open-weight System 1 decision engine with RLCD, multilingual routing across 100+ languages, and state-of-the-art calibration.",
     "lang": "en",
     "metrics": {},
     "tags": [],
     "variants": [],
     "links": [],
-    "curatedAt": "2026-09-22T06:12:10.613Z",
+    "curatedAt": "2026-09-22T06:30:18.375Z",
     "curatedBy": "auto"
   },
   {
@@ -65,14 +65,14 @@
       "name": "huggingface.co",
       "handle": "huggingface.co"
     },
-    "createdAt": "2026-09-22T06:12:12.821Z",
+    "createdAt": "2026-09-22T06:30:20.010Z",
     "excerpt": "Instructions to use convaiinnovations/ laya with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use convaiinnovations/ laya with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-classification\", model=\"convaiinnovations/ laya \")",
     "lang": "en",
     "metrics": {},
     "tags": [],
     "variants": [],
     "links": [],
-    "curatedAt": "2026-09-22T06:12:12.821Z",
+    "curatedAt": "2026-09-22T06:30:20.010Z",
     "curatedBy": "auto"
   },
   {
@@ -84,33 +84,14 @@
       "name": "modelscope.cn",
       "handle": "modelscope.cn"
     },
-    "createdAt": "2026-09-22T06:12:13.477Z",
+    "createdAt": "2026-09-22T06:30:21.279Z",
     "excerpt": "Laya Multilingual, non-autoregressive System 1 decision model. Give it a state (text, email, ticket, or JSON) and typed questions; it returns typed answers with mathematically calibrated probabilities in a single forward pass (~33 ms) across 100+ languages. Trained with reinforcement learning against strictly proper scoring rules (RLCD), so reporting honest probabilities is the only way to ...",
     "lang": "en",
     "metrics": {},
     "tags": [],
     "variants": [],
     "links": [],
-    "curatedAt": "2026-09-22T06:12:13.477Z",
-    "curatedBy": "auto"
-  },
-  {
-    "id": "blog-huggingface-co-convaiinnovations-laya-typed-decisions",
-    "sourceType": "blog",
-    "canonicalUrl": "https://huggingface.co/convaiinnovations/laya-typed-decisions",
-    "title": "convaiinnovations/laya-typed-decisions · Hugging Face",
-    "author": {
-      "name": "huggingface.co",
-      "handle": "huggingface.co"
-    },
-    "createdAt": "2026-09-22T06:12:14.477Z",
-    "excerpt": "Laya (Fine-Tuned on Typed-Decisions Benchmark) This is Laya fine-tuned on the 1,200 training cases (6,000 decisions) of the independent LocalLLaMA/typed-decisions benchmark.",
-    "lang": "en",
-    "metrics": {},
-    "tags": [],
-    "variants": [],
-    "links": [],
-    "curatedAt": "2026-09-22T06:12:14.477Z",
+    "curatedAt": "2026-09-22T06:30:21.279Z",
     "curatedBy": "auto"
   },
   {
@@ -122,33 +103,52 @@
       "name": "huggingface.co",
       "handle": "huggingface.co"
     },
-    "createdAt": "2026-09-22T06:12:15.422Z",
+    "createdAt": "2026-09-22T06:30:22.190Z",
     "excerpt": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science.",
     "lang": "en",
     "metrics": {},
     "tags": [],
     "variants": [],
     "links": [],
-    "curatedAt": "2026-09-22T06:12:15.422Z",
+    "curatedAt": "2026-09-22T06:30:22.190Z",
     "curatedBy": "auto"
   },
   {
-    "id": "blog-github-com-mroxso-lajev-tree-main",
+    "id": "blog-www-ai345-info-ai-guide-convai-laya-what-is",
     "sourceType": "blog",
-    "canonicalUrl": "https://github.com/mroxso/lajev/tree/main",
-    "title": "GitHub - mroxso/lajev · GitHub",
+    "canonicalUrl": "https://www.ai345.info/ai-guide/convai-laya-what-is",
+    "title": "Convai Laya 是什么？不生成文本的决策模型，38 毫秒出结果 - ai345",
+    "author": {
+      "name": "ai345.info",
+      "handle": "ai345.info"
+    },
+    "createdAt": "2026-09-19T09:44:17.000Z",
+    "excerpt": "Convai Laya 是什么？ Convai Innovations 开源的非自回归决策模型，421M 参数，一次前向 38 毫秒返回带校准概率的结构化答案，不做文本生成。含能力、评测与上手指南。",
+    "lang": "zh",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-22T06:30:23.020Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "blog-github-com-artificial-intelligence-works-laya-jev",
+    "sourceType": "blog",
+    "canonicalUrl": "https://github.com/artificial-intelligence-works/laya-jev",
+    "title": "GitHub - artificial-intelligence-works/laya-jev",
     "author": {
       "name": "github.com",
       "handle": "github.com"
     },
-    "createdAt": "2026-09-22T06:12:18.254Z",
-    "excerpt": "Dockerized REST API around Laya ( convaiinnovations / laya ), the open-source non-autoregressive decision model that came out of the TypeSafe Jev discussion (Sep 2026). Laya takes a state (text, email, ticket, JSON) plus typed questions and returns typed answers with calibrated probabilities — in a ...",
+    "createdAt": "2026-09-22T06:30:25.416Z",
+    "excerpt": "Contribute to artificial-intelligence-works/ laya -jev development by creating an account on GitHub.",
     "lang": "en",
     "metrics": {},
     "tags": [],
     "variants": [],
     "links": [],
-    "curatedAt": "2026-09-22T06:12:18.254Z",
+    "curatedAt": "2026-09-22T06:30:25.416Z",
     "curatedBy": "auto"
   },
   {

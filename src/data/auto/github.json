@@ -18,8 +18,8 @@
       "snippet": "res_hi[\"routing\"]\n# {\n#   'model': 'multilingual',\n#   'repo': 'convaiinnovations/laya/multilingual',\n#   'reason': 'non-Latin script (devanagari, 100% of letters); the English checkpoint cannot read it'\n# }"
     },
     "metrics": {
-      "stars": 12039,
-      "forks": 980
+      "stars": 12104,
+      "forks": 985
     },
     "imageUrl": "https://raw.githubusercontent.com/NandhaKishorM/laya/main/assets/logo-lockup.png",
     "tags": [],
@@ -28,7 +28,7 @@
       "typed-decisions"
     ],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:08.862Z",
+    "curatedAt": "2026-09-22T06:28:58.432Z",
     "curatedBy": "auto"
   },
   {
@@ -50,8 +50,8 @@
       "snippet": "pip install laya-mlx"
     },
     "metrics": {
-      "stars": 4324,
-      "forks": 288
+      "stars": 4340,
+      "forks": 293
     },
     "imageUrl": "https://raw.githubusercontent.com/mizorewww/laya-mlx/main/docs/assets/snake-demo.gif",
     "tags": [],
@@ -60,7 +60,7 @@
       "typed-decisions"
     ],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:09.347Z",
+    "curatedAt": "2026-09-22T06:28:59.043Z",
     "curatedBy": "auto"
   },
   {
@@ -82,7 +82,7 @@
       "snippet": "pip install 'laya-coreml[demo]'\nhf download aac6fef/laya-multilingual-coreml-ane --local-dir models/snake\nlaya-coreml-snake --model ./models/snake"
     },
     "metrics": {
-      "stars": 986,
+      "stars": 990,
       "forks": 64
     },
     "imageUrl": "https://raw.githubusercontent.com/mizorewww/laya-coreml/main/docs/assets/snake-demo.gif",
@@ -91,7 +91,7 @@
       "typed-decisions"
     ],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:09.815Z",
+    "curatedAt": "2026-09-22T06:28:59.627Z",
     "curatedBy": "auto"
   },
   {
@@ -122,7 +122,7 @@
       "node"
     ],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:10.292Z",
+    "curatedAt": "2026-09-22T06:29:00.253Z",
     "curatedBy": "auto"
   },
   {
@@ -150,7 +150,7 @@
     "tags": [],
     "variants": [],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:10.788Z",
+    "curatedAt": "2026-09-22T06:29:00.891Z",
     "curatedBy": "auto"
   },
   {
@@ -172,7 +172,7 @@
       "snippet": "swift run -c release FluidUseLaya answer --state \"…\" --type choice \\\n    --instructions \"What does the customer want?\" --options \"refund|order status|technical help\"\nswift run -c release FluidUseLaya tetris --pieces 200            # headless Tetris, P(clean) per landing\nswift run -c release FluidUseLaya benchmark --suites <mobius>/benchmark/suites.jsonl --reference <mobius>/benchmark/reference-rows.jsonl\nswift run -c release LayaTetrisDemo                              # SwiftUI: laya plays Tetris, live decisions"
     },
     "metrics": {
-      "stars": 61,
+      "stars": 62,
       "forks": 5
     },
     "tags": [],
@@ -180,7 +180,7 @@
       "typed-decisions"
     ],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:11.280Z",
+    "curatedAt": "2026-09-22T06:29:01.463Z",
     "curatedBy": "auto"
   },
   {
@@ -210,7 +210,7 @@
       "laya-mlx"
     ],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:11.795Z",
+    "curatedAt": "2026-09-22T06:29:02.052Z",
     "curatedBy": "auto"
   },
   {
@@ -241,7 +241,7 @@
       "typed-decisions"
     ],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:12.267Z",
+    "curatedAt": "2026-09-22T06:29:02.624Z",
     "curatedBy": "auto"
   },
   {
@@ -271,7 +271,7 @@
       "typed-decisions"
     ],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:12.864Z",
+    "curatedAt": "2026-09-22T06:29:03.235Z",
     "curatedBy": "auto"
   },
   {
@@ -299,7 +299,7 @@
     "tags": [],
     "variants": [],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:13.362Z",
+    "curatedAt": "2026-09-22T06:29:03.819Z",
     "curatedBy": "auto"
   },
   {
@@ -327,7 +327,7 @@
     "tags": [],
     "variants": [],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:13.832Z",
+    "curatedAt": "2026-09-22T06:29:04.371Z",
     "curatedBy": "auto"
   },
   {
@@ -357,7 +357,7 @@
       "elixir"
     ],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:14.317Z",
+    "curatedAt": "2026-09-22T06:29:04.926Z",
     "curatedBy": "auto"
   },
   {
@@ -385,7 +385,7 @@
     "tags": [],
     "variants": [],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:14.818Z",
+    "curatedAt": "2026-09-22T06:29:05.482Z",
     "curatedBy": "auto"
   },
   {
@@ -416,7 +416,7 @@
       "typed-decisions"
     ],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:15.300Z",
+    "curatedAt": "2026-09-22T06:29:06.050Z",
     "curatedBy": "auto"
   },
   {
@@ -447,7 +447,7 @@
       "laya.cpp"
     ],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:15.785Z",
+    "curatedAt": "2026-09-22T06:29:06.636Z",
     "curatedBy": "auto"
   },
   {
@@ -475,7 +475,7 @@
     "tags": [],
     "variants": [],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:16.261Z",
+    "curatedAt": "2026-09-22T06:29:07.200Z",
     "curatedBy": "auto"
   },
   {
@@ -505,7 +505,7 @@
       "typed-decisions"
     ],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:16.744Z",
+    "curatedAt": "2026-09-22T06:29:07.773Z",
     "curatedBy": "auto"
   },
   {
@@ -534,7 +534,7 @@
     "tags": [],
     "variants": [],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:17.222Z",
+    "curatedAt": "2026-09-22T06:29:08.356Z",
     "curatedBy": "auto"
   },
   {
@@ -565,7 +565,7 @@
       "laya-candle"
     ],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:17.701Z",
+    "curatedAt": "2026-09-22T06:29:08.919Z",
     "curatedBy": "auto"
   },
   {
@@ -591,7 +591,7 @@
       "laya.cpp"
     ],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:18.189Z",
+    "curatedAt": "2026-09-22T06:29:09.471Z",
     "curatedBy": "auto"
   },
   {
@@ -619,7 +619,7 @@
     "tags": [],
     "variants": [],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:18.670Z",
+    "curatedAt": "2026-09-22T06:29:10.027Z",
     "curatedBy": "auto"
   },
   {
@@ -650,7 +650,7 @@
       "laya-candle"
     ],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:19.182Z",
+    "curatedAt": "2026-09-22T06:29:10.611Z",
     "curatedBy": "auto"
   },
   {
@@ -680,7 +680,7 @@
       "laya-go"
     ],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:19.666Z",
+    "curatedAt": "2026-09-22T06:29:11.174Z",
     "curatedBy": "auto"
   },
   {
@@ -708,7 +708,7 @@
     "tags": [],
     "variants": [],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:20.171Z",
+    "curatedAt": "2026-09-22T06:29:11.758Z",
     "curatedBy": "auto"
   },
   {
@@ -738,7 +738,7 @@
       "laya-rust"
     ],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:20.656Z",
+    "curatedAt": "2026-09-22T06:29:12.327Z",
     "curatedBy": "auto"
   },
   {
@@ -766,7 +766,7 @@
     "tags": [],
     "variants": [],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:21.138Z",
+    "curatedAt": "2026-09-22T06:29:12.912Z",
     "curatedBy": "auto"
   },
   {
@@ -790,7 +790,7 @@
     "tags": [],
     "variants": [],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:21.608Z",
+    "curatedAt": "2026-09-22T06:29:13.482Z",
     "curatedBy": "auto"
   },
   {
@@ -819,7 +819,7 @@
     "tags": [],
     "variants": [],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:22.120Z",
+    "curatedAt": "2026-09-22T06:29:14.120Z",
     "curatedBy": "auto"
   },
   {
@@ -847,7 +847,7 @@
     "tags": [],
     "variants": [],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:22.601Z",
+    "curatedAt": "2026-09-22T06:29:14.691Z",
     "curatedBy": "auto"
   },
   {
@@ -879,7 +879,7 @@
       "typed-decisions"
     ],
     "links": [],
-    "curatedAt": "2026-09-22T06:19:23.088Z",
+    "curatedAt": "2026-09-22T06:29:15.275Z",
     "curatedBy": "auto"
   }
 ]
