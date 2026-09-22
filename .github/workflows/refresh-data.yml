@@ -54,8 +54,8 @@ jobs:
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "LearningByDoingNow"
+          git config user.email "209099402+LearningByDoingNow@users.noreply.github.com"
           git add src/data
           git commit -m "chore: refresh collected data (automated)"
           git push
