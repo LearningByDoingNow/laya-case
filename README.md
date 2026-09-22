@@ -62,6 +62,10 @@ npm run data:build                 # 合并 auto + manual → src/data/cases.jso
 - `src/data/cases.json` 由合并生成，请勿手改
 - 无头采集依赖公开接口；GitHub 搜索无 token 为 10 次/分，配置 `GITHUB_TOKEN` 可提升配额
 - 英文来源默认标记 `translation.status: "pending"`，中文参考由人工或后续翻译流程补充
+- 定时保鲜：`.github/workflows/refresh-data.yml` 每周一 03:00 UTC 自动执行采集与合并
+  （也支持手动触发）。单个来源失败不阻断整体刷新；采集结果为空时保留已有文件，
+  不会用空数据覆盖；合并后案例数低于 60 条时中止发布。仅当数据真正有变化时，
+  才由 `github-actions[bot]` 提交英文 commit 并触发 CI 重新构建部署
 
 案例结构（`schemaVersion: 1`），每条包含：
 

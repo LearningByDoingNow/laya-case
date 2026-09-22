@@ -1,0 +1,68 @@
+name: Refresh Data
+
+on:
+  schedule:
+    # 每周一 03:00 UTC（北京时间 11:00）重新采集各来源数据
+    - cron: "0 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Fetch latest data from all sources
+        # 个别来源失败（如 Reddit 429、接口抖动）不该阻断整体刷新：
+        # 成功的来源照常更新，失败的来源由 writeAuto 保留原文件。
+        run: |
+          npm run data:fetch || \
+            echo "::warning::some sources failed; committing partial refresh"
+
+      - name: Rebuild merged data (offline, deterministic)
+        run: npm run data:build
+
+      - name: Guard against publishing truncated data
+        # 采集层意外大面积失败时中止，避免把残缺数据发布上线。
+        run: |
+          COUNT=$(node -e "console.log(JSON.parse(require('fs').readFileSync('src/data/cases.json','utf8')).cases.length)")
+          echo "merged case count: $COUNT"
+          if [ "$COUNT" -lt 60 ]; then
+            echo "::error::case count $COUNT is below 60; refusing to publish truncated data"
+            exit 1
+          fi
+
+      - name: Commit refreshed data
+        id: commit
+        run: |
+          if git diff --quiet -- src/data; then
+            echo "No data changes."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data
+          git commit -m "chore: refresh collected data (automated)"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Trigger CI build and deploy
+        # GITHUB_TOKEN 的 push 不会触发其它 workflow，需显式触发 CI 重新构建部署。
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run CI --ref main
