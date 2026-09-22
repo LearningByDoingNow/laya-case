@@ -51,7 +51,7 @@ test("renders the case wall with Laya intro and filters", async ({ page }) => {
 test("renders the official case page with code and source link", async ({
   page,
 }) => {
-  await page.goto("case/gh-nandhakishorm-laya");
+  await page.goto("case/gh-nandhakishorm-laya/");
   await expect(page.locator(".detail-title")).toHaveText("laya");
   await expect(page.locator(".origin-text")).toBeVisible();
   await expect(page.locator(".detail-coordinates")).toContainText(
@@ -73,7 +73,7 @@ test("renders the official case page with code and source link", async ({
 test("shows pending Chinese reference for untranslated cases", async ({
   page,
 }) => {
-  await page.goto("case/gh-mizorewww-laya-mlx");
+  await page.goto("case/gh-mizorewww-laya-mlx/");
   await expect(page.locator(".translation-block")).toContainText(
     "中文参考整理中",
   );
@@ -82,7 +82,7 @@ test("shows pending Chinese reference for untranslated cases", async ({
 test("switches case wall text to Chinese translations", async ({ page }) => {
   await page.goto("./");
   const card = page.locator(
-    'a[href$="/case/medium-laya-bye-bye-typescript-jev"]',
+    'a[href$="/case/medium-laya-bye-bye-typescript-jev/"]',
   );
   await expect(card.locator(".original-text")).toBeVisible();
   await expect(card.locator(".translated-text")).toBeHidden();
@@ -94,7 +94,7 @@ test("switches case wall text to Chinese translations", async ({ page }) => {
 });
 
 test("does not expose unpublished case ids", async ({ page }) => {
-  const response = await page.goto("case/not-a-real-case-id");
+  const response = await page.goto("case/not-a-real-case-id/");
   expect(response?.status()).toBe(404);
   await expect(page.getByText("这条案例不存在。")).toBeVisible();
 });

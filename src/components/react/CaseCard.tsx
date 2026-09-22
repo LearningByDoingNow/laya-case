@@ -21,7 +21,7 @@ export default function CaseCard({ item, index }: CaseCardProps) {
   return (
     <a
       className="case-card"
-      href={`${import.meta.env.BASE_URL}case/${item.id}`}
+      href={`${import.meta.env.BASE_URL}case/${item.id}/`}
       data-case-card
       data-source={item.sourceType}
       data-code={item.code ? "true" : "false"}

@@ -39,7 +39,7 @@ function readRoute(): Route {
   const requestedId = decodeURIComponent(match[1]);
   const canonicalId = aliases.get(requestedId) ?? requestedId;
   if (canonicalId !== requestedId) {
-    window.history.replaceState({}, "", withBase(`/case/${canonicalId}`));
+    window.history.replaceState({}, "", withBase(`/case/${canonicalId}/`));
   }
 
   const item = database.cases.find((candidate) => candidate.id === canonicalId);
@@ -132,7 +132,7 @@ export default function App() {
         ? "浏览 GitHub、HuggingFace、Reddit 与博客上基于开源模型 Laya（System 1 决策模型）的公开案例、可运行代码与讨论。"
         : "没有找到这条案例。";
     const path = item
-      ? withBase(`/case/${item.id}`)
+      ? withBase(`/case/${item.id}/`)
       : route.kind === "home"
         ? withBase("/")
         : withBase("/404");
@@ -239,7 +239,7 @@ export default function App() {
         {route.kind === "home" && (
           <CaseWall
             cases={database.cases}
-            scoreReferenceTime={new Date().toISOString()}
+            scoreReferenceTime={database.generatedAt}
           />
         )}
         {route.kind === "case" && <CaseDetail item={route.item} />}

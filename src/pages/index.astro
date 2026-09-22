@@ -1,10 +1,11 @@
 ---
 import CaseWall from "../components/react/CaseWall";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { getCases } from "../lib/cases";
+import { getCases, getGeneratedAt } from "../lib/cases";
 
 const cases = getCases();
-const scoreReferenceTime = new Date().toISOString();
+// Data-derived timestamp keeps builds reproducible (no wall-clock in output).
+const scoreReferenceTime = getGeneratedAt();
 ---
 
 <BaseLayout
