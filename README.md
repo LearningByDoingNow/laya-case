@@ -8,8 +8,8 @@
 
 ### 🌐 [Live Preview · 在线预览](https://learningbydoingnow.github.io/laya-case/)
 
-A curated wall of open-source Laya / System 1 cases — searchable, filterable, runnable
-收集全网优秀 Laya / System 1 开源案例的收藏墙 —— 可搜索、可筛选、可复制运行
+A curated collection of the best Laya articles and open-source cases — searchable, filterable, runnable
+收集优秀的 Laya 相关文章与开源案例 —— 可搜索、可筛选、可复制运行
 
 <img src="docs/preview.png" alt="Laya Case case wall preview" width="880" />
 
@@ -114,7 +114,7 @@ Tests use the local Chrome by default.
 
 **[🌐 在线预览](https://learningbydoingnow.github.io/laya-case/)** · [English](#laya-case)
 
-Laya Case 把 GitHub、HuggingFace、Reddit 与博客上公开分享的 Laya 实战案例收进一面静态案例墙——保留来源链接、作者、数据指标、可运行代码与外链。
+Laya Case 收集全网优秀的 Laya 相关文章与开源案例,汇成一面静态案例墙——保留来源链接、作者、数据指标、可运行代码与外链。
 
 > 非官方社区项目,与 Convai Innovations / Laya 无隶属关系;模型、代码片段、账号信息与商标权利归原作者及原平台所有。
 
