@@ -106,7 +106,7 @@ export function getHotScore(
 }
 
 export function caseCover(item: CaseItem): string {
-  return item.imageUrl || "/poster-placeholder.svg";
+  return item.imageUrl || `${import.meta.env.BASE_URL}poster-placeholder.svg`;
 }
 
 export function formatMetric(value: number): string {

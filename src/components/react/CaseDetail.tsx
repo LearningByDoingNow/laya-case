@@ -75,7 +75,7 @@ export default function CaseDetail({ item }: CaseDetailProps) {
   return (
     <article className="case-detail">
       <header className="detail-head">
-        <a className="back-link" href="/">
+        <a className="back-link" href={import.meta.env.BASE_URL}>
           ← 返回案例流
         </a>
         <div className="detail-coordinates">

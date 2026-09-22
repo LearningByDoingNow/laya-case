@@ -1,6 +1,7 @@
 /// <reference types="astro/client" />
 
 interface ImportMetaEnv {
+  readonly BASE_URL: string;
   readonly PUBLIC_SITE_URL?: string;
 }
 

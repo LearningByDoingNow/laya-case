@@ -25,7 +25,10 @@ export async function getText(url, { headers = {} } = {}) {
 export async function writeAuto(name, cases) {
   await mkdir("src/data/auto", { recursive: true });
   const path = `src/data/auto/${name}.json`;
-  await writeFile(path, `${JSON.stringify(cases, null, 2)}\n`);
+  // Stamp collection time once per fetch so downstream merges are deterministic.
+  const stamp = new Date().toISOString();
+  const stamped = cases.map((item) => ({ curatedAt: stamp, ...item }));
+  await writeFile(path, `${JSON.stringify(stamped, null, 2)}\n`);
   return path;
 }
 

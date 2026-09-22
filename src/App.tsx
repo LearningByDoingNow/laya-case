@@ -9,6 +9,19 @@ const aliases = new Map(
   database.aliases.map((alias) => [alias.id, alias.canonicalCaseId]),
 );
 
+// Base path shared with astro.config / vite.config (GitHub Pages project site).
+const BASE_PATH = import.meta.env.BASE_URL.replace(/\/+$/u, "");
+const withBase = (path: string) => `${BASE_PATH}${path}`;
+function stripBase(pathname: string): string {
+  const trimmed = pathname.replace(/\/+$/u, "") || "/";
+  if (!BASE_PATH) return trimmed;
+  if (trimmed === BASE_PATH) return "/";
+  if (trimmed.startsWith(`${BASE_PATH}/`)) {
+    return trimmed.slice(BASE_PATH.length) || "/";
+  }
+  return trimmed;
+}
+
 const CODE_SOURCES: CaseSourceType[] = ["github", "huggingface"];
 
 type Route =
@@ -17,7 +30,7 @@ type Route =
   | { kind: "not-found" };
 
 function readRoute(): Route {
-  const pathname = window.location.pathname.replace(/\/+$/u, "") || "/";
+  const pathname = stripBase(window.location.pathname);
   if (pathname === "/") return { kind: "home" };
 
   const match = pathname.match(/^\/case\/([^/]+)$/u);
@@ -26,7 +39,7 @@ function readRoute(): Route {
   const requestedId = decodeURIComponent(match[1]);
   const canonicalId = aliases.get(requestedId) ?? requestedId;
   if (canonicalId !== requestedId) {
-    window.history.replaceState({}, "", `/case/${canonicalId}`);
+    window.history.replaceState({}, "", withBase(`/case/${canonicalId}`));
   }
 
   const item = database.cases.find((candidate) => candidate.id === canonicalId);
@@ -50,7 +63,7 @@ function NotFound() {
     <section className="empty-state full">
       <p className="eyebrow">404 / CASE LOST</p>
       <h1>这条案例不存在。</h1>
-      <a className="source-button compact" href="/">
+      <a className="source-button compact" href={withBase("/")}>
         返回案例流
       </a>
     </section>
@@ -88,15 +101,16 @@ export default function App() {
       if (!anchor) return;
 
       const url = new URL(anchor.href, window.location.href);
+      const relativePath = stripBase(url.pathname);
       if (
         url.origin !== window.location.origin ||
-        !/^\/(?:case\/[^/]+)?$/u.test(url.pathname)
+        !/^\/(?:case\/[^/]+)?$/u.test(relativePath)
       ) {
         return;
       }
 
       event.preventDefault();
-      window.history.pushState({}, "", url.pathname);
+      window.history.pushState({}, "", withBase(relativePath));
       setRoute(readRoute());
       window.scrollTo({ top: 0 });
     };
@@ -117,7 +131,11 @@ export default function App() {
       : route.kind === "home"
         ? "浏览 GitHub、HuggingFace、Reddit 与博客上基于开源模型 Laya（System 1 决策模型）的公开案例、可运行代码与讨论。"
         : "没有找到这条案例。";
-    const path = item ? `/case/${item.id}` : route.kind === "home" ? "/" : "/404";
+    const path = item
+      ? withBase(`/case/${item.id}`)
+      : route.kind === "home"
+        ? withBase("/")
+        : withBase("/404");
     const canonicalURL = new URL(path, window.location.origin).toString();
     const image = item?.imageUrl;
 
@@ -192,7 +210,7 @@ export default function App() {
   return (
     <div className="site-shell">
       <header className="site-header">
-        <a className="brand" href="/" aria-label="Laya Case 首页">
+        <a className="brand" href={withBase("/")} aria-label="Laya Case 首页">
           <span className="brand-mark">LAYA</span>
           <span className="brand-name">CASE</span>
         </a>
@@ -206,7 +224,7 @@ export default function App() {
             <span className="translation-option translation-original">原文</span>
             <span className="translation-option translation-chinese">中文</span>
           </label>
-          <a href="/">案例</a>
+          <a href={withBase("/")}>案例</a>
           <a
             href="https://huggingface.co/convaiinnovations/laya"
             target="_blank"

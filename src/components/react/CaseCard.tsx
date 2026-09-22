@@ -21,7 +21,7 @@ export default function CaseCard({ item, index }: CaseCardProps) {
   return (
     <a
       className="case-card"
-      href={`/case/${item.id}`}
+      href={`${import.meta.env.BASE_URL}case/${item.id}`}
       data-case-card
       data-source={item.sourceType}
       data-code={item.code ? "true" : "false"}
@@ -36,7 +36,7 @@ export default function CaseCard({ item, index }: CaseCardProps) {
           loading="lazy"
           decoding="async"
           onError={(event) => {
-            event.currentTarget.src = "/poster-placeholder.svg";
+            event.currentTarget.src = `${import.meta.env.BASE_URL}poster-placeholder.svg`;
           }}
         />
         <span className="case-scanline" aria-hidden="true" />

@@ -3,6 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LearningByDoingNow/laya-case.git"
+  },
+  "homepage": "https://github.com/LearningByDoingNow/laya-case#readme",
+  "bugs": {
+    "url": "https://github.com/LearningByDoingNow/laya-case/issues"
+  },
   "scripts": {
     "dev": "astro dev",
     "dev:spa": "vite",
@@ -26,10 +34,11 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
     "@playwright/test": "^1.55.0",
+    "@types/node": "^26.6.2",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.0.2",
-    "vite": "^8.0.13",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vite": "^8.0.13"
   }
 }

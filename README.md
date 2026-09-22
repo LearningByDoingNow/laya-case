@@ -1,5 +1,7 @@
 # Laya Case
 
+![CI](https://github.com/LearningByDoingNow/laya-case/actions/workflows/ci.yml/badge.svg)
+
 收集全网优秀 Laya / System 1 开源 case 的收藏库 | A curated collection of open-source Laya cases from across the web.
 
 Laya Case 把 GitHub、HuggingFace、Reddit、X 与博客上公开分享的 Laya 使用案例整理成可搜索、可筛选的静态案例墙。项目保留来源链接、作者信息、互动指标、中文参考、可运行代码片段与外部链接，方便集中浏览社区正在用 Laya 构建什么。
@@ -30,7 +32,7 @@ npm install
 npm run dev
 ```
 
-开发服务器默认运行在 [http://localhost:4321](http://localhost:4321)。
+开发服务器运行在 [http://localhost:4321/laya-case/](http://localhost:4321/laya-case/)（与线上相同的 `/laya-case/` 子路径）。
 
 检查并构建静态站点：
 
@@ -39,7 +41,11 @@ npm run check
 npm run build
 ```
 
-构建结果输出到 `dist/`，可部署到 GitHub Pages、Cloudflare Pages、Vercel 或任意静态托管平台。
+构建结果输出到 `dist/`。本仓库已配置 GitHub Actions：push 到 `main` 会自动执行
+检查与构建，并部署到 GitHub Pages：<https://learningbydoingnow.github.io/laya-case/>。
+
+站点固定使用 `base: "/laya-case/"`（定义在 `astro.config.mjs`），本地开发、测试与
+线上部署运行在完全相同的子路径上，保证三者 URL 与产物逐字节一致。
 
 ## Data
 
@@ -59,7 +65,7 @@ npm run data:build                 # 合并 auto + manual → src/data/cases.jso
 
 案例结构（`schemaVersion: 1`），每条包含：
 
-- `sourceType`：github / huggingface / reddit / x / blog / video / official
+- `sourceType`：github / huggingface / reddit / x / threads / blog / video / official
 - `title`、`excerpt`、`author`、`canonicalUrl`、`createdAt`、`lang`
 - `translation`：中文参考（ready / pending）
 - `code`：可运行代码片段（语言 + 源码）
@@ -70,18 +76,24 @@ npm run data:build                 # 合并 auto + manual → src/data/cases.jso
 
 ### Configuration
 
-构建时可通过环境变量设置公开域名，用于生成 canonical 和分享元数据：
+构建时可通过环境变量设置公开域名（仅 origin，不含子路径），用于生成 canonical 和分享元数据；子路径 `/laya-case/` 固定配置在 `astro.config.mjs` 的 `base`。CI 构建时会自动注入该变量：
 
 ```
-PUBLIC_SITE_URL=https://your-domain.example npm run build
+PUBLIC_SITE_URL=https://learningbydoingnow.github.io npm run build
 ```
 
 ## Test
 
-开发服务器运行在 `http://127.0.0.1:4321` 时执行：
+本地（dev server 运行中）执行：
 
 ```bash
 npm run test:smoke
+```
+
+对线上部署执行同一套测试，验证与本地行为一致：
+
+```bash
+TEST_ORIGIN=https://learningbydoingnow.github.io npm run test:smoke
 ```
 
 测试默认使用本机 Chrome。

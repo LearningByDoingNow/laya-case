@@ -89,7 +89,7 @@ function normalizeCase(entry, curatedBy, now) {
   const excerpt = stripHtml(String(entry.excerpt ?? "")).trim() ||
     "社区公开案例，详情见原文链接。";
 
-  const curatedAt = entry.curatedAt ?? now;
+  const curatedAt = entry.curatedAt ?? entry.createdAt ?? now;
   const translation =
     entry.translation ??
     (entry.lang !== "zh"
@@ -188,7 +188,12 @@ cases.sort(
 
 const database = {
   schemaVersion: 1,
-  generatedAt: now,
+  // Derived from the newest curated entry so repeated merges of the same
+  // inputs produce byte-identical output (CI rebuilds data before deploy).
+  generatedAt: cases.reduce(
+    (latest, item) => (item.curatedAt > latest ? item.curatedAt : latest),
+    "",
+  ),
   aliases: [],
   cases,
 };

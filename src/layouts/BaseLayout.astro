@@ -24,6 +24,7 @@ const {
 const siteURL = import.meta.env.PUBLIC_SITE_URL || Astro.site?.toString() || "http://localhost:4321";
 const canonicalURL = new URL(canonicalPath, siteURL).toString();
 const imageURL = image ? new URL(image, siteURL).toString() : undefined;
+const base = import.meta.env.BASE_URL;
 ---
 
 <!doctype html>
@@ -33,7 +34,7 @@ const imageURL = image ? new URL(image, siteURL).toString() : undefined;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#0a0c0b" />
     <meta name="description" content={description} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
     <link rel="canonical" href={canonicalURL} />
     <meta property="og:locale" content="zh_CN" />
     <meta property="og:type" content={article ? "article" : "website"} />
@@ -54,7 +55,7 @@ const imageURL = image ? new URL(image, siteURL).toString() : undefined;
   <body>
     <div class="site-shell">
       <header class="site-header">
-        <a class="brand" href="/" aria-label="Laya Case 首页">
+        <a class="brand" href={base} aria-label="Laya Case 首页">
           <span class="brand-mark">LAYA</span>
           <span class="brand-name">CASE</span>
         </a>
@@ -68,7 +69,7 @@ const imageURL = image ? new URL(image, siteURL).toString() : undefined;
             <span class="translation-option translation-original">原文</span>
             <span class="translation-option translation-chinese">中文</span>
           </label>
-          <a href="/">案例</a>
+          <a href={base}>案例</a>
           <a
             href="https://huggingface.co/convaiinnovations/laya"
             target="_blank"
