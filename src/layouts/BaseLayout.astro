@@ -38,7 +38,7 @@ const base = import.meta.env.BASE_URL;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="theme-color" content="#22406e" />
     <meta name="description" content={description} />
     <meta name="keywords" content={keywords} />
     <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
@@ -60,6 +60,70 @@ const base = import.meta.env.BASE_URL;
     <slot name="head" />
   </head>
   <body>
+    <div class="bg-atmosphere" aria-hidden="true">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1600 900"
+        preserveAspectRatio="xMidYMid slice"
+      >
+        <defs>
+          <filter
+            id="wisp-a"
+            x="-25%"
+            y="-25%"
+            width="150%"
+            height="150%"
+            color-interpolation-filters="sRGB"
+          >
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency="0.004 0.007"
+              numOctaves="4"
+              seed="7"
+              result="noise"
+            />
+            <feGaussianBlur in="noise" stdDeviation="16" result="soft" />
+            <feColorMatrix
+              in="soft"
+              type="matrix"
+              values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0.9 0.9 0.9 0 -1.05"
+            />
+          </filter>
+          <filter
+            id="wisp-b"
+            x="-25%"
+            y="-25%"
+            width="150%"
+            height="150%"
+            color-interpolation-filters="sRGB"
+          >
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency="0.009 0.004"
+              numOctaves="3"
+              seed="19"
+              result="noise"
+            />
+            <feGaussianBlur in="noise" stdDeviation="9" result="soft" />
+            <feColorMatrix
+              in="soft"
+              type="matrix"
+              values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  1 1 1 0 -1.38"
+            />
+          </filter>
+        </defs>
+        <g opacity="0.52">
+          <rect width="1600" height="900" filter="url(#wisp-a)"></rect>
+          <rect
+            x="480"
+            y="-60"
+            width="1300"
+            height="820"
+            opacity="0.55"
+            filter="url(#wisp-b)"></rect>
+        </g>
+      </svg>
+    </div>
     <div class="site-shell">
       <header class="site-header">
         <a class="brand" href={base} aria-label="Laya Case 首页">
