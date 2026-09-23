@@ -11,7 +11,7 @@
 A curated collection of the best Laya articles and open-source cases — searchable, filterable, runnable
 收集优秀的 Laya 相关文章与开源案例 —— 可搜索、可筛选、可复制运行
 
-<img src="docs/preview.png" alt="Laya Case case wall preview" width="880" />
+<img src="docs/preview.jpg" alt="Laya Case case wall preview" width="880" />
 
 **English** · [简体中文](#简体中文)
 
