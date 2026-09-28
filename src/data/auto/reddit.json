@@ -1,5 +1,177 @@
 [
   {
+    "id": "reddit-1wrzjib",
+    "sourceType": "reddit",
+    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wrzjib/laya_replace_llmasajudge_with_a_322mparameter/",
+    "title": "Laya: replace LLM-as-a-judge with a 322M-parameter decision engine (26,639 stars in 9 days, hands-on test)",
+    "author": {
+      "name": "AIFrontierReads",
+      "handle": "AIFrontierReads",
+      "profileUrl": "https://www.reddit.com/user/AIFrontierReads"
+    },
+    "createdAt": "2026-09-27T23:55:59.000Z",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wrzjib/laya_replace_llmasajudge_with_a_322mparameter/\"> <img src=\"https://external-preview.redd.it/nAPBk1Aje5naJnGnEXojhDpNu19bVH1tUut-pGpjPq4.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=98afd44bb39999d7288f0309e22d9b6039cb1fca\" alt=\"Laya: replace LLM-as-a-judge with a 322M-parameter decision engine (26,639 stars in 9 days, hands-on test)\" title=\"Laya: replace LLM-as-a-judge with a 322M-parameter de...",
+    "lang": "en",
+    "imageUrl": "https://external-preview.redd.it/nAPBk1Aje5naJnGnEXojhDpNu19bVH1tUut-pGpjPq4.jpeg?width=640&crop=smart&auto=webp&s=98afd44bb39999d7288f0309e22d9b6039cb1fca",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [
+      {
+        "url": "https://aifrontierpost.com/articles/laya-typed-decisions-tutorial/",
+        "domain": "aifrontierpost.com"
+      }
+    ],
+    "curatedAt": "2026-09-28T09:29:19.136Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "reddit-1wohvds",
+    "sourceType": "reddit",
+    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wohvds/this_time_i_tested_reflex_vs_semif_vs_laya_vs_von/",
+    "title": "This time I tested reflex vs SemIf vs Laya vs Von vs jev",
+    "author": {
+      "name": "KingPinX",
+      "handle": "KingPinX",
+      "profileUrl": "https://www.reddit.com/user/KingPinX"
+    },
+    "createdAt": "2026-09-23T20:51:13.000Z",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Some of you saw <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wntc8m/i_tested_semif_openjev_vs_von_vs_jev/\">my last post</a> where a no-fine-tune Qwen3.5-4B beat a purpose-built 395M decision model (von) on all 4 tasks. since then, von shipped an update, two more projects landed in my inbox for testing, and I went back and reran that round-1 model on this round's fresh draw so its numbers actually compare against everyone else instea...",
+    "lang": "en",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-28T09:29:19.137Z",
+    "curatedBy": "auto",
+    "imageUrl": "https://share.redd.it/preview/post/1wohvds"
+  },
+  {
+    "id": "reddit-1woameh",
+    "sourceType": "reddit",
+    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1woameh/jevals_locally_runnable_evals_for_agents_using/",
+    "title": "jevals: locally runnable evals for agents using Jev-style decisions",
+    "author": {
+      "name": "byebaybay",
+      "handle": "byebaybay",
+      "profileUrl": "https://www.reddit.com/user/byebaybay"
+    },
+    "createdAt": "2026-09-23T16:22:26.000Z",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>There’s a lot of hype around JEV right now, as well as local/open versions like KEV and Laya.</p> <p>However, I think there’s one use case that could actually benefit from decision models (or, let’s be honest, one-shot classifiers lol): evaluations for agents. Right now, LLM-as-a-judge evaluations are super expensive (both in cost and latency).</p> <p>What I’m excited about:</p> <ol> <li>Running evals locally. Sending a request to evaluate yo...",
+    "lang": "en",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [
+      {
+        "url": "https://github.com/openlayer-ai/jevals",
+        "domain": "github.com"
+      }
+    ],
+    "curatedAt": "2026-09-28T09:29:19.137Z",
+    "curatedBy": "auto",
+    "imageUrl": "https://share.redd.it/preview/post/1woameh"
+  },
+  {
+    "id": "reddit-1wo6x7e",
+    "sourceType": "reddit",
+    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wo6x7e/i_turned_qwen3827b_q2_64_llamacpp_into_a_fully/",
+    "title": "I turned Qwen3.8-27B Q2_64 + llama.cpp into a fully TypeSafe AI-compatible Jev-like system. OpenAI API still intact! World’s first Vision-enabled Jev-like model! <10 GB VRAM, 170 ms on an RTX 3090 and ~140 tok/s in chat. 76% vs. 88% Jev-1.13 Acc. on a diverse 22,000-request typed-decision benchmark",
+    "author": {
+      "name": "kyr0x0",
+      "handle": "kyr0x0",
+      "profileUrl": "https://www.reddit.com/user/kyr0x0"
+    },
+    "createdAt": "2026-09-23T14:03:53.000Z",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wo6x7e/i_turned_qwen3827b_q2_64_llamacpp_into_a_fully/\"> <img src=\"https://preview.redd.it/7ezul9h11arh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=870fb183d1ed6058b148b300bb16f4bef80b41cf\" alt=\"I turned Qwen3.8-27B Q2_64 + llama.cpp into a fully TypeSafe AI-compatible Jev-like system. OpenAI API still intact! World’s first Vision-enabled Jev-like model! <10 GB VRAM, 170 ms on an RTX 3090 and ~140 t...",
+    "lang": "en",
+    "imageUrl": "https://preview.redd.it/7ezul9h11arh1.png?width=640&crop=smart&auto=webp&s=870fb183d1ed6058b148b300bb16f4bef80b41cf",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [
+      {
+        "url": "https://github.com/kyr0/Bonsai-Llama-Jev",
+        "domain": "github.com"
+      }
+    ],
+    "curatedAt": "2026-09-28T09:29:19.138Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "reddit-1wntc8m",
+    "sourceType": "reddit",
+    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wntc8m/i_tested_semif_openjev_vs_von_vs_jev/",
+    "title": "I tested Semif (openjev) vs Von vs Jev",
+    "author": {
+      "name": "KingPinX",
+      "handle": "KingPinX",
+      "profileUrl": "https://www.reddit.com/user/KingPinX"
+    },
+    "createdAt": "2026-09-23T02:19:01.000Z",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Multiple \"typed decision model\" projects showed up on reddit past couple o days, some with benchmarks, so I figured instead of working at my day job lets score some of these models on my own git history instead of taking their readme scores at face value.</p> <p><strong>Setup.</strong> Labels came free from conventional commit prefixes on a private repo of mine (a Discord RPG bot). Stripped the <code>type(scope):</code> prefix out of the inpu...",
+    "lang": "en",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-28T09:29:19.138Z",
+    "curatedBy": "auto",
+    "imageUrl": "https://share.redd.it/preview/post/1wntc8m"
+  },
+  {
+    "id": "reddit-1wnt7kv",
+    "sourceType": "reddit",
+    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wnt7kv/stuntd_a_local_jevcompatible_server_on_laya_that/",
+    "title": "stuntd: a local Jev-compatible server on Laya that learns from your own traffic (no API key needed)",
+    "author": {
+      "name": "Inevitable-Log5414",
+      "handle": "Inevitable-Log5414",
+      "profileUrl": "https://www.reddit.com/user/Inevitable-Log5414"
+    },
+    "createdAt": "2026-09-23T02:13:13.000Z",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wnt7kv/stuntd_a_local_jevcompatible_server_on_laya_that/\"> <img src=\"https://preview.redd.it/ka74tv0ai6rh1.png?width=140&amp;height=74&amp;auto=webp&amp;s=2226b7060790c610e766c9d1c288e8fcbb50c0ed\" alt=\"stuntd: a local Jev-compatible server on Laya that learns from your own traffic (no API key needed)\" title=\"stuntd: a local Jev-compatible server on Laya that learns from your own traffic (no API key needed...",
+    "lang": "en",
+    "imageUrl": "https://preview.redd.it/ka74tv0ai6rh1.png?width=140&height=74&auto=webp&s=2226b7060790c610e766c9d1c288e8fcbb50c0ed",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [
+      {
+        "url": "https://github.com/bladedevoff/stuntd",
+        "domain": "github.com"
+      }
+    ],
+    "curatedAt": "2026-09-28T09:29:19.138Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "reddit-1wnf4q2",
+    "sourceType": "reddit",
+    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wnf4q2/laya_model_playing_flappy_bird_on_a_cpu_using/",
+    "title": "Laya model playing Flappy Bird on a CPU using OpenVINO INT8 inference",
+    "author": {
+      "name": "simpleuserhere",
+      "handle": "simpleuserhere",
+      "profileUrl": "https://www.reddit.com/user/simpleuserhere"
+    },
+    "createdAt": "2026-09-22T16:59:39.000Z",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wnf4q2/laya_model_playing_flappy_bird_on_a_cpu_using/\"> <img src=\"https://external-preview.redd.it/NmhyNDZsaGlxM3JoMcenu8milHftaLytwYtj7P8u1oLFGHIXkBU4_X-ahcFy.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=084efff3f95c0059beb19150693809980e730f7a\" alt=\"Laya model playing Flappy Bird on a CPU using OpenVINO INT8 inference\" title=\"Laya model playing Flappy Bird on a CPU using OpenVINO INT8 inference\" />...",
+    "lang": "en",
+    "imageUrl": "https://external-preview.redd.it/NmhyNDZsaGlxM3JoMcenu8milHftaLytwYtj7P8u1oLFGHIXkBU4_X-ahcFy.png?width=640&crop=smart&auto=webp&s=084efff3f95c0059beb19150693809980e730f7a",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [
+      {
+        "url": "https://github.com/rupeshs/flappy-laya-openvino-cpu",
+        "domain": "github.com"
+      }
+    ],
+    "curatedAt": "2026-09-28T09:29:19.138Z",
+    "curatedBy": "auto"
+  },
+  {
     "id": "reddit-1wmyvzp",
     "sourceType": "reddit",
     "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wmyvzp/jev_is_very_good_your_own_data_is_better/",

@@ -14,12 +14,12 @@
     "lang": "en",
     "code": {
       "lang": "python",
-      "snippet": "res_hi[\"routing\"]\n# {\n#   'model': 'multilingual',\n#   'repo': 'convaiinnovations/laya/multilingual',\n#   'reason': 'non-Latin script (devanagari, 100% of letters); the English checkpoint cannot read it'\n# }"
+      "snippet": "> result = router.predict(long_document, questions, model=\"multilingual\", max_len=8192)\n>"
     },
     "metrics": {
-      "likes": 2061
+      "likes": 4190
     },
-    "imageUrl": "https://raw.githubusercontent.com/NandhaKishorM/laya/main/assets/laya_vs_jev_full.png",
+    "imageUrl": "https://raw.githubusercontent.com/NandhaKishorM/laya/main/assets/long_context_8192.png",
     "tags": [],
     "variants": [
       "multilingual",
@@ -44,10 +44,10 @@
     "lang": "en",
     "code": {
       "lang": "python",
-      "snippet": "import laya\n\nagent = laya.load(\"convaiinnovations/laya-multilingual\")\nresult = agent.predict(\n    {\"body\": \"मुझसे इनवॉइस 4411 के लिए दो बार शुल्क लिया गया। कृपया आज ही धनवापसी करें।\"},\n    {\"department\": {\"type\": \"choice\", \"instructions\": \"Which team should handle `body`?\",\n                    \"criteria\": {\"billing\": \"invoices, payments, refunds\",\n                                 \"technical\": \"bugs and outages\", \"sales\": \"pricing\"}},\n     \"refund_requested\": {\"type\": \"noul\", \"instructions\": \"Does the sender ask for money back?\"}},\n)\nprint(result[\"answers\"][\"department\"][\"choice\"])      # billing"
+      "snippet": "> import laya\n> agent = laya.load(\"convaiinnovations/laya-multilingual\")\n> result = agent.predict(long_document, questions, max_len=8192)\n>"
     },
     "metrics": {
-      "likes": 149
+      "likes": 311
     },
     "imageUrl": "https://huggingface.co/convaiinnovations/laya/resolve/main/assets/logo-mark.png",
     "tags": [],
@@ -76,7 +76,7 @@
       "snippet": "import laya\n\nagent = laya.load(\"convaiinnovations/laya-typed-decisions\")\nresult = agent.predict(state, questions)"
     },
     "metrics": {
-      "likes": 64
+      "likes": 124
     },
     "imageUrl": "https://huggingface.co/convaiinnovations/laya/resolve/main/assets/logo-mark.png",
     "tags": [],
@@ -101,7 +101,7 @@
     "excerpt": "Multilingual System 1 decision model compiled from convaiinnovations/laya-multilingual (mmBERT-base, 322M, context 1024, 100+ languages). These files are not llama.cpp / llama-cli GGUFs. They are produced by ggmlc, a neural network compiler that lowers PyTorch, JAX, Flax, and Keras models to high-performance GGML execution. Loading them in llama.cpp will fail. Typed questions (choice / score / noul) are scored in one encoder pass. There is no autoregressiv...",
     "lang": "en",
     "metrics": {
-      "likes": 8
+      "likes": 12
     },
     "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/mys/laya-multilingual-GGUF.png",
     "tags": [],
@@ -126,7 +126,7 @@
     "excerpt": "English System 1 decision model compiled from convaiinnovations/laya (ModernBERT-large, 421M, context 512). These files are not llama.cpp / llama-cli GGUFs. They are produced by ggmlc, a neural network compiler that lowers PyTorch, JAX, Flax, and Keras models to high-performance GGML execution. Loading them in llama.cpp will fail. Typed questions (choice / score / noul) are scored in one encoder pass. There is no autoregressive token generation. Source, CL...",
     "lang": "en",
     "metrics": {
-      "likes": 7
+      "likes": 18
     },
     "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/mys/laya-GGUF.png",
     "tags": [],
@@ -153,7 +153,7 @@
       "snippet": "llama-server -m laya-multilingual-Q8_0.gguf --embeddings --pooling none -c 2048 -ub 2048 -b 2048 --port 8080\npip install laya requests torch safetensors"
     },
     "metrics": {
-      "likes": 2
+      "likes": 5
     },
     "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Weidows/laya-multilingual-GGUF.png",
     "tags": [],
@@ -178,7 +178,7 @@
     "excerpt": "Specialist System 1 decision model compiled from convaiinnovations/laya-typed-decisions (ModernBERT-large, 421M, context 1024). Fine-tuned for invoice match, SOC alerts, customer-service next action, and agent-trace harnesses. These files are not llama.cpp / llama-cli GGUFs. They are produced by ggmlc, a neural network compiler that lowers PyTorch, JAX, Flax, and Keras models to high-performance GGML execution. Loading them in llama.cpp will fail. Typed qu...",
     "lang": "en",
     "metrics": {
-      "likes": 1
+      "likes": 2
     },
     "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/mys/laya-typed-decisions-GGUF.png",
     "tags": [],
@@ -207,7 +207,7 @@
       "snippet": "# 1. serve the backbone (per-token hidden states; -ub must cover your longest input)\nllama-server -m laya-F16.gguf --embeddings --pooling none -c 2048 -ub 2048 -b 2048 --port 8080\n\n# 2. python deps for the decision head + tokenizer\npip install laya requests torch safetensors"
     },
     "metrics": {
-      "likes": 2
+      "likes": 10
     },
     "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/fr0stbit3/laya-gguf.png",
     "tags": [],
@@ -234,7 +234,7 @@
       "snippet": "# 1. serve the backbone (per-token hidden states; -ub must cover your longest input)\nllama-server -m laya-multilingual-F16.gguf --embeddings --pooling none -c 2048 -ub 2048 -b 2048 --port 8080\n\n# 2. python deps for the decision head + tokenizer\npip install laya requests torch safetensors"
     },
     "metrics": {
-      "likes": 0
+      "likes": 1
     },
     "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/fr0stbit3/laya-multilingual-gguf.png",
     "tags": [],
@@ -243,6 +243,35 @@
     ],
     "links": [],
     "curatedAt": "2026-09-22T06:29:25.742Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-aac6fef-laya-multilingual-coreml-ane",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/aac6fef/laya-multilingual-coreml-ane",
+    "title": "laya-multilingual-coreml-ane",
+    "author": {
+      "name": "aac6fef",
+      "handle": "aac6fef",
+      "profileUrl": "https://huggingface.co/aac6fef"
+    },
+    "createdAt": "2026-09-20T03:22:57.000Z",
+    "excerpt": "Laya typed decisions on Apple Silicon, using CPU + Neural Engine. This is a portable Core ML bundle for laya-coreml, converted from convaiinnovations/laya-multilingual. It outputs choice, score, and noul probabilities with zero generated tokens. Inference needs no PyTorch, Transformers, MLX, remote code, or cloud API.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "pip install laya-coreml"
+    },
+    "metrics": {
+      "likes": 9
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/aac6fef/laya-multilingual-coreml-ane.png",
+    "tags": [],
+    "variants": [
+      "multilingual"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-22T06:29:26.892Z",
     "curatedBy": "auto"
   },
   {
@@ -275,35 +304,6 @@
     "curatedBy": "auto"
   },
   {
-    "id": "hf-aac6fef-laya-multilingual-coreml-ane",
-    "sourceType": "huggingface",
-    "canonicalUrl": "https://huggingface.co/aac6fef/laya-multilingual-coreml-ane",
-    "title": "laya-multilingual-coreml-ane",
-    "author": {
-      "name": "aac6fef",
-      "handle": "aac6fef",
-      "profileUrl": "https://huggingface.co/aac6fef"
-    },
-    "createdAt": "2026-09-20T03:22:57.000Z",
-    "excerpt": "Laya typed decisions on Apple Silicon, using CPU + Neural Engine. This is a portable Core ML bundle for laya-coreml, converted from convaiinnovations/laya-multilingual. It outputs choice, score, and noul probabilities with zero generated tokens. Inference needs no PyTorch, Transformers, MLX, remote code, or cloud API.",
-    "lang": "en",
-    "code": {
-      "lang": "bash",
-      "snippet": "pip install laya-coreml"
-    },
-    "metrics": {
-      "likes": 5
-    },
-    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/aac6fef/laya-multilingual-coreml-ane.png",
-    "tags": [],
-    "variants": [
-      "multilingual"
-    ],
-    "links": [],
-    "curatedAt": "2026-09-22T06:29:26.892Z",
-    "curatedBy": "auto"
-  },
-  {
     "id": "hf-aac6fef-laya-multilingual-coreml",
     "sourceType": "huggingface",
     "canonicalUrl": "https://huggingface.co/aac6fef/laya-multilingual-coreml",
@@ -321,7 +321,7 @@
       "snippet": "pip install laya-coreml"
     },
     "metrics": {
-      "likes": 3
+      "likes": 4
     },
     "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/aac6fef/laya-multilingual-coreml.png",
     "tags": [],
@@ -333,30 +333,366 @@
     "curatedBy": "auto"
   },
   {
-    "id": "hf-shaunspark-laya-mind2web-browser-agent",
+    "id": "hf-fluidinference-laya-coreml",
     "sourceType": "huggingface",
-    "canonicalUrl": "https://huggingface.co/ShaunSpark/laya-mind2web-browser-agent",
-    "title": "laya-mind2web-browser-agent",
+    "canonicalUrl": "https://huggingface.co/FluidInference/laya-coreml",
+    "title": "laya-coreml",
     "author": {
-      "name": "ShaunSpark",
-      "handle": "ShaunSpark",
-      "profileUrl": "https://huggingface.co/ShaunSpark"
+      "name": "FluidInference",
+      "handle": "FluidInference",
+      "profileUrl": "https://huggingface.co/FluidInference"
     },
-    "createdAt": "2026-09-18T22:14:33.000Z",
-    "excerpt": "This is a fine-tuned version of the Laya decision model, specialized for browser automation tasks. It predicts the next browser action (operation and target element) from a web page's DOM structure and a user goal.",
+    "createdAt": "2026-09-21T04:25:15.000Z",
+    "excerpt": "Core ML conversion of laya-multilingual (Convai Innovations, Apache-2.0): a 322M-parameter mmBERT-base encoder with a typed decision head that answers choice, score, and noul questions about a text state in one forward pass, returning calibrated probabilities and no generated tokens. Weights are unchanged from convaiinnovations/laya multilingual/ at revision 1c5edc17a7acd8701df6fc341c0d179f1c62c982.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "swift run -c release FluidUseLaya answer --state \"…\" --type choice \\\n    --instructions \"What does the customer want?\" --options \"refund|order status|technical help\"\nswift run -c release FluidUseLaya tetris      # headless Tetris played by laya decisions\nswift run -c release LayaTetrisDemo           # SwiftUI demo"
+    },
+    "metrics": {
+      "likes": 40
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/FluidInference/laya-coreml.png",
+    "tags": [],
+    "variants": [
+      "multilingual"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:41.818Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-axera-tech-laya",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/AXERA-TECH/Laya",
+    "title": "Laya",
+    "author": {
+      "name": "AXERA-TECH",
+      "handle": "AXERA-TECH",
+      "profileUrl": "https://huggingface.co/AXERA-TECH"
+    },
+    "createdAt": "2026-09-21T09:56:30.000Z",
+    "excerpt": "Ready-to-run deployment package for the Laya typed-decision model family on AX650 / NPU3.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "sha256sum -c SHA256SUMS"
+    },
+    "metrics": {
+      "likes": 3
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/AXERA-TECH/Laya.png",
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:42.112Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-sahilchachra-laya-typeddecisions-mxfp8",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/sahilchachra/Laya-TypedDecisions-MXFP8",
+    "title": "Laya-TypedDecisions-MXFP8",
+    "author": {
+      "name": "sahilchachra",
+      "handle": "sahilchachra",
+      "profileUrl": "https://huggingface.co/sahilchachra"
+    },
+    "createdAt": "2026-09-23T12:14:09.000Z",
+    "excerpt": "This is the Typed-Decisions encoder backbone of convaiinnovations/laya (ModernBERT-large, 421M params, 1024 hidden size, 28 layers, 1024 token context), quantized to MXFP8 for MLX on Apple Silicon.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "pip install mlx-embeddings"
+    },
+    "metrics": {
+      "likes": 0
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/sahilchachra/Laya-TypedDecisions-MXFP8.png",
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:42.407Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-litert-community-laya-multilingual-litert",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/litert-community/Laya-Multilingual-LiteRT",
+    "title": "Laya-Multilingual-LiteRT",
+    "author": {
+      "name": "litert-community",
+      "handle": "litert-community",
+      "profileUrl": "https://huggingface.co/litert-community"
+    },
+    "createdAt": "2026-09-21T16:11:38.000Z",
+    "excerpt": "Run the multilingual checkpoint of convaiinnovations/laya on a phone GPU with LiteRT. Laya reads a text or a JSON state and answers questions you define at request time: pick one of several options, score on an ordinal scale, or give a yes/no probability. Each question is one forward pass. The validated Android configuration is LiteRT 2.2.0 with explicit GPU FP32 computation on a Samsung Galaxy S26 (SM-S942Q, Android 16): 51 ms of graph time per question a...",
     "lang": "en",
     "code": {
       "lang": "python",
-      "snippet": "import torch\nimport laya\n\nagent = laya.load(\"convaiinnovations/laya\")\nmodel = agent.model\nmodel.load_state_dict(torch.load(\"pytorch_model.bin\", map_location=\"cpu\"))\nmodel.eval()"
+      "snippet": "import json\nfrom pathlib import Path\nfrom laya_host import LayaHost\n\nassets = Path(\".\")\nquestions = {\n    \"intent\": {\n        \"type\": \"choice\",\n        \"instructions\": \"What does the customer need?\",\n        \"criteria\": {\"refund\": \"money returned\", \"help\": \"technical help\"},\n    }\n}\nwith LayaHost(\n    tokenizer_dir=assets,\n    main_graph_path=assets / \"laya_ml_s256_embeds_wfp16.tflite\",\n    act_graph_path=assets / \"laya_ml_act_head_fp32.tflite\",\n    window=256,\n    head_max_len=256,\n    temperatures_json=assets / \"laya_ml_calibration.json\",\n    embeddings_path=assets / \"token_embeddings_fp16.bin\",\n) as host:\n    result = host.predict(\"同じ支払いが二重に請求されました。返金をお願いします。\", questions)\n    print(json.dumps(result, ensure_ascii=False, indent=2))"
     },
     "metrics": {
       "likes": 4
     },
-    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/ShaunSpark/laya-mind2web-browser-agent.png",
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/litert-community/Laya-Multilingual-LiteRT.png",
+    "tags": [],
+    "variants": [
+      "multilingual"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:42.705Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-killkli-open-jev-laya-multilingual-onnx",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/killkli/open-jev-laya-multilingual-onnx",
+    "title": "open-jev-laya-multilingual-onnx",
+    "author": {
+      "name": "killkli",
+      "handle": "killkli",
+      "profileUrl": "https://huggingface.co/killkli"
+    },
+    "createdAt": "2026-09-23T11:27:30.000Z",
+    "excerpt": "This repository contains a browser-ready ONNX export of the publicly licensed Convai Innovations Laya multilingual checkpoint. The weights remain under Apache 2.0. The export used the receptron/laya ONNX exporter at the linked revision.",
+    "lang": "en",
+    "metrics": {
+      "likes": 1
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/killkli/open-jev-laya-multilingual-onnx.png",
+    "tags": [],
+    "variants": [
+      "multilingual"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:43.003Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-falconsai-laya-v796",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/Falconsai/laya-v796",
+    "title": "laya-v796",
+    "author": {
+      "name": "Falconsai",
+      "handle": "Falconsai",
+      "profileUrl": "https://huggingface.co/Falconsai"
+    },
+    "createdAt": "2026-09-24T02:08:04.000Z",
+    "excerpt": "Source model card: Falconsai/laya-v795 @ main, carried verbatim below. Its licence is the repository's. The Model Surgeon record follows it.",
+    "lang": "en",
+    "code": {
+      "lang": "python",
+      "snippet": "res_hi[\"routing\"]\n# {\n#   'model': 'multilingual',\n#   'repo': 'Falconsai/laya-v796/multilingual',\n#   'reason': 'non-Latin script (devanagari, 100% of letters); the English checkpoint cannot read it'\n# }"
+    },
+    "metrics": {
+      "likes": 1
+    },
+    "imageUrl": "https://raw.githubusercontent.com/NandhaKishorM/laya/main/assets/laya_vs_jev_full.png",
     "tags": [],
     "variants": [],
     "links": [],
-    "curatedAt": "2026-09-22T06:29:28.003Z",
+    "curatedAt": "2026-09-28T09:28:43.303Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-chaoliangunsw-macjev-322m-4k-laya-gguf",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/chaoliangUNSW/MacJev-322M-4K-Laya-GGUF",
+    "title": "MacJev-322M-4K-Laya-GGUF",
+    "author": {
+      "name": "chaoliangUNSW",
+      "handle": "chaoliangUNSW",
+      "profileUrl": "https://huggingface.co/chaoliangUNSW"
+    },
+    "createdAt": "2026-09-23T01:02:04.000Z",
+    "excerpt": "Website: jevstyle.com — all JevStyle decision models, benchmarks and quickstart in one place.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "hf download chaoliangUNSW/MacJev-322M-4K-Laya-GGUF --local-dir MacJev-GGUF\ncd MacJev-GGUF\npython -m pip install -r requirements.txt"
+    },
+    "metrics": {
+      "likes": 0
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/chaoliangUNSW/MacJev-322M-4K-Laya-GGUF.png",
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:43.599Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-sahilchachra-laya-multilingual-mxfp8",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/sahilchachra/Laya-Multilingual-MXFP8",
+    "title": "Laya-Multilingual-MXFP8",
+    "author": {
+      "name": "sahilchachra",
+      "handle": "sahilchachra",
+      "profileUrl": "https://huggingface.co/sahilchachra"
+    },
+    "createdAt": "2026-09-23T12:12:57.000Z",
+    "excerpt": "This is the Multilingual encoder backbone of convaiinnovations/laya (mmBERT-base (100+ languages), 322M params, 768 hidden size, 22 layers, 1024 token context), quantized to MXFP8 for MLX on Apple Silicon.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "pip install mlx-embeddings"
+    },
+    "metrics": {
+      "likes": 1
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/sahilchachra/Laya-Multilingual-MXFP8.png",
+    "tags": [],
+    "variants": [
+      "multilingual"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:43.898Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-wigcheng5566-laya-neutron-gguf",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/wigcheng5566/laya-neutron-gguf",
+    "title": "laya-neutron-gguf",
+    "author": {
+      "name": "wigcheng5566",
+      "handle": "wigcheng5566",
+      "profileUrl": "https://huggingface.co/wigcheng5566"
+    },
+    "createdAt": "2026-09-23T09:00:26.000Z",
+    "excerpt": "Laya returns calibrated probabilities over the options of a typed question instead of generating tokens. It is two pieces: a bidirectional encoder, and a decision head that reads the encoder's hidden states at the option-marker positions.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "# 1. build laya-score\ngit clone -b neutron-npu https://github.com/wigcheng/llama-neutron\ncmake -B build llama-neutron -DCMAKE_BUILD_TYPE=Release\ncmake --build build -j --target laya-score\n\n# 2. tokenize (writes tokens + marker positions as JSON)\npython3 tokenize_laya.py \\\n    --tokenizer laya-ml-tokenizer.json \\\n    --tokenizer-config laya-ml-tokenizer_config.json \\\n    --type choice --ins \"Which subsystem is at fault?\" \\\n    --opt \"fan\" --opt \"power\" --state \"the fan is noisy\"\n# {\"tokens\": \"2,6241,2872,235292,12236,113078,603,696,15639,235336,1,4,5683,4,2384,1,573,5683,603,52806,1\",\n#  \"markers\": \"11,13\", \"n_tokens\": 21, \"options\": [\"fan\", \"power\"], ...}\n\n# 3. score\n./build/bin/laya-score -m laya-ml-encoder-q4_0.gguf --head laya-ml-head-f16.gguf -t 6 \\\n    --type choice --tokens 2,6241,...,1 --markers 11,13\n# {\n#   \"type\": \"choice\",\n#   \"tokens\": 21,\n#   \"temperature_bucket\": \"choice:2\",\n#   \"temperature\": 1.000000,\n#   \"choice\": \"option0\",\n#   \"logits\": [1.699239, -0.916494],\n#   \"probabilities\": [0.931867, 0.068133],\n#   \"options\": [\"option0\", \"option1\"]\n# }"
+    },
+    "metrics": {
+      "likes": 2
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/wigcheng5566/laya-neutron-gguf.png",
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:44.191Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-fibonacciai-laya-gguf-persian-multilingual-decision",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/fibonacciai/laya-gguf-persian-multilingual-decision",
+    "title": "laya-gguf-persian-multilingual-decision",
+    "author": {
+      "name": "fibonacciai",
+      "handle": "fibonacciai",
+      "profileUrl": "https://huggingface.co/fibonacciai"
+    },
+    "createdAt": "2026-09-22T23:37:37.000Z",
+    "excerpt": "Here is a new README.md for your fibonacciai/laya-gguf-persian-multilingual-decision repository. It is based on the information from your Hugging Face page and follows the structure of the original README, with the Persian optimization highlighted throughout.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "# ۱. دانلود مدل\nhuggingface-cli download fibonacciai/laya-persian \\\n  laya_multilingual_f16.gguf --local-dir .\n\n# ۲. دریافت باینری\n# از https://github.com/monatis/ggmlc/releases/latest دانلود کن\n# فایل laya.exe (ویندوز) یا laya (لینوکس/مک)\n\n# ۳. لیست پریستها\nlaya list-presets\n\n# ۴. اطلاعات مدل\nlaya info laya_multilingual_f16.gguf\n\n# ۵. تصمیمگیری روی متن فارسی\nlaya decide laya_multilingual_f16.gguf \\\n  --preset email \\\n  --text \"دو بار از من هزینه کسر شده است\" \\\n  --device auto\n\n# ۶. خروجی JSON\nlaya decide laya_multilingual_f16.gguf \\\n  --preset triage \\\n  --text \"لطفاً مبلغ کسر شده را بازگردانید.\" \\\n  --json\n\n# ۷. اجرای سرور\nlaya serve laya_multilingual_f16.gguf --port 8080 --device auto"
+    },
+    "metrics": {
+      "likes": 1
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/fibonacciai/laya-gguf-persian-multilingual-decision.png",
+    "tags": [],
+    "variants": [
+      "multilingual"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:44.493Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-wouze-laya-ara-rag",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/Wouze/laya-ara-rag",
+    "title": "laya-ara-rag",
+    "author": {
+      "name": "Wouze",
+      "handle": "Wouze",
+      "profileUrl": "https://huggingface.co/Wouze"
+    },
+    "createdAt": "2026-09-21T17:27:25.000Z",
+    "excerpt": "Arabic short-list reranker — passage relevance and k≤12 ranking on laya-multilingual.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "pip install \"laya==0.3.4\"\nexport USE_TF=0"
+    },
+    "metrics": {
+      "likes": 3
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Wouze/laya-ara-rag.png",
+    "tags": [],
+    "variants": [
+      "multilingual"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:44.792Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-litert-community-laya-litert",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/litert-community/laya-LiteRT",
+    "title": "laya-LiteRT",
+    "author": {
+      "name": "litert-community",
+      "handle": "litert-community",
+      "profileUrl": "https://huggingface.co/litert-community"
+    },
+    "createdAt": "2026-09-21T07:25:46.000Z",
+    "excerpt": "A state in, calibrated answers to typed questions out, no text generated: choice (one of the criteria), score (an ordered scale), noul (does the statement hold, as a probability). One forward per question. These are the convaiinnovations/laya checkpoints (revision 1c5edc17) converted to classic LiteRT graphs with one static window per file: the English model is ModernBERT-large with laya's decision head (421M parameters), the multilingual model is mmBERT-b...",
+    "lang": "en",
+    "code": {
+      "lang": "python",
+      "snippet": "# pip install transformers==5.17.0 numpy==2.5.3 huggingface_hub==1.32.0 ai-edge-litert==2.1.6\nfrom huggingface_hub import snapshot_download\nfrom laya_host import LayaHost\nroot = snapshot_download(\"litert-community/laya-LiteRT\", allow_patterns=[\"laya_ml_s256_wfp16.tflite\", \"laya_ml_act_head_fp32.tflite\", \"multilingual/*\", \"laya_host.py\"])\nwith LayaHost(tokenizer_dir=f\"{root}/multilingual\", main_graph_path=f\"{root}/laya_ml_s256_wfp16.tflite\", act_graph_path=f\"{root}/laya_ml_act_head_fp32.tflite\",\n              window=256, head_max_len=256, temperatures_json=f\"{root}/multilingual/calibration.json\") as host:\n    print(host.predict({\"message\": \"同じ注文の代金が二回引き落とされています。差額の返金をお願いします。\"},\n                       {\"department\": {\"type\": \"choice\", \"instructions\": \"Which department should handle this request?\",\n                                       \"criteria\": {\"billing\": \"invoices, payments, refunds\", \"technical\": \"bugs, outages, system errors\", \"sales\": \"pricing, new contracts\", \"other\": \"everything else\"}}}))"
+    },
+    "metrics": {
+      "likes": 3
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/litert-community/laya-LiteRT.png",
+    "tags": [],
+    "variants": [
+      "multilingual"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:45.089Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-wouze-laya-ara",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/Wouze/laya-ara",
+    "title": "laya-ara",
+    "author": {
+      "name": "Wouze",
+      "handle": "Wouze",
+      "profileUrl": "https://huggingface.co/Wouze"
+    },
+    "createdAt": "2026-09-21T15:54:16.000Z",
+    "excerpt": "Arabic NLU for typed decisions — intent, NLI, and short-list ranking on laya-multilingual.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "pip install \"laya==0.3.4\"\nexport USE_TF=0"
+    },
+    "metrics": {
+      "likes": 2
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Wouze/laya-ara.png",
+    "tags": [],
+    "variants": [
+      "multilingual"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:45.380Z",
     "curatedBy": "auto"
   },
   {
@@ -387,6 +723,60 @@
     "curatedBy": "auto"
   },
   {
+    "id": "hf-zerodegress-laya-gguf",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/zerodegress/laya-gguf",
+    "title": "laya-gguf",
+    "author": {
+      "name": "zerodegress",
+      "handle": "zerodegress",
+      "profileUrl": "https://huggingface.co/zerodegress"
+    },
+    "createdAt": "2026-09-23T05:53:57.000Z",
+    "excerpt": "GGUF version of convaiinnovations/laya, packaged for the laya-rust inference engine.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "git clone https://github.com/zerodegress/laya-rust && cd laya-rust\ncargo build --release --no-default-features --features mlx     # Apple Silicon; cuda is the default feature\n\n./target/release/laya test -m /path/to/laya-f16.gguf - < request.json"
+    },
+    "metrics": {
+      "likes": 1
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/zerodegress/laya-gguf.png",
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:46.128Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-sahilchachra-laya-typeddecisions-mxfp4",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/sahilchachra/Laya-TypedDecisions-MXFP4",
+    "title": "Laya-TypedDecisions-MXFP4",
+    "author": {
+      "name": "sahilchachra",
+      "handle": "sahilchachra",
+      "profileUrl": "https://huggingface.co/sahilchachra"
+    },
+    "createdAt": "2026-09-23T12:13:26.000Z",
+    "excerpt": "This is the Typed-Decisions encoder backbone of convaiinnovations/laya (ModernBERT-large, 421M params, 1024 hidden size, 28 layers, 1024 token context), quantized to MXFP4 for MLX on Apple Silicon.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "pip install mlx-embeddings"
+    },
+    "metrics": {
+      "likes": 0
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/sahilchachra/Laya-TypedDecisions-MXFP4.png",
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:46.422Z",
+    "curatedBy": "auto"
+  },
+  {
     "id": "hf-aac6fef-laya-coreml",
     "sourceType": "huggingface",
     "canonicalUrl": "https://huggingface.co/aac6fef/laya-coreml",
@@ -404,13 +794,177 @@
       "snippet": "pip install laya-coreml"
     },
     "metrics": {
-      "likes": 1
+      "likes": 7
     },
     "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/aac6fef/laya-coreml.png",
     "tags": [],
     "variants": [],
     "links": [],
     "curatedAt": "2026-09-22T06:29:29.140Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-inferenceprince-laya-onnx-int8",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/inferenceprince/laya-onnx-int8",
+    "title": "laya-onnx-int8",
+    "author": {
+      "name": "inferenceprince",
+      "handle": "inferenceprince",
+      "profileUrl": "https://huggingface.co/inferenceprince"
+    },
+    "createdAt": "2026-09-21T21:45:04.000Z",
+    "excerpt": "The same Laya model, 236 MB smaller, with identical output. Quantised with MatMulNBits (weight-only, block size 64, symmetric) and exported to ONNX for ONNX Runtime.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "pip install onnxruntime huggingface_hub tokenizers numpy\nhf download inferenceprince/laya-onnx-int8 --local-dir laya-onnx-int8"
+    },
+    "metrics": {
+      "likes": 1
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/inferenceprince/laya-onnx-int8.png",
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:47.015Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-shaunspark-laya-mind2web-browser-agent",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/ShaunSpark/laya-mind2web-browser-agent",
+    "title": "laya-mind2web-browser-agent",
+    "author": {
+      "name": "ShaunSpark",
+      "handle": "ShaunSpark",
+      "profileUrl": "https://huggingface.co/ShaunSpark"
+    },
+    "createdAt": "2026-09-18T22:14:33.000Z",
+    "excerpt": "This is a fine-tuned version of the Laya decision model, specialized for browser automation tasks. It predicts the next browser action (operation and target element) from a web page's DOM structure and a user goal.",
+    "lang": "en",
+    "code": {
+      "lang": "python",
+      "snippet": "import torch\nimport laya\n\nagent = laya.load(\"convaiinnovations/laya\")\nmodel = agent.model\nmodel.load_state_dict(torch.load(\"pytorch_model.bin\", map_location=\"cpu\"))\nmodel.eval()"
+    },
+    "metrics": {
+      "likes": 6
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/ShaunSpark/laya-mind2web-browser-agent.png",
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-22T06:29:28.003Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-inferenceprince-laya-onnx",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/inferenceprince/laya-onnx",
+    "title": "laya-onnx",
+    "author": {
+      "name": "inferenceprince",
+      "handle": "inferenceprince",
+      "profileUrl": "https://huggingface.co/inferenceprince"
+    },
+    "createdAt": "2026-09-21T21:42:57.000Z",
+    "excerpt": "Laya exported to ONNX, so it runs under ONNX Runtime — on a CPU, a GPU, or in a browser — with no PyTorch installed. This is the default build.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "pip install onnxruntime huggingface_hub tokenizers numpy\nhf download inferenceprince/laya-onnx --local-dir laya-onnx"
+    },
+    "metrics": {
+      "likes": 2
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/inferenceprince/laya-onnx.png",
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:47.603Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-sahilchachra-laya-multilingual-mxfp4",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/sahilchachra/Laya-Multilingual-MXFP4",
+    "title": "Laya-Multilingual-MXFP4",
+    "author": {
+      "name": "sahilchachra",
+      "handle": "sahilchachra",
+      "profileUrl": "https://huggingface.co/sahilchachra"
+    },
+    "createdAt": "2026-09-23T12:12:32.000Z",
+    "excerpt": "This is the Multilingual encoder backbone of convaiinnovations/laya (mmBERT-base (100+ languages), 322M params, 768 hidden size, 22 layers, 1024 token context), quantized to MXFP4 for MLX on Apple Silicon.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "pip install mlx-embeddings"
+    },
+    "metrics": {
+      "likes": 0
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/sahilchachra/Laya-Multilingual-MXFP4.png",
+    "tags": [],
+    "variants": [
+      "multilingual"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:47.895Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-sahilchachra-laya-english-mxfp8",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/sahilchachra/Laya-English-MXFP8",
+    "title": "Laya-English-MXFP8",
+    "author": {
+      "name": "sahilchachra",
+      "handle": "sahilchachra",
+      "profileUrl": "https://huggingface.co/sahilchachra"
+    },
+    "createdAt": "2026-09-23T12:11:56.000Z",
+    "excerpt": "This is the English encoder backbone of convaiinnovations/laya (ModernBERT-large, 421M params, 1024 hidden size, 28 layers, 512 token context), quantized to MXFP8 for MLX on Apple Silicon.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "pip install mlx-embeddings"
+    },
+    "metrics": {
+      "likes": 0
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/sahilchachra/Laya-English-MXFP8.png",
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:48.250Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-litert-community-laya-english-litert",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/litert-community/Laya-English-LiteRT",
+    "title": "Laya-English-LiteRT",
+    "author": {
+      "name": "litert-community",
+      "handle": "litert-community",
+      "profileUrl": "https://huggingface.co/litert-community"
+    },
+    "createdAt": "2026-09-22T03:48:08.000Z",
+    "excerpt": "Run the English checkpoint of convaiinnovations/laya and its typed-decisions/ fine-tune on a phone GPU with LiteRT. Laya reads a text or a JSON state and answers questions you define at request time: pick one of several options, score on an ordinal scale, or give a yes/no probability. Each question is one forward pass of the main graph plus one pass of a small act-head graph. The validated Android configuration is LiteRT 2.2.0 CompiledModel with explicit G...",
+    "lang": "en",
+    "code": {
+      "lang": "python",
+      "snippet": "import json\nfrom pathlib import Path\nfrom laya_host import LayaHost\n\nassets = Path(\".\")\nquestions = {\n    \"intent\": {\n        \"type\": \"choice\",\n        \"instructions\": \"What does the customer need?\",\n        \"criteria\": {\n            \"refund\": \"return a duplicate payment\",\n            \"help\": \"technical help\",\n        },\n    }\n}\nwith LayaHost.from_directory(\n    assets, checkpoint=\"en\", window=256, storage=\"wfp16\"\n) as host:\n    result = host.predict(\n        \"I was charged twice for one order. Please return the extra payment.\",\n        questions,\n    )\nprint(json.dumps(result, indent=2))"
+    },
+    "metrics": {
+      "likes": 1
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/litert-community/Laya-English-LiteRT.png",
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:48.572Z",
     "curatedBy": "auto"
   },
   {
@@ -443,6 +997,388 @@
     "curatedBy": "auto"
   },
   {
+    "id": "hf-sahilchachra-laya-english-mxfp4",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/sahilchachra/Laya-English-MXFP4",
+    "title": "Laya-English-MXFP4",
+    "author": {
+      "name": "sahilchachra",
+      "handle": "sahilchachra",
+      "profileUrl": "https://huggingface.co/sahilchachra"
+    },
+    "createdAt": "2026-09-23T12:11:33.000Z",
+    "excerpt": "This is the English encoder backbone of convaiinnovations/laya (ModernBERT-large, 421M params, 1024 hidden size, 28 layers, 512 token context), quantized to MXFP4 for MLX on Apple Silicon.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "pip install mlx-embeddings"
+    },
+    "metrics": {
+      "likes": 0
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/sahilchachra/Laya-English-MXFP4.png",
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:49.247Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-ti3x-m-laya-multilingual-onnx",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/ti3x-m/laya-multilingual-onnx",
+    "title": "laya-multilingual-onnx",
+    "author": {
+      "name": "ti3x-m",
+      "handle": "ti3x-m",
+      "profileUrl": "https://huggingface.co/ti3x-m"
+    },
+    "createdAt": "2026-09-23T00:50:35.000Z",
+    "excerpt": "Standard ONNX Runtime files are under onnx/. Browser-specific graphs with large gather tensors split for WebGPU are under onnxruntime/webgpu/.",
+    "lang": "en",
+    "code": {
+      "lang": "sh",
+      "snippet": "python -m pip install numpy==2.5.3 onnxruntime==1.30.0\npython evaluate.py --standard ../../../onnx/model.onnx"
+    },
+    "metrics": {
+      "likes": 0
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/ti3x-m/laya-multilingual-onnx.png",
+    "tags": [],
+    "variants": [
+      "multilingual"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:49.545Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-mlboydaisuke-laya-multilingual-coreai",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/mlboydaisuke/Laya-Multilingual-CoreAI",
+    "title": "Laya-Multilingual-CoreAI",
+    "author": {
+      "name": "mlboydaisuke",
+      "handle": "mlboydaisuke",
+      "profileUrl": "https://huggingface.co/mlboydaisuke"
+    },
+    "createdAt": "2026-09-23T10:28:33.000Z",
+    "excerpt": "Core AI is Apple's on-device ML runtime in iOS 27 / macOS 27 and the successor to Core ML: PyTorch models are exported with Apple's coreai-torch (LLMs: coreai.llm.export) into .aimodel bundles that run on the GPU or the Neural Engine.",
+    "lang": "en",
+    "metrics": {
+      "likes": 0
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/mlboydaisuke/Laya-Multilingual-CoreAI.png",
+    "tags": [],
+    "variants": [
+      "multilingual"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:49.849Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-ti3x-m-laya-typed-decisions-onnx",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/ti3x-m/laya-typed-decisions-onnx",
+    "title": "laya-typed-decisions-onnx",
+    "author": {
+      "name": "ti3x-m",
+      "handle": "ti3x-m",
+      "profileUrl": "https://huggingface.co/ti3x-m"
+    },
+    "createdAt": "2026-09-23T00:50:46.000Z",
+    "excerpt": "Standard ONNX Runtime files are under onnx/. Browser-specific graphs with large gather tensors split for WebGPU are under onnxruntime/webgpu/.",
+    "lang": "en",
+    "code": {
+      "lang": "sh",
+      "snippet": "python -m pip install numpy==2.5.3 onnxruntime==1.30.0\npython evaluate.py --standard ../../../onnx/model.onnx"
+    },
+    "metrics": {
+      "likes": 0
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/ti3x-m/laya-typed-decisions-onnx.png",
+    "tags": [],
+    "variants": [
+      "typed-decisions"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:50.141Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-m1rhan-laya-typed-decisions-onnx",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/m1rhan/laya-typed-decisions-ONNX",
+    "title": "laya-typed-decisions-ONNX",
+    "author": {
+      "name": "m1rhan",
+      "handle": "m1rhan",
+      "profileUrl": "https://huggingface.co/m1rhan"
+    },
+    "createdAt": "2026-09-22T11:00:11.000Z",
+    "excerpt": "ONNX export of convaiinnovations/laya, typed-decisions checkpoint — a ModernBERT-large encoder (421M params) with a small custom decision head, tuned specifically for typed choice / score / noul decisions (0.766 acc on that task family). All credit for the model itself goes to the original authors; this repo only adds ONNX conversion and quantization for in-browser (transformers.js / onnxruntime-web / WebGPU) use.",
+    "lang": "en",
+    "metrics": {
+      "likes": 0
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/m1rhan/laya-typed-decisions-ONNX.png",
+    "tags": [],
+    "variants": [
+      "typed-decisions"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:50.435Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-aac6fef-laya-multilingual-coreml-ane-w8",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/aac6fef/laya-multilingual-coreml-ane-w8",
+    "title": "laya-multilingual-coreml-ane-w8",
+    "author": {
+      "name": "aac6fef",
+      "handle": "aac6fef",
+      "profileUrl": "https://huggingface.co/aac6fef"
+    },
+    "createdAt": "2026-09-20T03:23:09.000Z",
+    "excerpt": "Laya typed decisions on Apple Silicon, using CPU + Neural Engine. This is a portable Core ML bundle for laya-coreml, converted from convaiinnovations/laya-multilingual. It outputs choice, score, and noul probabilities with zero generated tokens. Inference needs no PyTorch, Transformers, MLX, remote code, or cloud API.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "pip install laya-coreml"
+    },
+    "metrics": {
+      "likes": 0
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/aac6fef/laya-multilingual-coreml-ane-w8.png",
+    "tags": [],
+    "variants": [
+      "multilingual"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:50.788Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-ti3x-m-laya-onnx",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/ti3x-m/laya-onnx",
+    "title": "laya-onnx",
+    "author": {
+      "name": "ti3x-m",
+      "handle": "ti3x-m",
+      "profileUrl": "https://huggingface.co/ti3x-m"
+    },
+    "createdAt": "2026-09-23T00:49:57.000Z",
+    "excerpt": "Standard ONNX Runtime files are under onnx/. Browser-specific graphs with large gather tensors split for WebGPU are under onnxruntime/webgpu/.",
+    "lang": "en",
+    "code": {
+      "lang": "sh",
+      "snippet": "python -m pip install numpy==2.5.3 onnxruntime==1.30.0\npython evaluate.py --standard ../../../onnx/model.onnx"
+    },
+    "metrics": {
+      "likes": 0
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/ti3x-m/laya-onnx.png",
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:51.086Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-fluidinference-laya-english-coreml",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/FluidInference/laya-english-coreml",
+    "title": "laya-english-coreml",
+    "author": {
+      "name": "FluidInference",
+      "handle": "FluidInference",
+      "profileUrl": "https://huggingface.co/FluidInference"
+    },
+    "createdAt": "2026-09-22T20:41:03.000Z",
+    "excerpt": "This repository hosts the English root checkpoint of convaiinnovations/laya, pinned at 1c5edc17a7acd8701df6fc341c0d179f1c62c982. It is a 421,293,827-parameter ModernBERT-large model with trained choice, score, noul and action heads. This is separate from FluidInference/laya-coreml, which hosts the roughly 322M multilingual checkpoint.",
+    "lang": "en",
+    "metrics": {
+      "likes": 0
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/FluidInference/laya-english-coreml.png",
+    "tags": [],
+    "variants": [
+      "multilingual"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:51.381Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-ksanjiv05-laya-for-rn-executorch",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/ksanjiv05/laya-for-rn-executorch",
+    "title": "laya-for-rn-executorch",
+    "author": {
+      "name": "ksanjiv05",
+      "handle": "ksanjiv05",
+      "profileUrl": "https://huggingface.co/ksanjiv05"
+    },
+    "createdAt": "2026-09-23T16:26:35.000Z",
+    "excerpt": "ExecuTorch exports of convaiinnovations/laya (the typed-decisions checkpoint: ModernBERT-large encoder + Laya's from-scratch decision head), ready to run on-device via the ExecuTorch XNNPACK and Core ML backends — e.g. from react-native-executorch.",
+    "lang": "en",
+    "metrics": {
+      "likes": 0
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/ksanjiv05/laya-for-rn-executorch.png",
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:51.684Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-minhleduc-laya-typed-decisions-ce-1024",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/minhleduc/laya-typed-decisions-ce-1024",
+    "title": "laya-typed-decisions-ce-1024",
+    "author": {
+      "name": "minhleduc",
+      "handle": "minhleduc",
+      "profileUrl": "https://huggingface.co/minhleduc"
+    },
+    "createdAt": "2026-09-26T07:37:58.000Z",
+    "excerpt": "A ModernBERT-large decision model fine-tuned on LocalLLaMA/typed-decisions with plain cross-entropy against the teacher's soft targets, at the documented 1024-token context / 256-token option budget.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "git clone https://github.com/LakoreAI/sev\ncd rlcd-reverse-engineering && uv sync"
+    },
+    "metrics": {
+      "likes": 0
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/minhleduc/laya-typed-decisions-ce-1024.png",
+    "tags": [],
+    "variants": [
+      "typed-decisions"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:51.978Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-aac6fef-laya-multilingual-coreml-snake",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/aac6fef/laya-multilingual-coreml-snake",
+    "title": "laya-multilingual-coreml-snake",
+    "author": {
+      "name": "aac6fef",
+      "handle": "aac6fef",
+      "profileUrl": "https://huggingface.co/aac6fef"
+    },
+    "createdAt": "2026-09-20T03:23:46.000Z",
+    "excerpt": "Laya typed decisions on Apple Silicon, using CPU + GPU. This is a portable Core ML bundle for laya-coreml, converted from convaiinnovations/laya-multilingual. It outputs choice, score, and noul probabilities with zero generated tokens. Inference needs no PyTorch, Transformers, MLX, remote code, or cloud API.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "pip install laya-coreml"
+    },
+    "metrics": {
+      "likes": 0
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/aac6fef/laya-multilingual-coreml-snake.png",
+    "tags": [],
+    "variants": [
+      "multilingual"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:52.275Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-suarify-laya-multilingual-onnx",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/Suarify/laya-multilingual-onnx",
+    "title": "laya-multilingual-onnx",
+    "author": {
+      "name": "Suarify",
+      "handle": "Suarify",
+      "profileUrl": "https://huggingface.co/Suarify"
+    },
+    "createdAt": "2026-09-26T08:28:46.000Z",
+    "excerpt": "Standard ONNX Runtime files are under onnx/. Browser-specific graphs with large gather tensors split for WebGPU are under onnxruntime/webgpu/.",
+    "lang": "en",
+    "code": {
+      "lang": "sh",
+      "snippet": "python -m pip install numpy==2.5.3 onnxruntime==1.30.0\npython evaluate.py --standard ../../../onnx/model.onnx"
+    },
+    "metrics": {
+      "likes": 0
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Suarify/laya-multilingual-onnx.png",
+    "tags": [],
+    "variants": [
+      "multilingual"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:52.571Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-suarify-laya-onnx",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/Suarify/laya-onnx",
+    "title": "laya-onnx",
+    "author": {
+      "name": "Suarify",
+      "handle": "Suarify",
+      "profileUrl": "https://huggingface.co/Suarify"
+    },
+    "createdAt": "2026-09-26T08:33:46.000Z",
+    "excerpt": "Standard ONNX Runtime files are under onnx/. Browser-specific graphs with large gather tensors split for WebGPU are under onnxruntime/webgpu/.",
+    "lang": "en",
+    "code": {
+      "lang": "sh",
+      "snippet": "python -m pip install numpy==2.5.3 onnxruntime==1.30.0\npython evaluate.py --standard ../../../onnx/model.onnx"
+    },
+    "metrics": {
+      "likes": 0
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Suarify/laya-onnx.png",
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:52.866Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-suarify-laya-typed-decisions-onnx",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/Suarify/laya-typed-decisions-onnx",
+    "title": "laya-typed-decisions-onnx",
+    "author": {
+      "name": "Suarify",
+      "handle": "Suarify",
+      "profileUrl": "https://huggingface.co/Suarify"
+    },
+    "createdAt": "2026-09-26T08:38:26.000Z",
+    "excerpt": "Standard ONNX Runtime files are under onnx/. Browser-specific graphs with large gather tensors split for WebGPU are under onnxruntime/webgpu/.",
+    "lang": "en",
+    "code": {
+      "lang": "sh",
+      "snippet": "python -m pip install numpy==2.5.3 onnxruntime==1.30.0\npython evaluate.py --standard ../../../onnx/model.onnx"
+    },
+    "metrics": {
+      "likes": 0
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Suarify/laya-typed-decisions-onnx.png",
+    "tags": [],
+    "variants": [
+      "typed-decisions"
+    ],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:53.169Z",
+    "curatedBy": "auto"
+  },
+  {
     "id": "hf-convaiinnovations-laya-demo",
     "sourceType": "huggingface",
     "canonicalUrl": "https://huggingface.co/convaiinnovations/laya-demo",
@@ -456,7 +1392,7 @@
     "excerpt": "HuggingFace 上的 Laya 相关模型（gradio）。",
     "lang": "zh",
     "metrics": {
-      "likes": 122
+      "likes": 233
     },
     "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/convaiinnovations/laya-demo.png",
     "tags": [],
@@ -479,7 +1415,7 @@
     "excerpt": "HuggingFace 上的 Laya 相关模型（gradio）。",
     "lang": "zh",
     "metrics": {
-      "likes": 3
+      "likes": 7
     },
     "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/thaitea/laya-vision-demo.png",
     "tags": [],
@@ -502,7 +1438,7 @@
     "excerpt": "HuggingFace 上的 Laya 相关模型（gradio, mcp-server）。",
     "lang": "zh",
     "metrics": {
-      "likes": 2
+      "likes": 4
     },
     "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/abhishekbhakat/laya-multilingual-demo.png",
     "tags": [],
@@ -534,6 +1470,29 @@
     "variants": [],
     "links": [],
     "curatedAt": "2026-09-22T06:29:33.653Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "hf-afen0768-laya-zerogpu",
+    "sourceType": "huggingface",
+    "canonicalUrl": "https://huggingface.co/afen0768/laya-zerogpu",
+    "title": "laya-zerogpu",
+    "author": {
+      "name": "afen0768",
+      "handle": "afen0768",
+      "profileUrl": "https://huggingface.co/afen0768"
+    },
+    "createdAt": "2026-09-27T03:24:07.000Z",
+    "excerpt": "HuggingFace 上的 Laya 相关模型（gradio）。",
+    "lang": "zh",
+    "metrics": {
+      "likes": 1
+    },
+    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/afen0768/laya-zerogpu.png",
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-09-28T09:28:55.026Z",
     "curatedBy": "auto"
   }
 ]
