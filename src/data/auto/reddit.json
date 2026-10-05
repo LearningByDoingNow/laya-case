@@ -1,5 +1,109 @@
 [
   {
+    "id": "reddit-1wvtc1j",
+    "sourceType": "reddit",
+    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wvtc1j/caldec_v1_fully_open_decision_model_for_personal/",
+    "title": "CalDec v1 - Fully Open Decision Model for Personal Assistants",
+    "author": {
+      "name": "No_Contract_8296",
+      "handle": "No_Contract_8296",
+      "profileUrl": "https://www.reddit.com/user/No_Contract_8296"
+    },
+    "createdAt": "2026-10-02T13:06:31.000Z",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Somebody just released a fully open-source, open-weights decision model that beats Jev!</p> <p>Just kidding, it's me and I this is my first time releasing a public model, recipe and dataset so I am looking forward to learning from the experience.</p> <p>Jev is indeed a very powerful and inexpensive model and obviously a much better all-rounder, and some of my checkpoints did in fact score better on some tests (namely LocalLLaMA/typed-decision...",
+    "lang": "en",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [
+      {
+        "url": "https://huggingface.co/datasets/kgrozdanovski/assistant-decisions",
+        "domain": "huggingface.co"
+      }
+    ],
+    "curatedAt": "2026-10-05T10:07:56.593Z",
+    "curatedBy": "auto",
+    "imageUrl": "https://share.redd.it/preview/post/1wvtc1j"
+  },
+  {
+    "id": "reddit-1wvqbrz",
+    "sourceType": "reddit",
+    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wvqbrz/llama_server_add_v1systemone_api_models_laya/",
+    "title": "llama, server: add /v1/systemone API (models: laya, julia-1, lev, openjev, kev) by ngxson · Pull Request #29818 · ggml-org/llama.cpp",
+    "author": {
+      "name": "jacek2023",
+      "handle": "jacek2023",
+      "profileUrl": "https://www.reddit.com/user/jacek2023"
+    },
+    "createdAt": "2026-10-02T10:29:47.000Z",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wvqbrz/llama_server_add_v1systemone_api_models_laya/\"> <img src=\"https://external-preview.redd.it/G16gSywQX9FNlfT-4BioJVY3xrWdLWHmZKwDzA3qBds.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=580fb1052d8df2471a3eee6588218d51dcf173fd\" alt=\"llama, server: add /v1/systemone API (models: laya, julia-1, lev, openjev, kev) by ngxson · Pull Request #29818 · ggml-org/llama.cpp\" title=\"llama, server: add /v1/system...",
+    "lang": "en",
+    "imageUrl": "https://external-preview.redd.it/G16gSywQX9FNlfT-4BioJVY3xrWdLWHmZKwDzA3qBds.png?width=640&crop=smart&auto=webp&s=580fb1052d8df2471a3eee6588218d51dcf173fd",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [
+      {
+        "url": "https://huggingface.co/blog/ggml-org/decision-models-in-llamacpp",
+        "domain": "huggingface.co"
+      }
+    ],
+    "curatedAt": "2026-10-05T10:07:56.593Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "reddit-1wv51nt",
+    "sourceType": "reddit",
+    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wv51nt/nirnay_450m_decision_model_beats_jev_on_banking77/",
+    "title": "NIRNAY: 450M decision model beats Jev on Banking77, runs on CPU",
+    "author": {
+      "name": "BrilliantSecret143",
+      "handle": "BrilliantSecret143",
+      "profileUrl": "https://www.reddit.com/user/BrilliantSecret143"
+    },
+    "createdAt": "2026-10-01T17:06:19.000Z",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Built a small open decision model for intent classification and routing.<br/> 450M params (Laya fork plus ~30M), one forward pass gives calibrated<br/> probabilities, no text generation.</p> <p>Banking77 test, 3,080 cases: **0.8792**, Brier 0.208, fitted ECE 0.045.<br/> Same cases through Jev 1.13.0: 0.803. Caveat, stated plainly: we<br/> fine-tuned, Jev answered zero-shot. Fine-tune beats API on your own<br/> data, that is the thesis.</p> <p...",
+    "lang": "en",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [
+      {
+        "url": "https://github.com/eulogik/nirnay",
+        "domain": "github.com"
+      }
+    ],
+    "curatedAt": "2026-10-05T10:07:56.593Z",
+    "curatedBy": "auto",
+    "imageUrl": "https://share.redd.it/preview/post/1wv51nt"
+  },
+  {
+    "id": "reddit-1wsfjmb",
+    "sourceType": "reddit",
+    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wsfjmb/mica_v01_4b_got_diamonds_in_survival_minecraft_on/",
+    "title": "Mica v0.1 4B got diamonds in survival Minecraft on its first run. 26 decisions from an empty inventory.",
+    "author": {
+      "name": "Top-Evidence174",
+      "handle": "Top-Evidence174",
+      "profileUrl": "https://www.reddit.com/user/Top-Evidence174"
+    },
+    "createdAt": "2026-09-28T14:05:18.000Z",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wsfjmb/mica_v01_4b_got_diamonds_in_survival_minecraft_on/\"> <img src=\"https://external-preview.redd.it/NzMyeXN2cjVwOXNoMabHd3J__aO-gtp0QXWcnrUATUKooMI2JyY1l91M68t9.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=dca8bcdf2bbdbb0ff519f1bbb836940ba9334e6c\" alt=\"Mica v0.1 4B got diamonds in survival Minecraft on its first run. 26 decisions from an empty inventory.\" title=\"Mica v0.1 4B got diamonds in surviva...",
+    "lang": "en",
+    "imageUrl": "https://external-preview.redd.it/NzMyeXN2cjVwOXNoMabHd3J__aO-gtp0QXWcnrUATUKooMI2JyY1l91M68t9.png?width=640&crop=smart&auto=webp&s=dca8bcdf2bbdbb0ff519f1bbb836940ba9334e6c",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [
+      {
+        "url": "https://huggingface.co/sky7350/Mica-v0.1-4B",
+        "domain": "huggingface.co"
+      }
+    ],
+    "curatedAt": "2026-10-05T10:07:56.594Z",
+    "curatedBy": "auto"
+  },
+  {
     "id": "reddit-1wrzjib",
     "sourceType": "reddit",
     "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wrzjib/laya_replace_llmasajudge_with_a_322mparameter/",

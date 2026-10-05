@@ -1,5 +1,25 @@
 [
   {
+    "id": "blog-laya-model-com",
+    "sourceType": "blog",
+    "canonicalUrl": "https://laya-model.com/",
+    "title": "Laya AI — System One Decision Model",
+    "author": {
+      "name": "laya-model.com",
+      "handle": "laya-model.com"
+    },
+    "createdAt": "2026-10-05T10:08:10.531Z",
+    "excerpt": "Laya AI · System One Laya AI — System One Decision Model Typed decisions for agents and software — choice, score, and yes/no in one forward pass. Hosted prepaid API here; Apache 2.0 weights if you run locally.",
+    "lang": "en",
+    "imageUrl": "https://laya-model.com/opengraph-image?7a6abf9875e3bc78",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-10-05T10:08:10.531Z",
+    "curatedBy": "auto"
+  },
+  {
     "id": "blog-laplusda-com-en-posts-laya-local-system-one-model-guide",
     "sourceType": "blog",
     "canonicalUrl": "https://laplusda.com/en/posts/laya-local-system-one-model-guide/",
@@ -8,7 +28,7 @@
       "name": "laplusda.com",
       "handle": "laplusda.com"
     },
-    "createdAt": "2026-09-28T09:29:32.265Z",
+    "createdAt": "2026-10-05T10:08:11.095Z",
     "excerpt": "Laya is an open-source System One decision model that can run on local hardware. Like Jev, it accepts a state plus Choice, Score, and Noul questions instead of generating text. The model code and weights are published under Apache 2.0, which makes Laya relevant when application data cannot be sent to a managed decision API. The project was published on September 18, 2026 and remains very new ...",
     "lang": "en",
     "metrics": {},
@@ -20,43 +40,42 @@
     "imageUrl": "https://laplusda.com/_astro/cover.JSglA2bY_1rA4dv.webp"
   },
   {
-    "id": "blog-laya-ai-com-system-one-models",
+    "id": "blog-layaaimodel-com",
     "sourceType": "blog",
-    "canonicalUrl": "https://laya-ai.com/system-one-models",
-    "title": "System One Decision Models: Laya, Jev, AnyJev, Nimble and Open Alternatives",
+    "canonicalUrl": "https://layaaimodel.com/",
+    "title": "Laya AI - Open Source System-1 Decision Model",
     "author": {
-      "name": "laya-ai.com",
-      "handle": "laya-ai.com"
+      "name": "layaaimodel.com",
+      "handle": "layaaimodel.com"
     },
-    "createdAt": "2026-09-28T09:29:32.978Z",
-    "excerpt": "Explore the emerging System One decision-model category: Laya , Jev, AnyJev, Bespoke Nimble, OpenThai-SystemOne, Decider, and other typed- decision approaches.",
+    "createdAt": "2026-10-05T10:08:11.823Z",
+    "excerpt": "Laya system one model , compared with Jev. Multilingual, non-autoregressive System 1 decision engine: typed decisions over 100+ languages in a single forward pass.",
     "lang": "en",
-    "imageUrl": "https://laya-ai.com/images/og/laya-ai-en.png",
+    "imageUrl": "https://www.layaaimodel.com/official/laya_vs_jev.png",
     "metrics": {},
     "tags": [],
     "variants": [],
     "links": [],
-    "curatedAt": "2026-09-28T09:29:32.978Z",
+    "curatedAt": "2026-10-05T10:08:11.823Z",
     "curatedBy": "auto"
   },
   {
-    "id": "blog-jevmodel-org-what-is-laya",
+    "id": "blog-systemoneatlas-com",
     "sourceType": "blog",
-    "canonicalUrl": "https://jevmodel.org/what-is-laya/",
-    "title": "What is Laya? Open-Source Local Decision Model, Not Jev",
+    "canonicalUrl": "https://systemoneatlas.com/",
+    "title": "System One AI Models, Laya & Jev Guides | System One Atlas",
     "author": {
-      "name": "jevmodel.org",
-      "handle": "jevmodel.org"
+      "name": "systemoneatlas.com",
+      "handle": "systemoneatlas.com"
     },
-    "createdAt": "2026-09-20T00:00:00.000Z",
-    "excerpt": "A local System One model , not a chatbot Laya is an Apache-2.0, non-autoregressive decision model from Convai Innovations. You send application state — a ticket, an email, a JSON document — plus questions whose answers are already typed: pick one label (choice), place it on a scale (score), or return a yes/no probability (noul).",
+    "createdAt": "2026-10-05T10:08:12.432Z",
+    "excerpt": "Explore System One AI models . Independent Laya and Jev profiles, practical deployment guides, and a framework for comparing decision models .",
     "lang": "en",
-    "imageUrl": "https://jevmodel.org/og.png",
     "metrics": {},
     "tags": [],
     "variants": [],
     "links": [],
-    "curatedAt": "2026-09-28T09:29:33.849Z",
+    "curatedAt": "2026-10-05T10:08:12.432Z",
     "curatedBy": "auto"
   },
   {
@@ -68,7 +87,7 @@
       "name": "laya.convaiinnovations.com",
       "handle": "laya.convaiinnovations.com"
     },
-    "createdAt": "2026-09-28T09:29:34.673Z",
+    "createdAt": "2026-10-05T10:08:13.217Z",
     "excerpt": "I Built Non-Autoregressive Decision Models with RL a Year Ago. Then a Frontier Lab Called It a \"Breakthrough\". From our March 2025 arXiv paper on sequence conversion trajectories to Laya : a sub-35ms open-weight System 1 decision engine with RLCD, multilingual routing across 100+ languages, and state-of-the-art calibration.",
     "lang": "en",
     "imageUrl": "https://raw.githubusercontent.com/NandhaKishorM/laya/main/assets/laya_vs_jev_full.png",
@@ -80,63 +99,23 @@
     "curatedBy": "auto"
   },
   {
-    "id": "blog-huggingface-co-convaiinnovations-laya",
+    "id": "blog-laya-tools-p-convaiinnovations-laya-typed-decisions",
     "sourceType": "blog",
-    "canonicalUrl": "https://huggingface.co/convaiinnovations/laya",
-    "title": "convaiinnovations/laya · Hugging Face",
-    "author": {
-      "name": "huggingface.co",
-      "handle": "huggingface.co"
-    },
-    "createdAt": "2026-09-28T09:29:35.293Z",
-    "excerpt": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science.",
-    "lang": "en",
-    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/convaiinnovations/laya.png",
-    "metrics": {},
-    "tags": [],
-    "variants": [],
-    "links": [],
-    "curatedAt": "2026-09-22T06:30:20.010Z",
-    "curatedBy": "auto"
-  },
-  {
-    "id": "blog-huggingface-co-spaces-convaiinnovations-laya-demo",
-    "sourceType": "blog",
-    "canonicalUrl": "https://huggingface.co/spaces/convaiinnovations/laya-demo",
-    "title": "Laya Demo - a Hugging Face Space by convaiinnovations",
-    "author": {
-      "name": "huggingface.co",
-      "handle": "huggingface.co"
-    },
-    "createdAt": "2026-09-28T09:29:35.940Z",
-    "excerpt": "Laya : Decisions, Not Text Give it a state (text or JSON) and typed questions; it returns typed answers with calibrated probabilities and a confidence score. No text generation, so nothing to parse and nothing to hallucinate.",
-    "lang": "en",
-    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/convaiinnovations/laya-demo.png",
-    "metrics": {},
-    "tags": [],
-    "variants": [],
-    "links": [],
-    "curatedAt": "2026-09-28T09:29:35.941Z",
-    "curatedBy": "auto"
-  },
-  {
-    "id": "blog-laya-tools-p-convaiinnovations-laya",
-    "sourceType": "blog",
-    "canonicalUrl": "https://laya.tools/p/convaiinnovations-laya",
-    "title": "convaiinnovations/laya · Built with Laya · laya.tools",
+    "canonicalUrl": "https://laya.tools/p/convaiinnovations-laya-typed-decisions",
+    "title": "convaiinnovations/laya-typed-decisions · Built with Laya · laya.tools",
     "author": {
       "name": "laya.tools",
       "handle": "laya.tools"
     },
-    "createdAt": "2026-09-28T09:29:37.320Z",
-    "excerpt": "A multilingual-ready System 1 model that returns calibrated typed decisions over text in one pass. HF model for the Laya System 1 decision model.",
+    "createdAt": "2026-10-05T10:08:14.354Z",
+    "excerpt": "A Laya model fine-tuned for agent traces, customer service, invoices, and security incidents. HF model for the Laya System 1 decision model.",
     "lang": "en",
-    "imageUrl": "https://laya.tools/og/p/convaiinnovations-laya.png",
+    "imageUrl": "https://laya.tools/og/p/convaiinnovations-laya-typed-decisions.png",
     "metrics": {},
     "tags": [],
     "variants": [],
     "links": [],
-    "curatedAt": "2026-09-28T09:29:37.320Z",
+    "curatedAt": "2026-10-05T10:08:14.354Z",
     "curatedBy": "auto"
   },
   {
@@ -157,6 +136,39 @@
     "links": [],
     "curatedAt": "2026-09-28T09:29:38.015Z",
     "curatedBy": "auto"
+  },
+  {
+    "id": "blog-juejin-cn-post-7688389114781024319",
+    "sourceType": "blog",
+    "canonicalUrl": "https://juejin.cn/post/7688389114781024319",
+    "title": "17K Star !爆打Jev，Laya使用完整教程：从安装到微调的System 1决策实战",
+    "author": {
+      "name": "juejin.cn",
+      "handle": "juejin.cn"
+    },
+    "createdAt": "2026-10-05T10:08:16.787Z",
+    "excerpt": "17K Star ! 爆打Jev，Laya使用完整教程：从安装到微调的System 1决策实战 七牛云行业应用 2026-09-22 700 阅读5分钟 发布日期：2026-09-23 Laya是ConvAI Innovations于2026年9月18日开源的非自回归决策模型，基于ModernBERT双向编码器，一次前向约33ms输出分类打分与概率，不生成文本。",
+    "lang": "zh",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-10-05T10:08:16.787Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "devto-dev-to-runware-jev-laya-and-the-emerging-role-of-decision-models-4529",
+    "canonicalUrl": "https://dev.to/runware/jev-laya-and-the-emerging-role-of-decision-models-4529",
+    "title": "Jev, Laya, and the emerging role of decision models",
+    "author": "theally",
+    "createdAt": "2026-09-28T22:48:07Z",
+    "description": "TL;DR: Jev (TypeSafe AI) and Laya (Convai Innovations) are decision models: instead of generating...",
+    "imageUrl": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F6lsumy3djzvoyvjcf3ja.png",
+    "metrics": {
+      "likes": 5
+    },
+    "links": [],
+    "curatedAt": "2026-10-05T10:08:19.696Z"
   },
   {
     "id": "devto-dev-to-zyvop-laya-a-fast-multilingual-system-1-for-structured-decisions-414i",
@@ -183,8 +195,7 @@
       "likes": 0
     },
     "links": [],
-    "curatedAt": "2026-09-28T09:29:40.856Z",
-    "imageUrl": "https://media2.dev.to/dynamic/image/width=1200,height=627,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fr8pvm0jo6rxcg75p9r48.png"
+    "curatedAt": "2026-09-28T09:29:40.856Z"
   },
   {
     "id": "devto-dev-to-ayush7614-not-another-llm-i-tried-laya-a-421m-parameter-ai-decision-engine-6af",
@@ -195,86 +206,86 @@
     "description": "What happened when I tried a model that doesn't generate text at all   I spend a lot of...",
     "imageUrl": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fyjjwomp895zxst4vlhez.png",
     "metrics": {
-      "likes": 8
+      "likes": 11
     },
     "links": [],
     "curatedAt": "2026-09-28T09:29:40.856Z"
   },
   {
-    "id": "medium-madhavmansuriya40-medium-com-laya-did-jev-really-invent-this-new-ai-model-a7605a7a3a5f",
-    "canonicalUrl": "https://madhavmansuriya40.medium.com/laya-did-jev-really-invent-this-new-ai-model-a7605a7a3a5f?source=rss------laya-5",
-    "title": "Laya: Did Jev Really Invent This New AI Model?",
-    "author": "Madhav Mansuriya",
-    "createdAt": "2026-09-28T05:23:17.000Z",
-    "description": "<div class=\"medium-feed-item\"><p class=\"medium-feed-image\"><a href=\"https://madhavmansuriya40.medium.com/laya-did-jev-really-invent-this-new-ai-model-a7605a7a3a5f?source=rss------laya-5\"><img src=\"https://cdn-images-1.medium.com/max/1672/1*Lk20RicVhe0sIrfRVVH_Yg.png\" width=\"1672\"></a></p><p class=\"medium-feed-snippet\">Jev started the hype. Laya says, &#x201C;Hold my open-source weights.&#x201D; &#x1F37A;&#x1F916;</p><p class=\"medium-feed-link\"><a href=\"https://madhavmansuriya40.medium.com/laya-did-jev-really-invent-this-new-ai-model-a7605a7a3a5f?source=rss------laya-5\">Continue reading on Medium »</a></p></div>",
-    "imageUrl": "https://cdn-images-1.medium.com/max/1672/1*Lk20RicVhe0sIrfRVVH_Yg.png",
+    "id": "medium-medium-com-danushidk507-inside-laya-ai-how-a-small-decision-model-routes-scores-and-learns-to-report-probabilities-5ef990bf1f2b",
+    "canonicalUrl": "https://medium.com/@danushidk507/inside-laya-ai-how-a-small-decision-model-routes-scores-and-learns-to-report-probabilities-5ef990bf1f2b?source=rss------laya-5",
+    "title": "Inside Laya AI: How a Small Decision Model Routes, Scores, and Learns to Report Probabilities",
+    "author": "DhanushKumar",
+    "createdAt": "2026-10-05T06:24:41.000Z",
+    "description": "<div class=\"medium-feed-item\"><p class=\"medium-feed-image\"><a href=\"https://medium.com/@danushidk507/inside-laya-ai-how-a-small-decision-model-routes-scores-and-learns-to-report-probabilities-5ef990bf1f2b?source=rss------laya-5\"><img src=\"https://cdn-images-1.medium.com/max/1536/1*VK8txtjqQQGlsFh8qklLPw.png\" width=\"1536\"></a></p><p class=\"medium-feed-snippet\">An architectural walkthrough of its encoder, option markers, RLCD training, multilingual routing, and the engineering work required to use&#x2026;</p><p class=\"medium-feed-link\"><a href=\"https://medium.com/@danushidk507/inside-laya-ai-how-a-small-decision-model-routes-scores-and-learns-to-report-probabilities-5ef990bf1f2b?source=rss------laya-5\">Continue reading on Medium »</a></p></div>",
+    "imageUrl": "https://cdn-images-1.medium.com/max/1536/1*VK8txtjqQQGlsFh8qklLPw.png",
     "links": [],
-    "curatedAt": "2026-09-28T09:29:40.856Z"
+    "curatedAt": "2026-10-05T10:08:19.696Z"
   },
   {
-    "id": "medium-gnana70-medium-com-i-tested-3-open-source-system-1-ai-models-julia-one-vs-laya-vs-clm-559f9fe31a77",
-    "canonicalUrl": "https://gnana70.medium.com/i-tested-3-open-source-system-1-ai-models-julia-one-vs-laya-vs-clm-559f9fe31a77?source=rss------laya-5",
-    "title": "I Tested 3 Open-Source System 1 AI Models: Julia One vs Laya vs CLM",
-    "author": "Gnana Prasath",
-    "createdAt": "2026-09-27T18:18:49.000Z",
-    "description": "<div class=\"medium-feed-item\"><p class=\"medium-feed-image\"><a href=\"https://gnana70.medium.com/i-tested-3-open-source-system-1-ai-models-julia-one-vs-laya-vs-clm-559f9fe31a77?source=rss------laya-5\"><img src=\"https://cdn-images-1.medium.com/max/1920/1*DOINRMUOusj7RrKVsciwEg.jpeg\" width=\"1920\"></a></p><p class=\"medium-feed-snippet\">Fast AI decisions without a big GPU? Accuracy, speed and memory, measured on the same 12 support tickets.</p><p class=\"medium-feed-link\"><a href=\"https://gnana70.medium.com/i-tested-3-open-source-system-1-ai-models-julia-one-vs-laya-vs-clm-559f9fe31a77?source=rss------laya-5\">Continue reading on Medium »</a></p></div>",
-    "imageUrl": "https://cdn-images-1.medium.com/max/1920/1*DOINRMUOusj7RrKVsciwEg.jpeg",
+    "id": "medium-medium-com-ali-farooqi-laya-vs-jev-can-open-source-decision-models-kill-managed-service-jev-78862ee535bd",
+    "canonicalUrl": "https://medium.com/@ali_farooqi/laya-vs-jev-can-open-source-decision-models-kill-managed-service-jev-78862ee535bd?source=rss------laya-5",
+    "title": "Laya vs Jev: Can Open-Source Decision Models kill managed service Jev?",
+    "author": "Ali Farooqi",
+    "createdAt": "2026-10-05T05:41:27.000Z",
+    "description": "<div class=\"medium-feed-item\"><p class=\"medium-feed-image\"><a href=\"https://medium.com/@ali_farooqi/laya-vs-jev-can-open-source-decision-models-kill-managed-service-jev-78862ee535bd?source=rss------laya-5\"><img src=\"https://cdn-images-1.medium.com/max/1536/1*_X-yUwqHZ7MgKihhtxAaGw.png\" width=\"1536\"></a></p><p class=\"medium-feed-snippet\">Jev made AI decision models interesting. Laya brings the idea to open weights, self-hosting, and the broader open-source ecosystem.</p><p class=\"medium-feed-link\"><a href=\"https://medium.com/@ali_farooqi/laya-vs-jev-can-open-source-decision-models-kill-managed-service-jev-78862ee535bd?source=rss------laya-5\">Continue reading on Medium »</a></p></div>",
+    "imageUrl": "https://cdn-images-1.medium.com/max/1536/1*_X-yUwqHZ7MgKihhtxAaGw.png",
     "links": [],
-    "curatedAt": "2026-09-28T09:29:40.856Z"
+    "curatedAt": "2026-10-05T10:08:19.696Z"
   },
   {
-    "id": "medium-medium-com-data-science-collective-ai-doesnt-always-need-to-talk-inside-jev-laya-and-the-rise-of-decision-models-d9fd4b7fff61",
-    "canonicalUrl": "https://medium.com/data-science-collective/ai-doesnt-always-need-to-talk-inside-jev-laya-and-the-rise-of-decision-models-d9fd4b7fff61?source=rss------laya-5",
-    "title": "AI Doesn’t Always Need to Talk: Inside Jev, Laya, and the Rise of Decision Models",
-    "author": "Aniket Potabatti",
-    "createdAt": "2026-09-27T11:13:43.000Z",
-    "description": "<div class=\"medium-feed-item\"><p class=\"medium-feed-image\"><a href=\"https://medium.com/data-science-collective/ai-doesnt-always-need-to-talk-inside-jev-laya-and-the-rise-of-decision-models-d9fd4b7fff61?source=rss------laya-5\"><img src=\"https://cdn-images-1.medium.com/max/1456/0*7BxU8-DilNcQyot3.png\" width=\"1456\"></a></p><p class=\"medium-feed-snippet\">We built AI around generating language. Jev and Laya are exploring a different interface: give software an intelligent decision instead of&#x2026;</p><p class=\"medium-feed-link\"><a href=\"https://medium.com/data-science-collective/ai-doesnt-always-need-to-talk-inside-jev-laya-and-the-rise-of-decision-models-d9fd4b7fff61?source=rss------laya-5\">Continue reading on Data Science Collective »</a></p></div>",
-    "imageUrl": "https://cdn-images-1.medium.com/max/1456/0*7BxU8-DilNcQyot3.png",
+    "id": "medium-aiadvances-org-jev-vs-laya-the-free-ai-model-that-might-cost-you-more-a95dbec83280",
+    "canonicalUrl": "https://aiadvances.org/jev-vs-laya-the-free-ai-model-that-might-cost-you-more-a95dbec83280?source=rss------laya-5",
+    "title": "Jev vs Laya: The Free AI Model That Might Cost You More",
+    "author": "Gursimar Singh",
+    "createdAt": "2026-10-04T22:01:44.000Z",
+    "description": "<div class=\"medium-feed-item\"><p class=\"medium-feed-image\"><a href=\"https://aiadvances.org/jev-vs-laya-the-free-ai-model-that-might-cost-you-more-a95dbec83280?source=rss------laya-5\"><img src=\"https://cdn-images-1.medium.com/max/615/1*e5cu1RFN_zlrJzEawaDwLg.png\" width=\"615\"></a></p><p class=\"medium-feed-snippet\">Two decision models launched three days apart. One is a paid API. One is free and open source. Here&#x2019;s how to pick without regretting it.</p><p class=\"medium-feed-link\"><a href=\"https://aiadvances.org/jev-vs-laya-the-free-ai-model-that-might-cost-you-more-a95dbec83280?source=rss------laya-5\">Continue reading on AI Advances »</a></p></div>",
+    "imageUrl": "https://cdn-images-1.medium.com/max/615/1*e5cu1RFN_zlrJzEawaDwLg.png",
     "links": [],
-    "curatedAt": "2026-09-28T09:29:40.856Z"
+    "curatedAt": "2026-10-05T10:08:19.696Z"
   },
   {
-    "id": "medium-ai-plainenglish-io-i-tried-fine-tuning-laya-a-421m-decision-engine-that-runs-in-33ms-de9f43357a74",
-    "canonicalUrl": "https://ai.plainenglish.io/i-tried-fine-tuning-laya-a-421m-decision-engine-that-runs-in-33ms-de9f43357a74?source=rss------laya-5",
-    "title": "I Tried Fine-Tuning Laya — A 421M Decision Engine That Runs in 33ms.",
-    "author": "Mohanvarma",
-    "createdAt": "2026-09-27T08:36:38.000Z",
-    "description": "<div class=\"medium-feed-item\"><p class=\"medium-feed-image\"><a href=\"https://ai.plainenglish.io/i-tried-fine-tuning-laya-a-421m-decision-engine-that-runs-in-33ms-de9f43357a74?source=rss------laya-5\"><img src=\"https://cdn-images-1.medium.com/max/2600/1*yzkc3_g8xvtchWz2qLBB9g.png\" width=\"3262\"></a></p><p class=\"medium-feed-snippet\">Not an LLM. Not a classifier. Something different. I ran every experiment so you don&#x2019;t have to.</p><p class=\"medium-feed-link\"><a href=\"https://ai.plainenglish.io/i-tried-fine-tuning-laya-a-421m-decision-engine-that-runs-in-33ms-de9f43357a74?source=rss------laya-5\">Continue reading on Artificial Intelligence in Plain English »</a></p></div>",
-    "imageUrl": "https://cdn-images-1.medium.com/max/2600/1*yzkc3_g8xvtchWz2qLBB9g.png",
-    "links": [],
-    "curatedAt": "2026-09-28T09:29:40.856Z"
-  },
-  {
-    "id": "medium-medium-com-aamilms-i-forgot-about-typesafe-jev-then-i-found-laya-a6d366ed6996",
-    "canonicalUrl": "https://medium.com/@aamilMS/i-forgot-about-typesafe-jev-then-i-found-laya-a6d366ed6996?source=rss------laya-5",
-    "title": "I Forgot About TypeSafe Jev. Then I Found Laya",
-    "author": "Aamil_MS",
-    "createdAt": "2026-09-27T05:13:36.000Z",
-    "description": "<div class=\"medium-feed-item\"><p class=\"medium-feed-image\"><a href=\"https://medium.com/@aamilMS/i-forgot-about-typesafe-jev-then-i-found-laya-a6d366ed6996?source=rss------laya-5\"><img src=\"https://cdn-images-1.medium.com/max/2000/0*al99efp1IHD5CVPf.png\" width=\"2000\"></a></p><p class=\"medium-feed-snippet\">I was looking at Jev because I wanted to understand something specific.</p><p class=\"medium-feed-link\"><a href=\"https://medium.com/@aamilMS/i-forgot-about-typesafe-jev-then-i-found-laya-a6d366ed6996?source=rss------laya-5\">Continue reading on Medium »</a></p></div>",
-    "imageUrl": "https://cdn-images-1.medium.com/max/2000/0*al99efp1IHD5CVPf.png",
-    "links": [],
-    "curatedAt": "2026-09-28T09:29:40.856Z"
-  },
-  {
-    "id": "medium-pub-towardsai-net-laya-a-free-local-stand-in-for-typesafes-jev-if-you-use-it-for-the-right-job-11aa0903f011",
-    "canonicalUrl": "https://pub.towardsai.net/laya-a-free-local-stand-in-for-typesafes-jev-if-you-use-it-for-the-right-job-11aa0903f011?source=rss------laya-5",
-    "title": "Laya: A Free, Local Stand-In for TypeSafe’s Jev — If You Use It for the Right Job",
+    "id": "medium-medium-com-data-science-collective-how-i-fine-tuned-laya-to-crack-scientometrics-quietest-open-problem-with-claude-code-a4b641434fb3",
+    "canonicalUrl": "https://medium.com/data-science-collective/how-i-fine-tuned-laya-to-crack-scientometrics-quietest-open-problem-with-claude-code-a4b641434fb3?source=rss------laya-5",
+    "title": "How I Fine-Tuned Laya to Crack Scientometrics’ Quietest Open Problem — With Claude Code",
     "author": "Jeet Mukherjee",
-    "createdAt": "2026-09-27T00:01:02.000Z",
-    "description": "<div class=\"medium-feed-item\"><p class=\"medium-feed-image\"><a href=\"https://pub.towardsai.net/laya-a-free-local-stand-in-for-typesafes-jev-if-you-use-it-for-the-right-job-11aa0903f011?source=rss------laya-5\"><img src=\"https://cdn-images-1.medium.com/max/1280/1*4NvcrwTWnN3t-uSXCOe_nw.png\" width=\"1280\"></a></p><p class=\"medium-feed-snippet\">I&#x2019;d been trying to put together a quick solution for parsing and matching invoices without throwing a full LLM at the problem. Most of the&#x2026;</p><p class=\"medium-feed-link\"><a href=\"https://pub.towardsai.net/laya-a-free-local-stand-in-for-typesafes-jev-if-you-use-it-for-the-right-job-11aa0903f011?source=rss------laya-5\">Continue reading on Towards AI »</a></p></div>",
-    "imageUrl": "https://cdn-images-1.medium.com/max/1280/1*4NvcrwTWnN3t-uSXCOe_nw.png",
+    "createdAt": "2026-10-04T13:04:46.000Z",
+    "description": "<div class=\"medium-feed-item\"><p class=\"medium-feed-image\"><a href=\"https://medium.com/data-science-collective/how-i-fine-tuned-laya-to-crack-scientometrics-quietest-open-problem-with-claude-code-a4b641434fb3?source=rss------laya-5\"><img src=\"https://cdn-images-1.medium.com/max/1200/1*E1hGFfEk7LpkQT-i2PS2Cw.png\" width=\"1200\"></a></p><p class=\"medium-feed-snippet\">Step-by-step instructions for fine-tuning ConvAI&#x2019;s 33ms &#x201C;System 1&#x201D; decision model on your own yes/no task &#x2014; plus what happened when I&#x2026;</p><p class=\"medium-feed-link\"><a href=\"https://medium.com/data-science-collective/how-i-fine-tuned-laya-to-crack-scientometrics-quietest-open-problem-with-claude-code-a4b641434fb3?source=rss------laya-5\">Continue reading on Data Science Collective »</a></p></div>",
+    "imageUrl": "https://cdn-images-1.medium.com/max/1200/1*E1hGFfEk7LpkQT-i2PS2Cw.png",
     "links": [],
-    "curatedAt": "2026-09-28T09:29:40.856Z"
+    "curatedAt": "2026-10-05T10:08:19.696Z"
   },
   {
-    "id": "medium-medium-com-omkamal-laya-typed-ai-decisions-in-a-single-forward-pass-f0c350b1325b",
-    "canonicalUrl": "https://medium.com/@omkamal/laya-typed-ai-decisions-in-a-single-forward-pass-f0c350b1325b?source=rss------laya-5",
-    "title": "Laya: Typed AI Decisions in a Single Forward Pass",
-    "author": "OmarEbnElKhattab Hosney",
-    "createdAt": "2026-09-26T18:07:28.000Z",
-    "description": "<div class=\"medium-feed-item\"><p class=\"medium-feed-image\"><a href=\"https://medium.com/@omkamal/laya-typed-ai-decisions-in-a-single-forward-pass-f0c350b1325b?source=rss------laya-5\"><img src=\"https://cdn-images-1.medium.com/max/1536/1*k2XIgjoua7LCQ9a_BCt-MQ.png\" width=\"1536\"></a></p><p class=\"medium-feed-snippet\">How a 421M-parameter encoder answers choice, score and yes/no questions in milliseconds, in 100+ languages, and how to fine-tune it on&#x2026;</p><p class=\"medium-feed-link\"><a href=\"https://medium.com/@omkamal/laya-typed-ai-decisions-in-a-single-forward-pass-f0c350b1325b?source=rss------laya-5\">Continue reading on Medium »</a></p></div>",
-    "imageUrl": "https://cdn-images-1.medium.com/max/1536/1*k2XIgjoua7LCQ9a_BCt-MQ.png",
+    "id": "medium-switch2mac-medium-com-laya-vs-jev-decisions-locally-instead-of-via-api-d5dc8589cf9f",
+    "canonicalUrl": "https://switch2mac.medium.com/laya-vs-jev-decisions-locally-instead-of-via-api-d5dc8589cf9f?source=rss------laya-5",
+    "title": "Laya vs. Jev: Decisions Locally Instead of via API",
+    "author": "David Krcek",
+    "createdAt": "2026-10-03T20:07:18.000Z",
+    "description": "<div class=\"medium-feed-item\"><p class=\"medium-feed-image\"><a href=\"https://switch2mac.medium.com/laya-vs-jev-decisions-locally-instead-of-via-api-d5dc8589cf9f?source=rss------laya-5\"><img src=\"https://cdn-images-1.medium.com/max/1200/1*pEGSfGEoTs3lUxMObpJ8Sw.png\" width=\"1200\"></a></p><p class=\"medium-feed-snippet\">Models like Jev don&#x2019;t write text. They pick from fixed answer options and return probabilities. Jev is API-only. Laya implements the same&#x2026;</p><p class=\"medium-feed-link\"><a href=\"https://switch2mac.medium.com/laya-vs-jev-decisions-locally-instead-of-via-api-d5dc8589cf9f?source=rss------laya-5\">Continue reading on Medium »</a></p></div>",
+    "imageUrl": "https://cdn-images-1.medium.com/max/1200/1*pEGSfGEoTs3lUxMObpJ8Sw.png",
     "links": [],
-    "curatedAt": "2026-09-28T09:29:40.856Z"
+    "curatedAt": "2026-10-05T10:08:19.696Z"
+  },
+  {
+    "id": "medium-jhparmar-medium-com-jev-vs-laya-the-battle-of-ai-decision-models-d86f3cffcbf7",
+    "canonicalUrl": "https://jhparmar.medium.com/jev-vs-laya-the-battle-of-ai-decision-models-d86f3cffcbf7?source=rss------laya-5",
+    "title": "Jev vs Laya: The Battle of AI Decision Models",
+    "author": "Jatinkumar Parmar",
+    "createdAt": "2026-10-03T12:24:02.000Z",
+    "description": "<div class=\"medium-feed-item\"><p class=\"medium-feed-image\"><a href=\"https://jhparmar.medium.com/jev-vs-laya-the-battle-of-ai-decision-models-d86f3cffcbf7?source=rss------laya-5\"><img src=\"https://cdn-images-1.medium.com/max/1536/1*5qZzpDpv05CV9njrK1wmOQ.png\" width=\"1536\"></a></p><p class=\"medium-feed-snippet\">Why the next evolution of AI may not be about generating more tokens, but making faster, structured decisions</p><p class=\"medium-feed-link\"><a href=\"https://jhparmar.medium.com/jev-vs-laya-the-battle-of-ai-decision-models-d86f3cffcbf7?source=rss------laya-5\">Continue reading on Medium »</a></p></div>",
+    "imageUrl": "https://cdn-images-1.medium.com/max/1536/1*5qZzpDpv05CV9njrK1wmOQ.png",
+    "links": [],
+    "curatedAt": "2026-10-05T10:08:19.696Z"
+  },
+  {
+    "id": "medium-levelup-gitconnected-com-decision-models-like-jev-laya-dont-write-they-judge-bb26d340f3fb",
+    "canonicalUrl": "https://levelup.gitconnected.com/decision-models-like-jev-laya-dont-write-they-judge-bb26d340f3fb?source=rss------laya-5",
+    "title": "Decision Models like Jev, Laya Don’t Write. They Judge.",
+    "author": "Noaman Kazi",
+    "createdAt": "2026-10-02T14:48:21.000Z",
+    "description": "<div class=\"medium-feed-item\"><p class=\"medium-feed-image\"><a href=\"https://levelup.gitconnected.com/decision-models-like-jev-laya-dont-write-they-judge-bb26d340f3fb?source=rss------laya-5\"><img src=\"https://cdn-images-1.medium.com/max/1153/1*LRWysdzgP_zqLYF8booZbw.png\" width=\"1153\"></a></p><p class=\"medium-feed-snippet\">Jev does it in the cloud. Laya does it on your machine.</p><p class=\"medium-feed-link\"><a href=\"https://levelup.gitconnected.com/decision-models-like-jev-laya-dont-write-they-judge-bb26d340f3fb?source=rss------laya-5\">Continue reading on Level Up Coding »</a></p></div>",
+    "imageUrl": "https://cdn-images-1.medium.com/max/1153/1*LRWysdzgP_zqLYF8booZbw.png",
+    "links": [],
+    "curatedAt": "2026-10-05T10:08:19.696Z"
   }
 ]
