@@ -1,5 +1,151 @@
 [
   {
+    "id": "reddit-1x28zr9",
+    "sourceType": "reddit",
+    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1x28zr9/created_laya_now_introducing_a_new_800_million/",
+    "title": "Created laya : Now Introducing a new 800 Million Param physics-based typed decision model with 73k context and image support",
+    "author": {
+      "name": "Nandakishor_ml",
+      "handle": "Nandakishor_ml",
+      "profileUrl": "https://www.reddit.com/user/Nandakishor_ml"
+    },
+    "createdAt": "2026-10-10T07:22:42.000Z",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1x28zr9/created_laya_now_introducing_a_new_800_million/\"> <img src=\"https://preview.redd.it/azxgzp7xcluh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=e26c867ac08a3ca7b45c8ae7f3c36f6eb17bc41d\" alt=\"Created laya : Now Introducing a new 800 Million Param physics-based typed decision model with 73k context and image support\" title=\"Created laya : Now Introducing a new 800 Million Param physics-based typed...",
+    "lang": "en",
+    "imageUrl": "https://preview.redd.it/azxgzp7xcluh1.png?width=640&crop=smart&auto=webp&s=e26c867ac08a3ca7b45c8ae7f3c36f6eb17bc41d",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [
+      {
+        "url": "https://www.nandakishorm.com/writing/vega",
+        "domain": "nandakishorm.com"
+      }
+    ],
+    "curatedAt": "2026-10-12T10:24:49.153Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "reddit-1x0wg85",
+    "sourceType": "reddit",
+    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1x0wg85/running_decision_model_locally_on_an_rtx_4090_to/",
+    "title": "Running decision model locally on an RTX 4090 to find out which one is the fastest",
+    "author": {
+      "name": "Fun-Meaning-6474",
+      "handle": "Fun-Meaning-6474",
+      "profileUrl": "https://www.reddit.com/user/Fun-Meaning-6474"
+    },
+    "createdAt": "2026-10-08T17:04:32.000Z",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1x0wg85/running_decision_model_locally_on_an_rtx_4090_to/\"> <img src=\"https://external-preview.redd.it/M2F5N2Q4NHl5OXVoMfURPj1VUjR_LLxIDVHzPfgGD8G3mPOdqioS8x-hwSV8.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=71d097399779e063f49dc47fa3afab062b3fa375\" alt=\"Running decision model locally on an RTX 4090 to find out which one is the fastest\" title=\"Running decision model locally on an RTX 4090 to find out...",
+    "lang": "en",
+    "imageUrl": "https://external-preview.redd.it/M2F5N2Q4NHl5OXVoMfURPj1VUjR_LLxIDVHzPfgGD8G3mPOdqioS8x-hwSV8.png?width=640&crop=smart&auto=webp&s=71d097399779e063f49dc47fa3afab062b3fa375",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [
+      {
+        "url": "http://atomic.chat",
+        "domain": "atomic.chat"
+      }
+    ],
+    "curatedAt": "2026-10-12T10:24:49.153Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "reddit-1x0sm1b",
+    "sourceType": "reddit",
+    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1x0sm1b/jevman_ai_decision_models_play_pacman/",
+    "title": "jevman: AI decision models play Pac-Man",
+    "author": {
+      "name": "facethef",
+      "handle": "facethef",
+      "profileUrl": "https://www.reddit.com/user/facethef"
+    },
+    "createdAt": "2026-10-08T14:37:15.000Z",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1x0sm1b/jevman_ai_decision_models_play_pacman/\"> <img src=\"https://external-preview.redd.it/cWZ1MnR1em82OXVoMenD7U3DrZNrpB9J1PZEEVeEQUTq7Z5_KwPW4wzbyAXM.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=29fc3d9c287b9901f0bb0478418022fb71033537\" alt=\"jevman: AI decision models play Pac-Man\" title=\"jevman: AI decision models play Pac-Man\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>The other week I po...",
+    "lang": "en",
+    "imageUrl": "https://external-preview.redd.it/cWZ1MnR1em82OXVoMenD7U3DrZNrpB9J1PZEEVeEQUTq7Z5_KwPW4wzbyAXM.png?width=640&crop=smart&auto=webp&s=29fc3d9c287b9901f0bb0478418022fb71033537",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-10-12T10:24:49.153Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "reddit-1x0py31",
+    "sourceType": "reddit",
+    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1x0py31/auto_mode_plugin_for_the_pi_coding_agent_that/",
+    "title": "Auto mode plugin for the Pi coding agent that uses Kev/Laya (running locally) or Jev to classify commands",
+    "author": {
+      "name": "deepu105",
+      "handle": "deepu105",
+      "profileUrl": "https://www.reddit.com/user/deepu105"
+    },
+    "createdAt": "2026-10-08T12:44:08.000Z",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Just published <a href=\"https://github.com/deepu105/pi-automode-classifier\">pi-automode-classifier</a>, an auto mode plugin for the <a href=\"https://pi.dev\">Pi</a> coding agent that uses <a href=\"https://docs.typesafe.ai/api\">Jev</a> or <a href=\"https://huggingface.co/jaredpalmer/kev-0.8b\">Kev</a>/<a href=\"https://huggingface.co/convaiinnovations/laya-typed-decisions\">Laya</a> (running locally) to classify commands.</p> <p>Pi runs every tool...",
+    "lang": "en",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [
+      {
+        "url": "https://github.com/deepu105/pi-automode-classifier",
+        "domain": "github.com"
+      }
+    ],
+    "curatedAt": "2026-10-12T10:24:49.153Z",
+    "curatedBy": "auto",
+    "imageUrl": "https://share.redd.it/preview/post/1x0py31"
+  },
+  {
+    "id": "reddit-1x0jsdv",
+    "sourceType": "reddit",
+    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1x0jsdv/some_recent_decision_models_3b_on_internal/",
+    "title": "Some recent decision models <=3B on internal benchmarks vs fine-tuned embedding model",
+    "author": {
+      "name": "Infinite-Local5435",
+      "handle": "Infinite-Local5435",
+      "profileUrl": "https://www.reddit.com/user/Infinite-Local5435"
+    },
+    "createdAt": "2026-10-08T06:35:26.000Z",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Before anyone has the change, yes, I know that the classifier models may be able to better generalize. But in my case with a dataset of ~10k rows and general task routing based on a sleuth of customer service inquiry/interaction to the appropriate service/task, it basically covers the whole range of what I can think of and what I could find online already. Very surprised from my results to see large decision models perform worse than smaller...",
+    "lang": "en",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-10-12T10:24:49.153Z",
+    "curatedBy": "auto",
+    "imageUrl": "https://share.redd.it/preview/post/1x0jsdv"
+  },
+  {
+    "id": "reddit-1wz14pv",
+    "sourceType": "reddit",
+    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wz14pv/arc1_a_17b_decision_model_pick_score_yesno_with/",
+    "title": "ARC-1: a 1.7B decision model (pick / score / yes-no, with probabilities) that answers in ~20 ms on a 4060 Ti",
+    "author": {
+      "name": "KMatysek",
+      "handle": "KMatysek",
+      "profileUrl": "https://www.reddit.com/user/KMatysek"
+    },
+    "createdAt": "2026-10-06T12:19:49.000Z",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>I spent the last 11 days training a small model for typed decisions: routing support tickets, intent detection, moderation, \"should the agent call this tool\", that kind of thing. You give it some context and a question, and it gives you back a choice, a score or a yes/no probability.</p> <ul> <li>1.7B parameters (Qwen3-1.7B-Base + LoRA). Each option is scored in its own branch, so the order of the options doesn't matter</li> <li>~16 ms for a...",
+    "lang": "en",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [
+      {
+        "url": "https://github.com/realslapout/arc-1",
+        "domain": "github.com"
+      }
+    ],
+    "curatedAt": "2026-10-12T10:24:49.153Z",
+    "curatedBy": "auto",
+    "imageUrl": "https://share.redd.it/preview/post/1wz14pv"
+  },
+  {
     "id": "reddit-1wvtc1j",
     "sourceType": "reddit",
     "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wvtc1j/caldec_v1_fully_open_decision_model_for_personal/",
@@ -326,151 +472,5 @@
     "curatedAt": "2026-09-22T06:30:02.597Z",
     "curatedBy": "auto",
     "imageUrl": "https://share.redd.it/preview/post/1wmev5u"
-  },
-  {
-    "id": "reddit-1wm0cn0",
-    "sourceType": "reddit",
-    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wm0cn0/convaiinnovationslaya_multilingual/",
-    "title": "convaiinnovations/laya (multilingual, non-autoregressive System 1 decision model)",
-    "author": {
-      "name": "Balance-",
-      "handle": "Balance-",
-      "profileUrl": "https://www.reddit.com/user/Balance-"
-    },
-    "createdAt": "2026-09-21T02:33:01.000Z",
-    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wm0cn0/convaiinnovationslaya_multilingual/\"> <img src=\"https://external-preview.redd.it/jvxN3-dnP0ONagNz6HLgL-xfARRDV2e0gNQNzYl3qhI.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=8ea78a158bf00fdf63a20e254bdb727256cd92a2\" alt=\"convaiinnovations/laya (multilingual, non-autoregressive System 1 decision model)\" title=\"convaiinnovations/laya (multilingual, non-autoregressive System 1 decision model)\" /> </a>...",
-    "lang": "en",
-    "imageUrl": "https://external-preview.redd.it/jvxN3-dnP0ONagNz6HLgL-xfARRDV2e0gNQNzYl3qhI.png?width=640&crop=smart&auto=webp&s=8ea78a158bf00fdf63a20e254bdb727256cd92a2",
-    "metrics": {},
-    "tags": [],
-    "variants": [],
-    "links": [
-      {
-        "url": "https://huggingface.co/convaiinnovations/laya",
-        "domain": "huggingface.co"
-      }
-    ],
-    "curatedAt": "2026-09-22T06:30:02.598Z",
-    "curatedBy": "auto"
-  },
-  {
-    "id": "reddit-1wlmkm9",
-    "sourceType": "reddit",
-    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wlmkm9/layacpp_optimized_laya_nearinstant_decision_making/",
-    "title": "laya.cpp: Optimized laya near-instant decision making",
-    "author": {
-      "name": "lkarlslund",
-      "handle": "lkarlslund",
-      "profileUrl": "https://www.reddit.com/user/lkarlslund"
-    },
-    "createdAt": "2026-09-20T17:06:02.000Z",
-    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>After seeing <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wjieap/made_the_horizontal_opensource_model_for_jev_with/\">u/Nandakishor_ml’s post introducing Laya</a>, I wanted to see how fast it could run in a standalone C++ implementation.</p> <p>Credit to <a href=\"/u/Nandakishor_ml\">u/Nandakishor_ml</a> for the architecture, training and open-source release. My contribution is the inference implementation: <strong><a href=\"https://git...",
-    "lang": "en",
-    "metrics": {},
-    "tags": [],
-    "variants": [],
-    "links": [
-      {
-        "url": "https://github.com/lkarlslund/laya.cpp",
-        "domain": "github.com"
-      }
-    ],
-    "curatedAt": "2026-09-22T06:30:02.598Z",
-    "curatedBy": "auto",
-    "imageUrl": "https://share.redd.it/preview/post/1wlmkm9"
-  },
-  {
-    "id": "reddit-1wlm50l",
-    "sourceType": "reddit",
-    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wlm50l/the_scaling_lesson_what_are_we_missing/",
-    "title": "The Scaling Lesson. What are we missing?",
-    "author": {
-      "name": "Silver-Champion-4846",
-      "handle": "Silver-Champion-4846",
-      "profileUrl": "https://www.reddit.com/user/Silver-Champion-4846"
-    },
-    "createdAt": "2026-09-20T16:49:41.000Z",
-    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Consider the difference between GPT 1 and GPT 6. They are both decoder-only language models, yet there's so much difference between them. Data scale, data quality, sft, rl, etc. </p> <p>But the important lesson, I think, is that the preliminary capabilities of a specific manifestation of a machine learning architecture should not be viewed as the absolute limit of that architecture's potential, seeing as we went from 'autocomplete on steroids...",
-    "lang": "en",
-    "metrics": {},
-    "tags": [],
-    "variants": [],
-    "links": [],
-    "curatedAt": "2026-09-22T06:30:02.599Z",
-    "curatedBy": "auto",
-    "imageUrl": "https://share.redd.it/preview/post/1wlm50l"
-  },
-  {
-    "id": "reddit-1wlfmgq",
-    "sourceType": "reddit",
-    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wlfmgq/is_typesafe_basedderived_from_work_done_by_the/",
-    "title": "Is Typesafe based/derived from work done by the Laya author?",
-    "author": {
-      "name": "ECrispy",
-      "handle": "ECrispy",
-      "profileUrl": "https://www.reddit.com/user/ECrispy"
-    },
-    "createdAt": "2026-09-20T12:19:44.000Z",
-    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Typesafe's new model, Jev is all over the internet, this sub etc as a new classifier model.</p> <p>Then an AI dev posted here how they'd done something very similar, and made a new model, Laya.</p> <p><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wijo3e/i_literally_built_the_jev_architecture_one_year/\">https://www.reddit.com/r/LocalLLaMA/comments/1wijo3e/i_literally_built_the_jev_architecture_one_year/</a></p> <p>I'm not an ML/AI dev...",
-    "lang": "en",
-    "metrics": {},
-    "tags": [],
-    "variants": [],
-    "links": [],
-    "curatedAt": "2026-09-22T06:30:02.599Z",
-    "curatedBy": "auto",
-    "imageUrl": "https://share.redd.it/preview/post/1wlfmgq"
-  },
-  {
-    "id": "reddit-1wl1yzq",
-    "sourceType": "reddit",
-    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wl1yzq/i_gave_jev_laya_finetuned_modernce_and_qwen35_the/",
-    "title": "I gave Jev, Laya, finetuned ModernCE and Qwen3.5 the controls to Doom",
-    "author": {
-      "name": "shniydder",
-      "handle": "shniydder",
-      "profileUrl": "https://www.reddit.com/user/shniydder"
-    },
-    "createdAt": "2026-09-20T00:15:37.000Z",
-    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wl1yzq/i_gave_jev_laya_finetuned_modernce_and_qwen35_the/\"> <img src=\"https://external-preview.redd.it/OGs5bzllNXE5a3FoMf0C-RwhEAIhO29wYbXpGCItnwYWeS2V6CtQJKOIxpem.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=01d16cdb259d88f1648e1505f251d3403479e697\" alt=\"I gave Jev, Laya, finetuned ModernCE and Qwen3.5 the controls to Doom\" title=\"I gave Jev, Laya, finetuned ModernCE and Qwen3.5 the controls to Doom\"...",
-    "lang": "en",
-    "imageUrl": "https://external-preview.redd.it/OGs5bzllNXE5a3FoMf0C-RwhEAIhO29wYbXpGCItnwYWeS2V6CtQJKOIxpem.png?width=640&crop=smart&auto=webp&s=01d16cdb259d88f1648e1505f251d3403479e697",
-    "metrics": {},
-    "tags": [],
-    "variants": [],
-    "links": [
-      {
-        "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
-        "domain": "typesafe.ai"
-      }
-    ],
-    "curatedAt": "2026-09-22T06:30:02.599Z",
-    "curatedBy": "auto"
-  },
-  {
-    "id": "reddit-1wjieap",
-    "sourceType": "reddit",
-    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wjieap/made_the_horizontal_opensource_model_for_jev_with/",
-    "title": "Made the horizontal open-source model for Jev with RLCD, and it surpasses all the Jev benchmarks. HF space, benchmark, model, repo",
-    "author": {
-      "name": "Nandakishor_ml",
-      "handle": "Nandakishor_ml",
-      "profileUrl": "https://www.reddit.com/user/Nandakishor_ml"
-    },
-    "createdAt": "2026-09-18T06:25:03.000Z",
-    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wjieap/made_the_horizontal_opensource_model_for_jev_with/\"> <img src=\"https://preview.redd.it/i3znzaqm28qh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=29d4364afa725ca1d778ff2eee50a853947aa36e\" alt=\"Made the horizontal open-source model for Jev with RLCD, and it surpasses all the Jev benchmarks. HF space, benchmark, model, repo\" title=\"Made the horizontal open-source model for Jev with RLCD, and it s...",
-    "lang": "en",
-    "imageUrl": "https://preview.redd.it/i3znzaqm28qh1.png?width=640&crop=smart&auto=webp&s=29d4364afa725ca1d778ff2eee50a853947aa36e",
-    "metrics": {},
-    "tags": [],
-    "variants": [],
-    "links": [
-      {
-        "url": "https://github.com/NandhaKishorM/laya",
-        "domain": "github.com"
-      }
-    ],
-    "curatedAt": "2026-09-22T06:30:02.599Z",
-    "curatedBy": "auto"
   }
 ]
