@@ -8,7 +8,7 @@
       "name": "laya-model.com",
       "handle": "laya-model.com"
     },
-    "createdAt": "2026-10-12T10:25:03.734Z",
+    "createdAt": "2026-10-19T08:35:59.354Z",
     "excerpt": "Laya AI · System One Laya AI — System One Decision Model Typed decisions for agents and software — choice, score, and yes/no in one forward pass. Hosted prepaid API here; Apache 2.0 weights if you run locally.",
     "lang": "en",
     "imageUrl": "https://laya-model.com/opengraph-image?7a6abf9875e3bc78",
@@ -20,42 +20,23 @@
     "curatedBy": "auto"
   },
   {
-    "id": "blog-modelsystem-one-models-laya",
+    "id": "blog-systemonemodels-ai-blog-laya-architecture-explained",
     "sourceType": "blog",
-    "canonicalUrl": "https://modelsystem.one/models/laya/",
-    "title": "Laya — ModelSystem.One",
+    "canonicalUrl": "https://systemonemodels.ai/blog/laya-architecture-explained",
+    "title": "Laya, explained — an open decision model that runs on your own machine",
     "author": {
-      "name": "modelsystem.one",
-      "handle": "modelsystem.one"
+      "name": "systemonemodels.ai",
+      "handle": "systemonemodels.ai"
     },
-    "createdAt": "2026-10-12T10:25:04.760Z",
-    "excerpt": "Laya is a full open System One -style decision model — ModernBERT-large fine-tuned with a decision head (~421M parameters), Apache-2.0 — not a LoRA adapter and not a TypeSafe product. You load a checkpoint, pass shared state plus typed questions (choice, score, noul → catalog boolean), and get answers with probabilities in one forward pass.",
+    "createdAt": "2026-10-19T08:36:29.434Z",
+    "excerpt": "All articles September 19, 2026 · 2 min read Laya , explained — an open decision model that runs on your own machine Laya is an open-weights System One model built on a ModernBERT encoder. Here is how it scores options in one pass, what its checkpoints are for, and how to fine-tune it on a laptop.",
     "lang": "en",
-    "imageUrl": "https://modelsystem.one/og-default.png?v=20260919",
+    "imageUrl": "https://systemonemodels.ai/blog/laya-architecture-explained/opengraph-image?37fce5905c262721",
     "metrics": {},
     "tags": [],
     "variants": [],
     "links": [],
-    "curatedAt": "2026-10-12T10:25:04.760Z",
-    "curatedBy": "auto"
-  },
-  {
-    "id": "blog-systemoneatlas-com",
-    "sourceType": "blog",
-    "canonicalUrl": "https://systemoneatlas.com/",
-    "title": "System One AI Models, Laya & Jev Guides | System One Atlas",
-    "author": {
-      "name": "systemoneatlas.com",
-      "handle": "systemoneatlas.com"
-    },
-    "createdAt": "2026-10-12T10:25:05.500Z",
-    "excerpt": "Explore System One AI models . Independent Laya and Jev profiles, practical deployment guides, and a framework for comparing decision models .",
-    "lang": "en",
-    "metrics": {},
-    "tags": [],
-    "variants": [],
-    "links": [],
-    "curatedAt": "2026-10-05T10:08:12.432Z",
+    "curatedAt": "2026-10-19T08:36:29.434Z",
     "curatedBy": "auto"
   },
   {
@@ -67,7 +48,7 @@
       "name": "laplusda.com",
       "handle": "laplusda.com"
     },
-    "createdAt": "2026-10-12T10:25:06.139Z",
+    "createdAt": "2026-10-19T08:36:30.000Z",
     "excerpt": "Laya is an open-source System One decision model that can run on local hardware. Like Jev, it accepts a state plus Choice, Score, and Noul questions instead of generating text. The model code and weights are published under Apache 2.0, which makes Laya relevant when application data cannot be sent to a managed decision API. The project was published on September 18, 2026 and remains very new ...",
     "lang": "en",
     "metrics": {},
@@ -76,7 +57,47 @@
     "links": [],
     "curatedAt": "2026-09-22T06:30:14.442Z",
     "curatedBy": "auto",
-    "imageUrl": "https://laplusda.com/_astro/cover.JSglA2bY_1rA4dv.webp"
+    "imageUrl": "https://laplusda.com/_astro/cover.JSglA2bY_1iOn4F.webp"
+  },
+  {
+    "id": "blog-melaya-org-en-guides-laya-system-one-model",
+    "sourceType": "blog",
+    "canonicalUrl": "https://melaya.org/en/guides/laya-system-one-model",
+    "title": "Laya MCP: Free System One Decision Model | Melaya",
+    "author": {
+      "name": "melaya.org",
+      "handle": "melaya.org"
+    },
+    "createdAt": "2026-04-01T00:00:00.000Z",
+    "excerpt": "Laya is an open System One decision model built into Melaya. Free typed decisions with zero output tokens in agents, pipelines, Fast Mode and MCP.",
+    "lang": "en",
+    "imageUrl": "https://melaya.org/og-socials.png",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-10-19T08:36:30.743Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "blog-modelfit-io-blog-laya-mlx-ollaya-decision-models-apple-silicon",
+    "sourceType": "blog",
+    "canonicalUrl": "https://modelfit.io/blog/laya-mlx-ollaya-decision-models-apple-silicon/",
+    "title": "Laya Runs a 421M Decision Model on Your Mac in 13ms: System One Models ...",
+    "author": {
+      "name": "modelfit.io",
+      "handle": "modelfit.io"
+    },
+    "createdAt": "2026-10-19T08:36:31.742Z",
+    "excerpt": "What Laya actually is Laya is a non-autoregressive System 1 decision model , which means it answers in a single forward pass instead of generating one token at a time. A fully fine-tuned ModernBERT-large encoder (395M parameters, bidirectional) forms the backbone, and on top of it sits a decision head.",
+    "lang": "en",
+    "imageUrl": "https://modelfit.io/images/blog/laya-mlx-ollaya-decision-models-apple-silicon-hero.webp",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-10-19T08:36:31.742Z",
+    "curatedBy": "auto"
   },
   {
     "id": "blog-laya-convaiinnovations-com",
@@ -87,7 +108,7 @@
       "name": "laya.convaiinnovations.com",
       "handle": "laya.convaiinnovations.com"
     },
-    "createdAt": "2026-10-12T10:25:06.911Z",
+    "createdAt": "2026-10-19T08:36:32.418Z",
     "excerpt": "I Built Non-Autoregressive Decision Models with RL a Year Ago. Then a Frontier Lab Called It a \"Breakthrough\". From our March 2025 arXiv paper on sequence conversion trajectories to Laya : a sub-35ms open-weight System 1 decision engine with RLCD, multilingual routing across 100+ languages, and state-of-the-art calibration.",
     "lang": "en",
     "imageUrl": "https://raw.githubusercontent.com/NandhaKishorM/laya/main/assets/laya_vs_jev_full.png",
@@ -96,26 +117,6 @@
     "variants": [],
     "links": [],
     "curatedAt": "2026-09-22T06:30:18.375Z",
-    "curatedBy": "auto"
-  },
-  {
-    "id": "blog-laya-tools-p-convaiinnovations-laya-typed-decisions",
-    "sourceType": "blog",
-    "canonicalUrl": "https://laya.tools/p/convaiinnovations-laya-typed-decisions",
-    "title": "convaiinnovations/laya-typed-decisions · Built with Laya · laya.tools",
-    "author": {
-      "name": "laya.tools",
-      "handle": "laya.tools"
-    },
-    "createdAt": "2026-10-12T10:25:08.296Z",
-    "excerpt": "A Laya model fine-tuned for agent traces, customer service, invoices, and security incidents. HF model for the Laya System 1 decision model.",
-    "lang": "en",
-    "imageUrl": "https://laya.tools/og/p/convaiinnovations-laya-typed-decisions.png",
-    "metrics": {},
-    "tags": [],
-    "variants": [],
-    "links": [],
-    "curatedAt": "2026-10-05T10:08:14.354Z",
     "curatedBy": "auto"
   },
   {
@@ -138,23 +139,22 @@
     "curatedBy": "auto"
   },
   {
-    "id": "blog-huggingface-co-convaiinnovations-laya-typed-decisions",
+    "id": "blog-juejin-cn-post-7688389114781024319",
     "sourceType": "blog",
-    "canonicalUrl": "https://huggingface.co/convaiinnovations/laya-typed-decisions",
-    "title": "convaiinnovations/laya-typed-decisions · Hugging Face",
+    "canonicalUrl": "https://juejin.cn/post/7688389114781024319",
+    "title": "17K Star !爆打Jev，Laya使用完整教程：从安装到微调的System 1决策实战",
     "author": {
-      "name": "huggingface.co",
-      "handle": "huggingface.co"
+      "name": "juejin.cn",
+      "handle": "juejin.cn"
     },
-    "createdAt": "2026-10-12T10:25:09.721Z",
-    "excerpt": "Fine-tuned from convaiinnovations / laya on the benchmark&#x27;s 1,200-case training split (6,000 decisions) with RLCD: the policy reports a distribution, exploration adds zero-mean Gaussian noise to the logits, and the reward is a strictly proper scoring rule (log + spherical, plus ranked probability score for ordinal questions), so expected reward ...",
-    "lang": "en",
-    "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/convaiinnovations/laya-typed-decisions.png",
+    "createdAt": "2026-09-23T05:52:29.000Z",
+    "excerpt": "17K Star ! 爆打Jev，Laya使用完整教程：从安装到微调的System 1决策实战 七牛云行业应用 2026-09-22 1,229 阅读5分钟 发布日期：2026-09-23 Laya是ConvAI Innovations于2026年9月18日开源的非自回归决策模型，基于ModernBERT双向编码器，一次前向约33ms输出分类打分与概率，不生成 ...",
+    "lang": "zh",
     "metrics": {},
     "tags": [],
     "variants": [],
     "links": [],
-    "curatedAt": "2026-10-12T10:25:09.721Z",
+    "curatedAt": "2026-10-19T08:36:35.067Z",
     "curatedBy": "auto"
   },
   {
@@ -213,6 +213,39 @@
     "curatedAt": "2026-09-28T09:29:40.856Z"
   },
   {
+    "id": "medium-medium-com-riyasyash-fine-tuning-a-small-decision-model-a-gmail-experiment-with-laya-and-jev-5ad88ea95bbe",
+    "canonicalUrl": "https://medium.com/@riyasyash/fine-tuning-a-small-decision-model-a-gmail-experiment-with-laya-and-jev-5ad88ea95bbe?source=rss------laya-5",
+    "title": "Fine-Tuning a Small Decision Model: A Gmail Experiment with Laya and JEV",
+    "author": "Riyas P",
+    "createdAt": "2026-10-16T14:02:24.000Z",
+    "description": "<div class=\"medium-feed-item\"><p class=\"medium-feed-image\"><a href=\"https://medium.com/@riyasyash/fine-tuning-a-small-decision-model-a-gmail-experiment-with-laya-and-jev-5ad88ea95bbe?source=rss------laya-5\"><img src=\"https://cdn-images-1.medium.com/max/1774/1*1EC8Cb3jOSazNOVA4wqB1A.png\" width=\"1774\"></a></p><p class=\"medium-feed-snippet\">I&#x2019;ve been experimenting with simple AI-based classification for my Gmail inbox.</p><p class=\"medium-feed-link\"><a href=\"https://medium.com/@riyasyash/fine-tuning-a-small-decision-model-a-gmail-experiment-with-laya-and-jev-5ad88ea95bbe?source=rss------laya-5\">Continue reading on Medium »</a></p></div>",
+    "imageUrl": "https://cdn-images-1.medium.com/max/1774/1*1EC8Cb3jOSazNOVA4wqB1A.png",
+    "links": [],
+    "curatedAt": "2026-10-19T08:36:38.370Z"
+  },
+  {
+    "id": "medium-medium-com-balamuru-sub-40ms-ai-at-the-edge-how-we-distilled-gemini-into-a-local-decision-engine-on-an-8gb-gpu-0de90791f5bd",
+    "canonicalUrl": "https://medium.com/@balamuru/sub-40ms-ai-at-the-edge-how-we-distilled-gemini-into-a-local-decision-engine-on-an-8gb-gpu-0de90791f5bd?source=rss------laya-5",
+    "title": "Sub-40ms AI at the Edge: How We Distilled Gemini into a Local Decision Engine on an 8GB GPU",
+    "author": "The Vinay",
+    "createdAt": "2026-10-13T04:38:39.000Z",
+    "description": "<div class=\"medium-feed-item\"><p class=\"medium-feed-image\"><a href=\"https://medium.com/@balamuru/sub-40ms-ai-at-the-edge-how-we-distilled-gemini-into-a-local-decision-engine-on-an-8gb-gpu-0de90791f5bd?source=rss------laya-5\"><img src=\"https://cdn-images-1.medium.com/max/1011/1*_P-ldxx5lVhrFlptZLf0UA.png\" width=\"1011\"></a></p><p class=\"medium-feed-snippet\">In part I of this effort, we developed a real time laya-based System I bluesky post analyzer. In this part, we took the actual&#x2026;</p><p class=\"medium-feed-link\"><a href=\"https://medium.com/@balamuru/sub-40ms-ai-at-the-edge-how-we-distilled-gemini-into-a-local-decision-engine-on-an-8gb-gpu-0de90791f5bd?source=rss------laya-5\">Continue reading on Medium »</a></p></div>",
+    "imageUrl": "https://cdn-images-1.medium.com/max/1011/1*_P-ldxx5lVhrFlptZLf0UA.png",
+    "links": [],
+    "curatedAt": "2026-10-19T08:36:38.370Z"
+  },
+  {
+    "id": "medium-medium-com-balamuru-real-time-social-stream-intelligence-with-laya-sub-millisecond-ai-on-the-bluesky-firehose-a196c9b805d2",
+    "canonicalUrl": "https://medium.com/@balamuru/real-time-social-stream-intelligence-with-laya-sub-millisecond-ai-on-the-bluesky-firehose-a196c9b805d2?source=rss------laya-5",
+    "title": "Real-Time Social Stream Intelligence with Laya on local hardware: Sub-Millisecond AI on the Bluesky…",
+    "author": "The Vinay",
+    "createdAt": "2026-10-12T17:53:00.000Z",
+    "description": "<div class=\"medium-feed-item\"><p class=\"medium-feed-image\"><a href=\"https://medium.com/@balamuru/real-time-social-stream-intelligence-with-laya-sub-millisecond-ai-on-the-bluesky-firehose-a196c9b805d2?source=rss------laya-5\"><img src=\"https://cdn-images-1.medium.com/max/1007/1*AgHGdEPu4sOhmB8P5ZIaZw.png\" width=\"1007\"></a></p><p class=\"medium-feed-snippet\">How we processed 50+ posts/sec using Laya local inference instead of hosted models like Jev, combined with ClickHouse and Grafana.</p><p class=\"medium-feed-link\"><a href=\"https://medium.com/@balamuru/real-time-social-stream-intelligence-with-laya-sub-millisecond-ai-on-the-bluesky-firehose-a196c9b805d2?source=rss------laya-5\">Continue reading on Medium »</a></p></div>",
+    "imageUrl": "https://cdn-images-1.medium.com/max/1007/1*AgHGdEPu4sOhmB8P5ZIaZw.png",
+    "links": [],
+    "curatedAt": "2026-10-19T08:36:38.370Z"
+  },
+  {
     "id": "medium-medium-com-rahultiwari065-laya-vs-jev-i-went-looking-for-the-better-decision-model-c6a19f841a5a",
     "canonicalUrl": "https://medium.com/@rahultiwari065/laya-vs-jev-i-went-looking-for-the-better-decision-model-c6a19f841a5a?source=rss------laya-5",
     "title": "Laya vs Jev: I Went Looking for the Better Decision Model.",
@@ -240,7 +273,7 @@
     "title": "Jev or Laya? Neither: Why I fine-tuned ModernBERT on the Edge for Rural Healthcare AI",
     "author": "Suyash Baoney",
     "createdAt": "2026-10-10T18:48:56.000Z",
-    "description": "<div class=\"medium-feed-item\"><p class=\"medium-feed-image\"><a href=\"https://medium.com/@suyashbaoney58/jev-or-laya-neither-why-i-fine-tuned-modernbert-on-the-edge-for-rural-healthcare-ai-1d5c4c302e1e?source=rss------laya-5\"><img src=\"https://cdn-images-1.medium.com/max/2597/1*KSAeIxtKursD694GbS_ppA.png\" width=\"2597\"></a></p><p class=\"medium-feed-snippet\">The recent debate around &#x2018;System 1&#x2019; decision models (Jev vs. Laya) has exposed an undeniable truth: autoregressive generative LLMs are far&#x2026;</p><p class=\"medium-feed-link\"><a href=\"https://medium.com/@suyashbaoney58/jev-or-laya-neither-why-i-fine-tuned-modernbert-on-the-edge-for-rural-healthcare-ai-1d5c4c302e1e?source=rss------laya-5\">Continue reading on Medium »</a></p></div>",
+    "description": "<div class=\"medium-feed-item\"><p class=\"medium-feed-image\"><a href=\"https://medium.com/@suyashbaoney58/jev-or-laya-neither-why-i-fine-tuned-modernbert-on-the-edge-for-rural-healthcare-ai-1d5c4c302e1e?source=rss------laya-5\"><img src=\"https://cdn-images-1.medium.com/max/2597/1*KSAeIxtKursD694GbS_ppA.png\" width=\"2597\"></a></p><p class=\"medium-feed-snippet\">How stripping 26M deadweight parameters and compiling to ONNX INT8 delivered a sub-100ms deterministic intent router for offline clinical&#x2026;</p><p class=\"medium-feed-link\"><a href=\"https://medium.com/@suyashbaoney58/jev-or-laya-neither-why-i-fine-tuned-modernbert-on-the-edge-for-rural-healthcare-ai-1d5c4c302e1e?source=rss------laya-5\">Continue reading on Medium »</a></p></div>",
     "imageUrl": "https://cdn-images-1.medium.com/max/2597/1*KSAeIxtKursD694GbS_ppA.png",
     "links": [],
     "curatedAt": "2026-10-12T10:25:12.730Z"
@@ -253,17 +286,6 @@
     "createdAt": "2026-10-10T18:30:03.000Z",
     "description": "<div class=\"medium-feed-item\"><p class=\"medium-feed-image\"><a href=\"https://manansoni77.medium.com/the-quick-decision-makers-system-1-models-51adfd39fd51?source=rss------laya-5\"><img src=\"https://cdn-images-1.medium.com/max/1200/1*MG_JyO71jzy2UdncK6jSAw.png\" width=\"1200\"></a></p><p class=\"medium-feed-snippet\">The story of Jev, Laya and many other new models taking the world by storm!</p><p class=\"medium-feed-link\"><a href=\"https://manansoni77.medium.com/the-quick-decision-makers-system-1-models-51adfd39fd51?source=rss------laya-5\">Continue reading on Medium »</a></p></div>",
     "imageUrl": "https://cdn-images-1.medium.com/max/1200/1*MG_JyO71jzy2UdncK6jSAw.png",
-    "links": [],
-    "curatedAt": "2026-10-12T10:25:12.730Z"
-  },
-  {
-    "id": "medium-medium-com-balamuru-stop-using-8b-generative-llms-for-routing-the-rise-of-system-1-ai-with-jev-and-laya-19a79fb7a8e6",
-    "canonicalUrl": "https://medium.com/@balamuru/stop-using-8b-generative-llms-for-routing-the-rise-of-system-1-ai-with-jev-and-laya-19a79fb7a8e6?source=rss------laya-5",
-    "title": "Stop Using 8B Generative LLMs for Routing: The Rise of System 1 AI with Jev and Laya",
-    "author": "The Vinay",
-    "createdAt": "2026-10-07T23:08:08.000Z",
-    "description": "<div class=\"medium-feed-item\"><p class=\"medium-feed-image\"><a href=\"https://medium.com/@balamuru/stop-using-8b-generative-llms-for-routing-the-rise-of-system-1-ai-with-jev-and-laya-19a79fb7a8e6?source=rss------laya-5\"><img src=\"https://cdn-images-1.medium.com/max/1020/1*55uaoR6Y7AK7noJcOP95YQ.png\" width=\"1020\"></a></p><p class=\"medium-feed-snippet\">Understanding the split between System 1 and System 2 AI, why TypeSafe Jev pioneered programmable decisions, where Laya improves upon it&#x2026;</p><p class=\"medium-feed-link\"><a href=\"https://medium.com/@balamuru/stop-using-8b-generative-llms-for-routing-the-rise-of-system-1-ai-with-jev-and-laya-19a79fb7a8e6?source=rss------laya-5\">Continue reading on Medium »</a></p></div>",
-    "imageUrl": "https://cdn-images-1.medium.com/max/1020/1*55uaoR6Y7AK7noJcOP95YQ.png",
     "links": [],
     "curatedAt": "2026-10-12T10:25:12.730Z"
   }

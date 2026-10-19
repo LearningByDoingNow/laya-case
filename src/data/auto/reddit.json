@@ -1,5 +1,31 @@
 [
   {
+    "id": "reddit-1x53ob3",
+    "sourceType": "reddit",
+    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1x53ob3/quartermaster_17_update_now_lets_you_run/",
+    "title": "Quartermaster 1.7 update now lets you run llama.cpp's new decision models (/v1/systemone) with a playground tab",
+    "author": {
+      "name": "OneMoreName1",
+      "handle": "OneMoreName1",
+      "profileUrl": "https://www.reddit.com/user/OneMoreName1"
+    },
+    "createdAt": "2026-10-13T17:54:13.000Z",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1x53ob3/quartermaster_17_update_now_lets_you_run/\"> <img src=\"https://preview.redd.it/b55bupzvv9vh1.png?width=140&amp;height=87&amp;auto=webp&amp;s=f04faf41589eebfd24cf3629e26cca085af93d42\" alt=\"Quartermaster 1.7 update now lets you run llama.cpp's new decision models (/v1/systemone) with a playground tab\" title=\"Quartermaster 1.7 update now lets you run llama.cpp's new decision models (/v1/systemone) with...",
+    "lang": "en",
+    "imageUrl": "https://preview.redd.it/b55bupzvv9vh1.png?width=140&height=87&auto=webp&s=f04faf41589eebfd24cf3629e26cca085af93d42",
+    "metrics": {},
+    "tags": [],
+    "variants": [],
+    "links": [
+      {
+        "url": "https://quartermaster-labs.github.io/Quartermaster/",
+        "domain": "quartermaster-labs.github.io"
+      }
+    ],
+    "curatedAt": "2026-10-19T08:35:46.067Z",
+    "curatedBy": "auto"
+  },
+  {
     "id": "reddit-1x28zr9",
     "sourceType": "reddit",
     "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1x28zr9/created_laya_now_introducing_a_new_800_million/",
@@ -220,8 +246,7 @@
       }
     ],
     "curatedAt": "2026-10-05T10:07:56.593Z",
-    "curatedBy": "auto",
-    "imageUrl": "https://share.redd.it/preview/post/1wv51nt"
+    "curatedBy": "auto"
   },
   {
     "id": "reddit-1wsfjmb",
@@ -293,8 +318,7 @@
     "variants": [],
     "links": [],
     "curatedAt": "2026-09-28T09:29:19.137Z",
-    "curatedBy": "auto",
-    "imageUrl": "https://share.redd.it/preview/post/1wohvds"
+    "curatedBy": "auto"
   },
   {
     "id": "reddit-1woameh",
@@ -319,8 +343,7 @@
       }
     ],
     "curatedAt": "2026-09-28T09:29:19.137Z",
-    "curatedBy": "auto",
-    "imageUrl": "https://share.redd.it/preview/post/1woameh"
+    "curatedBy": "auto"
   },
   {
     "id": "reddit-1wo6x7e",
@@ -366,8 +389,7 @@
     "variants": [],
     "links": [],
     "curatedAt": "2026-09-28T09:29:19.138Z",
-    "curatedBy": "auto",
-    "imageUrl": "https://share.redd.it/preview/post/1wntc8m"
+    "curatedBy": "auto"
   },
   {
     "id": "reddit-1wnt7kv",
@@ -446,31 +468,5 @@
     ],
     "curatedAt": "2026-09-22T06:30:02.595Z",
     "curatedBy": "auto"
-  },
-  {
-    "id": "reddit-1wmev5u",
-    "sourceType": "reddit",
-    "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wmev5u/got_jevlike_api_running_natively_on_ninfer_qwen38/",
-    "title": "Got jev-like api running natively on ninfer / qwen3.8 27b and results are quite decent",
-    "author": {
-      "name": "Unlucky-Message8866",
-      "handle": "Unlucky-Message8866",
-      "profileUrl": "https://www.reddit.com/user/Unlucky-Message8866"
-    },
-    "createdAt": "2026-09-21T14:46:43.000Z",
-    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Hi all! After all the jev hype I wanted to try by myself and got qwen3.8 27b to mix-and-match open implementations on top of ninfer, and to be honest I'm quite impressed with the results, latency is not great but accuracy is almost on par, this is a very dirty POC but it kinda works (there's still some bugs and incorrect allocation, still need to figure out how to properly integrate into ninfer). Source code at: <a href=\"https://github.com/kn...",
-    "lang": "en",
-    "metrics": {},
-    "tags": [],
-    "variants": [],
-    "links": [
-      {
-        "url": "https://github.com/knoopx/ninfer",
-        "domain": "github.com"
-      }
-    ],
-    "curatedAt": "2026-09-22T06:30:02.597Z",
-    "curatedBy": "auto",
-    "imageUrl": "https://share.redd.it/preview/post/1wmev5u"
   }
 ]
