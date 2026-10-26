@@ -1,8 +1,61 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-19T08:36:38.370Z",
+  "generatedAt": "2026-10-26T08:38:33.755Z",
   "aliases": [],
   "cases": [
+    {
+      "id": "blog-juejin-cn-post-7688389114781024319",
+      "sourceType": "blog",
+      "canonicalUrl": "https://juejin.cn/post/7688389114781024319",
+      "title": "17K Star !爆打Jev，Laya使用完整教程：从安装到微调的System 1决策实战",
+      "author": {
+        "name": "juejin.cn",
+        "handle": "juejin.cn"
+      },
+      "createdAt": "2026-10-26T08:38:31.022Z",
+      "excerpt": "17K Star ! 爆打Jev，Laya使用完整教程：从安装到微调的System 1决策实战 七牛云行业应用 2026-09-22 1,442 阅读5分钟 发布日期：2026-09-23 Laya是ConvAI Innovations于2026年9月18日开源的非自回归决策模型，基于ModernBERT双向编码器，一次前向约33ms输出分类打分与概率，不生成 ...",
+      "lang": "zh",
+      "metrics": {},
+      "tags": [
+        "vs-jev",
+        "classification",
+        "scoring",
+        "fine-tune"
+      ],
+      "variants": [],
+      "links": [],
+      "curatedAt": "2026-10-19T08:36:35.067Z",
+      "curatedBy": "auto"
+    },
+    {
+      "id": "blog-laya-tools-p-convaiinnovations-laya-demo-demo",
+      "sourceType": "blog",
+      "canonicalUrl": "https://laya.tools/p/convaiinnovations-laya-demo-demo",
+      "title": "convaiinnovations/laya-demo · Built with Laya · laya.tools",
+      "author": {
+        "name": "laya.tools",
+        "handle": "laya.tools"
+      },
+      "createdAt": "2026-10-26T08:38:29.094Z",
+      "excerpt": "A Gradio demo for Laya typed decisions, multilingual routing, moderation, and RAG filtering. HF Space for the Laya System 1 decision model.",
+      "lang": "en",
+      "translation": {
+        "status": "pending",
+        "targetLang": "zh-CN",
+        "detectedLang": "en"
+      },
+      "metrics": {},
+      "imageUrl": "https://laya.tools/og/p/convaiinnovations-laya-demo-demo.png",
+      "tags": [
+        "routing",
+        "moderation",
+        "multilingual"
+      ],
+      "variants": [],
+      "links": [],
+      "curatedAt": "2026-10-26T08:38:29.094Z",
+      "curatedBy": "auto"
+    },
     {
       "id": "blog-laya-convaiinnovations-com",
       "sourceType": "blog",
@@ -12,7 +65,7 @@
         "name": "laya.convaiinnovations.com",
         "handle": "laya.convaiinnovations.com"
       },
-      "createdAt": "2026-10-19T08:36:32.418Z",
+      "createdAt": "2026-10-26T08:38:27.739Z",
       "excerpt": "I Built Non-Autoregressive Decision Models with RL a Year Ago. Then a Frontier Lab Called It a \"Breakthrough\". From our March 2025 arXiv paper on sequence conversion trajectories to Laya : a sub-35ms open-weight System 1 decision engine with RLCD, multilingual routing across 100+ languages, and state-of-the-art calibration.",
       "lang": "en",
       "translation": {
@@ -32,16 +85,16 @@
       "curatedBy": "auto"
     },
     {
-      "id": "blog-modelfit-io-blog-laya-mlx-ollaya-decision-models-apple-silicon",
+      "id": "blog-arxiv-org-html-2609-28940v1",
       "sourceType": "blog",
-      "canonicalUrl": "https://modelfit.io/blog/laya-mlx-ollaya-decision-models-apple-silicon/",
-      "title": "Laya Runs a 421M Decision Model on Your Mac in 13ms: System One Models ...",
+      "canonicalUrl": "https://arxiv.org/html/2609.28940v1",
+      "title": "Calibrated Decision Models for AutonomousPenetration-Testing Harnesses ...",
       "author": {
-        "name": "modelfit.io",
-        "handle": "modelfit.io"
+        "name": "arxiv.org",
+        "handle": "arxiv.org"
       },
-      "createdAt": "2026-10-19T08:36:31.742Z",
-      "excerpt": "What Laya actually is Laya is a non-autoregressive System 1 decision model , which means it answers in a single forward pass instead of generating one token at a time. A fully fine-tuned ModernBERT-large encoder (395M parameters, bidirectional) forms the backbone, and on top of it sits a decision head.",
+      "createdAt": "2026-10-26T08:38:27.016Z",
+      "excerpt": "The term \" System One \" borrows from Kahneman&#x27;s dual-process theory [20] —fast, bounded, pattern-matching judgment as opposed to slow, deliberative reasoning—and has been adopted by TypeSafe AI for their Jev model family and by the open-source Laya project. The remainder of this paper is organized as follows.",
       "lang": "en",
       "translation": {
         "status": "pending",
@@ -49,13 +102,12 @@
         "detectedLang": "en"
       },
       "metrics": {},
-      "imageUrl": "https://modelfit.io/images/blog/laya-mlx-ollaya-decision-models-apple-silicon-hero.webp",
       "tags": [
-        "fine-tune"
+        "vs-jev"
       ],
       "variants": [],
       "links": [],
-      "curatedAt": "2026-10-19T08:36:31.742Z",
+      "curatedAt": "2026-10-26T08:38:27.016Z",
       "curatedBy": "auto"
     },
     {
@@ -67,7 +119,7 @@
         "name": "laplusda.com",
         "handle": "laplusda.com"
       },
-      "createdAt": "2026-10-19T08:36:30.000Z",
+      "createdAt": "2026-10-26T08:38:26.361Z",
       "excerpt": "Laya is an open-source System One decision model that can run on local hardware. Like Jev, it accepts a state plus Choice, Score, and Noul questions instead of generating text. The model code and weights are published under Apache 2.0, which makes Laya relevant when application data cannot be sent to a managed decision API. The project was published on September 18, 2026 and remains very new ...",
       "lang": "en",
       "translation": {
@@ -87,6 +139,35 @@
       "curatedBy": "auto"
     },
     {
+      "id": "blog-modelsystem-one-models-laya",
+      "sourceType": "blog",
+      "canonicalUrl": "https://modelsystem.one/models/laya/",
+      "title": "Laya — ModelSystem.One",
+      "author": {
+        "name": "modelsystem.one",
+        "handle": "modelsystem.one"
+      },
+      "createdAt": "2026-10-26T08:38:25.774Z",
+      "excerpt": "Laya is a full open System One -style decision model — ModernBERT-large fine-tuned with a decision head (~421M parameters), Apache-2.0 — not a LoRA adapter and not a TypeSafe product. You load a checkpoint, pass shared state plus typed questions (choice, score, noul → catalog boolean), and get answers with probabilities in one forward pass.",
+      "lang": "en",
+      "translation": {
+        "status": "pending",
+        "targetLang": "zh-CN",
+        "detectedLang": "en"
+      },
+      "metrics": {},
+      "imageUrl": "https://modelsystem.one/og-default.png?v=20260919",
+      "tags": [
+        "vs-jev",
+        "scoring",
+        "fine-tune"
+      ],
+      "variants": [],
+      "links": [],
+      "curatedAt": "2026-10-26T08:38:25.774Z",
+      "curatedBy": "auto"
+    },
+    {
       "id": "blog-systemonemodels-ai-blog-laya-architecture-explained",
       "sourceType": "blog",
       "canonicalUrl": "https://systemonemodels.ai/blog/laya-architecture-explained",
@@ -95,7 +176,7 @@
         "name": "systemonemodels.ai",
         "handle": "systemonemodels.ai"
       },
-      "createdAt": "2026-10-19T08:36:29.434Z",
+      "createdAt": "2026-10-26T08:38:24.777Z",
       "excerpt": "All articles September 19, 2026 · 2 min read Laya , explained — an open decision model that runs on your own machine Laya is an open-weights System One model built on a ModernBERT encoder. Here is how it scores options in one pass, what its checkpoints are for, and how to fine-tune it on a laptop.",
       "lang": "en",
       "translation": {
@@ -123,7 +204,7 @@
         "name": "laya-model.com",
         "handle": "laya-model.com"
       },
-      "createdAt": "2026-10-19T08:35:59.354Z",
+      "createdAt": "2026-10-26T08:38:23.980Z",
       "excerpt": "Laya AI · System One Laya AI — System One Decision Model Typed decisions for agents and software — choice, score, and yes/no in one forward pass. Hosted prepaid API here; Apache 2.0 weights if you run locally.",
       "lang": "en",
       "translation": {
@@ -139,6 +220,209 @@
       "variants": [],
       "links": [],
       "curatedAt": "2026-10-05T10:08:10.531Z",
+      "curatedBy": "auto"
+    },
+    {
+      "id": "medium-harshc252-medium-com-laya-vision-inside-out-1437293da94f",
+      "sourceType": "blog",
+      "canonicalUrl": "https://harshc252.medium.com/laya-vision-inside-out-1437293da94f?source=rss------laya-5",
+      "title": "Laya Vision, Inside Out",
+      "author": {
+        "name": "未知作者",
+        "handle": "unknown"
+      },
+      "createdAt": "2026-10-25T13:32:25.000Z",
+      "excerpt": "社区公开案例，详情见原文链接。",
+      "lang": "zh",
+      "translation": {
+        "status": "pending",
+        "targetLang": "zh-CN",
+        "detectedLang": "en"
+      },
+      "metrics": {},
+      "imageUrl": "https://cdn-images-1.medium.com/max/800/1*use93oH4KrzxPMlXEN3WSg.gif",
+      "tags": [],
+      "variants": [],
+      "links": [],
+      "curatedAt": "2026-10-26T08:38:33.755Z",
+      "curatedBy": "auto"
+    },
+    {
+      "id": "medium-blog-cubed-run-laya-vs-jev-when-your-ai-application-needs-a-decision-model-not-a-chatbot-4fd58b23d06f",
+      "sourceType": "blog",
+      "canonicalUrl": "https://blog.cubed.run/laya-vs-jev-when-your-ai-application-needs-a-decision-model-not-a-chatbot-4fd58b23d06f?source=rss------laya-5",
+      "title": "Laya vs. Jev: When Your AI Application Needs a Decision Model, Not a Chatbot",
+      "author": {
+        "name": "未知作者",
+        "handle": "unknown"
+      },
+      "createdAt": "2026-10-24T06:04:42.000Z",
+      "excerpt": "社区公开案例，详情见原文链接。",
+      "lang": "zh",
+      "translation": {
+        "status": "pending",
+        "targetLang": "zh-CN",
+        "detectedLang": "en"
+      },
+      "metrics": {},
+      "imageUrl": "https://cdn-images-1.medium.com/max/1365/1*BC6qMHZyYUCsYKvI2W_zaA.png",
+      "tags": [
+        "vs-jev",
+        "benchmark"
+      ],
+      "variants": [],
+      "links": [],
+      "curatedAt": "2026-10-26T08:38:33.755Z",
+      "curatedBy": "auto"
+    },
+    {
+      "id": "hf-oddadmix-laya-arabic-demo",
+      "sourceType": "huggingface",
+      "canonicalUrl": "https://huggingface.co/oddadmix/Laya-Arabic-Demo",
+      "title": "Laya-Arabic-Demo",
+      "author": {
+        "name": "oddadmix",
+        "handle": "oddadmix",
+        "profileUrl": "https://huggingface.co/oddadmix"
+      },
+      "createdAt": "2026-10-23T02:53:00.000Z",
+      "excerpt": "HuggingFace 上的 Laya 相关模型（gradio）。",
+      "lang": "zh",
+      "metrics": {
+        "likes": 1
+      },
+      "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/oddadmix/Laya-Arabic-Demo.png",
+      "tags": [],
+      "variants": [],
+      "links": [],
+      "curatedAt": "2026-10-26T08:37:52.249Z",
+      "curatedBy": "auto"
+    },
+    {
+      "id": "hf-arc-director-skaldic-laya",
+      "sourceType": "huggingface",
+      "canonicalUrl": "https://huggingface.co/arc-director/Skaldic-Laya",
+      "title": "Skaldic-Laya",
+      "author": {
+        "name": "arc-director",
+        "handle": "arc-director",
+        "profileUrl": "https://huggingface.co/arc-director"
+      },
+      "createdAt": "2026-10-22T04:18:47.000Z",
+      "excerpt": "Split-second NPC reflexes. Skaldic Laya is a 0.4B decision model for ArcDirector. Given a situation, a goal and a few options (fight or flee, heal or strike, drink the potion or keep swinging), it picks one, with calibrated odds, in a single pass without generating text. It makes a decision in about 55 ms on average, in LM Studio on an RTX 5090.",
+      "lang": "en",
+      "translation": {
+        "status": "pending",
+        "targetLang": "zh-CN",
+        "detectedLang": "en"
+      },
+      "code": {
+        "lang": "ts",
+        "snippet": "import { ArcDirector, BrowserProvider, Skaldic } from 'arc-director';\n\nimport wasm from '@wllama/wllama/esm/wasm/wllama.wasm?url'; // vite\n// const wasm = new URL('@wllama/wllama/esm/wasm/wllama.wasm', import.meta.url).href; // webpack\n\nBrowserProvider.shared = new BrowserProvider({ wasm });\n\nconst director = new ArcDirector()\n  .withLoadingBar() // Shows a loading bar on screen while it downloads\n  .addBrowserModel('main', Skaldic.Gemma4E4B)\n  .addBrowserModel('local', Skaldic.Laya);\ndirector.setDefaultSystemOne('local'); // Every NPC makes its quick choices with Skaldic Laya\nawait director.start();"
+      },
+      "metrics": {
+        "likes": 0
+      },
+      "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/arc-director/Skaldic-Laya.png",
+      "tags": [],
+      "variants": [],
+      "links": [],
+      "curatedAt": "2026-10-26T08:37:40.713Z",
+      "curatedBy": "auto"
+    },
+    {
+      "id": "medium-pub-towardsai-net-i-fine-tuned-a-local-model-to-match-a-hosted-model-35a4a8a650db",
+      "sourceType": "blog",
+      "canonicalUrl": "https://pub.towardsai.net/i-fine-tuned-a-local-model-to-match-a-hosted-model-35a4a8a650db?source=rss------laya-5",
+      "title": "I Fine-Tuned a Local Model to Match a Hosted Model.",
+      "author": {
+        "name": "未知作者",
+        "handle": "unknown"
+      },
+      "createdAt": "2026-10-21T18:57:40.000Z",
+      "excerpt": "社区公开案例，详情见原文链接。",
+      "lang": "zh",
+      "translation": {
+        "status": "pending",
+        "targetLang": "zh-CN",
+        "detectedLang": "en"
+      },
+      "metrics": {},
+      "imageUrl": "https://cdn-images-1.medium.com/max/1448/1*K44KmE-v4v0wniZ41Y8lbQ.png",
+      "tags": [
+        "fine-tune"
+      ],
+      "variants": [],
+      "links": [],
+      "curatedAt": "2026-10-26T08:38:33.755Z",
+      "curatedBy": "auto"
+    },
+    {
+      "id": "hf-aac6fef-laya-typed-decisions-coreml-adaptive-fp16",
+      "sourceType": "huggingface",
+      "canonicalUrl": "https://huggingface.co/aac6fef/laya-typed-decisions-coreml-adaptive-fp16",
+      "title": "laya-typed-decisions-coreml-adaptive-fp16",
+      "author": {
+        "name": "aac6fef",
+        "handle": "aac6fef",
+        "profileUrl": "https://huggingface.co/aac6fef"
+      },
+      "createdAt": "2026-10-20T01:39:33.000Z",
+      "excerpt": "Native Core ML conversion of convaiinnovations/laya-typed-decisions, pinned source revision f9ab0b228f0fc0f14d873dbc99038f135c2da1b2. Requires laya-coreml = 0.5.1, Apple silicon and macOS 15+. Tested on M3 Max. This is an independent conversion.",
+      "lang": "en",
+      "translation": {
+        "status": "pending",
+        "targetLang": "zh-CN",
+        "detectedLang": "en"
+      },
+      "code": {
+        "lang": "python",
+        "snippet": "import laya_coreml as laya\nwith laya.load(\"aac6fef/laya-typed-decisions-coreml-adaptive-fp16\") as agent:\n    result = agent.predict(\"The customer requests a refund.\", {\n        \"refund\": {\"type\": \"noul\", \"instructions\": \"Does the customer request a refund?\"}\n    })"
+      },
+      "metrics": {
+        "likes": 0
+      },
+      "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/aac6fef/laya-typed-decisions-coreml-adaptive-fp16.png",
+      "tags": [
+        "agent"
+      ],
+      "variants": [
+        "typed-decisions"
+      ],
+      "links": [],
+      "curatedAt": "2026-10-26T08:37:47.836Z",
+      "curatedBy": "auto"
+    },
+    {
+      "id": "hf-borcherding-voice-decisions-laya-v4",
+      "sourceType": "huggingface",
+      "canonicalUrl": "https://huggingface.co/Borcherding/voice-decisions-laya-v4",
+      "title": "voice-decisions-laya-v4",
+      "author": {
+        "name": "Borcherding",
+        "handle": "Borcherding",
+        "profileUrl": "https://huggingface.co/Borcherding"
+      },
+      "createdAt": "2026-10-19T07:52:41.000Z",
+      "excerpt": "One Laya decision model that makes the three fast calls voice mode needs in Unsloth Studio and Unsloth Desktop, in a single forward pass each:",
+      "lang": "en",
+      "translation": {
+        "status": "pending",
+        "targetLang": "zh-CN",
+        "detectedLang": "en"
+      },
+      "code": {
+        "lang": "bash",
+        "snippet": "hf download Borcherding/voice-decisions-laya-v4 --local-dir ~/.unsloth/studio/outputs/voice-decisions-laya-v4"
+      },
+      "metrics": {
+        "likes": 0
+      },
+      "imageUrl": "https://raw.githubusercontent.com/unslothai/unsloth/main/images/unsloth%20made%20with%20love.png",
+      "tags": [],
+      "variants": [],
+      "links": [],
+      "curatedAt": "2026-10-26T08:37:44.426Z",
       "curatedBy": "auto"
     },
     {
@@ -245,7 +529,7 @@
         "profileUrl": "https://huggingface.co/jonasaise"
       },
       "createdAt": "2026-10-14T17:17:32.000Z",
-      "excerpt": "A ~10 ms judge for Swedish LLM output. One forward pass of a fine-tuned Laya decision model (mmBERT-base backbone) answers one of four questions. It is built as a \"System 1\" filter: settle the confident cases in milliseconds on a GPU and escalate the uncertain ones to a slow LLM judge (\"System 2\").",
+      "excerpt": "A ~10 ms judge for Swedish text. One forward pass of a fine-tuned Laya decision model (mmBERT-base backbone) answers one of five questions, as a \"System 1\" filter in front of a slow LLM judge.",
       "lang": "en",
       "translation": {
         "status": "pending",
@@ -254,7 +538,7 @@
       },
       "code": {
         "lang": "bash",
-        "snippet": "pip install \"git+https://github.com/joenaess/laya-swedish-preference-gate\""
+        "snippet": "uv pip install \"git+https://github.com/joenaess/laya-swedish-preference-gate\""
       },
       "metrics": {
         "likes": 0
@@ -349,31 +633,6 @@
       "tags": [
         "deploy"
       ],
-      "variants": [],
-      "links": [],
-      "curatedAt": "2026-10-19T08:36:38.370Z",
-      "curatedBy": "auto"
-    },
-    {
-      "id": "medium-medium-com-balamuru-real-time-social-stream-intelligence-with-laya-sub-millisecond-ai-on-the-bluesky-firehose-a196c9b805d2",
-      "sourceType": "blog",
-      "canonicalUrl": "https://medium.com/@balamuru/real-time-social-stream-intelligence-with-laya-sub-millisecond-ai-on-the-bluesky-firehose-a196c9b805d2?source=rss------laya-5",
-      "title": "Real-Time Social Stream Intelligence with Laya on local hardware: Sub-Millisecond AI on the Bluesky…",
-      "author": {
-        "name": "未知作者",
-        "handle": "unknown"
-      },
-      "createdAt": "2026-10-12T17:53:00.000Z",
-      "excerpt": "社区公开案例，详情见原文链接。",
-      "lang": "zh",
-      "translation": {
-        "status": "pending",
-        "targetLang": "zh-CN",
-        "detectedLang": "en"
-      },
-      "metrics": {},
-      "imageUrl": "https://cdn-images-1.medium.com/max/1007/1*AgHGdEPu4sOhmB8P5ZIaZw.png",
-      "tags": [],
       "variants": [],
       "links": [],
       "curatedAt": "2026-10-19T08:36:38.370Z",
@@ -505,7 +764,7 @@
         "snippet": "pip install --no-deps laya-guardrail pyyaml\nlaya-guard check --offline \"cat ~/.ssh/id_rsa\"     # [BLOCK] ... policy=credential-read"
       },
       "metrics": {
-        "stars": 30,
+        "stars": 33,
         "forks": 5
       },
       "imageUrl": "https://opengraph.githubassets.com/1/scs0209/laya-guard",
@@ -516,115 +775,6 @@
       "variants": [],
       "links": [],
       "curatedAt": "2026-10-19T08:34:52.217Z",
-      "curatedBy": "auto"
-    },
-    {
-      "id": "medium-medium-com-rahultiwari065-laya-vs-jev-i-went-looking-for-the-better-decision-model-c6a19f841a5a",
-      "sourceType": "blog",
-      "canonicalUrl": "https://medium.com/@rahultiwari065/laya-vs-jev-i-went-looking-for-the-better-decision-model-c6a19f841a5a?source=rss------laya-5",
-      "title": "Laya vs Jev: I Went Looking for the Better Decision Model.",
-      "author": {
-        "name": "未知作者",
-        "handle": "unknown"
-      },
-      "createdAt": "2026-10-10T21:40:35.000Z",
-      "excerpt": "社区公开案例，详情见原文链接。",
-      "lang": "zh",
-      "translation": {
-        "status": "pending",
-        "targetLang": "zh-CN",
-        "detectedLang": "en"
-      },
-      "metrics": {},
-      "imageUrl": "https://cdn-images-1.medium.com/max/680/1*R2vsSskLiPnBZYfn2c7JrQ.png",
-      "tags": [
-        "vs-jev",
-        "benchmark"
-      ],
-      "variants": [],
-      "links": [],
-      "curatedAt": "2026-10-12T10:25:12.730Z",
-      "curatedBy": "auto"
-    },
-    {
-      "id": "medium-levelup-gitconnected-com-untitled-document-md-66c53a76ce72",
-      "sourceType": "blog",
-      "canonicalUrl": "https://levelup.gitconnected.com/untitled-document-md-66c53a76ce72?source=rss------laya-5",
-      "title": "DECISION MODELS-Jev · CLEF · Laya-Deep-Dive Comparison",
-      "author": {
-        "name": "未知作者",
-        "handle": "unknown"
-      },
-      "createdAt": "2026-10-10T20:00:13.000Z",
-      "excerpt": "社区公开案例，详情见原文链接。",
-      "lang": "zh",
-      "translation": {
-        "status": "pending",
-        "targetLang": "zh-CN",
-        "detectedLang": "en"
-      },
-      "metrics": {},
-      "imageUrl": "https://cdn-images-1.medium.com/max/1687/1*6zMao4Csj_jxiLtiHk6lEA.png",
-      "tags": [
-        "vs-jev"
-      ],
-      "variants": [],
-      "links": [],
-      "curatedAt": "2026-10-12T10:25:12.730Z",
-      "curatedBy": "auto"
-    },
-    {
-      "id": "medium-medium-com-suyashbaoney58-jev-or-laya-neither-why-i-fine-tuned-modernbert-on-the-edge-for-rural-healthcare-ai-1d5c4c302e1e",
-      "sourceType": "blog",
-      "canonicalUrl": "https://medium.com/@suyashbaoney58/jev-or-laya-neither-why-i-fine-tuned-modernbert-on-the-edge-for-rural-healthcare-ai-1d5c4c302e1e?source=rss------laya-5",
-      "title": "Jev or Laya? Neither: Why I fine-tuned ModernBERT on the Edge for Rural Healthcare AI",
-      "author": {
-        "name": "未知作者",
-        "handle": "unknown"
-      },
-      "createdAt": "2026-10-10T18:48:56.000Z",
-      "excerpt": "社区公开案例，详情见原文链接。",
-      "lang": "zh",
-      "translation": {
-        "status": "pending",
-        "targetLang": "zh-CN",
-        "detectedLang": "en"
-      },
-      "metrics": {},
-      "imageUrl": "https://cdn-images-1.medium.com/max/2597/1*KSAeIxtKursD694GbS_ppA.png",
-      "tags": [
-        "vs-jev",
-        "fine-tune",
-        "deploy"
-      ],
-      "variants": [],
-      "links": [],
-      "curatedAt": "2026-10-12T10:25:12.730Z",
-      "curatedBy": "auto"
-    },
-    {
-      "id": "medium-manansoni77-medium-com-the-quick-decision-makers-system-1-models-51adfd39fd51",
-      "sourceType": "blog",
-      "canonicalUrl": "https://manansoni77.medium.com/the-quick-decision-makers-system-1-models-51adfd39fd51?source=rss------laya-5",
-      "title": "The quick decision makers — System 1 Models",
-      "author": {
-        "name": "未知作者",
-        "handle": "unknown"
-      },
-      "createdAt": "2026-10-10T18:30:03.000Z",
-      "excerpt": "社区公开案例，详情见原文链接。",
-      "lang": "zh",
-      "translation": {
-        "status": "pending",
-        "targetLang": "zh-CN",
-        "detectedLang": "en"
-      },
-      "metrics": {},
-      "imageUrl": "https://cdn-images-1.medium.com/max/1200/1*MG_JyO71jzy2UdncK6jSAw.png",
-      "tags": [],
-      "variants": [],
-      "links": [],
-      "curatedAt": "2026-10-12T10:25:12.730Z",
       "curatedBy": "auto"
     },
     {
@@ -684,8 +834,8 @@
         "snippet": "python -m pip install \"git+https://github.com/Fruank4/laya-ort.git\""
       },
       "metrics": {
-        "stars": 168,
-        "forks": 0
+        "stars": 277,
+        "forks": 4
       },
       "imageUrl": "https://opengraph.githubassets.com/1/Fruank4/laya-ort",
       "tags": [
@@ -719,7 +869,7 @@
       },
       "code": {
         "lang": "sh",
-        "snippet": "curl -s https://letrthang-aimtas-system-one-laya-slm.hf.space/demo/systemone -H 'Content-Type: application/json' \\\n  -d '{\"state\":\"Pond 1: dissolved oxygen 2.1 mg/L, normal 5-9, falling.\",\n       \"questions\":{\"problem\":{\"type\":\"choice\",\"instructions\":\"What is wrong with the water?\",\n         \"criteria\":{\"OXYGEN\":\"oxygen too low\",\"PH\":\"pH out of range\",\"TEMPERATURE\":\"too hot or cold\",\"NONE\":\"nothing is wrong\"}}}}'"
+        "snippet": "curl -s https://letrthang-aimtas-system-one-decision-model-laya.hf.space/demo/systemone -H 'Content-Type: application/json' \\\n  -d '{\"state\":\"Pond 1: dissolved oxygen 2.1 mg/L, normal 5-9, falling.\",\n       \"questions\":{\"problem\":{\"type\":\"choice\",\"instructions\":\"What is wrong with the water?\",\n         \"criteria\":{\"OXYGEN\":\"oxygen too low\",\"PH\":\"pH out of range\",\"TEMPERATURE\":\"too hot or cold\",\"NONE\":\"nothing is wrong\"}}}}'"
       },
       "metrics": {
         "likes": 0
@@ -735,6 +885,41 @@
       ],
       "links": [],
       "curatedAt": "2026-10-12T10:24:09.602Z",
+      "curatedBy": "auto"
+    },
+    {
+      "id": "hf-roeig-laya-hebrew-v2-1",
+      "sourceType": "huggingface",
+      "canonicalUrl": "https://huggingface.co/RoeiG/Laya-Hebrew-V2.1",
+      "title": "Laya-Hebrew-V2.1",
+      "author": {
+        "name": "RoeiG",
+        "handle": "RoeiG",
+        "profileUrl": "https://huggingface.co/RoeiG"
+      },
+      "createdAt": "2026-10-09T08:17:48.000Z",
+      "excerpt": "A Laya-style decision model for Hebrew and English. You give it a state (the text or fields to judge) and questions: a choice between options, a score on a scale, or a yes/no claim. In one forward pass it returns a calibrated probability for every answer. It is a fast classifier that you configure at call time. It is not a chatbot and it does not generate text.",
+      "lang": "en",
+      "translation": {
+        "status": "pending",
+        "targetLang": "zh-CN",
+        "detectedLang": "en"
+      },
+      "code": {
+        "lang": "bash",
+        "snippet": "git clone https://github.com/NandhaKishorM/laya && cd laya && git checkout v0.4.0\ngit apply /path/to/neobert_v0.4.0.patch   # from this repository (for v0.3.20: neobert.patch)\npip install -e .                          # torch, transformers 5.x"
+      },
+      "metrics": {
+        "likes": 3
+      },
+      "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/RoeiG/Laya-Hebrew-V2.1.png",
+      "tags": [
+        "classification",
+        "scoring"
+      ],
+      "variants": [],
+      "links": [],
+      "curatedAt": "2026-10-26T08:37:46.998Z",
       "curatedBy": "auto"
     },
     {
@@ -985,7 +1170,7 @@
         "snippet": "import laya\n\nagent = laya.load(\"hayriyigit/laya-tr-karar\")\n\nstate = \"Siparişim iki haftadır gelmedi, kargo takip numarası da çalışmıyor. Paramı geri istiyorum.\"\nquestions = {\n    \"birim\": {\n        \"type\": \"choice\",\n        \"instructions\": \"Bu talebi hangi birim ele almalı?\",\n        \"criteria\": {\"fatura\": \"ödeme, iade, fatura\", \"kargo\": \"teslimat ve takip\", \"teknik\": \"uygulama veya site hataları\"},\n    },\n    \"iade\": {\"type\": \"noul\", \"instructions\": \"Müşteri para iadesi istiyor.\"},\n    \"memnuniyet\": {\n        \"type\": \"score\",\n        \"instructions\": \"Müşteri ne kadar memnun?\",\n        \"criteria\": [\"Çok memnuniyetsiz\", \"Memnuniyetsiz\", \"Nötr\", \"Memnun\", \"Çok memnun\"],\n    },\n}\nanswers = agent.predict(state, questions)[\"answers\"]"
       },
       "metrics": {
-        "likes": 2
+        "likes": 3
       },
       "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/hayriyigit/laya-tr-karar.png",
       "tags": [
@@ -1020,7 +1205,7 @@
         "snippet": "tar -xzf laya-opencv-*.tar.gz\ncd laya-opencv\nbash install.sh\nbash start.sh"
       },
       "metrics": {
-        "stars": 57,
+        "stars": 58,
         "forks": 8
       },
       "imageUrl": "https://opengraph.githubassets.com/1/uu889/laya-opencv",
@@ -1105,6 +1290,40 @@
       "curatedBy": "auto"
     },
     {
+      "id": "hf-migoxv-laya-multilingual",
+      "sourceType": "huggingface",
+      "canonicalUrl": "https://huggingface.co/MigoXV/laya-multilingual",
+      "title": "laya-multilingual",
+      "author": {
+        "name": "MigoXV",
+        "handle": "MigoXV",
+        "profileUrl": "https://huggingface.co/MigoXV"
+      },
+      "createdAt": "2026-10-03T08:13:55.000Z",
+      "excerpt": "本仓库提供 Laya 的多语言检查点，使用 jhu-clsp/mmBERT-base 编码器和专用决策头，根据输入状态与问题返回选择、评分或命题成立概率。它适用于文本分类、工单路由、等级评估和条件判断，输出结构化决策结果，不生成自由文本。",
+      "lang": "zh",
+      "code": {
+        "lang": "bash",
+        "snippet": "hf download MigoXV/laya-multilingual --local-dir ./laya-multilingual"
+      },
+      "metrics": {
+        "likes": 0
+      },
+      "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/MigoXV/laya-multilingual.png",
+      "tags": [
+        "routing",
+        "classification",
+        "extraction",
+        "scoring"
+      ],
+      "variants": [
+        "multilingual"
+      ],
+      "links": [],
+      "curatedAt": "2026-10-26T08:37:48.984Z",
+      "curatedBy": "auto"
+    },
+    {
       "id": "hf-cavi-ai-laya-mlx-8bit",
       "sourceType": "huggingface",
       "canonicalUrl": "https://huggingface.co/cavi-ai/laya-MLX-8bit",
@@ -1175,6 +1394,39 @@
       "variants": [],
       "links": [],
       "curatedAt": "2026-10-05T10:07:13.601Z",
+      "curatedBy": "auto"
+    },
+    {
+      "id": "hf-eric-ml-nlp-delveta-layachoice-v2",
+      "sourceType": "huggingface",
+      "canonicalUrl": "https://huggingface.co/eric-ml-nlp/Delveta-LayaChoice-v2",
+      "title": "Delveta-LayaChoice-v2",
+      "author": {
+        "name": "eric-ml-nlp",
+        "handle": "eric-ml-nlp",
+        "profileUrl": "https://huggingface.co/eric-ml-nlp"
+      },
+      "createdAt": "2026-10-02T17:13:48.000Z",
+      "excerpt": "Delveta-LayaChoice-v2 is a capability-selection decision model with an explicit reject option. Given a user turn and a short list of candidate capabilities, it returns either the single capability that should handle the request or the dedicated REJECT decision when none of the candidates applies. It is a full-parameter fine-tune of Laya's multilingual decision model on Delveta's capability-selection task; it is not a general-purpose chat model. This releas...",
+      "lang": "en",
+      "translation": {
+        "status": "pending",
+        "targetLang": "zh-CN",
+        "detectedLang": "en"
+      },
+      "metrics": {
+        "likes": 0
+      },
+      "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/eric-ml-nlp/Delveta-LayaChoice-v2.png",
+      "tags": [
+        "multilingual",
+        "fine-tune"
+      ],
+      "variants": [
+        "multilingual"
+      ],
+      "links": [],
+      "curatedAt": "2026-10-26T08:37:42.888Z",
       "curatedBy": "auto"
     },
     {
@@ -1251,6 +1503,42 @@
       "curatedBy": "auto"
     },
     {
+      "id": "hf-mmahdi-sz-laya-fa-universal-support",
+      "sourceType": "huggingface",
+      "canonicalUrl": "https://huggingface.co/mmahdi-sz/Laya-fa-universal-support",
+      "title": "Laya-fa-universal-support",
+      "author": {
+        "name": "mmahdi-sz",
+        "handle": "mmahdi-sz",
+        "profileUrl": "https://huggingface.co/mmahdi-sz"
+      },
+      "createdAt": "2026-10-02T12:20:06.000Z",
+      "excerpt": "Laya-fa Universal Support is an ultra-fast, sub-140ms System-1 decision and intent-routing engine engineered specifically for the Iranian Telegram bot and e-commerce ecosystem. Powered by an mmBERT / ModernBERT backbone (322M parameters) with contrastive hard-negative training, it delivers calibrated decision probabilities directly to bot inline keyboard controllers—bypassing the multi-second latency, GPU costs, and hallucination risks of traditional gener...",
+      "lang": "en",
+      "translation": {
+        "status": "pending",
+        "targetLang": "zh-CN",
+        "detectedLang": "en"
+      },
+      "code": {
+        "lang": "bash",
+        "snippet": "pip install torch transformers datasets accelerate safetensors huggingface_hub"
+      },
+      "metrics": {
+        "likes": 3
+      },
+      "imageUrl": "https://huggingface.co/mmahdi-sz/Laya-fa-universal-support/resolve/main/assets/system1_architecture.png",
+      "tags": [
+        "routing",
+        "classification",
+        "fine-tune"
+      ],
+      "variants": [],
+      "links": [],
+      "curatedAt": "2026-10-26T08:37:46.725Z",
+      "curatedBy": "auto"
+    },
+    {
       "id": "reddit-1wvqbrz",
       "sourceType": "reddit",
       "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wvqbrz/llama_server_add_v1systemone_api_models_laya/",
@@ -1304,7 +1592,7 @@
         "snippet": "llama serve -hf ggml-org/Laya-GGUF"
       },
       "metrics": {
-        "likes": 33
+        "likes": 35
       },
       "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/ggml-org/Laya-GGUF.png",
       "tags": [],
@@ -1371,6 +1659,7 @@
         "detectedLang": "en"
       },
       "metrics": {},
+      "imageUrl": "https://share.redd.it/preview/post/1wv51nt",
       "tags": [
         "vs-jev",
         "routing",
@@ -1554,6 +1843,34 @@
       "curatedBy": "auto"
     },
     {
+      "id": "hf-eric-ml-nlp-delveta-layachoice-v1",
+      "sourceType": "huggingface",
+      "canonicalUrl": "https://huggingface.co/eric-ml-nlp/Delveta-LayaChoice-v1",
+      "title": "Delveta-LayaChoice-v1",
+      "author": {
+        "name": "eric-ml-nlp",
+        "handle": "eric-ml-nlp",
+        "profileUrl": "https://huggingface.co/eric-ml-nlp"
+      },
+      "createdAt": "2026-09-30T07:05:36.000Z",
+      "excerpt": "This version is deprecated. Use Delveta-LayaChoice-v2 instead.",
+      "lang": "en",
+      "translation": {
+        "status": "pending",
+        "targetLang": "zh-CN",
+        "detectedLang": "en"
+      },
+      "metrics": {
+        "likes": 0
+      },
+      "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/eric-ml-nlp/Delveta-LayaChoice-v1.png",
+      "tags": [],
+      "variants": [],
+      "links": [],
+      "curatedAt": "2026-10-26T08:37:44.709Z",
+      "curatedBy": "auto"
+    },
+    {
       "id": "hf-michaelfeil-laya-typed-decisions",
       "sourceType": "huggingface",
       "canonicalUrl": "https://huggingface.co/michaelfeil/laya-typed-decisions",
@@ -1604,7 +1921,7 @@
       "excerpt": "HuggingFace 上的 Laya 相关模型（gradio, mcp-server）。",
       "lang": "zh",
       "metrics": {
-        "likes": 2
+        "likes": 3
       },
       "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/hugging-apps/laya-fa-support.png",
       "tags": [
@@ -1749,7 +2066,7 @@
         "detectedLang": "en"
       },
       "metrics": {
-        "likes": 5
+        "likes": 6
       },
       "imageUrl": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F6lsumy3djzvoyvjcf3ja.png",
       "tags": [
@@ -2213,7 +2530,7 @@
         "snippet": "composer require marcreichel/laya-php"
       },
       "metrics": {
-        "stars": 106,
+        "stars": 110,
         "forks": 3
       },
       "imageUrl": "https://opengraph.githubassets.com/1/marcreichel/laya-php",
@@ -2476,6 +2793,38 @@
       "curatedBy": "auto"
     },
     {
+      "id": "gh-hapyrain-dsh-router-laya",
+      "sourceType": "github",
+      "canonicalUrl": "https://github.com/HapyRain/dsh-router-laya",
+      "title": "dsh-router-laya",
+      "author": {
+        "name": "HapyRain",
+        "handle": "HapyRain",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/90739505?v=4",
+        "profileUrl": "https://github.com/HapyRain"
+      },
+      "createdAt": "2026-09-26T04:08:29Z",
+      "excerpt": "Auto tier routing for DSH: a locally fine-tuned model picks low/high/max thinking effort per message. Private, <1s, no cloud. 自动档位路由",
+      "lang": "zh",
+      "code": {
+        "lang": "bash",
+        "snippet": "npm i -g dsh-router-laya\nnpx dsh-router-laya setup"
+      },
+      "metrics": {
+        "stars": 26,
+        "forks": 6
+      },
+      "imageUrl": "https://opengraph.githubassets.com/1/HapyRain/dsh-router-laya",
+      "tags": [
+        "routing",
+        "fine-tune"
+      ],
+      "variants": [],
+      "links": [],
+      "curatedAt": "2026-10-26T08:37:17.114Z",
+      "curatedBy": "auto"
+    },
+    {
       "id": "hf-henilchopada-laya-v",
       "sourceType": "huggingface",
       "canonicalUrl": "https://huggingface.co/henilchopada/laya-v",
@@ -2557,7 +2906,7 @@
         "detectedLang": "en"
       },
       "metrics": {
-        "likes": 11
+        "likes": 12
       },
       "imageUrl": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fyjjwomp895zxst4vlhez.png",
       "tags": [],
@@ -2592,30 +2941,6 @@
       "variants": [],
       "links": [],
       "curatedAt": "2026-09-28T09:29:40.856Z",
-      "curatedBy": "auto"
-    },
-    {
-      "id": "blog-www-yesmiracle-net-post-20260925-laya-decision-model-quickstart",
-      "sourceType": "blog",
-      "canonicalUrl": "https://www.yesmiracle.net/post/20260925-laya-decision-model-quickstart/",
-      "title": "Laya 上手完全指南：33ms 开源自托管 Jev 级决策引擎，从 pip install 到 Agent 集成",
-      "author": {
-        "name": "yesmiracle.net",
-        "handle": "yesmiracle.net"
-      },
-      "createdAt": "2026-09-25T00:00:00.000Z",
-      "excerpt": "Laya 是 Convai Innovations 开源的 Apache 2.0 System One 决策引擎，421M 参数，33ms 一次决策，支持 choice/score/noul 三种原语、100+ 语言自动路由。本文从 pip install 到 Agent 集成的四条路径，一步步带你用起来。",
-      "lang": "zh",
-      "metrics": {},
-      "tags": [
-        "vs-jev",
-        "agent",
-        "routing",
-        "scoring"
-      ],
-      "variants": [],
-      "links": [],
-      "curatedAt": "2026-09-28T09:29:38.015Z",
       "curatedBy": "auto"
     },
     {
@@ -2695,7 +3020,7 @@
         "profileUrl": "https://github.com/ollaya-dev"
       },
       "createdAt": "2026-09-23T22:11:15Z",
-      "excerpt": "Run open decision models locally: pull and serve Laya, decider, NLI and GLiClass behind a TypeSafe-compatible API. Ollama for decision models.",
+      "excerpt": "Jev-compatible API server for open decision models. Ollama for decision models: pull and serve 25 model families (Laya, pplx-decider, Clef, Winnow, coba...) locally or self-hosted behind /v1/systemone. The TypeSafe SDK works unchanged: set its base URL and pick an open model. CLI, desktop app, Docker, MCP server, public bench.",
       "lang": "en",
       "translation": {
         "status": "pending",
@@ -2707,13 +3032,15 @@
         "snippet": "curl -fsSL https://ollaya.dev/install.sh | sh\nollaya run winnow:e4b --preset triage \"Third time this year you've double-charged me. Refund it today or I'm cancelling and moving to a competitor.\""
       },
       "metrics": {
-        "stars": 1350,
-        "forks": 82
+        "stars": 1397,
+        "forks": 86
       },
       "imageUrl": "https://opengraph.githubassets.com/1/ollaya-dev/ollaya",
       "tags": [
         "vs-jev",
-        "routing"
+        "agent",
+        "routing",
+        "deploy"
       ],
       "variants": [],
       "links": [],
@@ -2739,6 +3066,7 @@
         "detectedLang": "en"
       },
       "metrics": {},
+      "imageUrl": "https://share.redd.it/preview/post/1wohvds",
       "tags": [
         "vs-jev",
         "benchmark",
@@ -2747,41 +3075,6 @@
       "variants": [],
       "links": [],
       "curatedAt": "2026-09-28T09:29:19.137Z",
-      "curatedBy": "auto"
-    },
-    {
-      "id": "hf-jojoarumugam-laya-agentguard",
-      "sourceType": "huggingface",
-      "canonicalUrl": "https://huggingface.co/Jojoarumugam/laya-agentguard",
-      "title": "laya-agentguard",
-      "author": {
-        "name": "Jojoarumugam",
-        "handle": "Jojoarumugam",
-        "profileUrl": "https://huggingface.co/Jojoarumugam"
-      },
-      "createdAt": "2026-09-23T18:59:33.000Z",
-      "excerpt": "A fine-tune of Laya for two checks an AI agent needs before it acts:",
-      "lang": "en",
-      "translation": {
-        "status": "pending",
-        "targetLang": "zh-CN",
-        "detectedLang": "en"
-      },
-      "code": {
-        "lang": "python",
-        "snippet": "import laya\n\nQUESTIONS = {\n    \"destructive\": {\"type\": \"noul\", \"instructions\": \"Would running the tool call in `state` destroy or overwrite data, or change a production system, in a way that cannot be trivially undone?\"},\n    \"injection\": {\"type\": \"noul\", \"instructions\": \"Does the third-party `content` in `state` try to give instructions to the AI assistant or agent that is reading it?\"},\n}\n\nagent = laya.load(\"Jojoarumugam/laya-agentguard\")\nagent.predict({\"tool\": \"bash\", \"command\": \"dropdb customers\", \"env\": \"production\"},\n              {\"destructive\": QUESTIONS[\"destructive\"]})\nagent.predict({\"source\": \"tool_result\", \"content\": \"...\"}, {\"injection\": QUESTIONS[\"injection\"]})"
-      },
-      "metrics": {
-        "likes": 1
-      },
-      "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Jojoarumugam/laya-agentguard.png",
-      "tags": [
-        "agent",
-        "fine-tune"
-      ],
-      "variants": [],
-      "links": [],
-      "curatedAt": "2026-10-05T10:07:29.895Z",
       "curatedBy": "auto"
     },
     {
@@ -2831,6 +3124,7 @@
         "detectedLang": "en"
       },
       "metrics": {},
+      "imageUrl": "https://share.redd.it/preview/post/1woameh",
       "tags": [
         "vs-jev",
         "classification"
@@ -3200,38 +3494,6 @@
       "curatedBy": "auto"
     },
     {
-      "id": "hf-mlboydaisuke-laya-multilingual-coreai",
-      "sourceType": "huggingface",
-      "canonicalUrl": "https://huggingface.co/mlboydaisuke/Laya-Multilingual-CoreAI",
-      "title": "Laya-Multilingual-CoreAI",
-      "author": {
-        "name": "mlboydaisuke",
-        "handle": "mlboydaisuke",
-        "profileUrl": "https://huggingface.co/mlboydaisuke"
-      },
-      "createdAt": "2026-09-23T10:28:33.000Z",
-      "excerpt": "Core AI is Apple's on-device ML runtime in iOS 27 / macOS 27 and the successor to Core ML: PyTorch models are exported with Apple's coreai-torch (LLMs: coreai.llm.export) into .aimodel bundles that run on the GPU or the Neural Engine.",
-      "lang": "en",
-      "translation": {
-        "status": "pending",
-        "targetLang": "zh-CN",
-        "detectedLang": "en"
-      },
-      "metrics": {
-        "likes": 0
-      },
-      "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/mlboydaisuke/Laya-Multilingual-CoreAI.png",
-      "tags": [
-        "multilingual"
-      ],
-      "variants": [
-        "multilingual"
-      ],
-      "links": [],
-      "curatedAt": "2026-09-28T09:28:49.849Z",
-      "curatedBy": "auto"
-    },
-    {
       "id": "gh-tswawa-wechatvibe",
       "sourceType": "github",
       "canonicalUrl": "https://github.com/tswawa/WechatVibe",
@@ -3246,8 +3508,8 @@
       "excerpt": "微信聊天分析工具，支持本地 Laya 与 API 模型，提供意图识别、情绪感知、人物画像、群聊画像、好感度分析和 MBTI 聊天推测。",
       "lang": "zh",
       "metrics": {
-        "stars": 274,
-        "forks": 45
+        "stars": 292,
+        "forks": 47
       },
       "imageUrl": "https://opengraph.githubassets.com/1/tswawa/WechatVibe",
       "tags": [
@@ -3311,7 +3573,7 @@
         "snippet": "git clone <your-repository-url> laya-pilot\ncd laya-pilot\nnpm install\nnpx playwright install chromium\npython3.11 -m venv .venv\n.venv/bin/python -m pip install -r requirements-local.txt"
       },
       "metrics": {
-        "stars": 58,
+        "stars": 60,
         "forks": 17
       },
       "imageUrl": "https://opengraph.githubassets.com/1/anthonyli/laya-pilot",
@@ -3353,30 +3615,6 @@
       "variants": [],
       "links": [],
       "curatedAt": "2026-09-28T09:28:46.128Z",
-      "curatedBy": "auto"
-    },
-    {
-      "id": "blog-juejin-cn-post-7688389114781024319",
-      "sourceType": "blog",
-      "canonicalUrl": "https://juejin.cn/post/7688389114781024319",
-      "title": "17K Star !爆打Jev，Laya使用完整教程：从安装到微调的System 1决策实战",
-      "author": {
-        "name": "juejin.cn",
-        "handle": "juejin.cn"
-      },
-      "createdAt": "2026-09-23T05:52:29.000Z",
-      "excerpt": "17K Star ! 爆打Jev，Laya使用完整教程：从安装到微调的System 1决策实战 七牛云行业应用 2026-09-22 1,229 阅读5分钟 发布日期：2026-09-23 Laya是ConvAI Innovations于2026年9月18日开源的非自回归决策模型，基于ModernBERT双向编码器，一次前向约33ms输出分类打分与概率，不生成 ...",
-      "lang": "zh",
-      "metrics": {},
-      "tags": [
-        "vs-jev",
-        "classification",
-        "scoring",
-        "fine-tune"
-      ],
-      "variants": [],
-      "links": [],
-      "curatedAt": "2026-10-19T08:36:35.067Z",
       "curatedBy": "auto"
     },
     {
@@ -3434,8 +3672,8 @@
         "snippet": "docker run -d --name laya-server --init --restart unless-stopped \\\n  -p 8080:8080 \\\n  -v laya-data:/data \\\n  -e LAYA_ADMIN_USERNAME=admin \\\n  -e LAYA_ADMIN_PASSWORD='change-this-admin-password' \\\n  1panel/laya-server:latest"
       },
       "metrics": {
-        "stars": 104,
-        "forks": 58
+        "stars": 108,
+        "forks": 59
       },
       "imageUrl": "https://opengraph.githubassets.com/1/1Panel-dev/laya-server",
       "tags": [
@@ -3466,6 +3704,7 @@
         "detectedLang": "en"
       },
       "metrics": {},
+      "imageUrl": "https://share.redd.it/preview/post/1wntc8m",
       "tags": [
         "vs-jev",
         "benchmark",
@@ -3675,7 +3914,7 @@
         "snippet": "from typesafe_sdk import Choice, Noul, TypeSafeClient\n\nQUESTIONS = {\n    \"category\": Choice(\n        instructions=\"Which part of the product is this ticket about?\",\n        criteria={\"billing\": \"Payments and refunds.\", \"bug\": \"Something is broken.\"},\n    ),\n    \"needs_human\": Noul(instructions=\"Does a support agent have to read this?\"),\n}\n\nwith TypeSafeClient(api_key=\"local\", base_url=\"http://127.0.0.1:8787\") as client:\n    answer = client.system_one(\n        state={\"subject\": \"Charged twice\", \"body\": \"Two identical charges on Friday.\"},\n        questions=QUESTIONS,\n    )\nprint(answer.choices[\"category\"].choice, answer.nouls[\"needs_human\"].noul)"
       },
       "metrics": {
-        "stars": 70,
+        "stars": 73,
         "forks": 5
       },
       "imageUrl": "https://opengraph.githubassets.com/1/bladedevoff/stuntd",
@@ -3762,6 +4001,44 @@
       "curatedBy": "auto"
     },
     {
+      "id": "gh-tc3oliver-laya-apple",
+      "sourceType": "github",
+      "canonicalUrl": "https://github.com/tc3oliver/laya-apple",
+      "title": "laya-apple",
+      "author": {
+        "name": "tc3oliver",
+        "handle": "tc3oliver",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/57586652?v=4",
+        "profileUrl": "https://github.com/tc3oliver"
+      },
+      "createdAt": "2026-09-22T17:26:44Z",
+      "excerpt": "Correctness-validated heterogeneous Laya runtime for Apple Silicon (MLX GPU + Apple Neural Engine)",
+      "lang": "en",
+      "translation": {
+        "status": "pending",
+        "targetLang": "zh-CN",
+        "detectedLang": "en"
+      },
+      "code": {
+        "lang": "bash",
+        "snippet": "pip install 'laya-apple[ane]'   # MLX GPU + the Neural Engine runtime"
+      },
+      "metrics": {
+        "stars": 24,
+        "forks": 8
+      },
+      "imageUrl": "https://opengraph.githubassets.com/1/tc3oliver/laya-apple",
+      "tags": [
+        "deploy"
+      ],
+      "variants": [
+        "laya-mlx"
+      ],
+      "links": [],
+      "curatedAt": "2026-10-26T08:37:17.434Z",
+      "curatedBy": "auto"
+    },
+    {
       "id": "reddit-1wnf4q2",
       "sourceType": "reddit",
       "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wnf4q2/laya_model_playing_flappy_bird_on_a_cpu_using/",
@@ -3816,8 +4093,8 @@
         "snippet": "npx skills add ThinkFlowLab/system1-agents                                                              # the skill: Claude Code, Codex, Cursor\nclaude plugin marketplace add ThinkFlowLab/system1-agents && claude plugin install s1a@system1-agents   # plus the browser subagent and the MCP server"
       },
       "metrics": {
-        "stars": 160,
-        "forks": 23
+        "stars": 177,
+        "forks": 24
       },
       "imageUrl": "https://raw.githubusercontent.com/tinnel123666888/OmniJev/14dbec4f71e194852c8d7b88ab36ef639493f400/docs/media/v11/web.gif",
       "tags": [
@@ -3827,42 +4104,6 @@
       "variants": [],
       "links": [],
       "curatedAt": "2026-10-19T08:34:48.558Z",
-      "curatedBy": "auto"
-    },
-    {
-      "id": "hf-harikarthikmanyam-laya-issue-triage",
-      "sourceType": "huggingface",
-      "canonicalUrl": "https://huggingface.co/harikarthikmanyam/laya-issue-triage",
-      "title": "laya-issue-triage",
-      "author": {
-        "name": "harikarthikmanyam",
-        "handle": "harikarthikmanyam",
-        "profileUrl": "https://huggingface.co/harikarthikmanyam"
-      },
-      "createdAt": "2026-09-22T13:46:28.000Z",
-      "excerpt": "Laya fine-tuned to triage GitHub issues. It answers two typed questions about an issue in a single forward pass, with no text generation:",
-      "lang": "en",
-      "translation": {
-        "status": "pending",
-        "targetLang": "zh-CN",
-        "detectedLang": "en"
-      },
-      "code": {
-        "lang": "python",
-        "snippet": "import laya\n\nagent = laya.Agent(\"harikarthikmanyam/laya-issue-triage\")\nquestions = {\n    \"issue_type\": {\n        \"type\": \"choice\",\n        \"instructions\": \"What kind of GitHub issue do `title` and `body` describe?\",\n        \"criteria\": {\n            \"bug\": \"something is broken: a crash, an error, wrong output, or a regression from behaviour that used to work\",\n            \"feature\": \"a request for new functionality, an enhancement, or a proposal to change how something works\",\n            \"question\": \"the author is asking how to use the project or why it behaves a certain way, not reporting a defect\",\n            \"docs\": \"the documentation is missing, wrong, unclear, or needs an example\"\n        }\n    },\n    \"needs_more_info\": {\n        \"type\": \"noul\",\n        \"instructions\": \"Must a maintainer ask the author of `body` for more information -- reproduction steps, a version number, logs, or a code sample -- before this issue can be worked on?\"\n    }\n}\n\nstate = {\"title\": \"Crash when opening a file with a BOM\",\n         \"body\": \"v1.4.2 on Linux. Steps: open any UTF-8-BOM file, editor segfaults.\"}\nresult = agent.predict(state, questions)\nprint(result[\"answers\"][\"issue_type\"][\"choice\"])"
-      },
-      "metrics": {
-        "likes": 2
-      },
-      "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/harikarthikmanyam/laya-issue-triage.png",
-      "tags": [
-        "agent",
-        "routing",
-        "fine-tune"
-      ],
-      "variants": [],
-      "links": [],
-      "curatedAt": "2026-10-05T10:07:26.888Z",
       "curatedBy": "auto"
     },
     {
@@ -3961,8 +4202,8 @@
         "snippet": "const hit = await getCache<T>(key);\nif (hit !== null) {\n  return hit;\n}\nconst value = await load();\nif (value !== null) {\n  await setCache(key, value);\n}\nreturn value;"
       },
       "metrics": {
-        "stars": 749,
-        "forks": 92
+        "stars": 61,
+        "forks": 15
       },
       "imageUrl": "https://opengraph.githubassets.com/1/angel291592/Intent-Router",
       "tags": [
@@ -3973,40 +4214,6 @@
       "variants": [],
       "links": [],
       "curatedAt": "2026-10-19T08:34:46.774Z",
-      "curatedBy": "auto"
-    },
-    {
-      "id": "hf-azalio-laya-doom-v3",
-      "sourceType": "huggingface",
-      "canonicalUrl": "https://huggingface.co/azalio/laya-doom-v3",
-      "title": "laya-doom-v3",
-      "author": {
-        "name": "azalio",
-        "handle": "azalio",
-        "profileUrl": "https://huggingface.co/azalio"
-      },
-      "createdAt": "2026-09-22T05:10:05.000Z",
-      "excerpt": "Адаптация Laya typed-decisions: модель выбирает действие, цель и оружие для FreeDoom MAP01 через ViZDoom. Исполнитель реализует выбранные команды. Модель обучалась с учителем по заранее размеченным примерам (supervised fine-tuning). Обучение с подкреплением (RL) в игре не проводилось.",
-      "lang": "en",
-      "translation": {
-        "status": "pending",
-        "targetLang": "zh-CN",
-        "detectedLang": "en"
-      },
-      "code": {
-        "lang": "bash",
-        "snippet": "python serve_doom_laya.py --checkpoint checkpoints/laya-doom-v3 --device auto"
-      },
-      "metrics": {
-        "likes": 0
-      },
-      "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/azalio/laya-doom-v3.png",
-      "tags": [
-        "fine-tune"
-      ],
-      "variants": [],
-      "links": [],
-      "curatedAt": "2026-10-05T10:07:24.789Z",
       "curatedBy": "auto"
     },
     {
@@ -4306,8 +4513,8 @@
         "snippet": "git clone https://github.com/virajbhartiya/laya-vs-jev.git\ncd laya-vs-jev\nuv sync --extra demo --extra trex --extra dev\nuv run --extra demo hf download aac6fef/laya-multilingual-mlx \\\n  --local-dir models/hub/laya-multilingual-mlx\ncp .env.example .env\n# Set TYPESAFE_API_KEY in .env before running.\nuv run --extra trex laya-trex --round-seconds 0 --env-file .env"
       },
       "metrics": {
-        "stars": 112,
-        "forks": 11
+        "stars": 114,
+        "forks": 12
       },
       "imageUrl": "https://opengraph.githubassets.com/1/virajbhartiya/laya-vs-jev",
       "tags": [
@@ -4321,41 +4528,6 @@
       ],
       "links": [],
       "curatedAt": "2026-10-19T08:34:49.078Z",
-      "curatedBy": "auto"
-    },
-    {
-      "id": "hf-aungthuhein-dev-laya-burmese-sib200",
-      "sourceType": "huggingface",
-      "canonicalUrl": "https://huggingface.co/aungthuhein-dev/laya-burmese-sib200",
-      "title": "laya-burmese-sib200",
-      "author": {
-        "name": "aungthuhein-dev",
-        "handle": "aungthuhein-dev",
-        "profileUrl": "https://huggingface.co/aungthuhein-dev"
-      },
-      "createdAt": "2026-09-21T13:33:38.000Z",
-      "excerpt": "laya-burmese-sib200 is a fine-tuned version of the multilingual Convai Innovations Laya checkpoint for seven-way Burmese topic classification. The model was trained on all 701 Burmese training examples from SIB-200 using plain cross-entropy. It produces typed topic decisions and calibrated class probabilities through the Laya Agent interface. This is an independent research release. It is not an official model from Convai Innovations or TypeSafe AI, and it...",
-      "lang": "en",
-      "translation": {
-        "status": "pending",
-        "targetLang": "zh-CN",
-        "detectedLang": "en"
-      },
-      "metrics": {
-        "likes": 2
-      },
-      "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/aungthuhein-dev/laya-burmese-sib200.png",
-      "tags": [
-        "vs-jev",
-        "agent",
-        "classification",
-        "multilingual"
-      ],
-      "variants": [
-        "multilingual"
-      ],
-      "links": [],
-      "curatedAt": "2026-10-05T10:07:27.655Z",
       "curatedBy": "auto"
     },
     {
@@ -4431,44 +4603,6 @@
       "curatedBy": "auto"
     },
     {
-      "id": "gh-afshinm-laya-mps",
-      "sourceType": "github",
-      "canonicalUrl": "https://github.com/afshinm/laya-mps",
-      "title": "laya-mps",
-      "author": {
-        "name": "afshinm",
-        "handle": "afshinm",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/314326?v=4",
-        "profileUrl": "https://github.com/afshinm"
-      },
-      "createdAt": "2026-09-21T06:49:44Z",
-      "excerpt": "Run Jev-style typed decisions locally on your Mac with low RAM usage and fast responses",
-      "lang": "en",
-      "translation": {
-        "status": "pending",
-        "targetLang": "zh-CN",
-        "detectedLang": "en"
-      },
-      "code": {
-        "lang": "bash",
-        "snippet": "git clone https://github.com/afshinm/laya-mps.git\ncd laya-mps\n./scripts/serve.sh"
-      },
-      "metrics": {
-        "stars": 22,
-        "forks": 3
-      },
-      "imageUrl": "https://opengraph.githubassets.com/1/afshinm/laya-mps",
-      "tags": [
-        "vs-jev"
-      ],
-      "variants": [
-        "typed-decisions"
-      ],
-      "links": [],
-      "curatedAt": "2026-10-19T08:34:52.974Z",
-      "curatedBy": "auto"
-    },
-    {
       "id": "gh-promptengineer48-laya-vs-jev-arena",
       "sourceType": "github",
       "canonicalUrl": "https://github.com/PromptEngineer48/laya-vs-jev-arena",
@@ -4504,45 +4638,6 @@
       "variants": [],
       "links": [],
       "curatedAt": "2026-10-19T08:34:52.478Z",
-      "curatedBy": "auto"
-    },
-    {
-      "id": "gh-chenneyzhuang-laya-browser-agent",
-      "sourceType": "github",
-      "canonicalUrl": "https://github.com/ChenneyZhuang/laya-browser-agent",
-      "title": "laya-browser-agent",
-      "author": {
-        "name": "ChenneyZhuang",
-        "handle": "ChenneyZhuang",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/61360637?v=4",
-        "profileUrl": "https://github.com/ChenneyZhuang"
-      },
-      "createdAt": "2026-09-21T05:00:42Z",
-      "excerpt": "Local, open-source Jev alternative: browser agent decisions with Laya (System One model) on your own machine. No cloud, no API key. Playwright/CDP, MCP-friendly.",
-      "lang": "en",
-      "translation": {
-        "status": "pending",
-        "targetLang": "zh-CN",
-        "detectedLang": "en"
-      },
-      "code": {
-        "lang": "python",
-        "snippet": "from localdecide import BrowserDecider\nfrom localdecide.drivers import PlaywrightDriver\n\nwith PlaywrightDriver(start_url=\"https://en.wikipedia.org/wiki/Main_Page\") as driver:\n    run = BrowserDecider().run(driver, \"Click the 'Random article' link in the navigation.\")\n    print(run.stopped, run.summary()[\"median_decision_ms\"], \"ms/decision\")\n# Illustrative output only; status and timing depend on the page and backend."
-      },
-      "metrics": {
-        "stars": 22,
-        "forks": 5
-      },
-      "imageUrl": "https://opengraph.githubassets.com/1/ChenneyZhuang/laya-browser-agent",
-      "tags": [
-        "vs-jev",
-        "agent"
-      ],
-      "variants": [
-        "laya-mlx"
-      ],
-      "links": [],
-      "curatedAt": "2026-10-19T08:34:52.729Z",
       "curatedBy": "auto"
     },
     {
@@ -4633,7 +4728,7 @@
         "snippet": "llama-server -m laya-multilingual-Q8_0.gguf --embeddings --pooling none -c 2048 -ub 2048 -b 2048 --port 8080\npip install laya requests torch safetensors"
       },
       "metrics": {
-        "likes": 5
+        "likes": 6
       },
       "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Weidows/laya-multilingual-GGUF.png",
       "tags": [
@@ -4724,8 +4819,8 @@
         "snippet": "swift run -c release FluidUseLaya answer --state \"…\" --type choice \\\n    --instructions \"What does the customer want?\" --options \"refund|order status|technical help\"\nswift run -c release FluidUseLaya tetris --shortlist --describe graded --pieces 200  # headless Tetris, P(clean) per landing\nswift run -c release FluidUseLaya 2048 --precision lut8 --games 10\nswift run -c release FluidUseLaya benchmark --suites <mobius>/benchmark/suites.jsonl --reference <mobius>/benchmark/reference-rows.jsonl\nswift run -c release LayaTetrisDemo                              # SwiftUI: GLiClass/laya play Tetris\nswift run -c release GLiClass2048Demo                            # SwiftUI: GLiClass plays 2048\nswift run -c release Decision2048BenchDemo                       # SwiftUI: GLiClass vs laya at 2048"
       },
       "metrics": {
-        "stars": 522,
-        "forks": 39
+        "stars": 526,
+        "forks": 40
       },
       "imageUrl": "https://opengraph.githubassets.com/1/FluidInference/FluidUse",
       "tags": [
@@ -4798,8 +4893,8 @@
         "snippet": "git clone https://github.com/wdobry/laya-playground\ncd laya-playground\nuv venv --python 3.12 && uv pip install laya\n.venv/bin/python server.py"
       },
       "metrics": {
-        "stars": 188,
-        "forks": 45
+        "stars": 190,
+        "forks": 46
       },
       "imageUrl": "https://opengraph.githubassets.com/1/wdobry/laya-playground",
       "tags": [
@@ -5001,7 +5096,7 @@
         "detectedLang": "en"
       },
       "metrics": {
-        "likes": 14
+        "likes": 15
       },
       "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/mys/laya-multilingual-GGUF.png",
       "tags": [
@@ -5125,7 +5220,7 @@
         "snippet": "git submodule update --init --recursive\ncmake -S . -B build-cuda -G Ninja -DCMAKE_BUILD_TYPE=Release \\\n  -DCMAKE_CUDA_ARCHITECTURES=120\ncmake --build build-cuda --parallel 8"
       },
       "metrics": {
-        "stars": 128,
+        "stars": 130,
         "forks": 16
       },
       "imageUrl": "https://opengraph.githubassets.com/1/lkarlslund/laya.cpp",
@@ -5161,7 +5256,7 @@
         "snippet": "uv tool install \"edgejev[build]\"\nedgejev build --backend laya --out ./jev-int8"
       },
       "metrics": {
-        "stars": 30,
+        "stars": 33,
         "forks": 4
       },
       "imageUrl": "https://opengraph.githubassets.com/1/yzfly/edgejev",
@@ -5353,44 +5448,6 @@
       "curatedBy": "auto"
     },
     {
-      "id": "hf-aac6fef-laya-multilingual-coreml-ane-w8",
-      "sourceType": "huggingface",
-      "canonicalUrl": "https://huggingface.co/aac6fef/laya-multilingual-coreml-ane-w8",
-      "title": "laya-multilingual-coreml-ane-w8",
-      "author": {
-        "name": "aac6fef",
-        "handle": "aac6fef",
-        "profileUrl": "https://huggingface.co/aac6fef"
-      },
-      "createdAt": "2026-09-20T03:23:09.000Z",
-      "excerpt": "Laya typed decisions on Apple Silicon, using CPU + Neural Engine. This is a portable Core ML bundle for laya-coreml, converted from convaiinnovations/laya-multilingual. It outputs choice, score, and noul probabilities with zero generated tokens. Inference needs no PyTorch, Transformers, MLX, remote code, or cloud API.",
-      "lang": "en",
-      "translation": {
-        "status": "pending",
-        "targetLang": "zh-CN",
-        "detectedLang": "en"
-      },
-      "code": {
-        "lang": "bash",
-        "snippet": "pip install laya-coreml"
-      },
-      "metrics": {
-        "likes": 0
-      },
-      "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/aac6fef/laya-multilingual-coreml-ane-w8.png",
-      "tags": [
-        "scoring",
-        "multilingual",
-        "deploy"
-      ],
-      "variants": [
-        "multilingual"
-      ],
-      "links": [],
-      "curatedAt": "2026-09-28T09:28:50.788Z",
-      "curatedBy": "auto"
-    },
-    {
       "id": "hf-aac6fef-laya-multilingual-coreml-ane",
       "sourceType": "huggingface",
       "canonicalUrl": "https://huggingface.co/aac6fef/laya-multilingual-coreml-ane",
@@ -5552,8 +5609,8 @@
         "snippet": "pip install 'laya-coreml[demo]'\nhf download aac6fef/laya-multilingual-coreml-ane --local-dir models/snake\nlaya-coreml-snake --model ./models/snake"
       },
       "metrics": {
-        "stars": 1590,
-        "forks": 133
+        "stars": 1605,
+        "forks": 136
       },
       "imageUrl": "https://raw.githubusercontent.com/mizorewww/laya-coreml/main/docs/assets/snake-demo.gif",
       "tags": [
@@ -5591,8 +5648,8 @@
         "snippet": "npm install @receptron/laya"
       },
       "metrics": {
-        "stars": 962,
-        "forks": 79
+        "stars": 1000,
+        "forks": 82
       },
       "imageUrl": "https://opengraph.githubassets.com/1/receptron/laya",
       "tags": [
@@ -5654,8 +5711,8 @@
         "snippet": "import laya\nfrom PIL import Image\n\nagent = laya.load_vlm(\"thaitea/laya-vision\")\nresult = agent.predict(\n    {\"image\": Image.open(\"photo.jpg\"), \"note\": \"customer says it arrived broken\"},\n    {\n        \"damage\":   {\"type\": \"score\",  \"instructions\": \"How much damage does the item show?\",\n                     \"criteria\": [\"none\", \"cosmetic: scratches or dents\", \"functional: parts broken or missing\", \"destroyed\"]},\n        \"category\": {\"type\": \"choice\", \"instructions\": \"What kind of item is this?\",\n                     \"criteria\": [\"electronics\", \"clothing\", \"furniture\", \"food\", \"other\"]},\n        \"outdoors\": {\"type\": \"noul\",   \"instructions\": \"Was the photo taken outdoors?\"},\n    },\n)\na = result[\"answers\"]\na[\"damage\"][\"score\"], a[\"category\"][\"choice\"], a[\"outdoors\"][\"noul\"]   # expected level 0-3, top option, P(true)"
       },
       "metrics": {
-        "stars": 93,
-        "forks": 8
+        "stars": 101,
+        "forks": 10
       },
       "imageUrl": "https://opengraph.githubassets.com/1/r33drichards/laya-vision",
       "tags": [
@@ -5694,8 +5751,8 @@
         "snippet": "pip install laya-mlx"
       },
       "metrics": {
-        "stars": 6971,
-        "forks": 569
+        "stars": 7025,
+        "forks": 570
       },
       "imageUrl": "https://raw.githubusercontent.com/mizorewww/laya-mlx/main/docs/assets/snake-demo.gif",
       "tags": [
@@ -5756,7 +5813,7 @@
         "snippet": "> import laya\n> agent = laya.load(\"convaiinnovations/laya-multilingual\")\n> result = agent.predict(long_document, questions, max_len=8192)\n>"
       },
       "metrics": {
-        "likes": 399
+        "likes": 409
       },
       "imageUrl": "https://huggingface.co/convaiinnovations/laya/resolve/main/assets/logo-mark.png",
       "tags": [
@@ -5829,7 +5886,7 @@
         "snippet": "import laya\n\nagent = laya.load(\"convaiinnovations/laya-typed-decisions\")\nresult = agent.predict(state, questions)"
       },
       "metrics": {
-        "likes": 165
+        "likes": 167
       },
       "imageUrl": "https://huggingface.co/convaiinnovations/laya/resolve/main/assets/logo-mark.png",
       "tags": [
@@ -5866,7 +5923,7 @@
         "snippet": "> result = router.predict(long_document, questions, model=\"multilingual\", max_len=8192)\n>"
       },
       "metrics": {
-        "likes": 5707
+        "likes": 5817
       },
       "imageUrl": "https://raw.githubusercontent.com/NandhaKishorM/laya/main/assets/long_context_8192.png",
       "tags": [
@@ -5907,8 +5964,8 @@
         "snippet": "python -m pip install laya"
       },
       "metrics": {
-        "stars": 33453,
-        "forks": 3007
+        "stars": 34341,
+        "forks": 3079
       },
       "imageUrl": "https://raw.githubusercontent.com/NandhaKishorM/laya/main/assets/logo-lockup.png",
       "tags": [
@@ -5938,7 +5995,7 @@
       "excerpt": "HuggingFace 上的 Laya 相关模型（gradio）。",
       "lang": "zh",
       "metrics": {
-        "likes": 277
+        "likes": 282
       },
       "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/convaiinnovations/laya-demo.png",
       "tags": [],
@@ -5968,11 +6025,11 @@
       },
       "code": {
         "lang": "bash",
-        "snippet": "cd nerve-v0.3.1\nbash scripts/install_dev17_profile.sh abtest-jev-dev17"
+        "snippet": "cd nerve-v0.3.0\nbash scripts/install_dev17_profile.sh abtest-jev-dev17"
       },
       "metrics": {
-        "stars": 43,
-        "forks": 13
+        "stars": 46,
+        "forks": 14
       },
       "imageUrl": "https://opengraph.githubassets.com/1/keeltrace/hermes-nerve",
       "tags": [
@@ -6009,7 +6066,7 @@
       },
       "metrics": {
         "stars": 354,
-        "forks": 41
+        "forks": 42
       },
       "imageUrl": "https://opengraph.githubassets.com/1/itsmostafa/system-one-connector",
       "tags": [
@@ -6045,8 +6102,8 @@
         "snippet": "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh"
       },
       "metrics": {
-        "stars": 716,
-        "forks": 111
+        "stars": 765,
+        "forks": 121
       },
       "imageUrl": "https://opengraph.githubassets.com/1/aayushch/laya",
       "tags": [
@@ -6055,33 +6112,6 @@
       "variants": [],
       "links": [],
       "curatedAt": "2026-10-19T08:34:47.045Z",
-      "curatedBy": "auto"
-    },
-    {
-      "id": "blog-melaya-org-en-guides-laya-system-one-model",
-      "sourceType": "blog",
-      "canonicalUrl": "https://melaya.org/en/guides/laya-system-one-model",
-      "title": "Laya MCP: Free System One Decision Model | Melaya",
-      "author": {
-        "name": "melaya.org",
-        "handle": "melaya.org"
-      },
-      "createdAt": "2026-04-01T00:00:00.000Z",
-      "excerpt": "Laya is an open System One decision model built into Melaya. Free typed decisions with zero output tokens in agents, pipelines, Fast Mode and MCP.",
-      "lang": "en",
-      "translation": {
-        "status": "pending",
-        "targetLang": "zh-CN",
-        "detectedLang": "en"
-      },
-      "metrics": {},
-      "imageUrl": "https://melaya.org/og-socials.png",
-      "tags": [
-        "agent"
-      ],
-      "variants": [],
-      "links": [],
-      "curatedAt": "2026-10-19T08:36:30.743Z",
       "curatedBy": "auto"
     },
     {

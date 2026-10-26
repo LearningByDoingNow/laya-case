@@ -18,8 +18,8 @@
       "snippet": "python -m pip install laya"
     },
     "metrics": {
-      "stars": 33453,
-      "forks": 3007
+      "stars": 34341,
+      "forks": 3079
     },
     "imageUrl": "https://raw.githubusercontent.com/NandhaKishorM/laya/main/assets/logo-lockup.png",
     "tags": [],
@@ -50,8 +50,8 @@
       "snippet": "pip install laya-mlx"
     },
     "metrics": {
-      "stars": 6971,
-      "forks": 569
+      "stars": 7025,
+      "forks": 570
     },
     "imageUrl": "https://raw.githubusercontent.com/mizorewww/laya-mlx/main/docs/assets/snake-demo.gif",
     "tags": [],
@@ -82,8 +82,8 @@
       "snippet": "pip install 'laya-coreml[demo]'\nhf download aac6fef/laya-multilingual-coreml-ane --local-dir models/snake\nlaya-coreml-snake --model ./models/snake"
     },
     "metrics": {
-      "stars": 1590,
-      "forks": 133
+      "stars": 1605,
+      "forks": 136
     },
     "imageUrl": "https://raw.githubusercontent.com/mizorewww/laya-coreml/main/docs/assets/snake-demo.gif",
     "tags": [],
@@ -106,15 +106,15 @@
       "profileUrl": "https://github.com/ollaya-dev"
     },
     "createdAt": "2026-09-23T22:11:15Z",
-    "excerpt": "Run open decision models locally: pull and serve Laya, decider, NLI and GLiClass behind a TypeSafe-compatible API. Ollama for decision models.",
+    "excerpt": "Jev-compatible API server for open decision models. Ollama for decision models: pull and serve 25 model families (Laya, pplx-decider, Clef, Winnow, coba...) locally or self-hosted behind /v1/systemone. The TypeSafe SDK works unchanged: set its base URL and pick an open model. CLI, desktop app, Docker, MCP server, public bench.",
     "lang": "en",
     "code": {
       "lang": "sh",
       "snippet": "curl -fsSL https://ollaya.dev/install.sh | sh\nollaya run winnow:e4b --preset triage \"Third time this year you've double-charged me. Refund it today or I'm cancelling and moving to a competitor.\""
     },
     "metrics": {
-      "stars": 1350,
-      "forks": 82
+      "stars": 1397,
+      "forks": 86
     },
     "imageUrl": "https://opengraph.githubassets.com/1/ollaya-dev/ollaya",
     "tags": [],
@@ -142,8 +142,8 @@
       "snippet": "npm install @receptron/laya"
     },
     "metrics": {
-      "stars": 962,
-      "forks": 79
+      "stars": 1000,
+      "forks": 82
     },
     "imageUrl": "https://opengraph.githubassets.com/1/receptron/laya",
     "tags": [],
@@ -153,35 +153,6 @@
     ],
     "links": [],
     "curatedAt": "2026-10-19T08:34:46.542Z",
-    "curatedBy": "auto"
-  },
-  {
-    "id": "gh-angel291592-intent-router",
-    "sourceType": "github",
-    "canonicalUrl": "https://github.com/angel291592/Intent-Router",
-    "title": "Intent-Router",
-    "author": {
-      "name": "angel291592",
-      "handle": "angel291592",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/206995683?v=4",
-      "profileUrl": "https://github.com/angel291592"
-    },
-    "createdAt": "2026-09-22T06:00:27Z",
-    "excerpt": "Intent compiler for AI agents — converges vague requests into typed IntentSpec contracts (probe, ask, or halt before routing), the input layer for routers and typed-decision models like Jev & Laya",
-    "lang": "en",
-    "code": {
-      "lang": "ts",
-      "snippet": "const hit = await getCache<T>(key);\nif (hit !== null) {\n  return hit;\n}\nconst value = await load();\nif (value !== null) {\n  await setCache(key, value);\n}\nreturn value;"
-    },
-    "metrics": {
-      "stars": 749,
-      "forks": 92
-    },
-    "imageUrl": "https://opengraph.githubassets.com/1/angel291592/Intent-Router",
-    "tags": [],
-    "variants": [],
-    "links": [],
-    "curatedAt": "2026-10-19T08:34:46.774Z",
     "curatedBy": "auto"
   },
   {
@@ -203,8 +174,8 @@
       "snippet": "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh"
     },
     "metrics": {
-      "stars": 716,
-      "forks": 111
+      "stars": 765,
+      "forks": 121
     },
     "imageUrl": "https://opengraph.githubassets.com/1/aayushch/laya",
     "tags": [],
@@ -232,8 +203,8 @@
       "snippet": "swift run -c release FluidUseLaya answer --state \"…\" --type choice \\\n    --instructions \"What does the customer want?\" --options \"refund|order status|technical help\"\nswift run -c release FluidUseLaya tetris --shortlist --describe graded --pieces 200  # headless Tetris, P(clean) per landing\nswift run -c release FluidUseLaya 2048 --precision lut8 --games 10\nswift run -c release FluidUseLaya benchmark --suites <mobius>/benchmark/suites.jsonl --reference <mobius>/benchmark/reference-rows.jsonl\nswift run -c release LayaTetrisDemo                              # SwiftUI: GLiClass/laya play Tetris\nswift run -c release GLiClass2048Demo                            # SwiftUI: GLiClass plays 2048\nswift run -c release Decision2048BenchDemo                       # SwiftUI: GLiClass vs laya at 2048"
     },
     "metrics": {
-      "stars": 522,
-      "forks": 39
+      "stars": 526,
+      "forks": 40
     },
     "imageUrl": "https://opengraph.githubassets.com/1/FluidInference/FluidUse",
     "tags": [],
@@ -264,7 +235,7 @@
     },
     "metrics": {
       "stars": 354,
-      "forks": 41
+      "forks": 42
     },
     "imageUrl": "https://opengraph.githubassets.com/1/itsmostafa/system-one-connector",
     "tags": [],
@@ -288,43 +259,14 @@
     "excerpt": "微信聊天分析工具，支持本地 Laya 与 API 模型，提供意图识别、情绪感知、人物画像、群聊画像、好感度分析和 MBTI 聊天推测。",
     "lang": "zh",
     "metrics": {
-      "stars": 274,
-      "forks": 45
+      "stars": 292,
+      "forks": 47
     },
     "imageUrl": "https://opengraph.githubassets.com/1/tswawa/WechatVibe",
     "tags": [],
     "variants": [],
     "links": [],
     "curatedAt": "2026-10-19T08:34:47.785Z",
-    "curatedBy": "auto"
-  },
-  {
-    "id": "gh-wdobry-laya-playground",
-    "sourceType": "github",
-    "canonicalUrl": "https://github.com/wdobry/laya-playground",
-    "title": "laya-playground",
-    "author": {
-      "name": "wdobry",
-      "handle": "wdobry",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/10637790?v=4",
-      "profileUrl": "https://github.com/wdobry"
-    },
-    "createdAt": "2026-09-20T19:06:43Z",
-    "excerpt": "A website, two games, a benchmark and an agent skill for Laya, the open-source decision model. Runs on your machine.",
-    "lang": "en",
-    "code": {
-      "lang": "bash",
-      "snippet": "git clone https://github.com/wdobry/laya-playground\ncd laya-playground\nuv venv --python 3.12 && uv pip install laya\n.venv/bin/python server.py"
-    },
-    "metrics": {
-      "stars": 188,
-      "forks": 45
-    },
-    "imageUrl": "https://opengraph.githubassets.com/1/wdobry/laya-playground",
-    "tags": [],
-    "variants": [],
-    "links": [],
-    "curatedAt": "2026-10-19T08:34:48.061Z",
     "curatedBy": "auto"
   },
   {
@@ -346,8 +288,8 @@
       "snippet": "python -m pip install \"git+https://github.com/Fruank4/laya-ort.git\""
     },
     "metrics": {
-      "stars": 168,
-      "forks": 0
+      "stars": 277,
+      "forks": 4
     },
     "imageUrl": "https://opengraph.githubassets.com/1/Fruank4/laya-ort",
     "tags": [],
@@ -357,6 +299,35 @@
     ],
     "links": [],
     "curatedAt": "2026-10-19T08:34:48.326Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-wdobry-laya-playground",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/wdobry/laya-playground",
+    "title": "laya-playground",
+    "author": {
+      "name": "wdobry",
+      "handle": "wdobry",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/10637790?v=4",
+      "profileUrl": "https://github.com/wdobry"
+    },
+    "createdAt": "2026-09-20T19:06:43Z",
+    "excerpt": "A website, two games, a benchmark and an agent skill for Laya, the open-source decision model. Runs on your machine.",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "git clone https://github.com/wdobry/laya-playground\ncd laya-playground\nuv venv --python 3.12 && uv pip install laya\n.venv/bin/python server.py"
+    },
+    "metrics": {
+      "stars": 190,
+      "forks": 46
+    },
+    "imageUrl": "https://opengraph.githubassets.com/1/wdobry/laya-playground",
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-10-19T08:34:48.061Z",
     "curatedBy": "auto"
   },
   {
@@ -378,8 +349,8 @@
       "snippet": "npx skills add ThinkFlowLab/system1-agents                                                              # the skill: Claude Code, Codex, Cursor\nclaude plugin marketplace add ThinkFlowLab/system1-agents && claude plugin install s1a@system1-agents   # plus the browser subagent and the MCP server"
     },
     "metrics": {
-      "stars": 160,
-      "forks": 23
+      "stars": 177,
+      "forks": 24
     },
     "imageUrl": "https://raw.githubusercontent.com/tinnel123666888/OmniJev/14dbec4f71e194852c8d7b88ab36ef639493f400/docs/media/v11/web.gif",
     "tags": [],
@@ -407,7 +378,7 @@
       "snippet": "git submodule update --init --recursive\ncmake -S . -B build-cuda -G Ninja -DCMAKE_BUILD_TYPE=Release \\\n  -DCMAKE_CUDA_ARCHITECTURES=120\ncmake --build build-cuda --parallel 8"
     },
     "metrics": {
-      "stars": 128,
+      "stars": 130,
       "forks": 16
     },
     "imageUrl": "https://opengraph.githubassets.com/1/lkarlslund/laya.cpp",
@@ -440,8 +411,8 @@
       "snippet": "git clone https://github.com/virajbhartiya/laya-vs-jev.git\ncd laya-vs-jev\nuv sync --extra demo --extra trex --extra dev\nuv run --extra demo hf download aac6fef/laya-multilingual-mlx \\\n  --local-dir models/hub/laya-multilingual-mlx\ncp .env.example .env\n# Set TYPESAFE_API_KEY in .env before running.\nuv run --extra trex laya-trex --round-seconds 0 --env-file .env"
     },
     "metrics": {
-      "stars": 112,
-      "forks": 11
+      "stars": 114,
+      "forks": 12
     },
     "imageUrl": "https://opengraph.githubassets.com/1/virajbhartiya/laya-vs-jev",
     "tags": [],
@@ -471,7 +442,7 @@
       "snippet": "composer require marcreichel/laya-php"
     },
     "metrics": {
-      "stars": 106,
+      "stars": 110,
       "forks": 3
     },
     "imageUrl": "https://opengraph.githubassets.com/1/marcreichel/laya-php",
@@ -503,8 +474,8 @@
       "snippet": "docker run -d --name laya-server --init --restart unless-stopped \\\n  -p 8080:8080 \\\n  -v laya-data:/data \\\n  -e LAYA_ADMIN_USERNAME=admin \\\n  -e LAYA_ADMIN_PASSWORD='change-this-admin-password' \\\n  1panel/laya-server:latest"
     },
     "metrics": {
-      "stars": 104,
-      "forks": 58
+      "stars": 108,
+      "forks": 59
     },
     "imageUrl": "https://opengraph.githubassets.com/1/1Panel-dev/laya-server",
     "tags": [],
@@ -532,8 +503,8 @@
       "snippet": "import laya\nfrom PIL import Image\n\nagent = laya.load_vlm(\"thaitea/laya-vision\")\nresult = agent.predict(\n    {\"image\": Image.open(\"photo.jpg\"), \"note\": \"customer says it arrived broken\"},\n    {\n        \"damage\":   {\"type\": \"score\",  \"instructions\": \"How much damage does the item show?\",\n                     \"criteria\": [\"none\", \"cosmetic: scratches or dents\", \"functional: parts broken or missing\", \"destroyed\"]},\n        \"category\": {\"type\": \"choice\", \"instructions\": \"What kind of item is this?\",\n                     \"criteria\": [\"electronics\", \"clothing\", \"furniture\", \"food\", \"other\"]},\n        \"outdoors\": {\"type\": \"noul\",   \"instructions\": \"Was the photo taken outdoors?\"},\n    },\n)\na = result[\"answers\"]\na[\"damage\"][\"score\"], a[\"category\"][\"choice\"], a[\"outdoors\"][\"noul\"]   # expected level 0-3, top option, P(true)"
     },
     "metrics": {
-      "stars": 93,
-      "forks": 8
+      "stars": 101,
+      "forks": 10
     },
     "imageUrl": "https://opengraph.githubassets.com/1/r33drichards/laya-vision",
     "tags": [],
@@ -563,7 +534,7 @@
       "snippet": "from typesafe_sdk import Choice, Noul, TypeSafeClient\n\nQUESTIONS = {\n    \"category\": Choice(\n        instructions=\"Which part of the product is this ticket about?\",\n        criteria={\"billing\": \"Payments and refunds.\", \"bug\": \"Something is broken.\"},\n    ),\n    \"needs_human\": Noul(instructions=\"Does a support agent have to read this?\"),\n}\n\nwith TypeSafeClient(api_key=\"local\", base_url=\"http://127.0.0.1:8787\") as client:\n    answer = client.system_one(\n        state={\"subject\": \"Charged twice\", \"body\": \"Two identical charges on Friday.\"},\n        questions=QUESTIONS,\n    )\nprint(answer.choices[\"category\"].choice, answer.nouls[\"needs_human\"].noul)"
     },
     "metrics": {
-      "stars": 70,
+      "stars": 73,
       "forks": 5
     },
     "imageUrl": "https://opengraph.githubassets.com/1/bladedevoff/stuntd",
@@ -571,6 +542,35 @@
     "variants": [],
     "links": [],
     "curatedAt": "2026-10-19T08:34:50.105Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-angel291592-intent-router",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/angel291592/Intent-Router",
+    "title": "Intent-Router",
+    "author": {
+      "name": "angel291592",
+      "handle": "angel291592",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/206995683?v=4",
+      "profileUrl": "https://github.com/angel291592"
+    },
+    "createdAt": "2026-09-22T06:00:27Z",
+    "excerpt": "Intent compiler for AI agents — converges vague requests into typed IntentSpec contracts (probe, ask, or halt before routing), the input layer for routers and typed-decision models like Jev & Laya",
+    "lang": "en",
+    "code": {
+      "lang": "ts",
+      "snippet": "const hit = await getCache<T>(key);\nif (hit !== null) {\n  return hit;\n}\nconst value = await load();\nif (value !== null) {\n  await setCache(key, value);\n}\nreturn value;"
+    },
+    "metrics": {
+      "stars": 61,
+      "forks": 15
+    },
+    "imageUrl": "https://opengraph.githubassets.com/1/angel291592/Intent-Router",
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-10-19T08:34:46.774Z",
     "curatedBy": "auto"
   },
   {
@@ -592,7 +592,7 @@
       "snippet": "git clone <your-repository-url> laya-pilot\ncd laya-pilot\nnpm install\nnpx playwright install chromium\npython3.11 -m venv .venv\n.venv/bin/python -m pip install -r requirements-local.txt"
     },
     "metrics": {
-      "stars": 58,
+      "stars": 60,
       "forks": 17
     },
     "imageUrl": "https://opengraph.githubassets.com/1/anthonyli/laya-pilot",
@@ -621,7 +621,7 @@
       "snippet": "tar -xzf laya-opencv-*.tar.gz\ncd laya-opencv\nbash install.sh\nbash start.sh"
     },
     "metrics": {
-      "stars": 57,
+      "stars": 58,
       "forks": 8
     },
     "imageUrl": "https://opengraph.githubassets.com/1/uu889/laya-opencv",
@@ -676,11 +676,11 @@
     "lang": "en",
     "code": {
       "lang": "bash",
-      "snippet": "cd nerve-v0.3.1\nbash scripts/install_dev17_profile.sh abtest-jev-dev17"
+      "snippet": "cd nerve-v0.3.0\nbash scripts/install_dev17_profile.sh abtest-jev-dev17"
     },
     "metrics": {
-      "stars": 43,
-      "forks": 13
+      "stars": 46,
+      "forks": 14
     },
     "imageUrl": "https://opengraph.githubassets.com/1/keeltrace/hermes-nerve",
     "tags": [],
@@ -768,7 +768,7 @@
       "snippet": "uv tool install \"edgejev[build]\"\nedgejev build --backend laya --out ./jev-int8"
     },
     "metrics": {
-      "stars": 30,
+      "stars": 33,
       "forks": 4
     },
     "imageUrl": "https://opengraph.githubassets.com/1/yzfly/edgejev",
@@ -799,7 +799,7 @@
       "snippet": "pip install --no-deps laya-guardrail pyyaml\nlaya-guard check --offline \"cat ~/.ssh/id_rsa\"     # [BLOCK] ... policy=credential-read"
     },
     "metrics": {
-      "stars": 30,
+      "stars": 33,
       "forks": 5
     },
     "imageUrl": "https://opengraph.githubassets.com/1/scs0209/laya-guard",
@@ -839,65 +839,63 @@
     "curatedBy": "auto"
   },
   {
-    "id": "gh-chenneyzhuang-laya-browser-agent",
+    "id": "gh-hapyrain-dsh-router-laya",
     "sourceType": "github",
-    "canonicalUrl": "https://github.com/ChenneyZhuang/laya-browser-agent",
-    "title": "laya-browser-agent",
+    "canonicalUrl": "https://github.com/HapyRain/dsh-router-laya",
+    "title": "dsh-router-laya",
     "author": {
-      "name": "ChenneyZhuang",
-      "handle": "ChenneyZhuang",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/61360637?v=4",
-      "profileUrl": "https://github.com/ChenneyZhuang"
+      "name": "HapyRain",
+      "handle": "HapyRain",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/90739505?v=4",
+      "profileUrl": "https://github.com/HapyRain"
     },
-    "createdAt": "2026-09-21T05:00:42Z",
-    "excerpt": "Local, open-source Jev alternative: browser agent decisions with Laya (System One model) on your own machine. No cloud, no API key. Playwright/CDP, MCP-friendly.",
-    "lang": "en",
+    "createdAt": "2026-09-26T04:08:29Z",
+    "excerpt": "Auto tier routing for DSH: a locally fine-tuned model picks low/high/max thinking effort per message. Private, <1s, no cloud. 自动档位路由",
+    "lang": "zh",
     "code": {
-      "lang": "python",
-      "snippet": "from localdecide import BrowserDecider\nfrom localdecide.drivers import PlaywrightDriver\n\nwith PlaywrightDriver(start_url=\"https://en.wikipedia.org/wiki/Main_Page\") as driver:\n    run = BrowserDecider().run(driver, \"Click the 'Random article' link in the navigation.\")\n    print(run.stopped, run.summary()[\"median_decision_ms\"], \"ms/decision\")\n# Illustrative output only; status and timing depend on the page and backend."
+      "lang": "bash",
+      "snippet": "npm i -g dsh-router-laya\nnpx dsh-router-laya setup"
     },
     "metrics": {
-      "stars": 22,
-      "forks": 5
+      "stars": 26,
+      "forks": 6
     },
-    "imageUrl": "https://opengraph.githubassets.com/1/ChenneyZhuang/laya-browser-agent",
+    "imageUrl": "https://opengraph.githubassets.com/1/HapyRain/dsh-router-laya",
+    "tags": [],
+    "variants": [],
+    "links": [],
+    "curatedAt": "2026-10-26T08:37:17.114Z",
+    "curatedBy": "auto"
+  },
+  {
+    "id": "gh-tc3oliver-laya-apple",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/tc3oliver/laya-apple",
+    "title": "laya-apple",
+    "author": {
+      "name": "tc3oliver",
+      "handle": "tc3oliver",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/57586652?v=4",
+      "profileUrl": "https://github.com/tc3oliver"
+    },
+    "createdAt": "2026-09-22T17:26:44Z",
+    "excerpt": "Correctness-validated heterogeneous Laya runtime for Apple Silicon (MLX GPU + Apple Neural Engine)",
+    "lang": "en",
+    "code": {
+      "lang": "bash",
+      "snippet": "pip install 'laya-apple[ane]'   # MLX GPU + the Neural Engine runtime"
+    },
+    "metrics": {
+      "stars": 24,
+      "forks": 8
+    },
+    "imageUrl": "https://opengraph.githubassets.com/1/tc3oliver/laya-apple",
     "tags": [],
     "variants": [
       "laya-mlx"
     ],
     "links": [],
-    "curatedAt": "2026-10-19T08:34:52.729Z",
-    "curatedBy": "auto"
-  },
-  {
-    "id": "gh-afshinm-laya-mps",
-    "sourceType": "github",
-    "canonicalUrl": "https://github.com/afshinm/laya-mps",
-    "title": "laya-mps",
-    "author": {
-      "name": "afshinm",
-      "handle": "afshinm",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/314326?v=4",
-      "profileUrl": "https://github.com/afshinm"
-    },
-    "createdAt": "2026-09-21T06:49:44Z",
-    "excerpt": "Run Jev-style typed decisions locally on your Mac with low RAM usage and fast responses",
-    "lang": "en",
-    "code": {
-      "lang": "bash",
-      "snippet": "git clone https://github.com/afshinm/laya-mps.git\ncd laya-mps\n./scripts/serve.sh"
-    },
-    "metrics": {
-      "stars": 22,
-      "forks": 3
-    },
-    "imageUrl": "https://opengraph.githubassets.com/1/afshinm/laya-mps",
-    "tags": [],
-    "variants": [
-      "typed-decisions"
-    ],
-    "links": [],
-    "curatedAt": "2026-10-19T08:34:52.974Z",
+    "curatedAt": "2026-10-26T08:37:17.434Z",
     "curatedBy": "auto"
   }
 ]
